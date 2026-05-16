@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header";
-import { Table, Scale, AlertTriangle, CheckCircle2, Globe } from "lucide-react";
+import { Table, Scale, AlertTriangle, CheckCircle2, Globe, BookOpen, Activity, Heart } from "lucide-react";
 import { RelatedPages } from "@/components/RelatedPages";
 
 const TabelaIMC = () => {
@@ -421,6 +421,150 @@ const TabelaIMC = () => {
             <p className="text-xs text-muted-foreground mt-4">
               Fonte: Diretrizes Brasileiras de Obesidade 2024 (ABESO), DGS Portugal, OMS
             </p>
+          </div>
+
+          {/* VIGITEL 2023 e disparidades regionais no Brasil */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-destructive/10">
+                <Activity className="w-6 h-6 text-destructive" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">VIGITEL 2023: retrato da obesidade no Brasil</h2>
+            </div>
+            <p className="text-muted-foreground mb-6">
+              O <strong>VIGITEL</strong> (Vigilância de Fatores de Risco e Proteção para Doenças Crônicas por Inquérito Telefônico) é o principal sistema de monitoramento epidemiológico do Ministério da Saúde para acompanhar a evolução do IMC na população brasileira. Os dados de 2023 revelam um cenário preocupante, com a obesidade atingindo patamares históricos no país.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="p-5 rounded-xl bg-destructive/5 border border-destructive/20">
+                <h4 className="font-bold mb-3">Dados nacionais VIGITEL 2023</h4>
+                <ul className="text-muted-foreground space-y-2 text-sm">
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-destructive mt-2 flex-shrink-0" />
+                    <span><strong>26,8% dos adultos</strong> com obesidade (IMC &ge; 30), representando cerca de 43 milhões de brasileiros</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-warning mt-2 flex-shrink-0" />
+                    <span><strong>61,8% com excesso de peso</strong> (IMC &ge; 25), incluindo sobrepeso e obesidade combinados</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-info mt-2 flex-shrink-0" />
+                    <span>A obesidade <strong>cresceu 72% nos últimos 17 anos</strong>, passando de 15,6% em 2006 para 26,8% em 2023</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-info mt-2 flex-shrink-0" />
+                    <span>A prevalência é maior entre <strong>mulheres (27,7%)</strong> do que entre homens (25,7%), e atinge o pico na faixa etária de <strong>45 a 64 anos</strong></span>
+                  </li>
+                </ul>
+              </div>
+              <div className="p-5 rounded-xl bg-primary/5 border border-primary/20">
+                <h4 className="font-bold mb-3">Diferenças regionais no Brasil</h4>
+                <ul className="text-muted-foreground space-y-2 text-sm">
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-destructive mt-2 flex-shrink-0" />
+                    <span><strong>Região Sul</strong>: ~30% de obesidade, a maior do país. O consumo elevado de carne vermelha, embutidos e farináceos contribui para esses índices. Porto Alegre e Curitiba figuram entre as capitais com maior prevalência.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-warning mt-2 flex-shrink-0" />
+                    <span><strong>Região Sudeste</strong>: ~26% de obesidade. São Paulo e Rio de Janeiro concentram grande número absoluto de obesos, refletindo padrões alimentares urbanos com alto consumo de ultraprocessados.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-success mt-2 flex-shrink-0" />
+                    <span><strong>Região Norte</strong>: ~21% de obesidade, a menor do país. A dieta baseada em <strong>peixe, açaí, mandioca e frutas regionais</strong> está associada a menores índices de obesidade e doenças metabólicas.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-info mt-2 flex-shrink-0" />
+                    <span><strong>Região Nordeste</strong>: ~23% de obesidade. A transição nutricional está em curso, com rápido aumento do consumo de alimentos ultraprocessados em centros urbanos como Recife e Salvador.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p className="text-muted-foreground text-sm">
+              As disparidades regionais refletem profundas diferenças socioeconômicas, culturais e de acesso a serviços de saúde. O VIGITEL também destaca que a obesidade está inversamente associada ao nível de escolaridade: adultos com até 8 anos de estudo apresentam prevalência de obesidade 40% superior àqueles com ensino superior completo. Essa correlação reforça a necessidade de políticas públicas integradas que combinem educação alimentar, acesso a alimentos in natura e cobertura de saúde.
+            </p>
+          </div>
+
+          {/* SUS e cobertura para tratamento da obesidade */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-success/10">
+                <Heart className="w-6 h-6 text-success" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">SUS e SNS: cobertura pública para tratamento da obesidade</h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <h3 className="font-bold text-lg">Brasil: o SUS no combate à obesidade</h3>
+                <p className="text-muted-foreground text-sm">
+                  O <strong>Sistema Único de Saúde (SUS)</strong> oferece uma rede abrangente de serviços para o tratamento e a prevenção da obesidade, acessíveis a toda a população brasileira de forma gratuita. A atenção básica nas <strong>Unidades Básicas de Saúde (UBS)</strong> constitui a porta de entrada do sistema, onde o IMC é medido rotineiramente e registrado no <strong>SISVAN</strong> (Sistema de Vigilância Alimentar e Nutricional).
+                </p>
+                <ul className="text-muted-foreground space-y-2 text-sm">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-success mt-1 flex-shrink-0" />
+                    <span><strong>Consultas de nutrição</strong> gratuitas nas UBS, com nutricionistas integrados às equipes de Estratégia Saúde da Família (ESF)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-success mt-1 flex-shrink-0" />
+                    <span><strong>NASF-AP</strong> (Núcleo Ampliado de Saúde da Família): equipes multiprofissionais com nutricionistas, educadores físicos e psicólogos para abordagem integral da obesidade</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-success mt-1 flex-shrink-0" />
+                    <span><strong>Cirurgia bariátrica pelo SUS</strong>: disponível para pacientes com IMC &ge; 40 ou IMC &ge; 35 com comorbidades. O tempo médio de espera varia de 2 a 5 anos, dependendo do estado</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-success mt-1 flex-shrink-0" />
+                    <span><strong>Programa Academia da Saúde</strong>: espaços públicos com profissionais de educação física, voltados para a prática de atividade física comunitária e orientação nutricional</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="space-y-4">
+                <h3 className="font-bold text-lg">Portugal: o SNS e a estratégia PNPAS</h3>
+                <p className="text-muted-foreground text-sm">
+                  O <strong>Serviço Nacional de Saúde (SNS)</strong> de Portugal integra o acompanhamento do IMC na atenção primária através dos <strong>Centros de Saúde</strong> e das <strong>Unidades de Saúde Familiar (USF)</strong>. O <strong>PNPAS</strong> (Programa Nacional para a Promoção da Alimentação Saudável) coordena as políticas de prevenção da obesidade a nível nacional.
+                </p>
+                <ul className="text-muted-foreground space-y-2 text-sm">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-success mt-1 flex-shrink-0" />
+                    <span><strong>28,7% de obesidade</strong> em adultos portugueses (dados Eurostat), taxa superior à média europeia de 16,5%</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-success mt-1 flex-shrink-0" />
+                    <span><strong>Consultas de nutrição gratuitas</strong> nos centros de saúde do SNS, com referenciação pelo médico de família</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-success mt-1 flex-shrink-0" />
+                    <span>O <strong>IEAB</strong> (Imposto Especial sobre Bebidas Açucaradas) reduziu o consumo de refrigerantes em 7% no primeiro ano de implementação</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-success mt-1 flex-shrink-0" />
+                    <span>A <strong>DGS</strong> (Direção-Geral da Saúde) publica anualmente o relatório "Portugal: Alimentação Saudável em Números", que monitoriza a evolução do IMC na população</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Guia Alimentar Brasileiro — modelo mundial */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-primary/10">
+                <BookOpen className="w-6 h-6 text-primary" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Guia Alimentar Brasileiro: referência mundial contra a obesidade</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                O <strong>Guia Alimentar para a População Brasileira</strong>, publicado pelo Ministério da Saúde em 2014, é reconhecido pela <strong>Organização Mundial da Saúde (OMS)</strong> e pela <strong>FAO</strong> como um dos modelos mais inovadores do mundo em nutrição de saúde pública. Diferentemente dos guias tradicionais baseados em nutrientes, o guia brasileiro adota a <strong>classificação NOVA</strong> dos alimentos, desenvolvida pela equipe do professor Carlos Monteiro da Universidade de São Paulo (USP), que categoriza os alimentos pelo grau de processamento industrial.
+              </p>
+              <p>
+                A mensagem central do guia é simples e revolucionária: <strong>"Prefira sempre alimentos in natura ou minimamente processados e preparações culinárias a alimentos ultraprocessados"</strong>. Esta abordagem reconhece que o problema da obesidade não está apenas nos nutrientes individuais (gordura, açúcar, sal), mas no grau de processamento industrial que altera profundamente a matriz alimentar, tornando os produtos mais calóricos, menos saciantes e frequentemente hiperpalatáveis.
+              </p>
+              <p>
+                Estudos publicados no <em>British Medical Journal</em> e no <em>JAMA Internal Medicine</em> demonstram que cada aumento de 10% na proporção de ultraprocessados na dieta está associado a um aumento de 12% no risco de obesidade e de 14% no risco de mortalidade por todas as causas. No Brasil, os ultraprocessados representam em média 20% das calorias consumidas, cifra que chega a 30% nas capitais e a mais de 40% entre adolescentes de classes média e alta.
+              </p>
+              <p>
+                O guia brasileiro também inova ao incluir recomendações sobre o <strong>contexto das refeições</strong>: comer com atenção, em ambientes tranquilos, preferencialmente em companhia, cozinhar mais em casa e ser crítico em relação à publicidade alimentar. Países como Uruguai, Equador e Canadá adotaram princípios semelhantes em seus guias alimentares inspirados no modelo brasileiro. A combinação de uma alimentação baseada em alimentos reais, o acompanhamento do IMC pelo SUS e a educação nutricional nas escolas públicas forma o tripé da estratégia brasileira de combate à obesidade.
+              </p>
+            </div>
           </div>
 
           {/* SEO */}

@@ -384,6 +384,48 @@ const BMINanxing = () => {
             </div>
           </div>
 
+          {/* 中国城市青年男性肥胖危机 */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-warning/10">
+                <AlertTriangle className="w-6 h-6 text-warning" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">中国城市青年男性肥胖危机：久坐办公与饮食文化</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                中国城市青年男性（20-35岁）正面临前所未有的<strong>肥胖危机</strong>。根据中国疾控中心2023年的最新数据，城市青年男性超重肥胖率已突破<strong>55%</strong>（按中国标准BMI≥24计算），远高于同年龄段女性的35%。这一代人被称为<strong>"互联网一代"</strong>，他们的生活方式与父辈截然不同：长时间伏案工作、外卖代替家庭烹饪、手机游戏取代户外运动、熬夜加班打乱生物钟。
+              </p>
+              <p>
+                <strong>996工作制</strong>（早9点到晚9点、每周6天）虽然近年来受到越来越多批评，但仍在互联网、金融和科技行业中普遍存在。这种高强度工作模式导致男性员工<strong>每天久坐超过10小时</strong>，运动时间极为有限。下班后精力耗尽，往往选择叫外卖和刷手机而非运动。深夜加班还催生了<strong>"夜宵文化"</strong>——烧烤、麻辣烫、炸鸡啤酒成为年轻男性深夜的标配，这些高热量食物在深夜摄入对体重和代谢的危害尤为严重。
+              </p>
+              <p>
+                <strong>白酒（baijiu）文化</strong>是中国男性BMI升高的另一个重要因素。商务应酬中饮酒几乎不可避免，白酒热量极高（每100毫升约<strong>300千卡</strong>），远超啤酒和葡萄酒。频繁的商务宴请不仅带来大量酒精热量，还伴随着高油高盐的宴席菜肴。中国营养学会建议成年男性每日酒精摄入量不超过<strong>25克</strong>，但实际商务应酬中的饮酒量往往远超这一标准。长期过量饮酒不仅增加腹部脂肪堆积，还会导致<strong>脂肪肝</strong>——中国疾控中心数据显示，城市男性脂肪肝检出率已超过<strong>30%</strong>。
+              </p>
+            </div>
+          </div>
+
+          {/* 中国标准BMI切点与健康中国2030男性策略 */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-success/10">
+                <CheckCircle2 className="w-6 h-6 text-success" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">中国标准BMI切点的科学依据与男性健康策略</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                中国采用<strong>更严格的BMI切点（超重24/肥胖28）</strong>并非随意设定，而是基于大量中国人群流行病学研究的科学结论。<strong>卫生行业标准WS/T 428-2013</strong>的制定参考了数十万中国成年人的健康数据，研究发现：中国男性BMI达到24时，<strong>高血压风险增加2.5倍</strong>，<strong>2型糖尿病风险增加3倍</strong>，<strong>血脂异常风险增加2倍</strong>。如果沿用WHO的25作为超重切点，将会<strong>漏诊约20%的高风险人群</strong>。
+              </p>
+              <p>
+                <strong>腰围</strong>作为评估腹型肥胖的关键指标，中国标准同样比WHO标准更为严格。中国男性腰围切点为<strong>≥85厘米</strong>（WHO标准为94厘米）。研究表明，中国男性在相同BMI下，<strong>内脏脂肪面积</strong>比欧美男性高出约20-30%。这意味着一个BMI为24的中国男性，其实际代谢风险可能等同于BMI为27-28的西方男性。因此，<strong>BMI和腰围双重监测</strong>对中国男性来说尤为重要。
+              </p>
+              <p>
+                <strong>"健康中国2030"</strong>为男性健康制定了具体策略：推动企事业单位建设健身场所、鼓励<strong>工间操</strong>和健步走等职场健康活动、在城市社区配建健身步道和智能健身设施。各地政府还推出了<strong>免费或补贴的体质监测服务</strong>，市民可在社区体育中心进行BMI、体脂率、肌肉量等指标的免费检测。每年<strong>10月28日"中国男性健康日"</strong>，各地疾控中心和医疗机构开展男性健康筛查和宣教活动。对于中国男性来说，了解并使用<strong>中国标准BMI切点（24/28）</strong>而非WHO标准（25/30），是保护自身健康的第一步。
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header";
-import { Table, Scale, AlertTriangle, CheckCircle2, Globe } from "lucide-react";
+import { Table, Scale, AlertTriangle, CheckCircle2, Globe, BookOpen, Activity, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RelatedPages } from "@/components/RelatedPages";
 
@@ -365,6 +365,113 @@ const BMITabelle = () => {
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+
+          {/* RKI DEGS-Studie und Adipositas in Deutschland */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-destructive/10">
+                <Activity className="w-6 h-6 text-destructive" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">RKI DEGS-Studie: Adipositas in Deutschland im Detail</h2>
+            </div>
+            <p className="text-muted-foreground mb-6">
+              Die <strong>DEGS1-Studie</strong> (Studie zur Gesundheit Erwachsener in Deutschland) des <strong>Robert Koch-Instituts (RKI)</strong> ist die umfassendste epidemiologische Untersuchung zum Gesundheitszustand der deutschen Bevölkerung. Mit über 8.000 Teilnehmern liefert sie detaillierte Daten zur Verteilung des BMI in Deutschland und bildet die Grundlage für gesundheitspolitische Entscheidungen.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="p-5 rounded-xl bg-destructive/5 border border-destructive/20">
+                <h4 className="font-bold mb-3">Adipositas-Prävalenz nach Altersgruppen</h4>
+                <ul className="text-muted-foreground space-y-2 text-sm">
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-warning mt-2 flex-shrink-0" />
+                    <span><strong>18-29 Jahre</strong>: ca. 9% Adipositas -- die niedrigste Altersgruppe, jedoch mit steigender Tendenz gegenüber früheren Erhebungen</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-warning mt-2 flex-shrink-0" />
+                    <span><strong>30-44 Jahre</strong>: ca. 17% Adipositas, wobei Männer (19%) eine höhere Prävalenz als Frauen (15%) aufweisen</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-destructive mt-2 flex-shrink-0" />
+                    <span><strong>45-64 Jahre</strong>: ca. 29% Adipositas, die höchste Rate aller Altersgruppen. In dieser Lebensphase ist der Zusammenhang mit Diabetes Typ 2 und Herz-Kreislauf-Erkrankungen besonders ausgeprägt</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-destructive mt-2 flex-shrink-0" />
+                    <span><strong>65+ Jahre</strong>: ca. 25% Adipositas. Der leichte Rückgang gegenüber der Vorgängergruppe wird auf Mortalitätseffekte und altersbedingten Gewichtsverlust zurückgeführt</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="p-5 rounded-xl bg-primary/5 border border-primary/20">
+                <h4 className="font-bold mb-3">Vergleich Deutschland -- Österreich -- Schweiz</h4>
+                <p className="text-muted-foreground text-sm mb-3">
+                  Die DACH-Region (Deutschland, Österreich, Schweiz) zeigt trotz kultureller Ähnlichkeiten erhebliche Unterschiede in der Adipositas-Prävalenz. Die Daten stammen aus den jeweiligen nationalen Gesundheitserhebungen.
+                </p>
+                <ul className="text-muted-foreground space-y-2 text-sm">
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-destructive mt-2 flex-shrink-0" />
+                    <span><strong>Deutschland</strong>: 23,6% Adipositas (RKI DEGS1). Die höchste Rate in der DACH-Region. Besonders betroffen sind einkommensschwache Bevölkerungsschichten und die neuen Bundesländer.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-warning mt-2 flex-shrink-0" />
+                    <span><strong>Österreich</strong>: ca. 19% Adipositas (Statistik Austria). Tirol und Vorarlberg weisen niedrigere Raten auf als Wien und das Burgenland. Die Österreichische Gesellschaft für Ernährung (ÖGE) koordiniert nationale Präventionsprogramme.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-success mt-2 flex-shrink-0" />
+                    <span><strong>Schweiz</strong>: ca. 12% Adipositas (Schweizerische Gesundheitsbefragung SGB). Die niedrigste Rate in Westeuropa. Experten führen dies auf höheren Bildungsstand, bessere Ernährungsgewohnheiten und höhere Lebensmittelpreise zurück.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p className="text-muted-foreground text-sm">
+              Das RKI schätzt die jährlichen Kosten der Adipositas für das deutsche Gesundheitssystem auf <strong>über 60 Milliarden Euro</strong>, einschließlich direkter Behandlungskosten und indirekter Kosten durch Arbeitsunfähigkeit und Frühverrentung. Die DEGS-Nachfolgestudie GEDA (Gesundheit in Deutschland aktuell) bestätigt den Trend steigender Adipositas-Prävalenz in allen Bevölkerungsgruppen.
+            </p>
+          </div>
+
+          {/* Krankenkasse Prävention §20 SGB V */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-success/10">
+                <Heart className="w-6 h-6 text-success" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Krankenkassen und Adipositas-Prävention: Leistungen nach §20 SGB V</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Das deutsche Gesundheitssystem bietet über die <strong>gesetzlichen Krankenkassen</strong> umfangreiche Leistungen zur Prävention und Behandlung von Übergewicht und Adipositas. Die Rechtsgrundlage bildet <strong>§20 SGB V</strong> (Sozialgesetzbuch, Fünftes Buch), der die Krankenkassen zur Förderung der Gesundheitsvorsorge verpflichtet.
+              </p>
+              <p>
+                Im Bereich der <strong>Primärprävention</strong> bezuschussen die Krankenkassen zertifizierte Kurse zur Ernährungsumstellung, Bewegungsförderung und Stressbewältigung mit bis zu <strong>80-100% der Kursgebühren</strong>. Programme wie "Abnehmen mit Genuss" (AOK), "TK-GesundheitsCoaching" (Techniker Krankenkasse) oder "Gesund Abnehmen" (Barmer) bieten strukturierte Begleitung für Menschen mit einem BMI über 25. Diese Kurse müssen von der <strong>Zentralen Prüfstelle Prävention (ZPP)</strong> zertifiziert sein.
+              </p>
+              <p>
+                Bei einem BMI ab 30 (Adipositas Grad I) oder ab 25 mit Begleiterkrankungen übernehmen die Krankenkassen häufig die Kosten einer <strong>individuellen Ernährungsberatung</strong> durch zertifizierte Fachkräfte (Diätassistenten, Oecotrophologen). Die <strong>DGE</strong> (Deutsche Gesellschaft für Ernährung) empfiehlt mindestens 5-6 Beratungssitzungen über einen Zeitraum von 6 Monaten, um nachhaltige Verhaltensänderungen zu erzielen.
+              </p>
+              <p>
+                Für schwere Adipositas (BMI &ge; 40 oder BMI &ge; 35 mit Komorbiditäten) kann eine <strong>bariatrische Chirurgie</strong> (Magenbypass, Schlauchmagen) von der Krankenkasse genehmigt werden. Voraussetzung ist in der Regel ein dokumentierter konservativer Therapieversuch von mindestens 6-12 Monaten. Die <strong>S3-Leitlinie Chirurgie der Adipositas und metabolischer Erkrankungen</strong> der DGAV (Deutsche Gesellschaft für Allgemein- und Viszeralchirurgie) definiert die Indikationskriterien. In Deutschland werden jährlich etwa 15.000 bariatrische Eingriffe durchgeführt.
+              </p>
+            </div>
+          </div>
+
+          {/* Geschichte des BMI: von Quetelet bis heute */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-primary/10">
+                <BookOpen className="w-6 h-6 text-primary" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Geschichte des BMI: von Quetelet bis zur modernen Klassifikation</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Die Geschichte des Body-Mass-Index ist eng mit dem deutschsprachigen und belgischen Kulturraum verbunden. Der <strong>Adolphe Quetelet</strong> (1796-1874), ein belgischer Mathematiker und Statistiker aus Gent, entwickelte 1832 den nach ihm benannten <strong>Quetelet-Index</strong> -- die mathematische Formel Gewicht/Größe², die wir heute als BMI kennen. Quetelet, der an der Universität Gent studierte und in Brüssel lehrte, war ein Pionier der Sozialstatistik und beschrieb damit den "durchschnittlichen Menschen" (<em>l'homme moyen</em>).
+              </p>
+              <p>
+                Der Quetelet-Index geriet zunächst in Vergessenheit, bis der amerikanische Physiologe <strong>Ancel Keys</strong> ihn 1972 in einer wegweisenden Studie im <em>Journal of Chronic Diseases</em> wiederentdeckte und den Begriff <strong>"Body Mass Index"</strong> prägte. Keys verglich verschiedene Körpermaße und fand, dass das Verhältnis Gewicht/Größe² am besten mit dem Körperfettanteil korrelierte, wenn auch nur auf Populationsebene.
+              </p>
+              <p>
+                Die entscheidende Wende kam 1995, als die <strong>WHO</strong> (Weltgesundheitsorganisation) den BMI als internationalen Standard zur Klassifikation von Unter-, Normal- und Übergewicht übernahm. Die heute weltweit gültigen Grenzwerte (Untergewicht &lt; 18,5, Normalgewicht 18,5-24,9, Übergewicht 25-29,9, Adipositas &ge; 30) wurden 1997 auf einer WHO-Expertenkonferenz festgelegt und 2000 endgültig verabschiedet.
+              </p>
+              <p>
+                In Deutschland übernahm das <strong>Robert Koch-Institut (RKI)</strong> die WHO-Klassifikation und integrierte sie in die nationalen Gesundheitssurveys. Die <strong>DGE</strong> (Deutsche Gesellschaft für Ernährung) verwendet den BMI als zentrales Screening-Instrument in ihren Ernährungsempfehlungen, betont jedoch seit den 2010er Jahren zunehmend die Grenzen des BMI. Aktuelle Forschungen an deutschen Universitäten (Charité Berlin, TU München, Universität Leipzig) untersuchen alternative Indizes wie den <strong>Body Shape Index (ABSI)</strong> und den <strong>Body Roundness Index (BRI)</strong>, die die Körperfettverteilung besser berücksichtigen als der klassische BMI.
+              </p>
             </div>
           </div>
 

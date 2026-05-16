@@ -289,6 +289,37 @@ const IMCEnfant = () => {
             </div>
           </div>
 
+          {/* Écrans et sédentarité */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-cyan-500/10">
+                <AlertTriangle className="w-6 h-6 text-cyan-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Écrans, sédentarité et IMC de l'enfant français</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                L'<strong>ANSES</strong> et le <strong>Haut Conseil de la Santé Publique</strong> alertent sur l'impact
+                des écrans sur le poids des enfants français. Selon l'enquête <strong>INCA 3</strong>, les enfants de 3 à 17 ans
+                passent en moyenne <strong>3 heures par jour</strong> devant un écran, un chiffre qui a augmenté de 30% en dix ans.
+                Cette sédentarité favorise la prise de poids et l'augmentation de l'IMC, indépendamment de l'alimentation.
+              </p>
+              <p>
+                Les recommandations françaises sont claires : <strong>pas d'écran avant 3 ans</strong> (avis de l'Académie
+                des Sciences et du CSA), maximum <strong>1 heure par jour entre 3 et 6 ans</strong>, et <strong>2 heures
+                maximum après 6 ans</strong>. Le <strong>PNNS 4</strong> intègre désormais la réduction du temps d'écran
+                comme un objectif de santé publique au même titre que l'alimentation. L'étude ESTEBAN montre que les enfants
+                qui dépassent 4 heures d'écran par jour ont un risque de surpoids <strong>multiplié par 1,5</strong>.
+              </p>
+              <p>
+                Pour lutter contre la sédentarité infantile, le gouvernement a lancé les <strong>30 minutes d'activité
+                physique quotidienne</strong> à l'école (programme « 30 minutes APQ » depuis 2022, généralisé en 2024).
+                Le dispositif <strong>Pass'Sport</strong> (50 euros par enfant pour l'inscription en club sportif)
+                bénéficie chaque année à plus de <strong>2 millions d'enfants</strong> issus de familles modestes.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

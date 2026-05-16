@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 import { Header } from "@/components/Header";
 import { BMIGauge } from "@/components/BMIGauge";
-import { User, Dumbbell, Target, Heart, Scale, Activity, AlertTriangle, CheckCircle2, Globe } from "lucide-react";
+import { User, Dumbbell, Target, Heart, Scale, Activity, AlertTriangle, CheckCircle2, Globe, TrendingUp, Utensils, Shield } from "lucide-react";
 import { Slider } from "@/components/ui/slider";
 import { RelatedPages } from "@/components/RelatedPages";
 
@@ -295,6 +295,69 @@ const BMIMaenner = () => {
               <p>
                 <strong>Bariatrische Chirurgie</strong> wird in Deutschland bei einem <strong>BMI ab 40</strong> oder ab
                 <strong> BMI 35 mit Begleiterkrankungen</strong> (z.B. Diabetes, Bluthochdruck) von den Krankenkassen genehmigt.
+              </p>
+            </div>
+          </div>
+
+          {/* Adipositas-Statistiken Deutschland */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-blue-500/10">
+                <TrendingUp className="w-6 h-6 text-blue-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Adipositas bei Männern in Deutschland: Zahlen und Fakten (RKI)</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Laut der <strong>DEGS-Studie des Robert Koch-Instituts</strong> sind <strong>23% der deutschen Männer adipös</strong> (BMI ≥ 30) und weitere 44% übergewichtig (BMI 25-29,9). Damit liegt die Gesamtprävalenz von Übergewicht und Adipositas bei Männern in Deutschland bei <strong>67%</strong> – einer der höchsten Werte in der Europäischen Union. Im Vergleich dazu liegt der EU-Durchschnitt für männliche Adipositas bei etwa 19%.
+              </p>
+              <p>
+                Besonders alarmierend ist der <strong>Anstieg der Adipositas in der Altersgruppe 30-50 Jahre</strong>: Hier stieg die Rate in den letzten zehn Jahren um 5 Prozentpunkte. Das RKI führt dies auf zunehmende Schreibtischarbeit, weniger Alltagsbewegung und veränderte Ernährungsgewohnheiten zurück. Die <strong>Nationale Diabetes-Surveillance</strong> zeigt zudem, dass adipöse Männer ein <strong>5-fach erhöhtes Risiko</strong> für Diabetes Typ 2 haben.
+              </p>
+              <p>
+                Im <strong>Ost-West-Vergleich</strong> zeigen sich ebenfalls Unterschiede: Männer in den neuen Bundesländern haben im Durchschnitt einen <strong>um 0,8 Punkte höheren BMI</strong> als ihre Altersgenossen im Westen. Mecklenburg-Vorpommern weist die höchste Adipositasrate bei Männern auf (27%), während Hamburg mit 18% den niedrigsten Wert verzeichnet. Diese regionalen Unterschiede spiegeln sozioökonomische Faktoren und den Zugang zu Sportinfrastruktur wider.
+              </p>
+            </div>
+          </div>
+
+          {/* Bier- und Fleischkultur */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-amber-500/10">
+                <Utensils className="w-6 h-6 text-amber-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Bier- und Fleischkultur: Einfluss auf den männlichen BMI</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Die deutsche <strong>Bierkultur</strong> ist weltberühmt – und hat messbare Auswirkungen auf den BMI. Mit einem jährlichen <strong>Pro-Kopf-Verbrauch von 92 Litern Bier</strong> (Deutscher Brauer-Bund) liegt Deutschland auf Platz 3 weltweit. Bier liefert etwa <strong>43 kcal pro 100 ml</strong> – ein halber Liter Pils enthält somit rund 215 kcal. Der sogenannte <strong>„Bierbauch"</strong> ist medizinisch als abdominale Adipositas klassifiziert und erhöht das Risiko für Herz-Kreislauf-Erkrankungen erheblich.
+              </p>
+              <p>
+                Hinzu kommt ein hoher <strong>Fleischkonsum</strong>: Der durchschnittliche Deutsche verzehrt <strong>52 kg Fleisch pro Jahr</strong> (BMEL), wobei Männer deutlich mehr konsumieren als Frauen. <strong>Bratwurst, Schnitzel und Schweinebraten</strong> sind kalorienreich – eine Portion Schweinshaxe kann über 1.200 kcal enthalten. Die <strong>DGE empfiehlt maximal 300-600 g Fleisch pro Woche</strong>, doch viele Männer überschreiten diesen Wert deutlich.
+              </p>
+              <p>
+                Die <strong>Kantinenkultur</strong> in deutschen Betrieben bietet zunehmend gesündere Optionen: Die Initiative <strong>„IN FORM"</strong> des Bundesministeriums für Ernährung und Landwirtschaft zertifiziert Betriebskantinen, die ausgewogene Mahlzeiten anbieten. Männer, die regelmäßig in zertifizierten Kantinen essen, haben im Schnitt einen <strong>um 1,2 Punkte niedrigeren BMI</strong> als Kollegen, die auf Fast Food zurückgreifen.
+              </p>
+            </div>
+          </div>
+
+          {/* DACH-Vergleich und DGE */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-blue-500/10">
+                <Shield className="w-6 h-6 text-blue-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Krankenkassen-Prävention und DGE-Empfehlungen für Männer</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Die <strong>Deutsche Gesellschaft für Ernährung (DGE)</strong> hat 2024 ihre <strong>„10 Regeln der DGE"</strong> aktualisiert, die speziell für die Bedürfnisse von Männern relevant sind. Empfohlen werden <strong>mindestens 400 g Gemüse und 250 g Obst</strong> täglich, <strong>30 g Ballaststoffe</strong> sowie eine Reduktion von gesättigten Fettsäuren auf unter 10% der Gesamtenergiezufuhr. Für Männer mit einem BMI über 25 rät die DGE zu einer <strong>täglichen Kalorienreduktion von 500 kcal</strong> als nachhaltige Strategie zur Gewichtsabnahme.
+              </p>
+              <p>
+                Die <strong>gesetzlichen Krankenkassen</strong> fördern nach <strong>§20 SGB V</strong> Präventionskurse mit bis zu <strong>75-100% Kostenübernahme</strong>. Zertifizierte Programme umfassen Ernährungsberatung, Stressbewältigung und Bewegungsförderung. Viele Krankenkassen bieten zudem <strong>Bonusprogramme</strong> an, die Gesundheitsvorsorge mit finanziellen Prämien oder Sachleistungen belohnen – etwa für regelmäßige Check-ups, Sportvereinsmitgliedschaft oder die Teilnahme an Gesundheitskursen.
+              </p>
+              <p>
+                Interessant ist der <strong>Vergleich mit Österreich und der Schweiz</strong>: Während in Deutschland 23% der Männer adipös sind, liegt der Wert in <strong>Österreich bei 20%</strong> und in der <strong>Schweiz bei nur 13%</strong>. Der Schweizer Vorteil wird auf die stärkere <strong>Alltagsbewegung</strong> (Wandern, Radfahren), höhere Lebensmittelqualität und ein größeres Gesundheitsbewusstsein zurückgeführt. Die <strong>österreichische Gesellschaft für Ernährung (ÖGE)</strong> und die <strong>Schweizerische Gesellschaft für Ernährung (SGE)</strong> verfolgen ähnliche Empfehlungen wie die DGE, betonen aber zusätzlich die Bedeutung regionaler und saisonaler Lebensmittel.
               </p>
             </div>
           </div>

@@ -87,6 +87,18 @@ const FAQIMC = () => {
     {
       question: "Le tour de taille est-il plus fiable que l'IMC en France ?",
       answer: "La <strong>HAS</strong> recommande de mesurer <strong>les deux</strong>. Le tour de taille mesure la graisse abdominale (viscérale), plus dangereuse que la graisse sous-cutanée. Seuils HAS : Hommes &lt;94 cm (modéré), &lt;102 cm (élevé). Femmes &lt;80 cm (modéré), &lt;88 cm (élevé). En France, <strong>41% des femmes et 48% des hommes</strong> dépassent les seuils de risque modéré (Santé Publique France)."
+    },
+    {
+      question: "L'IMC est-il le même selon l'origine ethnique ?",
+      answer: "L'<strong>OMS</strong> recommande des seuils abaissés pour les <strong>populations asiatiques</strong> : surpoids dès un IMC de <strong>23</strong> (au lieu de 25) et obésité dès 27,5. La France, avec sa population diverse, est concernée par ces adaptations. Des études de l'<strong>INSERM</strong> montrent un risque métabolique (diabète de type 2, syndrome métabolique) accru à un IMC plus bas pour certaines populations. Votre médecin peut adapter l'interprétation de votre <a href='/' class='text-primary hover:underline'>calculateur IMC</a> en fonction de votre profil."
+    },
+    {
+      question: "Qu'est-ce que l'obésité à poids normal (TOFI) ?",
+      answer: "Le syndrome <strong>TOFI</strong> (Thin Outside, Fat Inside) désigne des personnes ayant un <strong>IMC normal</strong> (18,5-25) mais un excès de <strong>graisse viscérale</strong> dangereux pour la santé. En France, on estime que <strong>20 à 30%</strong> des personnes de poids normal présentent ce profil à risque. Le <strong>tour de taille</strong> est essentiel pour les détecter. Les risques cardiovasculaires et de diabète sont similaires à ceux du surpoids. Un <a href='/interpretation-imc' class='text-primary hover:underline'>IMC normal</a> ne garantit donc pas l'absence de risque métabolique."
+    },
+    {
+      question: "Existe-t-il une nouvelle formule d'IMC plus précise ?",
+      answer: "La <strong>formule de Trefethen</strong>, proposée par l'université d'Oxford en 2013, utilise le calcul : <strong>1,3 × poids / taille<sup>2,5</sup></strong>. Elle corrige le biais de la formule classique qui <strong>surestime l'IMC des personnes grandes</strong> et le sous-estime pour les plus petites. Cette formule n'est pas officiellement adoptée par la <strong>HAS</strong> en France, mais elle est discutée dans la littérature médicale. Notre <a href='/' class='text-primary hover:underline'>calculateur IMC</a> utilise la formule standard de Quételet, reconnue internationalement."
     }
   ];
 
@@ -134,18 +146,38 @@ const FAQIMC = () => {
 
         {/* SEO Schema */}
         <div className="glass-card p-8 mt-8">
-          <h2 className="text-2xl font-display font-bold mb-6">Tout savoir sur l'IMC</h2>
+          <h2 className="text-2xl font-display font-bold mb-6">Tout savoir sur l'IMC en France</h2>
           <div className="text-muted-foreground space-y-4">
             <p>
-              Cette <strong>FAQ IMC</strong> répond aux questions les plus courantes sur le calcul et
+              Cette <strong>FAQ IMC</strong> répond aux questions les plus courantes des Français sur le calcul et
               l'interprétation de l'<strong>Indice de Masse Corporelle</strong>. Que vous cherchiez à savoir
               <strong> comment calculer l'IMC</strong>, <strong>quel est l'IMC idéal</strong>, ou
-              <strong> si l'IMC est fiable</strong>, vous trouverez les réponses ici.
+              <strong> si l'IMC est fiable</strong>, vous trouverez les réponses ici, avec les références
+              officielles de la <strong>HAS</strong>, de l'<strong>INSERM</strong> et du <strong>PNNS</strong>.
             </p>
             <p>
-              L'IMC est un outil simple mais utile pour évaluer votre corpulence. Cependant, il a ses limites
-              et doit être complété par d'autres indicateurs. N'hésitez pas à consulter un professionnel de
-              santé pour un bilan complet.
+              En France, l'IMC est utilisé comme outil de dépistage de première ligne par les médecins traitants
+              et les centres de santé. Le <strong>bilan de santé gratuit</strong> proposé par la Sécurité Sociale
+              tous les 5 ans inclut systématiquement le calcul de l'IMC et la mesure du tour de taille.
+              Depuis 2024, le dispositif « <strong>Mon bilan prévention</strong> » propose un bilan personnalisé
+              à 25, 45 et 65 ans, incluant l'évaluation de l'IMC et des conseils nutritionnels adaptés.
+            </p>
+            <p>
+              L'IMC est un outil simple mais qui a ses limites et doit être complété par d'autres indicateurs
+              comme le <strong>tour de taille</strong> et le <strong>bilan sanguin</strong>. N'hésitez pas à
+              consulter votre médecin traitant ou un nutritionniste pour un bilan complet. En cas d'obésité
+              sévère (IMC ≥ 35), les <strong>37 CSO</strong> (Centres Spécialisés de l'Obésité) répartis sur
+              tout le territoire français assurent une prise en charge pluridisciplinaire.
+            </p>
+            <p>
+              La France innove également dans les <strong>outils numériques de santé</strong> pour la gestion
+              du poids. « <strong>Mon Espace Santé</strong> » (lancé en 2022) permet de suivre ses données de
+              santé, y compris l'évolution de son IMC dans le temps. Le dispositif
+              « <strong>Mon Bilan Prévention</strong> » (2024) offre des bilans de santé gratuits aux âges clés
+              de 25, 45 et 65 ans, incluant une évaluation de l'IMC et des conseils personnalisés. Les outils
+              comme le <strong>Nutri-Score</strong> sur les emballages et l'application « Mon Nutri-Score »
+              aident les consommateurs français à faire de meilleurs choix alimentaires au quotidien. Le
+              <strong> PNNS 4</strong> (2019-2023) vise une réduction de l'obésité de 20% d'ici 2030.
             </p>
           </div>
         </div>

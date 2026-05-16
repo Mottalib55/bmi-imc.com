@@ -313,6 +313,54 @@ const BMIChildren = () => {
             </div>
           </div>
 
+          {/* Nutrition, Screen Time & Policy */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-cyan-500/10">
+                <Users className="w-6 h-6 text-cyan-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Screen Time, School Meals and Public Health Interventions</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                The <strong>AAP</strong> (American Academy of Pediatrics) screen time guidelines have become a cornerstone
+                of paediatric health advice in the United States. The AAP recommends <strong>no screen exposure
+                before 18 months</strong> of age (with the exception of video calls), no more than <strong>one hour per day
+                of high-quality programming for children aged 2 to 5</strong>, and consistent, individualised limits for
+                older children. Research funded by the <strong>National Institutes of Health (NIH)</strong> ABCD study --
+                the largest long-term study of brain development in US children -- has linked excessive screen time to
+                reduced cortical thickness, lower academic performance, and increased risk of obesity. In the UK, the
+                <strong> Royal College of Paediatrics and Child Health</strong> takes a less prescriptive approach but still
+                recommends that screens should not interfere with sleep, physical activity, or family mealtimes.
+              </p>
+              <p>
+                School nutrition policy differs significantly between the two countries. In the United States, the
+                <strong> USDA National School Lunch Program (NSLP)</strong> feeds approximately 30 million children daily
+                across more than 100,000 schools. The <strong>Healthy, Hunger-Free Kids Act of 2010</strong>, championed
+                by <strong>Michelle Obama's Let's Move! campaign</strong>, introduced stricter nutrition standards requiring
+                more fruits, vegetables, whole grains, and low-fat dairy while capping sodium and trans fats. Although
+                some standards were rolled back between 2017 and 2020, the USDA restored and strengthened them in 2022.
+                In the UK, the <strong>School Food Standards</strong> (mandatory since 2015) set specific requirements
+                for each food group across the school week, and the government provides <strong>universal free school
+                meals</strong> for all children in Reception, Year 1, and Year 2 in England. Australia takes a different
+                path through its <strong>National Healthy School Canteens Guidelines</strong>, classifying foods into
+                "everyday," "select carefully," and "occasionally" categories.
+              </p>
+              <p>
+                The <strong>UK Soft Drinks Industry Levy</strong> (the "sugar tax"), introduced in April 2018, stands
+                as one of the most successful fiscal public health interventions globally. By taxing manufacturers
+                rather than consumers, it incentivised reformulation: <strong>over 50% of soft drink manufacturers
+                reduced sugar content</strong> before the levy even took effect, and Public Health England reported a
+                <strong> 46% reduction in sugar per 100ml</strong> in levied drinks by 2020. The <strong>AAP</strong> and
+                the <strong>American Medical Association (AMA)</strong> have both endorsed sugary drink taxes as
+                evidence-based policy, though only a handful of US cities -- including Philadelphia, San Francisco,
+                Seattle, and Boulder -- have implemented them. In Australia, a proposed sugar tax remains under
+                debate, with the <strong>Australian Medical Association</strong> calling for a 20% levy modelled on the
+                UK approach.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">
@@ -357,7 +405,7 @@ const BMIChildren = () => {
               Use our standard BMI calculator for adults
             </p>
             <Link
-              to="/en/bmi"
+              to="/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
               Calculate my adult BMI

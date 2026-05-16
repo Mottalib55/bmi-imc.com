@@ -399,6 +399,50 @@ const BMIInterpretation = () => {
             </div>
           </div>
 
+          {/* German Krankenkasse Coverage and Weight Stigma */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-primary/10">
+                <Heart className="w-6 h-6 text-primary" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Adipositas-Therapie, DMP-Programme und Gewichtsstigma in Deutschland</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Im deutschen Gesundheitssystem ist <strong>Adipositas</strong> seit der S3-Leitlinie der <strong>Deutschen
+                Adipositas-Gesellschaft (DAG)</strong> als chronische Erkrankung anerkannt. Dennoch gibt es eine
+                erhebliche Versorgungslücke: Während die <strong>gesetzlichen Krankenkassen (GKV)</strong> die Kosten
+                für Ernährungsberatung nach <strong>§ 43 SGB V</strong> und Präventionskurse nach <strong>§ 20 SGB V</strong>
+                übernehmen, werden <strong>multimodale Adipositas-Therapieprogramme</strong> (Kombination aus Ernährungs-,
+                Bewegungs- und Verhaltenstherapie) häufig nur teilweise oder nach aufwändigen Antragsverfahren
+                finanziert. Der <strong>Gemeinsame Bundesausschuss (G-BA)</strong> hat erst 2023 ein strukturiertes
+                Behandlungsprogramm (DMP) für Adipositas beschlossen, das schrittweise eingeführt wird.
+              </p>
+              <p>
+                Die bestehenden <strong>Disease-Management-Programme (DMP)</strong> für Diabetes mellitus Typ 2
+                und koronare Herzkrankheit (KHK) adressieren Übergewicht bereits als Begleitfaktor: Im Rahmen
+                des DMP Diabetes werden Patienten mit einem BMI über 30 systematisch zu Ernährungsberatung und
+                Bewegungstherapie angeleitet. Rund <strong>4,5 Millionen Menschen</strong> sind in Deutschland in
+                einem DMP Diabetes eingeschrieben. Das <strong>Kur- und Rehabilitationssystem</strong> bietet darüber
+                hinaus eine Besonderheit des deutschsprachigen Raums: Versicherte können bei medizinischer
+                Indikation eine mehrwöchige stationäre oder ambulante <strong>Rehabilitationsmaßnahme (Kur)</strong>
+                beantragen, bei der Gewichtsmanagement ein zentraler Bestandteil ist. In Österreich ist das
+                <strong> Kursystem</strong> der ÖGK noch stärker verankert, mit über 60 Kureinrichtungen landesweit.
+              </p>
+              <p>
+                Ein zunehmend beachtetes Thema ist das <strong>Gewichtsstigma (Weight Stigma)</strong>. Die
+                Forschungsgruppe von Prof. Dr. Claudia Luck-Sikorski am <strong>Integrierten Forschungs- und
+                Behandlungszentrum (IFB) AdipositasErkrankungen der Universität Leipzig</strong> hat in
+                mehreren Studien nachgewiesen, dass gewichtsbezogene Diskriminierung in Deutschland weit
+                verbreitet ist -- im Gesundheitswesen, am Arbeitsplatz und im Alltag. Rund <strong>38 % der
+                Menschen mit Adipositas</strong> berichten von Stigmatisierungserfahrungen durch medizinisches
+                Fachpersonal. Die DAG hat 2022 ein Positionspapier veröffentlicht, das ein Verbot von
+                Gewichtsdiskriminierung im Allgemeinen Gleichbehandlungsgesetz (AGG) fordert -- ein Schritt,
+                den auch die <strong>Europäische Adipositas-Gesellschaft (EASO)</strong> unterstützt.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <h2 className="text-2xl font-display font-bold mb-6">BMI-Interpretation im DACH-Raum verstehen</h2>

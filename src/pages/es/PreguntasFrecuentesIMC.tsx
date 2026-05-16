@@ -91,6 +91,26 @@ const PreguntasFrecuentesIMC = () => {
     {
       question: "¿Cuál es la diferencia entre IMC y BMI?",
       answer: "¡No hay <strong>ninguna diferencia</strong>! IMC significa <strong>Índice de Masa Corporal</strong> (español) y BMI significa <strong>Body Mass Index</strong> (inglés). Es exactamente el mismo indicador con la misma fórmula y los mismos umbrales."
+    },
+    {
+      question: "¿El IMC es igual para todas las etnias?",
+      answer: "No exactamente. La <strong>OMS</strong> recomienda umbrales más bajos para poblaciones asiáticas (sobrepeso a partir de IMC 23, obesidad a partir de 27,5) debido a mayor riesgo metabólico con menos grasa corporal visible. En <strong>México</strong>, las poblaciones indígenas pueden presentar composiciones corporales distintas. Los estudios en poblaciones mestizas latinoamericanas sugieren que la distribución de grasa abdominal es más frecuente, lo que hace del <strong>perímetro de cintura</strong> un complemento esencial al IMC estándar."
+    },
+    {
+      question: "¿El sistema de salud cubre el tratamiento de la obesidad?",
+      answer: "En <strong>España</strong>, el SNS (Sistema Nacional de Salud) cubre la derivación a endocrinología y, en algunas comunidades autónomas, consultas con nutricionistas. La <strong>cirugía bariátrica</strong> se financia para IMC≥40 o IMC≥35 con comorbilidades, aunque las listas de espera pueden superar los 18 meses. En <strong>México</strong>, el IMSS y el ISSSTE cubren tratamientos de obesidad incluyendo programas nutricionales y cirugía en casos graves. El antiguo Seguro Popular (hoy INSABI/IMSS-Bienestar) también contempla atención para obesidad mórbida en hospitales de referencia."
+    },
+    {
+      question: "¿Qué es la obesidad sarcopénica?",
+      answer: "La <strong>obesidad sarcopénica</strong> combina un exceso de masa grasa con una pérdida significativa de masa muscular. Una persona puede tener un IMC normal o ligeramente elevado (25-27) pero presentar un porcentaje de grasa alto y poca musculatura. Es frecuente en personas <strong>sedentarias</strong> y mayores de 65 años. Los criterios EWGSOP (European Working Group on Sarcopenia in Older People) definen esta condición. El tratamiento principal es el <strong>entrenamiento de resistencia</strong> combinado con una ingesta proteica adecuada (1,2-1,6 g/kg/día)."
+    },
+    {
+      question: "¿La dieta mediterránea ayuda a mantener un IMC saludable?",
+      answer: "Sí. El estudio <strong>PREDIMED</strong> (Prevención con Dieta Mediterránea) demostró que esta dieta, reconocida por la <strong>UNESCO</strong> como patrimonio inmaterial, reduce el riesgo cardiovascular y favorece un peso saludable. Sus pilares son el aceite de oliva virgen extra, legumbres, pescado, frutas, verduras y consumo moderado de vino tinto. Las dietas tradicionales de España y Latinoamérica comparten elementos protectores cuando se basan en alimentos <strong>no ultraprocesados</strong>: frijoles, maíz nixtamalizado, aguacate y pescado."
+    },
+    {
+      question: "¿A partir de qué IMC se puede operar?",
+      answer: "En España, la <strong>cirugía bariátrica</strong> se indica con IMC≥40 o IMC≥35 acompañado de comorbilidades (diabetes tipo 2, apnea del sueño, hipertensión). Las técnicas principales son el <strong>bypass gástrico</strong> y la gastrectomía vertical (sleeve). En el SNS, la espera puede ser de 1-2 años según la comunidad autónoma; la opción privada reduce los plazos. Antes de operar, se exige un seguimiento multidisciplinar de <strong>6-12 meses</strong> que incluye evaluación psicológica, nutricional y pruebas de compromiso con cambios de hábitos."
     }
   ];
 
@@ -134,6 +154,25 @@ const PreguntasFrecuentesIMC = () => {
           >
             Calcular mi IMC
           </Link>
+        </div>
+
+        {/* IMSS/SUS coverage info */}
+        <div className="glass-card p-8 mt-8">
+          <h2 className="text-2xl font-display font-bold mb-6">Cobertura del IMC y obesidad en los sistemas publicos de salud</h2>
+          <div className="text-muted-foreground space-y-4">
+            <p>
+              En <strong>Mexico</strong>, el <strong>IMSS</strong> incluye la medicion del IMC como parte obligatoria del chequeo anual de medicina preventiva (<strong>PrevenIMSS</strong>). Los derechohabientes con IMC superior a 30 pueden acceder a programas de nutricion, endocrinologia y, en casos graves, cirugia bariatrica cubierta por el seguro social. El <strong>ISSSTE</strong> ofrece servicios equivalentes para los trabajadores del Estado, con clinicas de obesidad en sus hospitales regionales principales.
+            </p>
+            <p>
+              En <strong>Brasil</strong>, el <strong>SUS</strong> (Sistema Unico de Saude) cubre consultas nutricionales, evaluaciones de IMC en las <strong>Unidades Basicas de Saude (UBS)</strong> y cirugia bariatrica para pacientes con IMC superior a 40 o superior a 35 con comorbilidades, a traves de centros especializados acreditados por el Ministerio de Salud. En <strong>Espana</strong>, el <strong>SNS</strong> incluye el calculo del IMC en el protocolo estandar de atencion primaria dentro del PAPPS (Programa de Actividades Preventivas y de Promocion de la Salud), con derivacion a endocrinologia hospitalaria segun criterios clinicos.
+            </p>
+            <p>
+              En <strong>España</strong>, la <strong>Estrategia NAOS</strong> (Nutrición, Actividad Física y Prevención de la Obesidad), impulsada desde 2005, y el Plan de Colaboración para la Mejora de la Composición de los Alimentos han sido iniciativas gubernamentales clave para frenar la epidemia de obesidad. Según la Encuesta Nacional de Salud (ENS 2017), la prevalencia de obesidad en adultos españoles ronda el <strong>16%</strong>, con diferencias regionales significativas: comunidades como Andalucía y Canarias presentan tasas más elevadas. La <strong>AESAN</strong> (Agencia Española de Seguridad Alimentaria y Nutrición, anteriormente AECOSAN) supervisa la seguridad alimentaria y la nutrición, mientras que el <strong>código PAOS</strong> regula la publicidad de alimentos dirigida a menores de 12 años.
+            </p>
+            <p>
+              En <strong>Latinoamérica</strong>, las tasas de obesidad varían enormemente: <strong>México</strong> registra una de las cifras más altas del mundo (36,1% de adultos con obesidad), mientras que países como Colombia y Perú se sitúan en torno al 22%. El <strong>impuesto al refresco</strong> implementado en México en 2014 logró reducir el consumo de bebidas azucaradas un 7,6% en su primer año de aplicación. La innovadora <strong>Ley de Etiquetado</strong> de Chile, con sus sellos negros de advertencia ("alto en azúcares", "alto en grasas saturadas"), ha sido adoptada por varios países latinoamericanos incluyendo México, Perú y Uruguay. Estas medidas de salud pública complementan el monitoreo individual del IMC y demuestran que las políticas poblacionales son esenciales para combatir la obesidad a gran escala.
+            </p>
+          </div>
         </div>
 
         {/* SEO Schema */}

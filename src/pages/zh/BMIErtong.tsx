@@ -537,6 +537,50 @@ const BMIErtong = () => {
             </div>
           </div>
 
+          {/* China-Specific Child Obesity & Nutrition Content */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-green-500/10">
+                <TrendingUp className="w-6 h-6 text-green-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">中国儿童肥胖流行病：数据、学校营养标准与"小皇帝"现象</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                中国正在经历全球最快速的<strong>儿童肥胖增长</strong>之一。根据<strong>中国疾病预防控制中心（中国CDC）</strong>
+                2020年发布的最新数据，<strong>6-17岁儿童青少年超重肥胖率已达19%</strong>，
+                其中超重率为11.1%，肥胖率为7.9%。更令人担忧的是，这一比例在过去30年间增长了
+                <strong>近10倍</strong>——1985年中国儿童肥胖率仅为0.5%。男孩的问题尤为严重：
+                <strong>男孩超重肥胖率（24.2%）</strong>几乎是<strong>女孩（13.2%）</strong>的两倍。
+                北方城市（如北京、天津、沈阳）的儿童肥胖率普遍高于南方城市，
+                北京市学龄儿童超重肥胖率已超过<strong>25%</strong>。
+              </p>
+              <p>
+                2018年，国家卫生健康委员会发布了<strong>《学生餐营养指南》（WS/T 554-2017）</strong>，
+                为中小学生提供了详细的营养标准。该指南规定了学生餐的<strong>能量、蛋白质、脂肪、
+                碳水化合物、维生素和矿物质</strong>的具体供给量标准，要求学校食堂每周制定食谱并公示。
+                同时，<strong>《营养与健康学校建设指南》</strong>要求学校限制含糖饮料和高脂高盐食品的
+                校内销售，推广"减盐减油减糖"行动。然而，实际执行情况参差不齐——许多学校周边的
+                <strong>小卖部和流动摊贩</strong>仍在大量销售不健康食品，外卖平台的普及也使高热量
+                食品更加触手可及。<strong>2020年六部门联合发布的《儿童青少年肥胖防控实施方案》</strong>
+                明确提出到2030年将0-18岁超重肥胖率控制在可控水平的目标。
+              </p>
+              <p>
+                <strong>"小皇帝"（小皇帝/Little Emperor）综合征</strong>是中国儿童肥胖问题中
+                独特的社会文化因素。在独生子女政策实施的几十年间（1979-2015），形成了典型的
+                <strong>"4-2-1"家庭结构</strong>——4个祖辈、2个父母围绕1个孩子。这种结构导致了
+                严重的<strong>过度喂养文化</strong>。祖辈普遍持有"胖就是壮""能吃是福"的传统观念，
+                频繁为孩子加餐、强迫进食。研究显示，<strong>祖辈养育的儿童超重率</strong>比父母
+                直接养育的儿童高出<strong>30-50%</strong>。即使2016年后实施二孩政策（2021年后放开
+                三孩），第一代独生子女的育儿观念仍深受影响。此外，城市中<strong>课后辅导班</strong>
+                占据了大量课余时间，严重挤压了儿童的<strong>户外运动时间</strong>——中国城市儿童
+                日均屏幕时间超过<strong>3小时</strong>，而体育活动时间不足1小时。
+                <strong>双减政策</strong>（2021年）虽然减轻了学科辅导负担，但释放的时间是否真正
+                转化为体育运动时间，仍有待观察。
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

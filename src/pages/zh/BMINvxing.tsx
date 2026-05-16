@@ -366,6 +366,51 @@ const BMINvxing = () => {
             </div>
           </div>
 
+          {/* 中国女性体重趋势与审美压力 */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-purple-500/10">
+                <Sparkles className="w-6 h-6 text-purple-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">中国女性体重趋势与审美标准的健康影响</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                中国女性面临着一个<strong>独特的矛盾</strong>：一方面，<strong>43%的成年女性</strong>按中国标准（BMI≥24）已属超重或肥胖；另一方面，社会审美标准却推崇极端纤瘦的身材。近年来在社交媒体上流行的<strong>"A4腰"挑战</strong>（腰部宽度不超过A4纸）、<strong>"锁骨放硬币"</strong>、<strong>"反手摸肚脐"</strong>等趋势，将不切实际的身材标准推向极端，给中国女性带来了巨大的身体焦虑。
+              </p>
+              <p>
+                这种<strong>审美压力</strong>导致了两个极端的健康问题。一端是年轻女性为追求"白幼瘦"而<strong>过度节食</strong>，BMI降至18.5以下，甚至出现进食障碍（厌食症）。中国精神卫生调查显示，城市年轻女性的进食障碍发病率近年来<strong>上升了3倍</strong>。另一端是在日常生活中，高糖奶茶文化、外卖便利化和久坐办公等因素导致实际体重不断增长。<strong>中国营养学会</strong>强调，健康的BMI范围（18.5-23.9）是科学的评价标准，而非社交媒体上的极端瘦身标准。
+              </p>
+              <p>
+                从<strong>城乡差异</strong>来看，中国城市女性肥胖率约<strong>18%</strong>，农村女性约<strong>15%</strong>（按WHO标准BMI≥30），但<strong>农村女性超重率正在快速上升</strong>。城市女性更容易接触到健身房、瑜伽馆和健康食品，而农村女性面临健康教育资源不足和传统饮食习惯（高碳水、高油脂）的挑战。此外，不同地区的饮食文化差异也显著影响女性体重：四川女性嗜辣但饮食均衡，广东女性注重煲汤养生，东北女性冬季高热量饮食较多。
+              </p>
+            </div>
+          </div>
+
+          {/* 坐月子、中医与膳食指南 */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-pink-500/10">
+                <Heart className="w-6 h-6 text-pink-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">坐月子传统、中医食疗与中国居民膳食指南</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                <strong>"坐月子"</strong>（产后30-42天的恢复期）是中国特有的产后护理传统，对女性BMI和产后体重恢复有深远影响。传统坐月子强调<strong>高蛋白、高脂肪的滋补饮食</strong>——猪蹄汤、鸡汤、鲫鱼汤、红糖鸡蛋等。虽然这些食物确实富含蛋白质，有助于产后恢复和母乳分泌，但<strong>过度进补</strong>往往导致产后体重难以恢复。研究显示，传统坐月子期间，产妇平均每日热量摄入可达<strong>3000-3500千卡</strong>，远超实际需求的2300千卡左右。
+              </p>
+              <p>
+                现代<strong>月子中心</strong>（月子会所）的兴起为这一传统注入了科学元素。专业月子中心配备营养师，根据产妇BMI和恢复情况制定<strong>个性化膳食方案</strong>，在保证营养充足的同时控制总热量摄入。<strong>《中国孕产妇体重管理指南（2021版）》</strong>建议产后体重管理应循序渐进，产后6个月内每月减重不超过2公斤，母乳喂养期间不建议严格节食。社区卫生服务中心提供<strong>产后42天免费复查</strong>，包括体重和BMI评估。
+              </p>
+              <p>
+                <strong>中医食疗</strong>在中国女性日常体重管理中仍然扮演重要角色。针对不同体质，中医提供差异化的食疗方案：<strong>痰湿体质</strong>（易胖型）推荐薏米红豆粥祛湿健脾；<strong>气血两虚</strong>型推荐当归黄芪炖鸡补气养血；<strong>肝郁气滞</strong>型（情绪性进食）推荐玫瑰花茶、陈皮茶疏肝解郁。中医强调<strong>"三分治七分养"</strong>，认为饮食调理和生活方式改善比药物更为根本。
+              </p>
+              <p>
+                <strong>《中国居民膳食指南（2022）》</strong>为女性提供了科学的膳食建议：每日谷薯类<strong>250-400克</strong>、蔬菜<strong>300-500克</strong>、水果<strong>200-350克</strong>、蛋白质类<strong>120-200克</strong>。成年女性（轻体力活动）每日推荐能量摄入约<strong>1800千卡</strong>。指南特别提醒控制<strong>游离糖摄入</strong>（每日不超过50克，最好控制在25克以内），这对爱喝奶茶的年轻女性尤为重要——一杯全糖奶茶的含糖量可达50-70克，相当于一天的建议上限。了解这些科学标准，结合中国标准BMI范围（18.5-23.9），是中国女性实现健康体重管理的坚实基础。
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

@@ -425,6 +425,65 @@ const BMIAthletes = () => {
             </div>
           </div>
 
+          {/* Research & Real-World Evidence */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-orange-500/10">
+                <Globe className="w-6 h-6 text-orange-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Research Evidence: Why BMI Misleads in Elite Sport</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                A landmark study published in the <strong>British Journal of Sports Medicine</strong> (Ode et al., 2007) examined
+                over 1,000 collegiate athletes and found that BMI misclassified <strong>nearly half of male athletes</strong> as
+                overweight or obese despite body fat levels well within healthy ranges. The research concluded that BMI has
+                "unacceptably high false-positive rates" when applied to physically active populations, particularly in
+                power and strength sports. A subsequent 2016 meta-analysis in the same journal confirmed these findings
+                across professional rugby, American football, and Olympic weightlifting cohorts.
+              </p>
+              <p>
+                The <strong>ACSM</strong> (American College of Sports Medicine) body composition guidelines for athletes
+                set markedly different targets from general population thresholds. For male athletes, the ACSM considers
+                <strong> 6-13% body fat</strong> as typical for sport-specific fitness, while female athletes generally range from
+                <strong> 14-20%</strong>. Compare this to BMI, which assigns the same "overweight" label to a 220-pound powerlifter
+                at 10% body fat and a sedentary individual of the same height carrying 30% body fat. The ACSM's position stand
+                on body composition assessment explicitly recommends skinfold calipers, bioelectrical impedance, or DEXA scanning
+                over BMI for anyone engaged in regular resistance training.
+              </p>
+              <p>
+                Consider the real-world implications. <strong>Cristiano Ronaldo</strong>, widely regarded as one of the
+                fittest athletes in global football, has a BMI of approximately <strong>24</strong> -- technically "normal" but
+                near the overweight threshold -- despite carrying only <strong>7% body fat</strong> at peak competition weight.
+                His lean mass is so high relative to his frame that even a slight gain would tip his BMI into the overweight
+                category. Meanwhile, <strong>LeBron James</strong> at a BMI of ~27 is labelled overweight by the formula, yet
+                his cardiovascular fitness, reaction time, and longevity in professional basketball are unmatched. NFL offensive
+                linemen routinely register BMIs above <strong>35</strong>, a threshold that would trigger serious clinical
+                concern in a sedentary patient, yet many of these athletes maintain blood pressure, cholesterol, and
+                metabolic markers well within healthy limits during their playing careers.
+              </p>
+              <p>
+                The <strong>NCAA</strong> has increasingly adopted sport-specific body composition protocols across its
+                Division I, II, and III programmes. Strength and conditioning staff at major universities such as Alabama,
+                Ohio State, and Clemson track athletes using DEXA scans every semester, measuring regional lean mass and
+                bone density alongside body fat. These protocols allow coaches to monitor <strong>body recomposition</strong> --
+                gaining muscle while losing fat -- which BMI cannot detect at all, since it measures only total weight relative to height.
+              </p>
+              <p>
+                The rise of <strong>CrossFit culture</strong> across the United States and United Kingdom has further
+                exposed BMI's blind spots. CrossFit athletes train for a blend of Olympic lifting, gymnastics, and
+                endurance, producing physiques that carry significant muscle mass across multiple planes of movement.
+                A typical male CrossFit Games competitor weighs 195-210 lbs (88-95 kg) at 5'9"-5'11" (175-180 cm),
+                yielding a BMI between <strong>28 and 31</strong> -- firmly in the "overweight" or "obese" range. Yet
+                these athletes demonstrate VO2 max values, resting heart rates, and metabolic health panels that rival
+                endurance specialists. CrossFit's "Fittest on Earth" competition has become a powerful cultural statement
+                in the US and UK that health cannot be reduced to a single number, reinforcing what the ACSM, British
+                Journal of Sports Medicine, and UK Sport have been saying for years: <strong>BMI is a population screening
+                tool that fails at the individual level, especially for anyone who trains with intensity</strong>.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">
@@ -456,7 +515,7 @@ const BMIAthletes = () => {
                 BMI was designed in the 1830s for population statistics, not for evaluating individuals -- and especially not
                 for people who train seriously. Use <strong>DEXA</strong>, <strong>Bod Pod</strong>, <strong>hydrostatic
                 weighing</strong>, or the <strong>Navy Method</strong> for an accurate picture of your body composition. For more
-                about general BMI calculation, see our <Link to="/en/bmi" className="text-orange-500 underline hover:text-orange-400">BMI calculator</Link>.
+                about general BMI calculation, see our <Link to="/" className="text-orange-500 underline hover:text-orange-400">BMI calculator</Link>.
               </p>
             </div>
           </div>

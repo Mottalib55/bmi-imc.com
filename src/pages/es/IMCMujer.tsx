@@ -328,6 +328,30 @@ const IMCMujer = () => {
             </div>
           </div>
 
+          {/* Salud de la Mujer Hispana y el Peso */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-amber-500/10">
+                <Heart className="w-6 h-6 text-amber-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Salud de la Mujer Hispana y el Peso</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                La salud de la mujer hispana esta profundamente condicionada por factores socioculturales, economicos y de acceso a servicios medicos. Segun la <strong>ENSANUT</strong>, la tasa de obesidad femenina en Mexico alcanza el <strong>38,6%</strong>, cifra que posiciona a las mujeres mexicanas entre las mas afectadas del continente. Esta prevalencia se agrava en zonas rurales e indigenas, donde el acceso a alimentos frescos y nutritivos es limitado y la dieta se basa en productos de alta densidad calorica y bajo valor nutricional. El costo de una canasta basica saludable sigue siendo inalcanzable para millones de familias, perpetuando el ciclo de malnutricion y obesidad.
+              </p>
+              <p>
+                Los <strong>estandares de belleza en America Latina</strong> presentan una dualidad compleja para las mujeres. Por un lado, la cultura popular celebra las figuras curvilineas — un ideal de belleza profundamente arraigado en paises como Colombia, Brasil y Mexico, donde la feminidad se asocia con caderas anchas y formas redondeadas. Por otro lado, la presion de los medios de comunicacion, la publicidad y las redes sociales impone modelos de delgadez cada vez mas extremos, generando una <strong>contradiccion que afecta la autoestima</strong> y la relacion de las mujeres con su cuerpo. Esta tension cultural contribuye al aumento de los trastornos alimentarios y a la normalizacion de dietas peligrosas y cirugia estetica no regulada.
+              </p>
+              <p>
+                La <strong>gestion del peso durante el embarazo</strong> representa un desafio particular en los sistemas de salud latinoamericanos. En Mexico, el <strong>IMSS e ISSSTE</strong> ofrecen control prenatal gratuito que incluye seguimiento de peso, pero la cobertura y calidad varian enormemente entre regiones urbanas y rurales. La prevalencia de diabetes gestacional en la region supera el 15%, significativamente por encima del promedio mundial. Programas como <strong>Progresa/Prospera</strong> han buscado mejorar la nutricion materna mediante transferencias condicionadas, logrando reducir el bajo peso al nacer en comunidades vulnerables. Sin embargo, la atencion postparto para la recuperacion del peso saludable sigue siendo insuficiente en la mayoria de los paises.
+              </p>
+              <p>
+                <strong>Espana registra tasas de obesidad femenina considerablemente inferiores</strong> a las de America Latina, situandose en torno al <strong>16,7%</strong> segun la AESAN — menos de la mitad que Mexico. Esta diferencia se atribuye en gran medida a la influencia de la <strong>dieta mediterranea</strong>, que privilegia el aceite de oliva, el pescado, las legumbres, las frutas y las verduras de temporada. El sistema de salud publico espanol (SNS) incluye programas de prevencion de la obesidad femenina, con acceso gratuito a nutricionistas y endocrinologos a traves de la atencion primaria. No obstante, las jovenes espanolas muestran una tendencia creciente hacia la comida rapida y el sedentarismo, lo que podria erosionar estas ventajas en las proximas decadas.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

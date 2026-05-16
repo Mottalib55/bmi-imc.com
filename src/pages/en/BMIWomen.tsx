@@ -341,6 +341,33 @@ const BMIWomen = () => {
             </div>
           </div>
 
+          {/* Women's Weight and Body Image in the US/UK */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-purple-500/10">
+                <AlertTriangle className="w-6 h-6 text-purple-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Women's Weight and Body Image in the US/UK</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                The relationship between weight, body image, and mental health is a critical concern for women across the English-speaking world. According to the <strong>National Eating Disorders Association (NEDA)</strong>, approximately <strong>30 million Americans</strong> will experience an eating disorder at some point in their lives, and <strong>two-thirds of those affected are women</strong>. Anorexia nervosa has the highest mortality rate of any psychiatric disorder, while binge eating disorder is the most common, affecting 3.5% of US women. These numbers underscore the importance of approaching BMI as one metric among many, rather than as a definitive measure of health or worth.
+              </p>
+              <p>
+                The <strong>UK's body positivity movement</strong> has significantly influenced how women think about weight and health on both sides of the Atlantic. Campaigns by organizations such as <strong>Dove</strong>, <strong>Body Confidence</strong>, and NHS mental health programs have challenged unrealistic beauty standards. The UK's Advertising Standards Authority (ASA) has banned digitally altered body images in ads targeting young audiences, while Instagram and TikTok have introduced labels for retouched photos. These cultural shifts encourage women to focus on overall well-being rather than a number on the scale.
+              </p>
+              <p>
+                <strong>Obesity rates among US women reveal stark racial and ethnic disparities</strong>. CDC data shows that <strong>Black women have the highest obesity rate at 56.9%</strong>, followed by <strong>Hispanic women at 44.8%</strong>, White women at 39.8%, and Asian women at 17.2%. These differences reflect systemic inequities in access to healthy food, safe spaces for physical activity, healthcare coverage, and the chronic stress associated with discrimination — all of which compound to create disproportionate health burdens.
+              </p>
+              <p>
+                <strong>Title IX</strong>, the landmark 1972 federal law, dramatically expanded women's participation in sports and physical activity across the United States. Before Title IX, only 1 in 27 girls played a varsity high school sport; today, that number is nearly 1 in 2. Regular athletic participation reduces obesity risk, improves cardiovascular health, and strengthens bone density — benefits that extend well beyond the playing field. Studies show that women who participated in organized sports during adolescence have lower rates of obesity and chronic disease later in life.
+              </p>
+              <p>
+                Under the <strong>Affordable Care Act (ACA)</strong>, women's preventive services — including <strong>BMI screening, obesity counseling, and nutritional guidance</strong> — are covered at no cost-sharing. This means women with any ACA-compliant health plan can receive annual wellness visits that include BMI assessment and referrals to registered dietitians or behavioral health counselors without paying a copay or deductible. The ACA also mandates coverage for breastfeeding support, contraception, and gestational diabetes screening, all of which intersect with weight management during and after pregnancy.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

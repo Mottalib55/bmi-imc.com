@@ -300,6 +300,52 @@ const BMIKinder = () => {
             </div>
           </div>
 
+          {/* KiGGS Study and School Health Programs */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-cyan-500/10">
+                <Stethoscope className="w-6 h-6 text-cyan-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">KiGGS-Studie, Schuleingangsuntersuchung und Ernährungsinitiativen</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Die <strong>KiGGS-Studie</strong> (Studie zur Gesundheit von Kindern und Jugendlichen in Deutschland)
+                des <strong>Robert Koch-Instituts (RKI)</strong> ist die bedeutendste Langzeitstudie zur Kindergesundheit
+                in Europa. Seit der Basiserhebung (2003-2006) mit über 17.600 Teilnehmern werden in regelmäßigen
+                Folgeerhebungen (KiGGS Welle 1, Welle 2) Daten zu Gewicht, Größe, Ernährungsverhalten,
+                Bewegungsgewohnheiten und psychischer Gesundheit erfasst. Die KiGGS-Daten zeigen, dass sich die
+                Übergewichtsraten bei Kindern seit 2006 auf hohem Niveau stabilisiert haben, jedoch die
+                <strong> Pandemiejahre 2020-2022</strong> zu einem deutlichen Anstieg der Adipositas bei 5- bis
+                9-Jährigen geführt haben -- insbesondere in sozial benachteiligten Familien.
+              </p>
+              <p>
+                Die <strong>Schuleingangsuntersuchung (SEU)</strong> ist in allen 16 Bundesländern gesetzlich
+                vorgeschrieben und wird vom <strong>Öffentlichen Gesundheitsdienst (ÖGD)</strong> durchgeführt.
+                Bei dieser Untersuchung, die jedes Kind vor der Einschulung durchläuft, werden unter anderem
+                Körpergewicht und Größe gemessen und der BMI berechnet. Die Ergebnisse werden in den
+                jährlichen <strong>Gesundheitsberichten der Länder</strong> veröffentlicht und dienen als wichtige
+                Datengrundlage für die kommunale Gesundheitsplanung. In Bundesländern wie Nordrhein-Westfalen
+                und Bayern zeigen die SEU-Daten regionale Unterschiede: Städtische Brennpunktgebiete weisen
+                bis zu doppelt so hohe Adipositasraten auf wie ländliche Gemeinden.
+              </p>
+              <p>
+                Im Bereich der <strong>Schulverpflegung</strong> spielen die <strong>Vernetzungsstellen
+                Schulverpflegung</strong> eine zentrale Rolle. In jedem Bundesland gibt es mindestens eine
+                solche Stelle, die Schulen bei der Umsetzung der <strong>DGE-Qualitätsstandards für die
+                Schulverpflegung</strong> unterstützt. Die <strong>Deutsche Gesellschaft für Ernährung (DGE)</strong>
+                empfiehlt einen täglichen Gemüseanteil von mindestens 200 g in der Schulmahlzeit und begrenzt
+                den Anteil von Süßspeisen auf maximal zweimal pro Monat als Hauptgericht. Kampagnen wie
+                <strong> "Fit statt fett"</strong> und das <strong>IN FORM</strong>-Programm der Bundesregierung
+                setzen auf Verhältnisprävention: Statt nur das individuelle Verhalten der Kinder zu adressieren,
+                werden die Rahmenbedingungen in Kitas, Schulen und Gemeinden verbessert. Ergänzend fördert die
+                <strong> Plattform Ernährung und Bewegung (peb)</strong>, ein Zusammenschluss aus über 100 Partnern
+                aus Wirtschaft, Wissenschaft, Politik und Zivilgesellschaft, Projekte zur Adipositasprävention bei
+                Kindern und Jugendlichen in ganz Deutschland.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content - German specific */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

@@ -414,6 +414,45 @@ const BMIVyakhya = () => {
             </div>
           </div>
 
+          {/* India-Specific Healthcare & BMI Content */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-primary/10">
+                <Heart className="w-6 h-6 text-primary" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">आयुष्मान भारत, PHC/CHC और ICMR आहार दिशानिर्देश</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                <strong>आयुष्मान भारत - प्रधानमंत्री जन आरोग्य योजना (PM-JAY)</strong> विश्व की सबसे बड़ी
+                सरकारी स्वास्थ्य बीमा योजना है, जो <strong>10.74 करोड़ गरीब परिवारों</strong> को प्रति परिवार
+                <strong> ₹5 लाख प्रति वर्ष</strong> तक का निःशुल्क उपचार प्रदान करती है। मोटापा संबंधित
+                स्थितियों के उपचार -- जैसे <strong>मधुमेह प्रबंधन, हृदय शल्य चिकित्सा, और बैरियाट्रिक सर्जरी</strong>
+                (BMI 37.5 से ऊपर या BMI 32.5 के साथ सहरुग्णता) -- PM-JAY के अंतर्गत कवर होते हैं।
+                यह BMI स्क्रीनिंग को भारत की सार्वजनिक स्वास्थ्य प्रणाली का अभिन्न हिस्सा बनाता है।
+              </p>
+              <p>
+                <strong>PHC (प्राथमिक स्वास्थ्य केंद्र)</strong> और <strong>CHC (सामुदायिक स्वास्थ्य केंद्र)</strong>
+                भारत की ग्रामीण स्वास्थ्य प्रणाली की रीढ़ हैं। <strong>Health and Wellness Centres (HWC)</strong>
+                -- आयुष्मान भारत के दूसरे स्तंभ -- में <strong>BMI स्क्रीनिंग</strong> को
+                <strong> व्यापक प्राथमिक स्वास्थ्य देखभाल (CPHC)</strong> का हिस्सा बनाया गया है।
+                30 वर्ष से ऊपर के सभी वयस्कों की <strong>NCD (गैर-संचारी रोग) स्क्रीनिंग</strong> में BMI माप,
+                कमर की परिधि, रक्तचाप, और रक्त शर्करा शामिल हैं। <strong>आशा कार्यकर्ता</strong> और
+                <strong> ANM (सहायक नर्स मिडवाइफ)</strong> इस स्क्रीनिंग में महत्वपूर्ण भूमिका निभाती हैं।
+              </p>
+              <p>
+                <strong>ICMR (भारतीय चिकित्सा अनुसंधान परिषद)</strong> ने 2024 में अपडेटेड
+                <strong> "भारतीयों के लिए आहार दिशानिर्देश"</strong> प्रकाशित किए हैं। इनमें
+                <strong> 17 दिशानिर्देश</strong> शामिल हैं जो भारतीय खाद्य संस्कृति और पोषण आवश्यकताओं
+                के अनुसार तैयार किए गए हैं। प्रमुख सिफारिशों में शामिल हैं: <strong>प्रति दिन कम से कम 400 ग्राम
+                फल और सब्ज़ियाँ</strong>, <strong>प्रोटीन के लिए दालें, दूध और अंडे</strong>,
+                <strong> चीनी कुल कैलोरी का 5% से कम</strong>, <strong>नमक प्रतिदिन 5 ग्राम से कम</strong>,
+                और <strong>तेल प्रतिदिन 25-30 ग्राम से कम</strong>। ये दिशानिर्देश BMI को ICMR की
+                सामान्य सीमा (18.5-22.9) में बनाए रखने के लिए भारतीय संदर्भ में सबसे प्रासंगिक हैं।
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <h2 className="text-2xl font-display font-bold mb-6">भारत में BMI व्याख्या: ICMR एशियन कटऑफ गाइड</h2>

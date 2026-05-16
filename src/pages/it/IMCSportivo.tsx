@@ -410,6 +410,75 @@ const IMCSportivo = () => {
             </p>
           </div>
 
+          {/* Serie A, Olympic Tradition & Cycling */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-orange-500/10">
+                <Dumbbell className="w-6 h-6 text-orange-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">IMC nel calcio di Serie A e la tradizione olimpica italiana</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                La <strong>Serie A</strong> rappresenta uno dei laboratori pi&ugrave; avanzati al mondo per lo studio della composizione
+                corporea nel calcio professionistico. I centri medici dei club di Serie A &mdash; dal laboratorio di Medicina dello Sport
+                della <strong>Juventus</strong> al centro Milanello del <strong>Milan</strong> &mdash; utilizzano tecnologie di ultima generazione
+                per monitorare la composizione corporea dei calciatori durante tutta la stagione. Uno studio pubblicato dal
+                <strong> Journal of Sports Medicine and Physical Fitness</strong>, condotto su giocatori di Serie A, ha dimostrato che
+                il <strong>68% dei difensori centrali</strong> risulta classificato come "sovrappeso" dall'IMC nonostante una massa
+                grassa media del 10-11%. I portieri come Donnarumma, con la loro statura imponente e la muscolatura necessaria per
+                coprire la porta, sono sistematicamente fuorviati da questo indicatore.
+              </p>
+              <p>
+                La tradizione olimpica italiana &egrave; altrettanto emblematica dell'inadeguatezza dell'IMC. Il <strong>CONI (Comitato
+                Olimpico Nazionale Italiano)</strong>, fondato nel 1914 e tra i pi&ugrave; antichi comitati olimpici al mondo, ha sviluppato
+                protocolli di valutazione atletica che escludono esplicitamente l'IMC come parametro primario. I protocolli CONI per la
+                preparazione olimpica prevedono valutazioni trimestrali della composizione corporea tramite <strong>DEXA scan</strong>
+                presso i centri federali, con soglie specifiche per ogni disciplina. Alla <strong>preparazione olimpica di Roma</strong>,
+                il Centro di Preparazione Olimpica dell'Acqua Acetosa effettua oltre 2.000 valutazioni della composizione corporea
+                all'anno, nessuna delle quali si basa sull'IMC.
+              </p>
+              <p>
+                L'obbligo del <strong>certificato medico per attivit&agrave; sportiva agonistica</strong>, introdotto con il D.M. del 1982,
+                &egrave; una peculiarit&agrave; tutta italiana che non ha equivalenti nel mondo. La <strong>FMSI</strong> supervisiona oltre
+                <strong> 1.200 centri di medicina dello sport</strong> sul territorio nazionale, ciascuno dotato di strumentazione per la
+                valutazione antropometrica avanzata. Ogni anno vengono rilasciati circa <strong>7 milioni di certificati medico-sportivi</strong>
+                in Italia, un numero che testimonia la capillarit&agrave; del sistema. Il protocollo prevede non solo l'ECG sotto sforzo
+                e la spirometria, ma anche la <strong>valutazione della composizione corporea</strong> mediante plicometria o
+                bioimpedenziometria, rendendo l'IMC un dato del tutto secondario nella valutazione dell'atleta italiano.
+              </p>
+            </div>
+          </div>
+
+          {/* Italian Cycling Tradition */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-orange-500/10">
+                <Activity className="w-6 h-6 text-orange-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">La tradizione ciclistica italiana e la composizione corporea estrema</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Il <strong>Giro d'Italia</strong>, fondato nel 1909 e seconda corsa a tappe pi&ugrave; importante al mondo, rappresenta
+                un caso estremo di come l'IMC sia completamente inadeguato per valutare atleti di resistenza. Gli scalatori italiani &mdash;
+                da <strong>Marco Pantani</strong> (IMC ~19,5 al suo apice) a <strong>Vincenzo Nibali</strong> &mdash; hanno sempre avuto
+                valori di IMC ai limiti inferiori del "normopeso" o addirittura nella zona di "sottopeso", nonostante fossero atleti
+                in condizioni fisiche eccezionali. Il rapporto potenza/peso, calcolato in watt per chilogrammo, &egrave; l'unico parametro
+                rilevante per uno scalatore: i migliori raggiungono 6,0-6,5 W/kg sulle salite alpine, un dato impossibile da dedurre dall'IMC.
+              </p>
+              <p>
+                Il <strong>Centro Mapei Sport</strong> di Olgiate Olona, fondato nel 1996 e diretto per anni dal Prof. Aldo Sassi, &egrave;
+                stato il punto di riferimento mondiale per la fisiologia applicata al ciclismo. I suoi protocolli di valutazione &mdash;
+                adottati da team WorldTour come la <strong>Mapei-Quick Step</strong> e successivamente dal <strong>Team Sky</strong> &mdash;
+                includono test metabolici, valutazione della composizione corporea segmentale e analisi dell'efficienza pedalata, ma mai
+                l'IMC come indicatore di salute o performance. Al contrario, i velocisti come <strong>Elia Viviani</strong> possono avere
+                un IMC di 23-24, simile a un sedentario in normopeso, pur avendo una percentuale di grasso corporeo del 6-8% e una
+                massa muscolare nelle gambe paragonabile a quella di un atleta di potenza.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

@@ -306,6 +306,49 @@ const IMCBambino = () => {
             </div>
           </div>
 
+          {/* OKkio alla SALUTE, Mensa Scolastica & Guadagnare Salute */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-cyan-500/10">
+                <Users className="w-6 h-6 text-cyan-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">OKkio alla SALUTE, mensa scolastica e la campagna "Guadagnare Salute"</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Il sistema di sorveglianza <strong>OKkio alla SALUTE</strong>, attivo dal 2007 e coordinato dall'<strong>Istituto
+                Superiore di Sanit&agrave; (ISS)</strong> con il supporto del Ministero della Salute, rappresenta una delle
+                iniziative pi&ugrave; capillari al mondo per il monitoraggio dell'obesit&agrave; infantile. Ogni due anni,
+                oltre <strong>45.000 bambini</strong> delle classi terze della scuola primaria (8-9 anni) vengono misurati e
+                pesati in tutte le regioni italiane, insieme alla raccolta di dati sulle abitudini alimentari, l'attivit&agrave;
+                fisica e i comportamenti sedentari. I risultati confermano che l'Italia detiene i <strong>tassi pi&ugrave; alti
+                di obesit&agrave; infantile dell'Europa occidentale</strong>: la Campania, con oltre il 35% dei bambini in
+                eccesso ponderale, supera persino le regioni britanniche tradizionalmente considerate le pi&ugrave; colpite.
+                Questo dato &egrave; particolarmente allarmante perch&eacute; l'Italia &egrave; la culla della dieta mediterranea.
+              </p>
+              <p>
+                La <strong>mensa scolastica italiana</strong> &egrave; un modello riconosciuto a livello internazionale. A differenza
+                di molti Paesi europei dove i bambini portano il pranzo da casa, in Italia la mensa prevede <strong>pasti cucinati
+                in loco</strong>, con menu settimanali elaborati da dietisti e approvati dalle ASL secondo le <strong>Linee di
+                indirizzo nazionale per la ristorazione scolastica</strong> del Ministero della Salute. In citt&agrave; come
+                Roma, Milano e Torino, le mense servono oltre <strong>un milione di pasti al giorno</strong>, con ingredienti
+                biologici, prodotti a filiera corta e menu che rispettano la stagionalit&agrave;. Per molti bambini di famiglie
+                in difficolt&agrave; economica, la mensa rappresenta l'unico pasto completo e bilanciato della giornata.
+              </p>
+              <p>
+                La campagna <strong>"Guadagnare Salute: rendere facili le scelte salutari"</strong>, lanciata nel 2007 dal
+                Ministero della Salute, &egrave; il programma quadro nazionale per la prevenzione delle malattie croniche
+                legate agli stili di vita. Per quanto riguarda l'alimentazione infantile, il programma promuove il consumo
+                di frutta e verdura nelle scuole attraverso il progetto <strong>"Frutta e verdura nelle scuole"</strong>,
+                finanziato dall'Unione Europea e dal MIUR, che distribuisce gratuitamente prodotti ortofrutticoli freschi
+                nelle scuole primarie. I dati OKkio alla SALUTE mostrano che, grazie a queste iniziative, la prevalenza
+                di sovrappeso e obesit&agrave; infantile &egrave; in lento ma costante calo dal 2008, passando dal 35,2%
+                al 29,8%, segno che le politiche di prevenzione stanno producendo risultati, sebbene il divario Nord-Sud
+                rimanga profondo.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

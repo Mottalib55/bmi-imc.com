@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 import { Header } from "@/components/Header";
 import { BMIGauge } from "@/components/BMIGauge";
-import { User, Dumbbell, Target, Heart, Scale, Activity, AlertTriangle, CheckCircle2, Globe } from "lucide-react";
+import { User, Dumbbell, Target, Heart, Scale, Activity, AlertTriangle, CheckCircle2, Globe, TrendingUp, Utensils, MapPin } from "lucide-react";
 import { Slider } from "@/components/ui/slider";
 import { RelatedPages } from "@/components/RelatedPages";
 
@@ -334,6 +334,79 @@ const IMCHomemPt = () => {
                 ISAPS (International Society of Aesthetic Plastic Surgery), refletindo a pressão estética que
                 os homens brasileiros enfrentam. É fundamental lembrar que o IMC é apenas um dos indicadores de
                 saúde e deve ser avaliado em conjunto com outros parâmetros clínicos.
+              </p>
+            </div>
+          </div>
+
+          {/* Futebol e Churrasco */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-success/10">
+                <Utensils className="w-6 h-6 text-success" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Churrasco, Futebol e o IMC Masculino Brasileiro</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                O <strong>churrasco</strong> é uma instituição cultural no Brasil, especialmente entre os homens. O consumo médio de <strong>carne vermelha no Brasil é de 42 kg por pessoa ao ano</strong> (IBGE), com os homens consumindo significativamente mais que as mulheres. Uma reunião típica de churrasco de fim de semana pode facilmente ultrapassar <strong>2.000 kcal em uma única refeição</strong>, considerando picanha, linguiça, pão de alho e cerveja. O <strong>Guia Alimentar para a População Brasileira</strong> recomenda moderação no consumo de carnes processadas e prioriza proteínas magras, leguminosas e grãos.
+              </p>
+              <p>
+                A <strong>cultura do futebol</strong> exerce uma influência paradoxal sobre o IMC masculino. Embora o Brasil tenha <strong>30 milhões de praticantes regulares de futebol</strong>, a prática tende a diminuir drasticamente após os 35 anos. Os dados do VIGITEL mostram que <strong>apenas 30,4% dos homens brasileiros</strong> praticam atividade física suficiente segundo os critérios da OMS. O „futebol de domingo" com cerveja pós-jogo e petiscos calóricos pode, paradoxalmente, contribuir para o ganho de peso quando não é acompanhado de uma alimentação equilibrada.
+              </p>
+              <p>
+                O <strong>consumo de cerveja no Brasil</strong> atinge <strong>60 litros por habitante ao ano</strong> (CervBrasil), posicionando o país como o 3.o maior consumidor mundial. Para homens, o acúmulo de gordura abdominal associado ao consumo regular de álcool — a chamada <strong>„barriga de cerveja"</strong> — é um fator de risco cardiovascular importante. A <strong>ABESO recomenda limitar o consumo a no máximo 2 doses por dia</strong> e evitar o consumo diário para manter um IMC saudável.
+              </p>
+            </div>
+          </div>
+
+          {/* Brasil vs Portugal */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-blue-500/10">
+                <MapPin className="w-6 h-6 text-blue-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Obesidade Masculina: Brasil vs Portugal em Números</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                A comparação entre <strong>Brasil e Portugal</strong> revela padrões distintos de obesidade masculina. No Brasil, <strong>22,8% dos homens são obesos</strong> (VIGITEL 2023), enquanto em Portugal a taxa alcança <strong>24,6%</strong> (IAN-AF/DGS). Apesar do clima mais favorável à atividade ao ar livre, os homens portugueses enfrentam taxas superiores, parcialmente atribuídas ao envelhecimento da população e à transição nutricional que substituiu a dieta mediterrânica tradicional por alimentos ultraprocessados.
+              </p>
+              <p>
+                As <strong>diferenças regionais no Brasil</strong> são particularmente marcantes para a obesidade masculina. O <strong>Sul</strong> apresenta a maior taxa de obesidade entre homens (<strong>26,3%</strong>), influenciado pela herança alimentar europeia rica em carnes e embutidos. O <strong>Sudeste</strong> registra 23,1%, o <strong>Centro-Oeste</strong> 22,5%, o <strong>Norte</strong> 20,2% e o <strong>Nordeste</strong> 18,7%. Em Portugal, a região do <strong>Alentejo</strong> concentra as maiores taxas de obesidade masculina, enquanto <strong>Lisboa e Vale do Tejo</strong> apresentam valores inferiores, refletindo o acesso a mais opções de estilo de vida ativo.
+              </p>
+              <p>
+                O <strong>SUS</strong> (Sistema Único de Saúde) e o <strong>SNS</strong> (Serviço Nacional de Saúde de Portugal) oferecem abordagens semelhantes para o tratamento da obesidade masculina. Ambos os sistemas cobrem <strong>consultas com nutricionistas</strong>, programas de exercício supervisionado e, em casos graves, <strong>cirurgia bariátrica</strong>. No entanto, o tempo de espera no SUS para cirurgia bariátrica pode ultrapassar <strong>3 anos</strong>, enquanto no SNS português a espera média é de <strong>18 meses</strong>. Iniciativas como o <strong>Programa Academia da Saúde</strong> no Brasil oferecem espaços gratuitos para atividade física em mais de 4.000 municípios.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-4 mt-6">
+              <div className="p-4 bg-muted/30 rounded-xl text-center">
+                <span className="text-2xl font-bold text-blue-500">22,8%</span>
+                <p className="text-sm text-muted-foreground mt-1">Obesidade masculina no Brasil (VIGITEL)</p>
+              </div>
+              <div className="p-4 bg-muted/30 rounded-xl text-center">
+                <span className="text-2xl font-bold text-blue-500">24,6%</span>
+                <p className="text-sm text-muted-foreground mt-1">Obesidade masculina em Portugal (DGS)</p>
+              </div>
+            </div>
+          </div>
+
+          {/* VIGITEL e SUS */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-blue-500/10">
+                <TrendingUp className="w-6 h-6 text-blue-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Dados VIGITEL e Cobertura do SUS para Homens</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                O <strong>VIGITEL (Vigilância de Fatores de Risco e Proteção para Doenças Crônicas por Inquérito Telefônico)</strong> é o principal sistema de monitoramento de obesidade do Ministério da Saúde. Os dados de 2023 revelam tendências preocupantes para a saúde masculina: a <strong>obesidade entre homens de 25 a 44 anos cresceu 72%</strong> nos últimos 15 anos, passando de 13,3% para 22,8%. As capitais com maior prevalência são <strong>Rio Branco (28,7%)</strong>, <strong>Manaus (27,1%)</strong> e <strong>Campo Grande (26,4%)</strong>.
+              </p>
+              <p>
+                A <strong>Política Nacional de Atenção Integral à Saúde do Homem (PNAISH)</strong>, instituída em 2009 pelo Ministério da Saúde, reconhece que os homens brasileiros procuram menos os serviços de saúde: <strong>38% dos homens não consultam um médico regularmente</strong>. O PNAISH promove ações específicas de prevenção da obesidade masculina através das Unidades Básicas de Saúde, incluindo grupos de reeducação alimentar, avaliação nutricional gratuita e encaminhamento para endocrinologistas quando necessário.
+              </p>
+              <p>
+                O <strong>Guia Alimentar para a População Brasileira</strong>, reconhecido internacionalmente por Harvard como referência mundial, classifica os alimentos em quatro grupos segundo o grau de processamento. Para homens que desejam reduzir o IMC, o Guia recomenda priorizar <strong>alimentos in natura</strong> (arroz, feijão, frutas, legumes, carnes frescas) e <strong>minimamente processados</strong>, evitando ultraprocessados como refrigerantes, salgadinhos e embutidos — que correspondem a <strong>22% das calorias consumidas pelo brasileiro médio</strong>.
               </p>
             </div>
           </div>

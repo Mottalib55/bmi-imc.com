@@ -277,6 +277,45 @@ const LimitiIMC = () => {
             </div>
           </div>
 
+          {/* Mediterranean Diet Research & PASSI */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-warning/10">
+                <Globe className="w-6 h-6 text-warning" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Dieta mediterranea, sorveglianza PASSI e i limiti dell'IMC nella ricerca italiana</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                La ricerca italiana sulla relazione tra <strong>dieta mediterranea e IMC</strong> ha prodotto risultati che
+                mettono in luce i limiti fondamentali di questo indicatore. Gli studi condotti dalla <strong>Fondazione Dieta
+                Mediterranea</strong> e dall'<strong>Universit&agrave; di Napoli Federico II</strong> &mdash; ateneo dove
+                Ancel Keys condusse le sue ricerche pioneristiche negli anni '50 &mdash; hanno dimostrato che l'aderenza
+                alla dieta mediterranea tradizionale &egrave; associata a un miglior profilo metabolico <strong>indipendentemente
+                dall'IMC</strong>. In altre parole, una persona con un IMC di 27 che segue fedelmente la dieta mediterranea
+                (olio extravergine d'oliva, legumi, pesce, cereali integrali, frutta e verdura di stagione) pu&ograve; avere
+                indicatori di salute cardiovascolare migliori di una persona con IMC di 23 che segue una dieta ricca di alimenti
+                ultraprocessati. Lo studio <strong>PREDIMED</strong>, a cui hanno partecipato anche ricercatori italiani, ha
+                confermato che la dieta mediterranea riduce del 30% il rischio cardiovascolare indipendentemente dalle variazioni
+                di peso corporeo.
+              </p>
+              <p>
+                Il <strong>sistema di sorveglianza PASSI</strong> (Progressi delle Aziende Sanitarie per la Salute in Italia),
+                coordinato dall'<strong>Istituto Superiore di Sanit&agrave; (ISS)</strong>, raccoglie dati continui sullo stato
+                di salute della popolazione adulta italiana (18-69 anni) attraverso interviste telefoniche condotte dalle ASL.
+                I dati PASSI hanno rivelato limiti importanti nell'uso dell'IMC come indicatore isolato nella popolazione italiana.
+                PASSI mostra che il <strong>28% degli italiani classificati come "normopeso" dall'IMC</strong> presenta almeno
+                un fattore di rischio metabolico (ipercolesterolemia, iperglicemia o ipertensione), una condizione nota come
+                <strong> "metabolically unhealthy normal weight"</strong>. Parallelamente, circa il <strong>15% degli italiani
+                in "sovrappeso"</strong> secondo l'IMC risulta metabolicamente sano, con valori ematochimici nella norma e
+                nessun fattore di rischio cardiovascolare. Questi dati, specifici per la popolazione italiana, confermano che
+                l'IMC da solo non &egrave; sufficiente per valutare lo stato di salute e che la combinazione con la
+                <strong> circonferenza vita</strong> e gli <strong>esami del sangue</strong>, come raccomandato dalle linee
+                guida ISS, fornisce un quadro molto pi&ugrave; accurato.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <h2 className="text-2xl font-display font-bold mb-6">Tutto sui limiti dell'IMC</h2>

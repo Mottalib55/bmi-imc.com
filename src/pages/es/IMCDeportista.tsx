@@ -296,6 +296,33 @@ const IMCDeportista = () => {
             </div>
           </div>
 
+          {/* Liga MX, La Liga and Luchadores BMI Paradox */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-orange-500/10">
+                <Dumbbell className="w-6 h-6 text-orange-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">La paradoja del IMC en futbolistas de Liga MX, La Liga y luchadores mexicanos</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                En el <strong>futbol profesional hispanohablante</strong>, el IMC genera clasificaciones absurdas que contradicen la realidad atletica de los jugadores. Un analisis de las plantillas de la <strong>Liga MX</strong> temporada 2023-24 revela que el 42% de los defensas centrales superan el umbral de IMC 25 que la OMS clasifica como "sobrepeso". En <strong>La Liga espanola</strong>, donde el futbol ha evolucionado hacia un modelo cada vez mas fisico, los centrocampistas defensivos como Rodri (Manchester City, formado en el Atletico de Madrid) presentan un IMC de 25,3 a pesar de mantener un porcentaje de grasa corporal inferior al 11%. La <strong>RFEF</strong> (Real Federacion Espanola de Futbol) y la <strong>Federacion Mexicana de Futbol</strong> han abandonado hace tiempo el IMC como metrica de evaluacion de sus seleccionados.
+              </p>
+              <p>
+                El caso de la <strong>lucha libre mexicana</strong> es particularmente revelador de las limitaciones del IMC. Los luchadores profesionales del <strong>CMLL</strong> (Consejo Mundial de Lucha Libre, fundado en 1933) y <strong>AAA</strong> (Asistencia Asesoria y Administracion) representan un espectro corporal unico en el deporte mundial. Los <strong>voladores</strong> como Mistico o Ultimo Guerrero mantienen un IMC entre 23 y 25 gracias a su constitucion agil, mientras que los <strong>pesados</strong> alcanzan IMC superiores a 32 con una funcionalidad atletica que incluye acrobacias aereas, caidas controladas y combates de 30 minutos. El <strong>IMSS</strong> ha documentado que estos atletas presentan perfiles metabolicos saludables a pesar de su IMC "obesidad", lo que demuestra la inadecuacion total del indice para esta poblacion deportiva unica.
+              </p>
+              <p>
+                En <strong>Espana</strong>, el <strong>CSD (Consejo Superior de Deportes)</strong> ha implementado desde 2018 protocolos de evaluacion corporal que excluyen el IMC como indicador primario para deportistas de alto rendimiento. El protocolo CSD utiliza la <strong>cineantropometria ISAK</strong> (International Society for the Advancement of Kinanthropometry) con mediciones de pliegues cutaneos en 8 sitios corporales, perimetros musculares y diametros oseos. En <strong>Mexico</strong>, la <strong>CONADE</strong> (Comision Nacional de Cultura Fisica y Deporte) ha adoptado un enfoque similar a traves de su Centro Nacional de Desarrollo de Talentos Deportivos (CNAR), donde se evalua la composicion corporal de atletas olimpicos mexicanos mediante <strong>DXA</strong> y <strong>pletismografia por desplazamiento de aire (BOD POD)</strong>. Ambas instituciones coinciden en que el IMC no debe figurar en los informes de aptitud fisica de deportistas de elite.
+              </p>
+              <p>
+                Un factor poco discutido es el efecto de la <strong>altitud en la composicion corporal</strong> de deportistas latinoamericanos. Ciudades como la <strong>Ciudad de Mexico (2.240 m)</strong>, <strong>Bogota (2.640 m)</strong>, <strong>Quito (2.850 m)</strong> y <strong>La Paz (3.640 m)</strong> son sede de equipos profesionales cuyos jugadores entrenan permanentemente en altura. Estudios del <strong>INCMNSZ</strong> (Instituto Nacional de Ciencias Medicas y Nutricion Salvador Zubiran) de Mexico han demostrado que el entrenamiento cronico en altitud produce un aumento del <strong>volumen sanguineo total</strong>, mayor <strong>densidad de hemoglobina</strong> y una redistribucion de la masa corporal que puede elevar el IMC entre 0,3 y 0,8 puntos sin ningun incremento de grasa. Los futbolistas del <strong>Club America</strong> o del <strong>Cruz Azul</strong> que entrenan en la Ciudad de Mexico, o los jugadores de <strong>Millonarios</strong> e <strong>Independiente Santa Fe</strong> en Bogota, presentan sistematicamente un IMC superior al de sus pares que entrenan a nivel del mar, un fenomeno que la <strong>FIFA</strong> y la <strong>CONMEBOL</strong> han reconocido pero que las tablas estandar de IMC ignoran completamente.
+              </p>
+              <p>
+                La <strong>FMMD</strong> (Federacion Mexicana de Medicina del Deporte) y la <strong>FEMEDE</strong> espanola recomiendan que cualquier evaluacion de la composicion corporal de un deportista en America Latina incluya la <strong>altitud del lugar de entrenamiento habitual</strong> como variable de ajuste. Centros de alto rendimiento como el <strong>CAR de Sant Cugat</strong> (Espana), el <strong>CNAR</strong> (Mexico) y el <strong>CENARD</strong> (Argentina) utilizan ecuaciones de regresion ajustadas que corrigen el efecto de la altitud y la etnicidad sobre la densidad corporal, ofreciendo una evaluacion mucho mas precisa que el IMC para poblaciones deportivas hispanohablantes.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header";
-import { Table, Scale, AlertTriangle, CheckCircle2, Globe } from "lucide-react";
+import { Table, Scale, AlertTriangle, CheckCircle2, Globe, BookOpen, Activity, Heart } from "lucide-react";
 import { RelatedPages } from "@/components/RelatedPages";
 
 const JadwalIMC = () => {
@@ -256,6 +256,143 @@ const JadwalIMC = () => {
               <h4 className="font-bold text-info mb-2">إرشادات WHO EMRO للسكان العرب</h4>
               <p className="text-sm text-muted-foreground">تشير إرشادات المكتب الإقليمي لمنظمة الصحة العالمية لشرق المتوسط إلى أن تكوين الجسم لدى سكان المنطقة العربية قد يختلف عن المعايير الغربية. أظهرت دراسات أن نسبة الدهون في الجسم قد تكون أعلى عند نفس مؤشر كتلة الجسم مقارنة بالسكان الأوروبيين، مما يعني أن عتبة خطر الأمراض المزمنة كالسكري من النوع الثاني وأمراض القلب قد تبدأ عند مؤشر أقل من 25 لدى بعض الفئات. لذلك يُنصح بقياس محيط الخصر كمؤشر مكمل: أقل من 94 سم للرجال و80 سم للنساء.</p>
             </div>
+          </div>
+
+          {/* Gulf States Obesity Data */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-destructive/10">
+                <Activity className="w-6 h-6 text-destructive" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">إحصائيات السمنة في دول الخليج العربي: أرقام مقلقة</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4 mb-6">
+              <p>تُعدّ <strong>دول الخليج العربي</strong> من أكثر مناطق العالم تأثراً بوباء السمنة. وفقاً لأحدث بيانات <strong>منظمة الصحة العالمية - المكتب الإقليمي لشرق المتوسط (WHO EMRO)</strong>، تتصدر الكويت القائمة العربية بنسبة سمنة تبلغ <strong>37.9%</strong> من إجمالي السكان البالغين، تليها المملكة العربية السعودية بنسبة <strong>35.4%</strong>، ثم قطر بنسبة <strong>35.1%</strong>. هذه الأرقام تضع هذه الدول ضمن أعلى عشرين دولة عالمياً في معدلات السمنة.</p>
+              <p>يرتبط هذا الارتفاع الحاد بالتحولات الاقتصادية والاجتماعية المتسارعة التي شهدتها المنطقة منذ اكتشاف النفط. فقد أدى الرخاء الاقتصادي إلى تغيير جذري في أنماط الحياة، حيث انتقل السكان من نمط حياة نشط يعتمد على الصيد والرعي والزراعة إلى نمط حياة حضري يتسم بالخمول البدني والاعتماد على السيارات في التنقل. كما أسهم المناخ الحار في تقليل ممارسة الأنشطة البدنية في الهواء الطلق لفترات طويلة من العام.</p>
+              <p>من الناحية الغذائية، شهدت دول الخليج انتشاراً واسعاً لمطاعم الوجبات السريعة والمشروبات الغازية المحلاة. وتشير إحصائيات WHO EMRO إلى أن استهلاك الفرد من السكر في دول الخليج يتجاوز المعدل العالمي بنسبة 30%، بينما يقل استهلاك الخضراوات والفواكه عن الحد الأدنى الموصى به عند أكثر من 70% من السكان.</p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-4 mb-6">
+              <div className="p-4 rounded-xl bg-destructive/10 text-center">
+                <p className="text-3xl font-bold text-destructive mb-1">37.9%</p>
+                <p className="text-sm text-muted-foreground">نسبة السمنة في الكويت</p>
+              </div>
+              <div className="p-4 rounded-xl bg-destructive/10 text-center">
+                <p className="text-3xl font-bold text-destructive mb-1">35.4%</p>
+                <p className="text-sm text-muted-foreground">نسبة السمنة في السعودية</p>
+              </div>
+              <div className="p-4 rounded-xl bg-destructive/10 text-center">
+                <p className="text-3xl font-bold text-destructive mb-1">35.1%</p>
+                <p className="text-sm text-muted-foreground">نسبة السمنة في قطر</p>
+              </div>
+            </div>
+            <p className="text-xs text-muted-foreground mt-4">المصدر: منظمة الصحة العالمية - المكتب الإقليمي لشرق المتوسط (WHO EMRO)، إحصائيات الأمراض غير المعدية</p>
+          </div>
+
+          {/* Saudi Vision 2030 Health Goals */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-success/10">
+                <Heart className="w-6 h-6 text-success" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">رؤية السعودية 2030 والأهداف الصحية لمكافحة السمنة</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4 mb-6">
+              <p>في إطار <strong>رؤية المملكة العربية السعودية 2030</strong>، أطلقت الحكومة السعودية استراتيجية شاملة لمكافحة السمنة وتعزيز أنماط الحياة الصحية. تهدف هذه الاستراتيجية إلى خفض معدل انتشار السمنة بنسبة 5% بحلول عام 2030، ورفع نسبة ممارسي الرياضة من 13% إلى 40% من السكان.</p>
+              <p>من أبرز الإجراءات التي اتخذتها المملكة العربية السعودية فرض <strong>ضريبة على المشروبات المحلاة بالسكر</strong> بنسبة 50%، وضريبة 100% على مشروبات الطاقة. كما فُرضت ضريبة على المنتجات الغذائية عالية الدهون المشبعة. وقد أسفرت هذه الإجراءات الضريبية عن انخفاض ملموس في استهلاك المشروبات الغازية بنسبة تقدّر بـ 35% خلال السنوات الأولى من التطبيق.</p>
+              <p>كذلك أنشأت المملكة <strong>برنامج جودة الحياة</strong> الذي يشمل بناء مسارات للمشي والدراجات الهوائية في المدن الرئيسية، وإنشاء مراكز رياضية مجتمعية، وتنظيم فعاليات رياضية شعبية. وأصدرت الهيئة العامة للغذاء والدواء السعودية تعليمات بوضع بطاقات تغذوية واضحة على جميع المنتجات الغذائية، مع نظام ألوان يوضح مستوى السكر والدهون والسعرات الحرارية.</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="p-4 rounded-xl bg-success/5 border border-success/20">
+                <h4 className="font-bold text-success mb-2">الإجراءات الضريبية والتنظيمية</h4>
+                <ul className="text-sm text-muted-foreground space-y-2">
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-success mt-1 flex-shrink-0" /><span>ضريبة 50% على المشروبات المحلاة بالسكر</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-success mt-1 flex-shrink-0" /><span>ضريبة 100% على مشروبات الطاقة</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-success mt-1 flex-shrink-0" /><span>بطاقات تغذوية إلزامية بنظام الألوان على المنتجات الغذائية</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-success mt-1 flex-shrink-0" /><span>تنظيم الإعلانات الغذائية الموجهة للأطفال</span></li>
+                </ul>
+              </div>
+              <div className="p-4 rounded-xl bg-primary/5 border border-primary/20">
+                <h4 className="font-bold text-primary mb-2">أهداف رؤية 2030 الصحية</h4>
+                <ul className="text-sm text-muted-foreground space-y-2">
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-1 flex-shrink-0" /><span>خفض السمنة 5% بحلول 2030</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-1 flex-shrink-0" /><span>رفع ممارسة الرياضة من 13% إلى 40%</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-1 flex-shrink-0" /><span>رفع متوسط العمر المتوقع من 74 إلى 80 سنة</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-1 flex-shrink-0" /><span>خفض الوفيات المبكرة من الأمراض غير المعدية</span></li>
+                </ul>
+              </div>
+            </div>
+            <p className="text-xs text-muted-foreground mt-4">المصدر: برنامج التحول الوطني - رؤية السعودية 2030، وزارة الصحة السعودية</p>
+          </div>
+
+          {/* Maghreb vs Gulf Differences */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-primary/10">
+                <BookOpen className="w-6 h-6 text-primary" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">الفروقات بين المغرب العربي ودول الخليج في مؤشر كتلة الجسم</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4 mb-6">
+              <p>يكشف تحليل بيانات <strong>مؤشر كتلة الجسم</strong> عبر العالم العربي عن فروقات جوهرية بين منطقتين رئيسيتين: <strong>دول المغرب العربي</strong> (المغرب، تونس، الجزائر) و<strong>دول الخليج العربي</strong> (السعودية، الكويت، الإمارات، قطر، البحرين، عُمان). هذه الفروقات تعكس اختلافات عميقة في الثقافة الغذائية ومستوى التحضر والعوامل الاقتصادية والمناخية.</p>
+              <p>في <strong>دول المغرب العربي</strong>، تتراوح معدلات السمنة بين 20% و26% وفقاً لبيانات WHO، وهي أقل بكثير من نظيراتها الخليجية. يعود ذلك جزئياً إلى استمرار <strong>النظام الغذائي المتوسطي التقليدي</strong> الغني بالخضراوات والبقوليات وزيت الزيتون والحبوب الكاملة في هذه المنطقة. فالمطبخ المغربي والتونسي والجزائري يعتمد بشكل كبير على الكسكس مع الخضراوات، والسلطات الطازجة، والأسماك الطازجة في المناطق الساحلية.</p>
+              <p>في المقابل، شهدت <strong>دول الخليج</strong> تحولاً غذائياً أسرع وأكثر جذرية. فقد حلّت الوجبات السريعة الغربية محل المأكولات التقليدية البسيطة كالمكبوس والمطازيز والجريش. كما أن المناخ الحار الشديد في الخليج يحدّ من النشاط البدني في الهواء الطلق لأشهر طويلة، بينما يسمح مناخ المغرب العربي المعتدل بنشاط بدني أكبر طوال العام. إضافة إلى ذلك، فإن ارتفاع مستوى الدخل في دول الخليج يرتبط بزيادة استهلاك الأطعمة المصنعة والمشروبات السكرية.</p>
+            </div>
+            <div className="overflow-x-auto mb-6">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b-2 border-border">
+                    <th className="text-right py-3 px-4 font-bold">المقارنة</th>
+                    <th className="text-right py-3 px-4 font-bold">المغرب العربي</th>
+                    <th className="text-right py-3 px-4 font-bold">دول الخليج</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-border/50">
+                    <td className="py-3 px-4 font-medium">معدل السمنة</td>
+                    <td className="py-3 px-4 text-warning font-mono">20-26%</td>
+                    <td className="py-3 px-4 text-destructive font-mono">30-38%</td>
+                  </tr>
+                  <tr className="border-b border-border/50">
+                    <td className="py-3 px-4 font-medium">النظام الغذائي السائد</td>
+                    <td className="py-3 px-4">متوسطي تقليدي</td>
+                    <td className="py-3 px-4">وجبات سريعة غربية</td>
+                  </tr>
+                  <tr className="border-b border-border/50">
+                    <td className="py-3 px-4 font-medium">النشاط البدني</td>
+                    <td className="py-3 px-4">معتدل (مناخ ملائم)</td>
+                    <td className="py-3 px-4">منخفض (حرارة شديدة)</td>
+                  </tr>
+                  <tr className="border-b border-border/50">
+                    <td className="py-3 px-4 font-medium">معدل السكري</td>
+                    <td className="py-3 px-4 font-mono">8-10%</td>
+                    <td className="py-3 px-4 font-mono">15-24%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="p-4 rounded-xl bg-info/5 border border-info/20">
+              <p className="text-sm text-muted-foreground">
+                <strong>ملاحظة مهمة:</strong> على الرغم من انخفاض معدلات السمنة في المغرب العربي مقارنة بالخليج، إلا أن الاتجاه آخذ في الارتفاع، خاصة في المناطق الحضرية. فقد ارتفعت نسبة السمنة في المغرب من 16% عام 2000 إلى 26% عام 2023، مما يشير إلى تأثير التحضر والعولمة الغذائية على المنطقة أيضاً.
+              </p>
+            </div>
+            <p className="text-xs text-muted-foreground mt-4">المصدر: WHO EMRO، دراسات وبائية مقارنة في شمال أفريقيا والخليج العربي</p>
+          </div>
+
+          {/* Ramadan and BMI - Extended Section */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-warning/10">
+                <BookOpen className="w-6 h-6 text-warning" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">تأثير صيام رمضان على مؤشر كتلة الجسم: دراسات علمية</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4 mb-6">
+              <p>أجريت العديد من الدراسات العلمية في المنطقة العربية لقياس التأثير الفعلي لـ<strong>صيام شهر رمضان</strong> على مؤشر كتلة الجسم وتكوين الجسم. وقد أظهرت تحليلات تلوية (meta-analyses) شملت أكثر من 35 دراسة علمية أن متوسط فقدان الوزن خلال رمضان يتراوح بين <strong>1.2 كغ و3.5 كغ</strong>، لكن هذا الفقدان يختلف بشكل كبير حسب العادات الغذائية والثقافية في كل بلد عربي.</p>
+              <p>في دراسة أجراها باحثون من جامعة الملك سعود في الرياض، تبين أن <strong>60% من المشاركين</strong> استعادوا الوزن المفقود خلال 4 إلى 6 أسابيع بعد عيد الفطر. وأشارت الدراسة إلى أن الإفراط في تناول الحلويات التقليدية مثل القطايف والكنافة والمعمول خلال وجبة الإفطار يمكن أن يلغي فوائد الصيام على الوزن تماماً. كما أن العادات الاجتماعية المتمثلة في الولائم الكبيرة والعزومات خلال الشهر الفضيل تساهم في زيادة السعرات الحرارية المستهلكة رغم تقليل عدد الوجبات.</p>
+              <p>من ناحية أخرى، أظهرت دراسات من الإمارات والبحرين أن <strong>الصيام المتقطع</strong> خلال رمضان له فوائد صحية تتجاوز فقدان الوزن. فقد لوحظ تحسن في مستويات الكوليسترول والدهون الثلاثية وحساسية الإنسولين لدى الصائمين الذين حافظوا على نظام غذائي متوازن. هذه النتائج تتوافق مع الأبحاث العالمية حول فوائد <strong>الصيام المتقطع</strong> (Intermittent Fasting) كاستراتيجية لتحسين مؤشرات الصحة الأيضية.</p>
+              <p>يُوصي خبراء التغذية في المنطقة العربية باتباع استراتيجية "الإفطار المتدرج" للحفاظ على مؤشر كتلة جسم صحي خلال رمضان: البدء بثلاث تمرات وكوب ماء، ثم أداء صلاة المغرب، ثم تناول حساء خفيف، يليه وجبة رئيسية معتدلة الكمية غنية بالبروتين والخضراوات. كما يُنصح بتأخير السحور قدر الإمكان وجعله غنياً بالألياف والبروتين للمحافظة على الشعور بالشبع أثناء الصيام.</p>
+            </div>
+            <p className="text-xs text-muted-foreground mt-4">المصدر: مراجعات منهجية منشورة في British Journal of Nutrition وStudies in Saudi Arabia</p>
           </div>
 
           <div className="glass-card p-8">

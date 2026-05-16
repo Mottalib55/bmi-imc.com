@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 import { Header } from "@/components/Header";
 import { BMIGauge } from "@/components/BMIGauge";
-import { Users, Heart, Target, Baby, Scale, Activity, AlertTriangle, CheckCircle2, Sparkles, Globe } from "lucide-react";
+import { Users, Heart, Target, Baby, Scale, Activity, AlertTriangle, CheckCircle2, Sparkles, Globe, TrendingUp, MapPin, Utensils } from "lucide-react";
 import { Slider } from "@/components/ui/slider";
 import { RelatedPages } from "@/components/RelatedPages";
 
@@ -339,6 +339,83 @@ const IMCMulherPt = () => {
                 Para manter um <strong>IMC saudável após os 50</strong> ou <strong>IMC após os 60</strong>,
                 foque em uma dieta rica em <strong>proteínas</strong> e <strong>cálcio</strong>,
                 e mantenha atividade física regular incluindo <strong>treino de força</strong>.
+              </p>
+            </div>
+          </div>
+
+          {/* VIGITEL Tendências Femininas */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-pink-500/10">
+                <TrendingUp className="w-6 h-6 text-pink-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Tendências da Obesidade Feminina: Dados VIGITEL e Pré-natal no SUS</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Os dados do <strong>VIGITEL 2023</strong> revelam que a obesidade feminina no Brasil cresceu <strong>67% nos últimos 15 anos</strong>, passando de 14,6% para 24,4%. A faixa etária mais afetada é entre <strong>45 e 64 anos</strong>, onde a taxa de obesidade atinge <strong>30,2%</strong>. As capitais com maior prevalência feminina são <strong>Rio Branco (31,2%)</strong>, <strong>Macapá (28,9%)</strong> e <strong>Manaus (28,4%)</strong>, enquanto <strong>São Luís (16,8%)</strong> e <strong>Palmas (17,3%)</strong> registram os menores índices.
+              </p>
+              <p>
+                O <strong>acompanhamento pré-natal no SUS</strong> inclui monitoramento rigoroso do ganho de peso. A <strong>Caderneta da Gestante</strong>, distribuída gratuitamente pelo Ministério da Saúde, contém curvas de ganho ponderal e orientações nutricionais personalizadas por faixa de IMC. O programa <strong>Rede Cegonha</strong>, implementado em 2011, garante atendimento integral desde a gestação até os dois primeiros anos de vida da criança, incluindo <strong>consultas nutricionais gratuitas</strong> em todas as Unidades Básicas de Saúde.
+              </p>
+              <p>
+                A <strong>FEBRASGO (Federação Brasileira de Ginecologia e Obstetrícia)</strong> alerta que <strong>18% das gestantes brasileiras</strong> desenvolvem diabetes gestacional, taxa diretamente relacionada ao IMC pré-gestacional. Gestantes com <strong>IMC acima de 30</strong> têm risco três vezes maior de pré-eclâmpsia e duas vezes maior de parto prematuro. O SUS oferece o <strong>teste oral de tolerância à glicose (TOTG)</strong> gratuitamente entre a 24.a e 28.a semana de gestação para rastreamento universal.
+              </p>
+            </div>
+          </div>
+
+          {/* Diferenças Regionais */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-purple-500/10">
+                <MapPin className="w-6 h-6 text-purple-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Diferenças Regionais e o Guia Alimentar para Mulheres</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                As <strong>diferenças regionais na obesidade feminina</strong> no Brasil são marcantes e refletem a diversidade cultural alimentar do país. A região <strong>Sul registra 27,1%</strong> de obesidade feminina, fortemente influenciada pela herança europeia com consumo elevado de massas, pães, embutidos e doces. O <strong>Sudeste apresenta 24,8%</strong>, o <strong>Centro-Oeste 23,5%</strong>, o <strong>Nordeste 21,9%</strong> e o <strong>Norte 22,7%</strong>. A alimentação tradicional nordestina à base de feijão, farinha e frutas regionais está associada aos menores índices de obesidade.
+              </p>
+              <p>
+                O <strong>Guia Alimentar para a População Brasileira</strong> oferece recomendações especialmente relevantes para mulheres. A „regra de ouro" do Guia — <strong>„prefira sempre alimentos in natura ou minimamente processados"</strong> — tem impacto direto no controle do IMC feminino. Para mulheres, o Guia recomenda: priorizar <strong>feijão com arroz</strong> como base da alimentação diária; consumir pelo menos <strong>400 g de frutas e hortaliças</strong> por dia; limitar açúcar adicionado a no máximo <strong>25 g diários</strong>; e evitar ultraprocessados que representam <strong>27% das calorias consumidas pelas brasileiras</strong>.
+              </p>
+              <p>
+                Em <strong>Portugal</strong>, o <strong>PNPAS (Programa Nacional para a Promoção da Alimentação Saudável)</strong> da DGS destaca que <strong>55% das mulheres portuguesas</strong> estão com excesso de peso. A <strong>Roda dos Alimentos Portuguesa</strong>, equivalente funcional do Guia Alimentar brasileiro, enfatiza a dieta mediterrânica com azeite, peixe, leguminosas e produtos hortícolas. As diferenças entre os dois países lusófonos são notáveis: enquanto no Brasil os ultraprocessados são o principal vilão, em Portugal é a <strong>diminuição da adesão à dieta mediterrânica</strong> entre as gerações mais jovens que preocupa os especialistas da DGS.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-4 mt-6">
+              <div className="p-4 bg-muted/30 rounded-xl text-center">
+                <span className="text-2xl font-bold text-pink-500">27,1%</span>
+                <p className="text-sm text-muted-foreground mt-1">Sul do Brasil</p>
+              </div>
+              <div className="p-4 bg-muted/30 rounded-xl text-center">
+                <span className="text-2xl font-bold text-pink-500">21,9%</span>
+                <p className="text-sm text-muted-foreground mt-1">Nordeste do Brasil</p>
+              </div>
+              <div className="p-4 bg-muted/30 rounded-xl text-center">
+                <span className="text-2xl font-bold text-pink-500">55%</span>
+                <p className="text-sm text-muted-foreground mt-1">Portugal (DGS)</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Imagem Corporal */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-pink-500/10">
+                <Utensils className="w-6 h-6 text-pink-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Imagem Corporal Feminina na Cultura Brasileira e Portuguesa</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                A relação das mulheres brasileiras com o corpo é moldada por uma <strong>pressão estética intensa e culturalmente enraizada</strong>. O Brasil é o <strong>1.o país do mundo em cirurgias plásticas femininas</strong> (ISAPS), com mais de <strong>1,5 milhão de procedimentos anuais</strong>. A lipoaspiração e o aumento de glúteos („bumbum brasileiro") estão entre os procedimentos mais procurados, refletindo padrões de beleza que muitas vezes se distanciam de faixas de IMC saudáveis. A <strong>ABESO</strong> alerta que a busca pelo corpo „ideal" pode levar a dietas restritivas perigosas e transtornos alimentares.
+              </p>
+              <p>
+                A prevalência de <strong>transtornos alimentares</strong> entre mulheres brasileiras é preocupante: estima-se que <strong>4,7% das mulheres</strong> entre 15 e 29 anos apresentem anorexia ou bulimia, e <strong>10-15%</strong> tenham algum comportamento alimentar de risco (compulsão alimentar, uso de laxantes, jejum prolongado). O <strong>movimento body positive</strong> vem ganhando força no Brasil, promovido por influenciadoras e campanhas do Ministério da Saúde que reforçam que o IMC deve ser usado como indicador de saúde, nunca como parâmetro estético.
+              </p>
+              <p>
+                Em <strong>Portugal</strong>, a relação com a imagem corporal é historicamente mais discreta, embora a influência das redes sociais esteja alterando esse panorama. A <strong>Ordem dos Nutricionistas de Portugal</strong> tem promovido campanhas de <strong>alimentação intuitiva</strong> e rejeição de dietas da moda. A tradição gastronômica portuguesa — com pratos equilibrados como <strong>bacalhau com grão-de-bico, caldo verde e sardinhas grelhadas</strong> — oferece uma base alimentar que, quando mantida, contribui para um IMC equilibrado. A DGS recomenda que as mulheres portuguesas priorizem a dieta mediterrânica como modelo de alimentação sustentável e promotor de saúde.
               </p>
             </div>
           </div>

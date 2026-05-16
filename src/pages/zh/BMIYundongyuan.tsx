@@ -483,6 +483,80 @@ const BMIYundongyuan = () => {
             </p>
           </div>
 
+          {/* China-Specific Olympic & Martial Arts Content */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-red-500/10">
+                <Dumbbell className="w-6 h-6 text-red-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">中国奥运举重、跳水、体操的BMI悖论</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                中国在奥运赛场上的统治地位主要集中在<strong>举重、跳水和体操</strong>三大项目。
+                然而，这三个项目的运动员身体组成截然不同，却都面临BMI评估的困境。
+                <strong>中国举重队</strong>自1984年以来累计获得<strong>38枚奥运金牌</strong>，
+                是中国代表团的最大金牌来源之一。举重运动员如<strong>吕小军</strong>（2020东京奥运81kg级金牌，
+                BMI约27.4）和<strong>谌利军</strong>（67kg级金牌，BMI约25.8），按中国标准WS/T 428-2013
+                均属于"超重"范畴。更大级别的运动员如<strong>李雯雯</strong>（87kg以上级金牌，BMI超过35），
+                按任何标准都被归为"重度肥胖"——但她是世界上最强壮的女性举重运动员之一，体脂率远低于同BMI的普通人群。
+              </p>
+              <p>
+                <strong>中国跳水队</strong>（"梦之队"）则呈现完全相反的情况。跳水运动员如<strong>全红婵</strong>
+                和<strong>陈芋汐</strong>，她们的BMI通常在18-20之间，处于"正常偏低"水平。
+                跳水运动要求极低的体脂率（通常8-12%）和精确的身体控制能力。如果仅看BMI数字，
+                一些年轻跳水运动员可能接近"体重过轻"的边界，但她们的肌肉密度、爆发力和核心稳定性
+                远超普通人群。<strong>中国体操队</strong>面临类似情况——<strong>刘洋</strong>（2020东京吊环金牌）
+                等体操运动员的BMI可能仅为20-22，但他们的上肢力量可以支撑体重进行各种高难度动作。
+                这再次证明<strong>BMI完全无法反映运动员的实际身体素质</strong>。
+              </p>
+              <p>
+                <strong>国家体育总局</strong>针对不同项目制定了完全不同的身体成分评估方案。
+                举重队重点监测<strong>肌肉截面积（通过MRI测量）</strong>和<strong>力量与体重比</strong>；
+                跳水队关注<strong>体脂率、身体控制评分和入水角度</strong>；体操队则以
+                <strong>力量-体重比、柔韧性指数和动作完成质量</strong>为核心指标。这三支队伍
+                没有任何一支将BMI作为运动员选拔或状态监测的参考指标。
+                <strong>国家体育总局科学研究所</strong>（中国体育科学研究院的前身）自2005年起
+                在内部文件中明确指出："BMI不适用于专业运动员的体重状态评估。"
+              </p>
+            </div>
+          </div>
+
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-red-500/10">
+                <Activity className="w-6 h-6 text-red-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">中国武术（武术、功夫）的身体组成传统</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                <strong>中国武术</strong>拥有数千年的历史传承，包含<strong>少林功夫、太极拳、形意拳、
+                八卦掌、咏春拳</strong>等数百个拳种和流派。每种武术对身体组成的要求各不相同：
+                <strong>少林功夫</strong>强调外功训练（铁砂掌、铁头功等），练习者通常拥有高密度肌肉和
+                极低的体脂率，BMI可能在24-28之间；<strong>太极拳</strong>注重内功修炼和柔和运动，
+                练习者的BMI可能处于正常范围（20-24），但他们在平衡、协调和关节健康方面远超同龄人群。
+              </p>
+              <p>
+                <strong>竞技武术（Wushu）</strong>作为国际体育项目，分为<strong>套路</strong>和<strong>散打</strong>
+                两大类。套路运动员注重动作的美感和难度，身体组成偏向瘦型肌肉（BMI 21-24）；
+                散打运动员则按体重级别参赛，身体组成差异巨大——<strong>48kg级</strong>选手与<strong>90kg以上级</strong>
+                选手的BMI可能相差15个单位以上。<strong>中国武术协会</strong>在运动员管理中从不使用BMI
+                作为评估标准，而是采用体重级别达标、体脂率控制和运动表现测试的综合评估体系。
+              </p>
+              <p>
+                值得注意的是，中国传统武术中的<strong>"功夫"概念</strong>本身就超越了西方体育科学中
+                对身体成分的单一关注。<strong>"内三合"（心与意合、意与气合、气与力合）</strong>和
+                <strong>"外三合"（肩与胯合、肘与膝合、手与足合）</strong>的训练理念，关注的是身体的
+                <strong>整体协调性和能量运用效率</strong>，而非体重或脂肪百分比。
+                <strong>武当山道家养生功法</strong>、<strong>峨眉气功</strong>等传统功法的练习者，
+                追求的是<strong>"精气神"的整体平衡</strong>——这是BMI数字永远无法衡量的维度。
+                中国武术的这种整体健康观念，为现代运动科学提供了独特的东方视角，
+                也进一步说明了<strong>BMI在评估身体健康状况时的根本局限性</strong>。
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

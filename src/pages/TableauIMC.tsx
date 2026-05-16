@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header";
-import { Table, Scale, AlertTriangle, CheckCircle2, Globe } from "lucide-react";
+import { Table, Scale, AlertTriangle, CheckCircle2, Globe, BookOpen, Activity, Heart } from "lucide-react";
 import { RelatedPages } from "@/components/RelatedPages";
 
 const TableauIMC = () => {
@@ -318,6 +318,174 @@ const TableauIMC = () => {
             </p>
           </div>
 
+          {/* Origines et histoire de la classification IMC */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-accent/10">
+                <BookOpen className="w-6 h-6 text-accent" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Histoire de la classification IMC : de Quetelet à l'OMS</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                L'<strong>Indice de Masse Corporelle</strong> a été inventé en <strong>1832</strong> par le mathématicien et
+                statisticien belge <strong>Adolphe Quetelet</strong>. À l'origine baptisé « indice de Quetelet », il visait
+                à décrire la corpulence moyenne d'une population, et non à diagnostiquer l'obésité individuelle. Quetelet
+                cherchait à définir « l'homme moyen » statistiquement, un concept révolutionnaire pour l'époque.
+              </p>
+              <p>
+                Ce n'est qu'en <strong>1972</strong> que le physiologiste américain <strong>Ancel Keys</strong> a popularisé
+                l'indice sous le nom de <strong>« Body Mass Index »</strong> dans une étude publiée dans le
+                <em> Journal of Chronic Diseases</em>. Keys a démontré que cette formule simple (poids/taille²) corrélait
+                mieux avec le taux de graisse corporelle que d'autres indices disponibles à l'époque, tout en reconnaissant
+                ses limites pour les individus très musclés ou très sédentaires.
+              </p>
+              <p>
+                L'<strong>Organisation Mondiale de la Santé (OMS)</strong> a officiellement adopté la classification actuelle
+                en <strong>1997</strong>, établissant les seuils que nous utilisons aujourd'hui : maigreur sous 18,5, poids
+                normal entre 18,5 et 24,9, surpoids entre 25 et 29,9, et obésité à partir de 30. En France, la <strong>HAS</strong>
+                et l'<strong>INSERM</strong> ont intégré ces seuils dans leurs recommandations officielles. Les trois classes
+                d'obésité (modérée, sévère et morbide) ont été ajoutées pour affiner la prise en charge médicale, car les
+                risques de comorbidités augmentent de manière exponentielle au-delà d'un IMC de 30.
+              </p>
+            </div>
+          </div>
+
+          {/* Disparités régionales en France */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-warning/10">
+                <Globe className="w-6 h-6 text-warning" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Disparités régionales de l'IMC en France</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                L'<strong>enquête ObÉpi-Roche 2023</strong> révèle des écarts régionaux considérables dans la répartition
+                de l'IMC en France. Ces disparités reflètent des différences socio-économiques, culturelles et alimentaires
+                profondes entre les territoires.
+              </p>
+              <div className="grid md:grid-cols-2 gap-4 mt-4">
+                <div className="bg-destructive/5 rounded-lg p-4 border border-destructive/10">
+                  <h4 className="font-semibold text-foreground mb-2">Régions les plus touchées</h4>
+                  <ul className="space-y-1 text-sm">
+                    <li><strong>Hauts-de-France</strong> : 22,1 % d'obésité — taux le plus élevé de métropole</li>
+                    <li><strong>Grand Est</strong> : 20,1 % — influence de l'alimentation riche (charcuterie, bière)</li>
+                    <li><strong>Normandie</strong> : 19,8 % — cuisine au beurre et à la crème</li>
+                    <li><strong>Outre-mer</strong> : 24-26 % — La Réunion, Guadeloupe, Martinique au-dessus de la moyenne</li>
+                  </ul>
+                </div>
+                <div className="bg-success/5 rounded-lg p-4 border border-success/10">
+                  <h4 className="font-semibold text-foreground mb-2">Régions les moins touchées</h4>
+                  <ul className="space-y-1 text-sm">
+                    <li><strong>Île-de-France</strong> : 14,2 % — population plus jeune, plus active, plus diplômée</li>
+                    <li><strong>Pays de la Loire</strong> : 14,8 % — tradition maraîchère et activité physique</li>
+                    <li><strong>Occitanie</strong> : 15,5 % — influence de la diète méditerranéenne</li>
+                    <li><strong>PACA</strong> : 15,1 % — climat propice à l'activité, cuisine méditerranéenne</li>
+                  </ul>
+                </div>
+              </div>
+              <p>
+                Le facteur socio-économique est déterminant : le taux d'obésité chez les <strong>ouvriers</strong> est de
+                <strong> 22 %</strong>, contre seulement <strong>9 %</strong> chez les <strong>cadres supérieurs</strong>.
+                Les revenus influencent directement la qualité de l'alimentation : les ménages modestes consomment davantage
+                d'<strong>aliments ultra-transformés</strong> (moins chers au kilogramme) et moins de fruits et légumes frais.
+                Le <strong>PNNS 4</strong> cible spécifiquement ces inégalités nutritionnelles à travers des programmes
+                d'aide alimentaire comme les <strong>paniers solidaires</strong> et les <strong>ateliers cuisine</strong>
+                dans les quartiers prioritaires.
+              </p>
+            </div>
+          </div>
+
+          {/* Risques de santé par catégorie */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-destructive/10">
+                <Heart className="w-6 h-6 text-destructive" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Risques de santé concrets pour chaque catégorie d'IMC</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Chaque catégorie du tableau IMC correspond à des risques de santé quantifiés par les études épidémiologiques
+                menées par l'<strong>INSERM</strong>, la <strong>HAS</strong> et l'<strong>OMS</strong>. Voici les risques
+                relatifs associés à chaque tranche d'IMC par rapport au poids normal :
+              </p>
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="bg-warning/5 rounded-lg p-4 border border-warning/10">
+                  <h4 className="font-semibold text-foreground mb-2">Surpoids (IMC 25-29,9)</h4>
+                  <p className="text-sm">
+                    Le risque de <strong>diabète de type 2</strong> est multiplié par <strong>2 à 3</strong> par rapport au poids normal.
+                    Le risque d'<strong>hypertension artérielle</strong> augmente de <strong>40 %</strong>. Le risque de
+                    <strong> stéatose hépatique</strong> (foie gras) est multiplié par 2. Cependant, un surpoids modéré
+                    (IMC 25-27) chez les personnes de plus de 65 ans semble avoir un léger effet protecteur sur la mortalité
+                    globale, un phénomène appelé <strong>« paradoxe de l'obésité »</strong>.
+                  </p>
+                </div>
+                <div className="bg-destructive/5 rounded-lg p-4 border border-destructive/10">
+                  <h4 className="font-semibold text-foreground mb-2">Obésité classe I (IMC 30-34,9)</h4>
+                  <p className="text-sm">
+                    Le risque de <strong>diabète de type 2</strong> est multiplié par <strong>5 à 8</strong>. Le risque de
+                    <strong> maladies cardiovasculaires</strong> (infarctus, AVC) augmente de <strong>70 %</strong>. Le risque
+                    d'<strong>apnée du sommeil</strong> est multiplié par 4. Le risque de <strong>gonarthrose</strong>
+                    (arthrose du genou) est multiplié par 3, en raison de la surcharge mécanique sur les articulations.
+                  </p>
+                </div>
+                <div className="bg-destructive/5 rounded-lg p-4 border border-destructive/10">
+                  <h4 className="font-semibold text-foreground mb-2">Obésité classe II (IMC 35-39,9)</h4>
+                  <p className="text-sm">
+                    Le risque de <strong>diabète de type 2</strong> est multiplié par <strong>10 à 20</strong>. L'espérance
+                    de vie est réduite de <strong>5 à 8 ans</strong> en moyenne. Le risque de <strong>certains cancers</strong>
+                    (endomètre, côlon, rein, sein post-ménopause) augmente significativement. La <strong>chirurgie
+                    bariatrique</strong> peut être envisagée en présence de comorbidités, selon les recommandations de la HAS.
+                  </p>
+                </div>
+                <div className="bg-destructive/10 rounded-lg p-4 border border-destructive/20">
+                  <h4 className="font-semibold text-foreground mb-2">Obésité classe III (IMC ≥ 40)</h4>
+                  <p className="text-sm">
+                    L'espérance de vie est réduite de <strong>8 à 14 ans</strong>. Le risque de mortalité toutes causes
+                    est multiplié par <strong>2,5 à 3</strong>. La qualité de vie est sévèrement impactée : mobilité réduite,
+                    douleurs chroniques, isolement social. La <strong>chirurgie bariatrique</strong> (sleeve, bypass) est
+                    recommandée par la HAS et prise en charge à 100 % par l'Assurance Maladie dans le cadre de l'ALD.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* L'IMC chez les populations spécifiques */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-primary/10">
+                <Activity className="w-6 h-6 text-primary" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Seuils d'IMC adaptés selon l'origine ethnique</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                L'<strong>OMS</strong> et la <strong>Fédération Internationale du Diabète (FID)</strong> reconnaissent
+                que les seuils standard d'IMC ne s'appliquent pas de manière uniforme à toutes les populations. Les
+                personnes d'<strong>origine asiatique</strong> (Chine, Japon, Inde, Asie du Sud-Est) développent des
+                complications métaboliques (diabète, maladies cardiovasculaires) à des IMC plus bas que les populations
+                européennes.
+              </p>
+              <p>
+                Pour ces populations, l'OMS recommande des seuils abaissés : <strong>surpoids dès un IMC de 23</strong>
+                (au lieu de 25) et <strong>obésité dès 27,5</strong> (au lieu de 30). En France, avec une population de plus
+                en plus diverse, ces seuils adaptés prennent une importance croissante. La <strong>HAS</strong> recommande
+                aux médecins traitants de prendre en compte l'origine ethnique du patient dans l'interprétation de l'IMC,
+                notamment pour le dépistage du diabète de type 2 et du syndrome métabolique.
+              </p>
+              <p>
+                À l'inverse, certaines études suggèrent que les populations d'<strong>origine africaine et afro-caribéenne</strong>
+                peuvent tolérer des IMC légèrement plus élevés sans le même niveau de risque métabolique, en raison d'une
+                <strong>masse musculaire et d'une densité osseuse</strong> en moyenne plus importantes. Ces nuances rappellent
+                que le tableau IMC est un outil de dépistage populationnel qui doit toujours être interprété dans le contexte
+                clinique individuel du patient.
+              </p>
+            </div>
+          </div>
+
           {/* SEO */}
           <div className="glass-card p-8">
             <h2 className="text-2xl font-display font-bold mb-6">Comprendre le tableau IMC en France</h2>
@@ -326,17 +494,30 @@ const TableauIMC = () => {
                 Le <strong>tableau IMC OMS</strong> est la référence internationale utilisée par la <strong>HAS</strong>
                 pour classifier la corpulence en France. Ce <strong>tableau d'indice de masse corporelle</strong> définit
                 les seuils de <strong>maigreur</strong>, <strong>poids normal</strong>, <strong>surpoids</strong> et <strong>obésité</strong>.
+                Conçu à l'origine par le statisticien belge Quetelet au XIXe siècle, il a été formalisé par l'OMS en 1997
+                et intégré dans les recommandations de la HAS et de l'INSERM pour le dépistage et la prise en charge
+                de l'obésité en France.
               </p>
               <p>
                 Selon l'enquête <strong>ObÉpi-Roche 2023</strong>, l'IMC moyen des Français est de <strong>25,4</strong>,
                 soit juste au-dessus du seuil de surpoids. <strong>17% des adultes</strong> sont obèses (IMC ≥ 30),
-                un chiffre qui a triplé en 30 ans (6% en 1997). La France reste toutefois en dessous de la moyenne européenne (23%).
+                un chiffre qui a triplé en 30 ans (6% en 1997). La France reste toutefois en dessous de la moyenne
+                européenne (23%), grâce notamment à sa culture alimentaire structurée et au Programme National Nutrition
+                Santé (PNNS).
               </p>
               <p>
                 La <strong>HAS</strong> recommande de compléter le <strong>tableau de correspondance IMC</strong> par
-                la mesure du <strong>tour de taille</strong>. Le <strong>tableau poids taille IMC</strong> ci-dessus
+                la mesure du <strong>tour de taille</strong>, qui évalue la graisse viscérale abdominale, la plus
+                dangereuse pour la santé. Le <strong>tableau poids taille IMC</strong> ci-dessus
                 utilise les tailles moyennes des Français (<strong>1m78</strong> pour les hommes, <strong>1m64</strong> pour les femmes)
-                comme repères.
+                comme repères. Pour les populations d'origine asiatique vivant en France, des seuils abaissés (23 pour
+                le surpoids, 27,5 pour l'obésité) sont recommandés par l'OMS.
+              </p>
+              <p>
+                Les risques associés à chaque catégorie d'IMC sont bien documentés : le <strong>diabète de type 2</strong>,
+                les <strong>maladies cardiovasculaires</strong> et certains <strong>cancers</strong> augmentent de façon
+                progressive avec l'élévation de l'IMC. Pour un bilan complet, consultez votre médecin traitant qui pourra
+                prescrire un bilan biologique et mesurer votre tour de taille en complément de l'IMC.
               </p>
             </div>
           </div>

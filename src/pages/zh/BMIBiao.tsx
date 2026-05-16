@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header";
-import { Table as TableIcon, Scale, AlertTriangle, CheckCircle2, Heart, Activity, Globe } from "lucide-react";
+import { Table as TableIcon, Scale, AlertTriangle, CheckCircle2, Heart, Activity, Globe, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RelatedPages } from "@/components/RelatedPages";
 
@@ -670,6 +670,153 @@ const BMIBiao = () => {
                 </ul>
               </div>
             </div>
+          </div>
+
+          {/* Healthy China 2030 Strategy */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-success/10">
+                <Heart className="w-6 h-6 text-success" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">"健康中国2030"战略与体重管理目标</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4 mb-6">
+              <p>2016年，中共中央、国务院印发了<strong>《"健康中国2030"规划纲要》</strong>，这是中国建设"健康中国"的行动纲领。在体重管理和肥胖防控方面，该战略设定了明确的量化目标：到2030年，将超重肥胖人口的增长速度明显放缓，成人肥胖增长率每年控制在1%以内，居民健康素养水平提升至30%以上。</p>
+              <p>"健康中国2030"战略强调<strong>"预防为主"</strong>的理念，将慢性病防控作为重要工作方向。根据《中国居民营养与慢性病状况报告》数据，中国成人超重率为<strong>34.3%</strong>，肥胖率为<strong>16.4%</strong>（按中国标准BMI≥28），超重和肥胖合计影响超过<strong>6亿人口</strong>。这一庞大的数字使得肥胖防控成为国家健康战略的核心议题之一。</p>
+              <p>在具体措施方面，国家卫生健康委员会联合多部门推出了一系列行动计划。<strong>《国民营养计划（2017-2030年）》</strong>提出了"三减三健"（减盐、减油、减糖，健康口腔、健康体重、健康骨骼）专项行动。全国各地的社区卫生服务中心已将BMI监测纳入居民健康档案管理，为超重和肥胖人群提供个性化的饮食和运动指导。学校也被要求加强学生体质健康监测，将BMI评估作为学生体检的必检项目。</p>
+              <p>国家医保局也开始探索将<strong>肥胖相关的医学营养治疗</strong>纳入基本医疗保险覆盖范围。这意味着未来符合条件的超重/肥胖患者可以获得医保报销的营养干预服务，这将极大地促进肥胖的早期预防和系统化管理。同时，国家体育总局推动的<strong>"全民健身计划"</strong>旨在到2030年实现经常参加体育锻炼的人口比例达到40%以上，人均体育场地面积达到2.5平方米以上。</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="p-4 rounded-xl bg-success/5 border border-success/20">
+                <h4 className="font-bold text-success mb-2">"健康中国2030"关键指标</h4>
+                <ul className="text-sm text-muted-foreground space-y-2">
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-success mt-1 flex-shrink-0" /><span>成人肥胖年增长率控制在1%以内</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-success mt-1 flex-shrink-0" /><span>经常锻炼人口比例达到40%</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-success mt-1 flex-shrink-0" /><span>人均预期寿命从76.3岁提高到79岁</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-success mt-1 flex-shrink-0" /><span>居民健康素养水平达到30%以上</span></li>
+                </ul>
+              </div>
+              <div className="p-4 rounded-xl bg-primary/5 border border-primary/20">
+                <h4 className="font-bold text-primary mb-2">"三减三健"专项行动</h4>
+                <ul className="text-sm text-muted-foreground space-y-2">
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-1 flex-shrink-0" /><span><strong>减盐：</strong>每人每天食盐摄入量降至5克以下</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-1 flex-shrink-0" /><span><strong>减油：</strong>每人每天烹调用油降至25-30克</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-1 flex-shrink-0" /><span><strong>减糖：</strong>每人每天添加糖摄入量降至25克以下</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-1 flex-shrink-0" /><span><strong>健康体重：</strong>BMI控制在18.5-23.9之间</span></li>
+                </ul>
+              </div>
+            </div>
+            <p className="text-xs text-muted-foreground mt-4">数据来源：《"健康中国2030"规划纲要》，国家卫生健康委员会，国民营养计划（2017-2030年）</p>
+          </div>
+
+          {/* Regional Differences in China */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-info/10">
+                <Globe className="w-6 h-6 text-info" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">中国各地区BMI差异：城乡与南北分化</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4 mb-6">
+              <p>中国幅员辽阔，不同地区的<strong>超重肥胖率存在显著差异</strong>，这反映了各地在经济发展水平、饮食文化、气候条件和生活方式等方面的巨大差异。了解这些地区差异对于制定有针对性的BMI管理策略至关重要。</p>
+              <p>从<strong>城乡差异</strong>来看，城市地区的肥胖率（按中国标准BMI≥28）为<strong>18.6%</strong>，高于农村地区的<strong>14.7%</strong>。然而值得关注的是，过去十年间农村地区的肥胖增速<strong>显著快于城市</strong>——农村肥胖率年均增长约8%，而城市约为4%。这一趋势与农村地区经济快速发展、膳食结构西化以及体力劳动减少密切相关。随着电动车和汽车在农村普及、外卖服务向县域和乡镇扩展，农村居民的生活方式正在快速向城市靠拢。</p>
+              <p>从<strong>南北差异</strong>来看，中国北方地区的超重肥胖率明显高于南方。数据显示，北方省份（如河北、山东、辽宁、黑龙江）的成人超重肥胖合计率超过<strong>55%</strong>，而南方省份（如广东、浙江、福建）约为<strong>40-45%</strong>。造成这一差异的主要原因包括：北方冬季漫长寒冷，户外活动减少；北方传统饮食以面食为主，热量密度较高；北方居民饮酒量普遍高于南方；以及南方居民传统上饮食更为清淡，蔬菜水果摄入量更大。</p>
+            </div>
+            <div className="overflow-x-auto mb-6">
+              <table className="w-full text-sm">
+                <thead>
+                  <tr className="border-b-2 border-border">
+                    <th className="text-left py-3 px-4 font-bold">地区</th>
+                    <th className="text-left py-3 px-4 font-bold">超重率（BMI 24-27.9）</th>
+                    <th className="text-left py-3 px-4 font-bold">肥胖率（BMI ≥28）</th>
+                    <th className="text-left py-3 px-4 font-bold">特征</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-border/50 bg-destructive/5">
+                    <td className="py-3 px-4 font-medium">华北（京津冀）</td>
+                    <td className="py-3 px-4 font-mono text-warning">38.5%</td>
+                    <td className="py-3 px-4 font-mono text-destructive">21.3%</td>
+                    <td className="py-3 px-4">经济发达，久坐生活方式</td>
+                  </tr>
+                  <tr className="border-b border-border/50 bg-destructive/5">
+                    <td className="py-3 px-4 font-medium">东北三省</td>
+                    <td className="py-3 px-4 font-mono text-warning">37.8%</td>
+                    <td className="py-3 px-4 font-mono text-destructive">20.5%</td>
+                    <td className="py-3 px-4">冬季漫长，饮食高热量</td>
+                  </tr>
+                  <tr className="border-b border-border/50">
+                    <td className="py-3 px-4 font-medium">华东（长三角）</td>
+                    <td className="py-3 px-4 font-mono text-warning">33.2%</td>
+                    <td className="py-3 px-4 font-mono text-destructive">15.4%</td>
+                    <td className="py-3 px-4">经济发达，健康意识较高</td>
+                  </tr>
+                  <tr className="border-b border-border/50">
+                    <td className="py-3 px-4 font-medium">华南（珠三角）</td>
+                    <td className="py-3 px-4 font-mono text-warning">29.6%</td>
+                    <td className="py-3 px-4 font-mono text-destructive">12.1%</td>
+                    <td className="py-3 px-4">饮食清淡，蔬果丰富</td>
+                  </tr>
+                  <tr className="border-b border-border/50">
+                    <td className="py-3 px-4 font-medium">西南（川渝贵云）</td>
+                    <td className="py-3 px-4 font-mono text-warning">30.8%</td>
+                    <td className="py-3 px-4 font-mono text-destructive">13.7%</td>
+                    <td className="py-3 px-4">多辣饮食，地形多山</td>
+                  </tr>
+                  <tr className="border-b border-border/50">
+                    <td className="py-3 px-4 font-medium">西北（陕甘宁青新）</td>
+                    <td className="py-3 px-4 font-mono text-warning">35.1%</td>
+                    <td className="py-3 px-4 font-mono text-destructive">17.9%</td>
+                    <td className="py-3 px-4">面食为主，蔬果不足</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="p-4 rounded-xl bg-info/5 border border-info/20">
+              <p className="text-sm text-muted-foreground">
+                <strong>城乡趋同趋势：</strong>值得关注的是，中国城乡之间的BMI差距正在缩小。中国CDC的追踪数据显示，2002年城乡超重率之差为12个百分点，到2020年已缩小至不足4个百分点。这说明农村地区的"营养过剩"问题正在快速追赶城市水平，未来农村可能成为肥胖防控的重点战场。
+              </p>
+            </div>
+            <p className="text-xs text-muted-foreground mt-4">数据来源：中国疾病预防控制中心慢性非传染性疾病预防控制中心；《中国居民营养与慢性病状况报告（2020年）》</p>
+          </div>
+
+          {/* Chinese Dietary Guidelines 2022 */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-primary/10">
+                <BookOpen className="w-6 h-6 text-primary" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">《中国居民膳食指南（2022）》与膳食宝塔模型</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4 mb-6">
+              <p>2022年4月，中国营养学会发布了最新版<strong>《中国居民膳食指南（2022）》</strong>，这是自2016年以来的首次修订。新版指南以<strong>"中国居民平衡膳食宝塔"</strong>为核心模型，针对中国人群的饮食特点和营养需求提出了科学合理的膳食建议，是维持健康BMI的重要参考依据。</p>
+              <p>"膳食宝塔"模型将每日食物分为五层，自下而上依次为：<strong>第一层（底层）</strong>——谷薯类，每天摄入200-300克，其中全谷物和杂豆50-150克、薯类50-100克，这是能量的主要来源；<strong>第二层</strong>——蔬菜水果，蔬菜300-500克（深色蔬菜占一半以上）、水果200-350克；<strong>第三层</strong>——畜禽肉40-75克、水产品40-75克、蛋类40-50克；<strong>第四层</strong>——奶及奶制品300-500克、大豆及坚果25-35克；<strong>第五层（塔尖）</strong>——烹调油25-30克、盐不超过5克。</p>
+              <p>新版指南特别强调了以下与BMI管理密切相关的要点：首先，<strong>增加了全谷物和杂豆的推荐摄入量</strong>，因为精白米面的大量摄入是中国居民肥胖和2型糖尿病高发的重要饮食因素。研究表明，每天摄入50克以上全谷物可使2型糖尿病风险降低26%。其次，<strong>首次将"规律进餐"作为核心准则之一</strong>，建议成人每天进食3次正餐，有规律地定时定量进食，合理分配三餐能量比例（早餐25-30%、午餐30-40%、晚餐30-35%），杜绝不吃早餐或暴饮暴食的不良习惯。</p>
+              <p>此外，新版指南还<strong>首次提出了"东方健康膳食模式"的概念</strong>，以浙江、上海、江苏、广东等沿海省份的传统饮食为蓝本，强调清淡少盐、食物多样、多蒸煮少煎炸。流行病学研究表明，遵循这种东方健康膳食模式的人群，其超重肥胖率和心血管疾病发生率显著低于其他饮食模式的人群。该模式被认为是适合中国人的"地中海饮食"替代方案。</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="p-4 rounded-xl bg-primary/5 border border-primary/20">
+                <h4 className="font-bold text-primary mb-2">膳食宝塔每日推荐量</h4>
+                <ul className="text-sm text-muted-foreground space-y-2">
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-1 flex-shrink-0" /><span>谷薯类 200-300克（含全谷物50-150克）</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-1 flex-shrink-0" /><span>蔬菜 300-500克，水果 200-350克</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-1 flex-shrink-0" /><span>肉鱼蛋 120-200克</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-1 flex-shrink-0" /><span>奶制品 300-500克</span></li>
+                  <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-primary mt-1 flex-shrink-0" /><span>烹调油 ≤30克，盐 ≤5克</span></li>
+                </ul>
+              </div>
+              <div className="p-4 rounded-xl bg-warning/5 border border-warning/20">
+                <h4 className="font-bold text-warning mb-2">中国人常见不良饮食习惯</h4>
+                <ul className="text-sm text-muted-foreground space-y-2">
+                  <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-warning mt-1 flex-shrink-0" /><span>精白米面摄入过多，全谷物严重不足</span></li>
+                  <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-warning mt-1 flex-shrink-0" /><span>食用油超标：实际人均42克/天（推荐≤30克）</span></li>
+                  <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-warning mt-1 flex-shrink-0" /><span>食盐超标：实际人均10.5克/天（推荐≤5克）</span></li>
+                  <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-warning mt-1 flex-shrink-0" /><span>含糖饮料消费量十年翻一番</span></li>
+                  <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-warning mt-1 flex-shrink-0" /><span>外卖依赖度高，营养成分不透明</span></li>
+                </ul>
+              </div>
+            </div>
+            <p className="text-xs text-muted-foreground mt-4">数据来源：中国营养学会《中国居民膳食指南（2022）》；中国居民营养与健康状况监测</p>
           </div>
 
           {/* SEO Content */}

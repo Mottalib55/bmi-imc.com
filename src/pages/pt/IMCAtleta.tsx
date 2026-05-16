@@ -296,6 +296,57 @@ const IMCAtleta = () => {
             </div>
           </div>
 
+          {/* CONFEF/CREF, COB and Brazilian combat sports body composition */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-orange-500/10">
+                <Scale className="w-6 h-6 text-orange-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Protocolos brasileiros de composicao corporal: CONFEF, CREF e COB</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                O <strong>CONFEF (Conselho Federal de Educacao Fisica)</strong> e os <strong>CREFs regionais</strong> regulamentam a atuacao dos profissionais de educacao fisica no Brasil e estabelecem protocolos de avaliacao antropometrica que vao muito alem do simples calculo do IMC. Esses protocolos incluem medicao de dobras cutaneas (metodo de Jackson-Pollock adaptado para a populacao brasileira), bioimpedancia eletrica e circunferencias corporais, oferecendo uma visao detalhada da composicao corporal do atleta.
+              </p>
+              <p>
+                O <strong>COB (Comite Olimpico do Brasil)</strong> utiliza centros de excelencia como o <strong>NAR (Nucleo de Alto Rendimento Esportivo)</strong> em Sao Paulo e o <strong>Centro de Treinamento Olimpico</strong> na Barra da Tijuca, Rio de Janeiro, onde atletas da selecao olimpica passam por avaliacoes de composicao corporal com tecnologia DEXA (absorcao de raios-X de dupla energia) e pletismografia por deslocamento de ar (BOD POD). Nesses centros, o IMC e considerado apenas um dado inicial, nunca um indicador definitivo da aptidao fisica do atleta.
+              </p>
+              <p>
+                O <strong>paradoxo do IMC no futebol brasileiro</strong> e particularmente revelador. Ronaldo Fenomeno, durante o auge de sua carreira no Barcelona e na Selecao Brasileira, mantinha um IMC entre 24 e 26, classificado como peso normal ou limiar de sobrepeso. No entanto, sua composicao corporal era de atleta de elite, com explosao muscular nas coxas que a formula do IMC interpretava como excesso de peso. Adriano Imperador, com IMC frequentemente acima de 27 durante a fase no Flamengo, era outro exemplo classico de como o indice falha ao avaliar jogadores com grande massa muscular.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mt-6">
+              <div className="bg-muted/30 rounded-xl p-6">
+                <h4 className="font-bold mb-3 text-orange-500">Capoeira e composicao corporal</h4>
+                <p className="text-sm text-muted-foreground">
+                  A capoeira, reconhecida como <strong>Patrimonio Cultural Imaterial da Humanidade pela UNESCO</strong> desde 2014, desenvolve um condicionamento funcional unico que combina flexibilidade, explosao, resistencia e agilidade. Mestres de capoeira Angola e Regional apresentam biotipos distintos: a Angola privilegia movimentos baixos e rasteiros que exigem grande flexibilidade de quadril, enquanto a Regional incorpora golpes mais altos e acrobacias. O IMC de praticantes avancados de capoeira geralmente varia entre 21 e 26, mas essa faixa nao captura a riqueza da preparacao fisica envolvida. O <strong>CONFEF reconhece a capoeira como atividade fisica</strong> regulamentada, e grupos como Abada-Capoeira e Capoeira Brasil realizam avaliacoes fisicas periodicas de seus membros utilizando protocolos de composicao corporal muito mais completos que o IMC.
+                </p>
+              </div>
+              <div className="bg-muted/30 rounded-xl p-6">
+                <h4 className="font-bold mb-3 text-orange-500">Jiu-Jitsu Brasileiro: categorias de peso e IMC</h4>
+                <p className="text-sm text-muted-foreground">
+                  A <strong>CBJJ (Confederacao Brasileira de Jiu-Jitsu)</strong> e a <strong>IBJJF (International Brazilian Jiu-Jitsu Federation)</strong> organizam competicoes em categorias de peso que vao do galo (ate 57,5 kg) ao pesadissimo (acima de 100,5 kg). Essa amplitude demonstra a diversidade de biotipos no esporte. Um competidor da categoria meio-pesado (ate 88,3 kg) com 1m75 de altura apresenta um IMC de 28,8, classificado como sobrepeso pela OMS, mesmo sendo um atleta de alto rendimento com percentual de gordura inferior a 12%. As academias filiadas ao CREF frequentemente oferecem avaliacao de composicao corporal antes de competicoes, utilizando adipometros e bioimpedancia para orientar o corte de peso de forma segura, evitando a desidratacao extrema que o simples controle pelo IMC poderia mascarar.
+                </p>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6 mt-6">
+              <div className="bg-muted/30 rounded-xl p-6">
+                <h4 className="font-bold mb-3 text-orange-500">UFC Brasil e o corte de peso</h4>
+                <p className="text-sm text-muted-foreground">
+                  O Brasil e o segundo pais com mais lutadores na historia do UFC, e a pratica de <strong>corte de peso (weight cut)</strong> torna o IMC completamente irrelevante nesse contexto. Alex Pereira, campeao do UFC em duas categorias, compete com peso oficial de 93 kg (meio-pesado) mas treina com mais de 105 kg, o que representa uma variacao de IMC de mais de 4 pontos entre treinos e pesagem. Charles Oliveira, ex-campeao dos leves, fazia cortes de peso de mais de 10 kg antes das lutas. A <strong>CABMMA (Comissao Atletica Brasileira de MMA)</strong> monitora a saude dos lutadores e exige exames medicos pre-luta que incluem avaliacoes muito alem do IMC, como funcao renal, hidratacao e perfil cardiaco.
+                </p>
+              </div>
+              <div className="bg-muted/30 rounded-xl p-6">
+                <h4 className="font-bold mb-3 text-orange-500">Cultura fitness em Portugal e a influencia de Cristiano Ronaldo</h4>
+                <p className="text-sm text-muted-foreground">
+                  Em Portugal, a <strong>Federacao Portuguesa de Culturismo e Fitness (FPCF)</strong> e o <strong>IPDJ (Instituto Portugues do Desporto e Juventude)</strong> promovem avaliacoes de composicao corporal para atletas de todas as modalidades. O impacto cultural de Cristiano Ronaldo na percepcao portuguesa sobre condicionamento fisico e inegavel: sua rotina de treino e composicao corporal (cerca de 7% de gordura, IMC de 24,3) tornaram-se referencia popular. A <strong>FMH (Faculdade de Motricidade Humana)</strong> da Universidade de Lisboa e referencia em pesquisa sobre composicao corporal de atletas portugueses, utilizando protocolos ISAK (International Society for the Advancement of Kinanthropometry) que complementam as limitacoes do IMC.
+                </p>
+              </div>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

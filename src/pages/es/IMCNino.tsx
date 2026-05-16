@@ -313,6 +313,27 @@ const IMCNino = () => {
             </div>
           </div>
 
+          {/* ENSANUT, NAOS and tienditas */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-destructive/10">
+                <AlertTriangle className="w-6 h-6 text-destructive" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">ENSANUT, estrategia NAOS y el problema de las "tienditas" escolares</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Los datos de la <strong>ENSANUT 2022</strong> (Encuesta Nacional de Salud y Nutrici&oacute;n de M&eacute;xico) confirman que el <strong>34% de los ni&ntilde;os mexicanos entre 5 y 11 a&ntilde;os</strong> presentan sobrepeso u obesidad, una cifra que posiciona a M&eacute;xico como uno de los pa&iacute;ses con mayor prevalencia de obesidad infantil del mundo. La ENSANUT detalla que en zonas urbanas del norte de M&eacute;xico (Sonora, Chihuahua, Nuevo Le&oacute;n), la prevalencia supera el 40%, mientras que en comunidades ind&iacute;genas rurales del sur (Chiapas, Oaxaca) persiste la desnutrici&oacute;n cr&oacute;nica. Esta <strong>doble carga nutricional</strong> convierte al sistema de salud mexicano en un caso &uacute;nico que la <strong>OPS/PAHO</strong> estudia como modelo de la transici&oacute;n epidemiol&oacute;gica latinoamericana.
+              </p>
+              <p>
+                En <strong>Espa&ntilde;a</strong>, la <strong>Estrategia NAOS</strong> (Nutrici&oacute;n, Actividad F&iacute;sica y Prevenci&oacute;n de la Obesidad), coordinada por la <strong>AESAN</strong> (Agencia Espa&ntilde;ola de Seguridad Alimentaria y Nutrici&oacute;n) desde 2005, ha sido reconocida por la OMS como una de las pol&iacute;ticas m&aacute;s completas de prevenci&oacute;n de obesidad infantil en Europa. La estrategia NAOS incluye el <strong>C&oacute;digo PAOS</strong> de autorregulaci&oacute;n publicitaria que limita la promoci&oacute;n de alimentos no saludables dirigida a menores de 15 a&ntilde;os, programas de actividad f&iacute;sica escolar obligatoria y la supervisi&oacute;n de men&uacute;s de comedores escolares por dietistas-nutricionistas colegiados. El <strong>estudio ALADINO 2023</strong> muestra que estas medidas han logrado estabilizar la prevalencia de obesidad infantil en Espa&ntilde;a en torno al 17%, aunque persisten desigualdades significativas entre comunidades aut&oacute;nomas (Canarias y Andaluc&iacute;a registran las tasas m&aacute;s altas).
+              </p>
+              <p>
+                Uno de los factores m&aacute;s cr&iacute;ticos en la obesidad infantil mexicana y latinoamericana es el fen&oacute;meno de las <strong>"tienditas" escolares</strong>: peque&ntilde;os puestos de venta dentro o en los alrededores de las escuelas que ofrecen predominantemente frituras, dulces, refrescos y productos ultraprocesados a precios muy accesibles. Un estudio del <strong>INSP</strong> (Instituto Nacional de Salud P&uacute;blica de M&eacute;xico) document&oacute; que el 78% de los productos vendidos en tienditas escolares mexicanas superaban los l&iacute;mites de az&uacute;car, sodio o grasas saturadas establecidos por la <strong>NOM-043-SSA2</strong>. Aunque M&eacute;xico prohibi&oacute; la venta de comida chatarra en escuelas en 2020, la implementaci&oacute;n sigue siendo desigual, especialmente en &aacute;reas rurales. Programas de <strong>comedores escolares</strong> como el DIF (Desarrollo Integral de la Familia) en M&eacute;xico, el PAE (Programa de Alimentaci&oacute;n Escolar) en Colombia y el PNAE en Brasil ofrecen alternativas nutritivas, pero su cobertura a&uacute;n no alcanza a todas las comunidades vulnerables de la regi&oacute;n.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

@@ -249,6 +249,144 @@ const IMCSportif = () => {
             </div>
           </div>
 
+          {/* Nutrition sportive en France */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-orange-500/10">
+                <Scale className="w-6 h-6 text-orange-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Nutrition sportive et composition corporelle en France</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                La <strong>nutrition sportive</strong> est un domaine encadré en France par l'<strong>ANSES</strong> et la
+                <strong> norme AFNOR NF V94-001</strong> qui définit les exigences pour les compléments alimentaires destinés aux
+                sportifs. L'INSEP dispose d'un département de nutrition sportive dirigé par des médecins et diététiciens spécialisés
+                qui accompagnent les athlètes de haut niveau dans l'optimisation de leur composition corporelle, bien au-delà du
+                simple calcul d'IMC.
+              </p>
+              <p>
+                Les besoins énergétiques d'un sportif sont radicalement différents de ceux d'un sédentaire. Un rugbyman
+                du <strong>Top 14</strong> consomme entre <strong>4 000 et 6 000 kcal/jour</strong> selon sa position, tandis qu'un
+                homme sédentaire de même corpulence n'a besoin que de 2 000 à 2 500 kcal. Cette différence métabolique rend l'IMC
+                encore plus inadapté : le sportif a un poids élevé mais un taux de masse grasse faible, grâce à une alimentation
+                riche en protéines (1,5 à 2,2 g/kg/jour selon les recommandations de la <strong>Société Française de Nutrition du Sport</strong>)
+                et un entraînement intensif.
+              </p>
+              <p>
+                En France, la <strong>lutte antidopage</strong> est gérée par l'<strong>AFLD</strong> (Agence Française de Lutte
+                contre le Dopage). Le FFMI (Fat-Free Mass Index) est aussi utilisé comme indicateur indirect de dopage :
+                un FFMI supérieur à <strong>25-26</strong> est considéré comme difficilement atteignable sans substances
+                interdites chez un homme, selon les études de Kouri et al. Les contrôles de l'AFLD incluent parfois des
+                mesures de composition corporelle par impédancemétrie pour détecter des changements suspects de masse musculaire.
+              </p>
+              <p>
+                Pour les sportifs amateurs en France, les <strong>Maisons Sport-Santé</strong> (plus de 500 labellisées par
+                le ministère des Sports) proposent des bilans de condition physique incluant l'évaluation de la composition
+                corporelle par impédancemétrie, bien plus pertinente que le simple IMC. Ces structures sont accessibles
+                gratuitement et constituent un premier pas vers un suivi adapté à la pratique sportive.
+              </p>
+            </div>
+          </div>
+
+          {/* IMC des sportifs professionnels français */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-blue-500/10">
+                <Globe className="w-6 h-6 text-blue-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">L'IMC des sportifs professionnels français</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                L'analyse de l'<strong>IMC des sportifs professionnels français</strong> révèle des paradoxes fascinants qui illustrent
+                parfaitement les limites de cet indicateur. En <strong>rugby</strong>, discipline phare du sport français, les joueurs
+                du <strong>Top 14</strong> présentent des IMC qui les classifieraient systématiquement en surpoids ou en obésité.
+                Au <strong>Stade Toulousain</strong>, quadruple champion d'Europe, les piliers et deuxièmes lignes affichent couramment
+                des IMC compris entre <strong>28 et 35</strong>, tandis que les trois-quarts se situent entre 26 et 29. Pourtant, les
+                données de l'<strong>INSEP</strong> (Institut National du Sport, de l'Expertise et de la Performance) montrent que ces
+                athlètes possèdent un taux de masse grasse de seulement <strong>12 à 18 %</strong>, bien en dessous de la moyenne
+                masculine française de 23 %. On parle alors de <strong>« fausse obésité »</strong> chez le rugbyman : l'IMC élevé
+                reflète uniquement la masse musculaire développée par des années d'entraînement en force et de préparation physique
+                spécifique. Un pilier international français pesant 120 kg pour 1m85 (IMC 35) possède en réalité une composition
+                corporelle radicalement différente d'un homme sédentaire de même IMC, dont la masse grasse dépasse souvent 30 %.
+              </p>
+              <p>
+                À l'opposé du spectre, le <strong>cyclisme professionnel français</strong> illustre le phénomène inverse. Les coureurs
+                du <strong>Tour de France</strong> présentent des IMC remarquablement bas, entre <strong>19 et 21</strong> pour les grimpeurs.
+                Un coureur comme Thibaut Pinot affichait un IMC proche de 20, considéré comme la limite basse de la « normalité ».
+                Les sprinteurs français comme Arnaud Démare se situent légèrement au-dessus, autour de 22-23, en raison de leur masse
+                musculaire au niveau des cuisses. L'INSEP a documenté que les cyclistes professionnels français maintiennent un taux de
+                masse grasse entre <strong>5 et 10 %</strong> durant la saison de compétition, un niveau qui serait considéré comme
+                dangereux pour la population générale mais qui est optimal pour la performance aérobie. Cette donnée montre qu'un IMC
+                « normal » peut masquer un état de restriction énergétique préoccupant.
+              </p>
+              <p>
+                En <strong>football</strong>, les joueurs de <strong>Ligue 1</strong> présentent généralement des IMC entre 22 et 25,
+                souvent classés dans la zone « normale ». C'est l'un des rares sports de haut niveau où l'IMC reste relativement
+                pertinent, en raison de l'équilibre entre endurance et puissance requis par la discipline. Néanmoins, certains
+                défenseurs centraux et attaquants puissants dépassent 25 d'IMC tout en possédant un taux de masse grasse inférieur
+                à 10 %. En <strong>judo</strong> et dans les <strong>sports de combat</strong>, la situation est complexe car les
+                athlètes sont classés par <strong>catégories de poids</strong> et non par IMC. La France, première nation mondiale en
+                judo olympique avec plus de <strong>50 médailles olympiques</strong>, dispose de judokas dont l'IMC varie considérablement
+                selon la catégorie : de 22-23 pour les légers (moins de 66 kg) à plus de 35 pour les super-lourds. Le concept même de
+                « poids de forme » dans ces sports est déterminé par la catégorie de compétition et non par un IMC théorique. Les
+                données de l'INSEP confirment que le rapport puissance/poids et la composition corporelle mesurée par DXA sont les
+                seuls indicateurs véritablement pertinents pour ces athlètes.
+              </p>
+            </div>
+          </div>
+
+          {/* Suivi médical des sportifs en France */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-green-500/10">
+                <Activity className="w-6 h-6 text-green-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Le suivi médical des sportifs en France</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Le système français de <strong>suivi médical des sportifs</strong> est l'un des plus structurés au monde. Tout sportif
+                licencié doit obtenir un <strong>certificat médical d'aptitude</strong> (ou certificat de non contre-indication à la
+                pratique sportive), délivré par un <strong>médecin du sport</strong> formé à évaluer la condition physique au-delà du
+                simple IMC. Depuis la réforme de 2016, ce certificat est valable trois ans pour les sports sans risque particulier,
+                avec un questionnaire de santé annuel. Pour les sportifs de <strong>haut niveau inscrits sur liste ministérielle</strong>,
+                le suivi est bien plus approfondi : l'INSEP met en place un <strong>suivi longitudinal</strong> comprenant au minimum
+                deux bilans médicaux complets par an. Ces bilans incluent systématiquement une <strong>évaluation de la composition
+                corporelle par DXA</strong> (absorptiométrie biphotonique à rayons X), disponible dans les <strong>centres de médecine
+                du sport (CMS)</strong> agréés sur tout le territoire français. La DXA fournit une cartographie précise de la répartition
+                de la masse grasse, de la masse maigre et de la densité osseuse, rendant l'IMC totalement obsolète dans ce contexte.
+              </p>
+              <p>
+                Les <strong>fédérations sportives françaises</strong> ont progressivement abandonné l'IMC comme indicateur de suivi au
+                profit de la <strong>composition corporelle segmentaire</strong>. La Fédération Française de Rugby (FFR), la Fédération
+                Française de Judo (FFJDA) et la Fédération Française d'Athlétisme (FFA) exigent toutes un suivi régulier de la masse
+                grasse et de la masse musculaire de leurs athlètes en pôle. Les <strong>CREPS</strong> (Centres de Ressources,
+                d'Expertise et de Performance Sportive) disposent d'équipements d'impédancemétrie bioélectrique multi-fréquence,
+                permettant un suivi mensuel de la composition corporelle sans irradiation. Les recommandations de la <strong>Société
+                Française de Nutrition (SFN)</strong> pour les sportifs insistent sur le fait que l'IMC ne doit jamais être utilisé
+                comme unique critère d'évaluation nutritionnelle chez l'athlète. La SFN préconise un bilan nutritionnel complet
+                incluant le calcul des apports énergétiques, le dosage des micronutriments (fer, vitamine D, calcium) et l'évaluation
+                de la disponibilité énergétique relative (RED-S), un syndrome qui touche particulièrement les sportifs d'endurance.
+              </p>
+              <p>
+                Un enjeu majeur du suivi médical sportif en France concerne les <strong>troubles du comportement alimentaire (TCA)</strong>
+                dans certaines disciplines. Les sports dits <strong>« à catégorie de poids »</strong> (judo, boxe, lutte, haltérophilie)
+                et les sports <strong>« esthétiques »</strong> (danse classique, gymnastique artistique, patinage artistique, natation
+                synchronisée) présentent une prévalence de TCA significativement plus élevée que la population générale. En France,
+                des études menées par l'INSEP en collaboration avec les services de psychiatrie de l'hôpital de la Pitié-Salpêtrière
+                ont montré que jusqu'à <strong>20 % des athlètes féminines</strong> dans ces disciplines présentaient des comportements
+                alimentaires à risque. L'obsession de maintenir un IMC bas pour la performance ou l'esthétique peut conduire à
+                l'<strong>anorexie athlétique</strong>, à la <strong>boulimie</strong> ou au <strong>syndrome RED-S</strong> (Relative
+                Energy Deficiency in Sport). Les médecins du sport français sont désormais formés à dépister ces troubles grâce à des
+                questionnaires validés (EAT-26, SCOFF) et à un suivi de la courbe de poids rapportée à la performance, bien plus
+                pertinent qu'un simple seuil d'IMC. La prise en charge pluridisciplinaire associant médecin du sport, diététicien
+                spécialisé en nutrition du sport et psychologue est aujourd'hui la norme dans les structures de haut niveau françaises.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

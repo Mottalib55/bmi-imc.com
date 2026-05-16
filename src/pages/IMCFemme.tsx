@@ -311,6 +311,78 @@ const IMCFemme = () => {
             </div>
           </div>
 
+          {/* Troubles alimentaires et image corporelle */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-purple-500/10">
+                <Heart className="w-6 h-6 text-purple-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Image corporelle et troubles alimentaires chez la femme</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                En France, les <strong>troubles du comportement alimentaire (TCA)</strong> touchent environ
+                <strong> 900 000 personnes</strong>, dont <strong>90 % de femmes</strong> (INSERM). L'<strong>anorexie
+                mentale</strong> concerne 1 à 2 % des femmes françaises, principalement entre 15 et 25 ans, tandis que
+                la <strong>boulimie</strong> touche 3 à 5 % des adolescentes et jeunes adultes. Ces troubles sont la
+                <strong>deuxième cause de mortalité</strong> chez les 15-24 ans après les accidents de la route.
+              </p>
+              <p>
+                La pression sociale sur le poids féminin reste intense en France malgré les avancées législatives.
+                La <strong>loi de 2017</strong> interdisant les mannequins excessivement maigres (IMC minimum exigé,
+                certificat médical obligatoire) et imposant la mention <strong>« photographie retouchée »</strong> sur
+                les images publicitaires modifiées a été un premier pas. Cependant, les <strong>réseaux sociaux</strong>
+                amplifient les comparaisons et la promotion de corps irréalistes, ce qui aggrave les troubles de
+                l'image corporelle chez les jeunes femmes.
+              </p>
+              <p>
+                L'<strong>ANSES</strong> (Agence nationale de sécurité sanitaire) alerte régulièrement sur les dangers
+                des <strong>régimes amaigrissants restrictifs</strong>. Son rapport de référence souligne que <strong>80 %
+                des régimes</strong> aboutissent à une reprise de poids dans les 2 ans (effet yo-yo), et que les
+                régimes très hypocaloriques (&lt; 1 200 kcal/jour) entraînent des <strong>carences en fer, calcium
+                et vitamine D</strong>, des nutriments essentiels pour la santé osseuse et la prévention de l'anémie
+                chez la femme. La démarche recommandée est un <strong>rééquilibrage alimentaire progressif</strong>
+                accompagné par un professionnel de santé (diététicien-nutritionniste ou médecin nutritionniste).
+              </p>
+            </div>
+          </div>
+
+          {/* Nutrition féminine en France */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-success/10">
+                <Activity className="w-6 h-6 text-success" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Nutrition et besoins spécifiques de la femme française</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Selon l'étude <strong>INCA 3</strong> de l'ANSES, les femmes françaises consomment en moyenne
+                <strong> 1 800 kcal par jour</strong>. Le <strong>PNNS 4</strong> recommande un apport de
+                <strong> 1 800 à 2 200 kcal</strong> selon le niveau d'activité physique. Cependant, plusieurs
+                carences nutritionnelles sont fréquentes chez les Françaises et influencent directement le
+                métabolisme et la gestion du poids.
+              </p>
+              <p>
+                Le <strong>fer</strong> est le nutriment le plus déficitaire : <strong>25 % des femmes en âge
+                de procréer</strong> sont carencées en fer en France (étude ESTEBAN, Santé Publique France).
+                Cette carence provoque fatigue, baisse des performances physiques et ralentissement du métabolisme.
+                La <strong>vitamine D</strong> est également insuffisante chez <strong>40 % des Françaises</strong>,
+                ce qui affecte la santé osseuse et pourrait favoriser la prise de poids selon des études récentes
+                de l'INSERM. Le <strong>calcium</strong> est souvent insuffisant après 50 ans, augmentant le risque
+                d'ostéoporose, une pathologie qui touche <strong>39 % des femmes de plus de 65 ans</strong> en France.
+              </p>
+              <p>
+                Les recommandations du PNNS pour les femmes incluent : des <strong>produits laitiers</strong> (2 par jour
+                pour le calcium), des <strong>légumineuses</strong> et de la <strong>viande rouge</strong> modérée (pour
+                le fer), du <strong>poisson gras</strong> (oméga-3, vitamine D), et au moins <strong>400 µg d'acide
+                folique par jour</strong> en période de projet de grossesse. Le <strong>Nutri-Score</strong> aide à
+                identifier les aliments les plus nutritifs, et les consultations chez un <strong>diététicien-nutritionniste</strong>
+                sont recommandées pour établir un plan alimentaire personnalisé tenant compte des besoins hormonaux spécifiques.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content enrichi */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

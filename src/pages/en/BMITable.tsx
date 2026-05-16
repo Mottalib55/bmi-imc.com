@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header";
-import { Table, Scale, AlertTriangle, CheckCircle2, Globe } from "lucide-react";
+import { Table, Scale, AlertTriangle, CheckCircle2, Globe, MapPin } from "lucide-react";
 import { RelatedPages } from "@/components/RelatedPages";
 
 const BMITable = () => {
@@ -380,6 +380,44 @@ const BMITable = () => {
             <div className="mt-6 p-4 rounded-lg bg-muted/30">
               <p className="text-sm text-muted-foreground">
                 <strong>Why the difference?</strong> The US uses National Institutes of Health (NIH) guidelines from 1998, which set the male waist threshold at 40 inches (102 cm). The WHO and International Diabetes Federation (IDF) later adopted a stricter 37-inch (94 cm) threshold for men based on European data. Both agree that waist circumference, combined with BMI, provides a better predictor of cardiovascular and metabolic disease risk than BMI alone.
+              </p>
+            </div>
+          </div>
+
+          {/* State-by-State Obesity Disparities */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-primary/10">
+                <MapPin className="w-6 h-6 text-primary" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">State-by-State Obesity Disparities in the US</h2>
+            </div>
+            <p className="text-muted-foreground mb-6">
+              Obesity prevalence varies dramatically across the United States, reflecting deep structural differences in income, food access, infrastructure, and demographics. According to CDC Behavioral Risk Factor Surveillance System (BRFSS) data, <strong>Mississippi holds the highest adult obesity rate at 40.8%</strong>, while <strong>Colorado reports the lowest at 25.1%</strong> — a gap of nearly 16 percentage points between the two states.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="p-6 rounded-xl bg-destructive/5 border border-destructive/20">
+                <h4 className="font-bold text-lg mb-3">The Southern "Stroke Belt"</h4>
+                <p className="text-sm text-muted-foreground">
+                  Southern states consistently rank among the highest for obesity prevalence. States like <strong>West Virginia, Alabama, Louisiana, and Arkansas</strong> all exceed 38% adult obesity. This region, historically called the <strong>"Stroke Belt"</strong> by the CDC, faces compounding factors: lower household incomes, fewer supermarkets per capita, higher rates of food insecurity, and limited access to recreational facilities. These environmental and socioeconomic conditions make healthy weight management significantly more challenging for residents.
+                </p>
+              </div>
+              <div className="p-6 rounded-xl bg-info/5 border border-info/20">
+                <h4 className="font-bold text-lg mb-3">Rural vs. Urban Divide</h4>
+                <p className="text-sm text-muted-foreground">
+                  CDC data reveals a persistent <strong>rural-urban gap of 6.2 percentage points</strong> in adult obesity rates. Rural counties average roughly 36.5% obesity prevalence compared to about 30.3% in metropolitan areas. Contributing factors include longer distances to grocery stores and healthcare facilities, fewer walkable neighborhoods, and reduced access to fitness programs. The USDA has classified many rural areas as "food deserts," where residents must travel over 10 miles to reach a full-service supermarket.
+                </p>
+              </div>
+            </div>
+            <div className="p-6 rounded-xl bg-warning/5 border border-warning/20 mb-6">
+              <h4 className="font-bold text-lg mb-3">Racial and Ethnic Disparities</h4>
+              <p className="text-sm text-muted-foreground">
+                Obesity affects racial and ethnic groups at significantly different rates in the US. CDC survey data shows that <strong>non-Hispanic Black adults have the highest prevalence at 49.9%</strong>, followed by <strong>Hispanic adults at 45.6%</strong> and <strong>non-Hispanic White adults at 41.4%</strong>. These disparities are driven not by genetics but by systemic inequities — including unequal access to affordable, nutritious food, disparities in healthcare coverage, neighborhood safety concerns that limit physical activity, and the lasting effects of residential segregation on community health infrastructure.
+              </p>
+            </div>
+            <div className="p-4 rounded-lg bg-muted/30">
+              <p className="text-sm text-muted-foreground">
+                <strong>Poverty and obesity correlation:</strong> Research published by the CDC consistently demonstrates a strong association between state-level poverty rates and obesity prevalence. States with poverty rates above 20% tend to have obesity rates 5 to 8 percentage points higher than wealthier states. Limited financial resources reduce access to fresh produce, gym memberships, and preventive healthcare — creating a cycle where economic disadvantage directly fuels higher BMI across entire communities.
               </p>
             </div>
           </div>

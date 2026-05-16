@@ -394,6 +394,27 @@ const InterpretacionIMC = () => {
             </div>
           </div>
 
+          {/* IMSS/ISSSTE pathways, SNS coverage, weight stigma */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-warning/10">
+                <Globe className="w-6 h-6 text-warning" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Rutas de atencion a la obesidad: IMSS, ISSSTE y el SNS espanol</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                En <strong>Mexico</strong>, el <strong>IMSS</strong> (Instituto Mexicano del Seguro Social) ha desarrollado la <strong>Guia de Practica Clinica para el Manejo del Sobrepeso y Obesidad</strong>, que establece un protocolo escalonado basado en el IMC del paciente. Cuando un derechohabiente presenta un IMC superior a 30 en su consulta de medicina familiar, el medico de primer contacto activa un protocolo que incluye: evaluacion nutricional con el servicio de dietologia, analisis de laboratorio metabolico completo (glucosa, HbA1c, perfil lipidico, funcion hepatica), derivacion a endocrinologia si existen comorbilidades, y en casos de IMC superior a 40, evaluacion para cirugia bariatrica en hospitales de tercer nivel como el <strong>Centro Medico Nacional Siglo XXI</strong> o el <strong>Hospital de Especialidades de La Raza</strong>. El <strong>ISSSTE</strong> (Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado) ofrece una ruta paralela para los empleados del gobierno federal, con clinicas de obesidad especializadas en los principales hospitales regionales.
+              </p>
+              <p>
+                El <strong>SNS espanol</strong> (Sistema Nacional de Salud) aborda el manejo del peso de forma distinta. El medico de atencion primaria utiliza el IMC como herramienta de cribado dentro del <strong>Programa de Actividades Preventivas y de Promocion de la Salud (PAPPS)</strong> de la <strong>semFYC</strong> (Sociedad Espanola de Medicina de Familia y Comunitaria). Los pacientes con IMC superior a 30 reciben consejo dietético estructurado, prescripcion de actividad fisica y seguimiento trimestral. La derivacion a endocrinologia hospitalaria se reserva para casos de IMC superior a 35 con comorbilidades o IMC superior a 40. La <strong>SEEN</strong> (Sociedad Espanola de Endocrinologia y Nutricion) ha publicado guias especificas que incluyen la posible prescripcion de farmacos antiobesidad (como liraglutida o semaglutida) dentro del SNS, aunque la disponibilidad varia segun la comunidad autonoma.
+              </p>
+              <p>
+                Un aspecto frecuentemente ignorado en la interpretacion del IMC en America Latina es el <strong>estigma de peso</strong> (gordofobia). Investigaciones del <strong>INSP</strong> (Instituto Nacional de Salud Publica de Mexico) y de universidades espanolas como la <strong>Universidad de Barcelona</strong> documentan que el estigma de peso en culturas hispanohablantes tiene matices especificos. En Mexico y Centroamerica, expresiones como "llenito/a" o "gordito/a" pueden funcionar como terminos afectuosos que normalizan el sobrepeso, dificultando la percepcion del riesgo. En Espana, el estigma opera de forma diferente, con una presion estetica que puede llevar al subdiagnostico de trastornos alimentarios en hombres. La <strong>ACAB</strong> (Asociacion contra la Anorexia y la Bulimia, Espana) y la <strong>Fundacion Ellen West</strong> (Mexico) alertan que interpretar el IMC sin sensibilidad cultural puede reforzar el estigma de peso o, por el contrario, minimizar riesgos reales en poblaciones donde el sobrepeso esta culturalmente aceptado.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <h2 className="text-2xl font-display font-bold mb-6">Comprender la interpretacion del IMC en el mundo hispanohablante</h2>

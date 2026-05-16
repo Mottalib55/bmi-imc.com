@@ -336,6 +336,39 @@ const InterpretationIMC = () => {
             </div>
           </div>
 
+          {/* Stigmatisation pondérale et santé mentale */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-warning/10">
+                <AlertTriangle className="w-6 h-6 text-warning" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">IMC, stigmatisation pondérale et santé mentale</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Interpréter un résultat d'IMC ne doit jamais se réduire à un jugement. La <strong>grossophobie</strong>
+                (discrimination liée au poids) est un phénomène documenté en France par le <strong>Défenseur des Droits</strong>
+                et le <strong>Collectif National des Associations d'Obèses</strong> (CNAO). Selon une étude de l'IFOP (2021),
+                <strong>62% des personnes obèses</strong> en France déclarent avoir subi des discriminations liées à leur poids,
+                que ce soit au travail, chez le médecin ou dans les transports.
+              </p>
+              <p>
+                La <strong>HAS</strong> rappelle dans ses recommandations de 2022 que la prise en charge de l'obésité doit
+                inclure une dimension psychologique. Un IMC élevé peut être associé à une <strong>détresse psychologique</strong>
+                (dépression, anxiété, trouble de l'image corporelle) qui, si elle n'est pas prise en compte, compromet
+                l'efficacité de toute intervention nutritionnelle. Le parcours de soins de l'obésité en France prévoit
+                d'ailleurs un <strong>accompagnement psychologique</strong> systématique dans les CSO.
+              </p>
+              <p>
+                À l'inverse, un IMC très bas peut signaler un <strong>trouble du comportement alimentaire</strong> (TCA).
+                L'<strong>INSERM</strong> estime qu'environ <strong>900 000 Français</strong> souffrent de TCA (anorexie,
+                boulimie, hyperphagie). La <strong>Fédération Française Anorexie Boulimie</strong> (FFAB) recommande de ne
+                jamais interpréter l'IMC de manière isolée et de toujours considérer le contexte psychologique, les
+                comportements alimentaires et l'histoire pondérale du patient.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <h2 className="text-2xl font-display font-bold mb-6">Interprétation IMC : le guide complet pour la France</h2>

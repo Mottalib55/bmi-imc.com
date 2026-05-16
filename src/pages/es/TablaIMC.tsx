@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header";
-import { Table, Scale, AlertTriangle, CheckCircle2, Globe } from "lucide-react";
+import { Table, Scale, AlertTriangle, CheckCircle2, Globe, BookOpen, Activity, Heart } from "lucide-react";
 import { RelatedPages } from "@/components/RelatedPages";
 
 const TablaIMC = () => {
@@ -329,6 +329,134 @@ const TablaIMC = () => {
             <p className="text-muted-foreground text-sm mt-4">
               Tanto los sellos octagonales como el Nutri-Score son herramientas complementarias a la tabla IMC: mientras el IMC evalúa el estado corporal individual, el etiquetado nutricional orienta las decisiones de compra que influyen directamente en el peso y la salud.
             </p>
+          </div>
+
+          {/* Prevalencia de la obesidad en América Latina */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-destructive/10">
+                <Activity className="w-6 h-6 text-destructive" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Obesidad en América Latina: una crisis continental</h2>
+            </div>
+            <p className="text-muted-foreground mb-6">
+              Según la <strong>Organización Panamericana de la Salud (OPS/PAHO)</strong>, América Latina es una de las regiones del mundo con mayor crecimiento de la obesidad en las últimas tres décadas. Los datos epidemiológicos recientes revelan una situación alarmante que varía considerablemente entre países, pero con una tendencia general al alza que afecta a todas las capas sociales y grupos etarios.
+            </p>
+            <div className="grid md:grid-cols-3 gap-4 mb-6">
+              <div className="p-5 rounded-xl bg-destructive/5 border border-destructive/20 text-center">
+                <div className="text-3xl font-display font-bold text-destructive mb-1">36,1%</div>
+                <p className="font-bold mb-1">México</p>
+                <p className="text-xs text-muted-foreground">
+                  Tasa de obesidad más alta de la región. Según la <strong>ENSANUT</strong> (Encuesta Nacional de Salud y Nutrición), el 75,2% de los adultos mexicanos presenta exceso de peso. La prevalencia es mayor en mujeres (40,2%) que en hombres (30,5%), y las zonas urbanas registran tasas superiores a las rurales.
+                </p>
+              </div>
+              <div className="p-5 rounded-xl bg-destructive/5 border border-destructive/20 text-center">
+                <div className="text-3xl font-display font-bold text-destructive mb-1">34,4%</div>
+                <p className="font-bold mb-1">Chile</p>
+                <p className="text-xs text-muted-foreground">
+                  Segundo país con mayor prevalencia. La Encuesta Nacional de Salud de Chile documenta un aumento sostenido desde los años 2000. La obesidad infantil chilena también preocupa: cerca del 25% de los niños en edad escolar presenta sobrepeso u obesidad.
+                </p>
+              </div>
+              <div className="p-5 rounded-xl bg-warning/5 border border-warning/20 text-center">
+                <div className="text-3xl font-display font-bold text-warning mb-1">28,3%</div>
+                <p className="font-bold mb-1">Argentina</p>
+                <p className="text-xs text-muted-foreground">
+                  La Encuesta Nacional de Factores de Riesgo registra un crecimiento constante de la obesidad, especialmente en las provincias del noroeste argentino (NOA) y noreste (NEA), donde el acceso a alimentos frescos es más limitado.
+                </p>
+              </div>
+            </div>
+            <div className="p-4 bg-info/5 rounded-xl border border-info/20 mb-4">
+              <h4 className="font-bold mb-2">Datos OPS/PAHO sobre distribución del IMC en poblaciones hispanas</h4>
+              <p className="text-muted-foreground text-sm">
+                La OPS/PAHO ha publicado estudios que demuestran que las <strong>poblaciones hispanas y mestizas</strong> presentan patrones de distribución del IMC distintos a los de poblaciones europeas. A igual valor de IMC, las personas de origen hispano tienden a acumular más grasa visceral, lo que incrementa el riesgo de diabetes tipo 2, hipertensión y enfermedades cardiovasculares. Esta particularidad metabólica ha llevado a investigadores del <strong>Instituto Nacional de Salud Pública de México</strong> a proponer umbrales de IMC ajustados para la región, sugiriendo que un IMC de 27 en población mestiza podría equivaler en riesgo a un IMC de 30 en población caucásica. La OPS recomienda combinar la tabla IMC con la medición del perímetro abdominal y marcadores bioquímicos como la hemoglobina glucosilada para una evaluación integral del riesgo cardiometabólico en América Latina.
+              </p>
+            </div>
+          </div>
+
+          {/* Ley de etiquetado de Chile e impacto en obesidad */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-success/10">
+                <Heart className="w-6 h-6 text-success" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Ley de etiquetado chilena: un modelo contra la obesidad</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                En 2016, Chile implementó la <strong>Ley 20.606 de Composición Nutricional de los Alimentos</strong>, conocida como la "Ley de Etiquetado", considerada la legislación más ambiciosa del mundo en materia de advertencia nutricional. Esta ley introdujo los sellos octagonales negros con la leyenda "Alto en" (calorías, azúcares, grasas saturadas o sodio) en productos que superan ciertos umbrales nutricionales.
+              </p>
+              <p>
+                Los resultados han sido notables. Estudios del <strong>Instituto de Nutrición y Tecnología de los Alimentos (INTA)</strong> de la Universidad de Chile documentaron una <strong>reducción del 25% en las compras de bebidas azucaradas</strong> y una disminución del 17% en la adquisición de cereales con sellos de advertencia durante los primeros 18 meses de vigencia. La industria alimentaria reformuló más de 1.500 productos para evitar los sellos, reduciendo en promedio un 25% el contenido de azúcar y un 15% el de sodio en los productos reformulados.
+              </p>
+              <p>
+                Además, la ley prohíbe la <strong>publicidad de alimentos con sellos dirigida a menores de 14 años</strong>, incluyendo el uso de personajes animados o juguetes en envases de productos poco saludables. Las mesas de los comedores escolares chilenos fueron transformadas: se prohibió la venta de productos con sellos en establecimientos educativos, lo que ha contribuido a una estabilización de las tasas de obesidad infantil en el país.
+              </p>
+              <p>
+                El modelo chileno inspiró directamente la legislación mexicana de etiquetado frontal implementada en 2020, así como iniciativas similares en Colombia, Perú y Uruguay. La <strong>OPS/PAHO</strong> lo reconoce como una de las intervenciones más efectivas de salud pública contra la obesidad en la región.
+              </p>
+            </div>
+          </div>
+
+          {/* ENSANUT México y datos AESAN España */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-primary/10">
+                <BookOpen className="w-6 h-6 text-primary" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">ENSANUT y ENPE: encuestas de referencia en el mundo hispano</h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <h3 className="font-bold text-lg">México: datos ENSANUT por categoría de peso</h3>
+                <p className="text-muted-foreground text-sm">
+                  La <strong>ENSANUT</strong> (Encuesta Nacional de Salud y Nutrición) es el estudio epidemiológico más completo de México, realizado periódicamente por el <strong>Instituto Nacional de Salud Pública (INSP)</strong>. Los datos más recientes desglosan la distribución del IMC en la población adulta mexicana de la siguiente manera:
+                </p>
+                <ul className="text-muted-foreground space-y-2 text-sm">
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-info mt-2 flex-shrink-0" />
+                    <span><strong>Bajo peso (IMC &lt; 18,5)</strong>: 1,6% de la población adulta, más frecuente en mujeres jóvenes de zonas rurales</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-success mt-2 flex-shrink-0" />
+                    <span><strong>Peso normal (18,5-24,9)</strong>: 23,2% de los adultos, cifra que ha disminuido constantemente desde el año 2000</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-warning mt-2 flex-shrink-0" />
+                    <span><strong>Sobrepeso (25-29,9)</strong>: 39,1%, la categoría más numerosa en la población mexicana</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-destructive mt-2 flex-shrink-0" />
+                    <span><strong>Obesidad (IMC &ge; 30)</strong>: 36,1% total, con 21,4% en clase I, 10,2% en clase II y 4,5% en clase III (obesidad mórbida)</span>
+                  </li>
+                </ul>
+                <p className="text-muted-foreground text-sm">
+                  La ENSANUT también revela que la <strong>diabetes tipo 2</strong> afecta al 15,6% de los adultos mexicanos, una prevalencia estrechamente correlacionada con los altos niveles de obesidad. México destina aproximadamente el 2,5% de su PIB al tratamiento de enfermedades relacionadas con la obesidad.
+                </p>
+              </div>
+              <div className="space-y-4">
+                <h3 className="font-bold text-lg">España: estudio ENPE y recomendaciones AESAN</h3>
+                <p className="text-muted-foreground text-sm">
+                  El <strong>Estudio Nutricional de la Población Española (ENPE)</strong>, publicado por la <strong>Sociedad Española de Nutrición Comunitaria (SENC)</strong>, proporciona los datos más detallados sobre el estado nutricional en España. Los hallazgos principales incluyen:
+                </p>
+                <ul className="text-muted-foreground space-y-2 text-sm">
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-destructive mt-2 flex-shrink-0" />
+                    <span><strong>16% de obesidad</strong> en adultos, cifra significativamente inferior a la media latinoamericana pero en aumento respecto a décadas anteriores</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-warning mt-2 flex-shrink-0" />
+                    <span><strong>39,3% de sobrepeso</strong> (IMC 25-29,9), con mayor prevalencia en hombres (46,5%) que en mujeres (32,1%)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-info mt-2 flex-shrink-0" />
+                    <span>Las <strong>comunidades del sur</strong> (Andalucía, Extremadura) presentan tasas superiores al norte (País Vasco, Navarra)</span>
+                  </li>
+                </ul>
+                <p className="text-muted-foreground text-sm">
+                  La <strong>Agencia Española de Seguridad Alimentaria y Nutrición (AESAN)</strong> coordina las políticas de prevención de la obesidad en España. Entre sus principales acciones se encuentran la promoción del sistema <strong>Nutri-Score</strong>, la regulación de la publicidad alimentaria dirigida a menores a través del <strong>Código PAOS</strong>, y la elaboración de las <strong>Guías Alimentarias para la Población Española</strong>. La AESAN también gestiona el <strong>Observatorio de la Nutrición y de Estudio de la Obesidad</strong>, que monitoriza de forma continua la evolución del IMC poblacional. España ha implementado además un impuesto sobre bebidas azucaradas en Cataluña desde 2017, con resultados prometedores en la reducción del consumo.
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* SEO */}

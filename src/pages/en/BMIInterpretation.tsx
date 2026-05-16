@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header";
-import { BookOpen, TrendingUp, TrendingDown, Target, AlertTriangle, CheckCircle2, Scale, Globe } from "lucide-react";
+import { BookOpen, TrendingUp, TrendingDown, Target, AlertTriangle, CheckCircle2, Scale, Globe, Heart, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RelatedPages } from "@/components/RelatedPages";
 
@@ -342,6 +342,82 @@ const BMIInterpretation = () => {
             </div>
           </div>
 
+          {/* Weight Stigma, AMA Policy, and Preventive Care */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-destructive/10">
+                <Heart className="w-6 h-6 text-destructive" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Weight Stigma, Mental Health, and Evolving Medical Policy</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                <strong>Weight stigma</strong> is a growing concern in English-speaking countries. In the United States,
+                the <strong>NAAFA (National Association to Advance Fat Acceptance)</strong> has advocated since 1969 against
+                weight-based discrimination in employment, healthcare, and public life. Research published in the
+                <strong> American Journal of Public Health</strong> shows that weight stigma is associated with increased
+                cortisol levels, binge eating, and avoidance of medical care — paradoxically worsening health outcomes
+                for individuals with higher BMIs. In the UK, <strong>Beat</strong>, the nation's leading eating disorder
+                charity, reports that approximately <strong>1.25 million people</strong> in the UK live with an eating
+                disorder, and that excessive focus on BMI numbers can trigger disordered eating behaviours in
+                vulnerable individuals.
+              </p>
+              <p>
+                In a landmark shift, the <strong>American Medical Association (AMA)</strong> adopted a new policy in
+                <strong> June 2023</strong> recognising significant limitations of BMI as a sole metric for assessing
+                individual health. The AMA resolution stated that BMI is based on data primarily from
+                non-Hispanic white populations and does not account for differences in body shape, composition,
+                or relative fat distribution across racial and ethnic groups. The policy recommends that BMI be
+                used in conjunction with other clinical measures such as visceral fat measurement, body adiposity
+                index, and metabolic markers — rather than as a standalone diagnostic tool.
+              </p>
+              <p>
+                Preventive care frameworks differ substantially between the US and the UK. The <strong>NHS Health
+                Check</strong> programme invites all adults aged <strong>40 to 74</strong> in England for a free check-up
+                every <strong>five years</strong>, which includes BMI measurement, blood pressure, cholesterol, and
+                diabetes risk assessment. This universal, publicly funded approach contrasts with the US system,
+                where preventive care depends on insurance coverage. Under the <strong>Affordable Care Act</strong>,
+                obesity screening and counselling are covered as preventive services with no cost-sharing, but
+                access varies widely. The <strong>US Preventive Services Task Force (USPSTF)</strong> recommends that
+                clinicians screen all adults for obesity and offer or refer patients with a BMI of 30 or higher to
+                intensive, multicomponent behavioural interventions — yet fewer than <strong>50% of eligible Americans</strong> receive
+                these services, according to CDC data.
+              </p>
+            </div>
+          </div>
+
+          {/* NHS vs US Preventive Care Comparison */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-info/10">
+                <ShieldCheck className="w-6 h-6 text-info" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">NHS Health Checks vs US Preventive Care: A Comparison</h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-info/5 border border-info/20 rounded-lg p-5">
+                <h4 className="font-bold mb-3">NHS Health Check (UK)</h4>
+                <ul className="text-muted-foreground text-sm space-y-2">
+                  <li>- <strong>Eligibility</strong>: All adults aged 40-74 without pre-existing conditions</li>
+                  <li>- <strong>Frequency</strong>: Every 5 years, by invitation from your GP</li>
+                  <li>- <strong>Cost</strong>: Completely free on the NHS</li>
+                  <li>- <strong>Includes</strong>: BMI, blood pressure, cholesterol, diabetes risk, dementia awareness (65+)</li>
+                  <li>- <strong>Coverage</strong>: Over 13 million checks completed since 2013</li>
+                </ul>
+              </div>
+              <div className="bg-primary/5 border border-primary/20 rounded-lg p-5">
+                <h4 className="font-bold mb-3">Annual Wellness Visit (US)</h4>
+                <ul className="text-muted-foreground text-sm space-y-2">
+                  <li>- <strong>Eligibility</strong>: Medicare beneficiaries; varies for private insurance</li>
+                  <li>- <strong>Frequency</strong>: Annually (Medicare); depends on plan (private)</li>
+                  <li>- <strong>Cost</strong>: No copay under ACA preventive care mandate</li>
+                  <li>- <strong>Includes</strong>: BMI screening, health risk assessment, personalised prevention plan</li>
+                  <li>- <strong>Gap</strong>: ~27 million Americans remain uninsured (Census Bureau, 2023)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <h2 className="text-2xl font-display font-bold mb-6">Understanding BMI interpretation in the US and UK</h2>
@@ -379,7 +455,7 @@ const BMIInterpretation = () => {
               Use our free calculator to know your body mass index
             </p>
             <Link
-              to="/en/bmi"
+              to="/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
               Calculate my BMI

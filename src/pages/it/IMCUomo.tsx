@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 import { Header } from "@/components/Header";
 import { BMIGauge } from "@/components/BMIGauge";
-import { User, Dumbbell, Target, Heart, Scale, Activity, AlertTriangle, CheckCircle2, Globe } from "lucide-react";
+import { User, Dumbbell, Target, Heart, Scale, Activity, AlertTriangle, CheckCircle2, Globe, TrendingUp, Utensils, MapPin } from "lucide-react";
 import { Slider } from "@/components/ui/slider";
 import { RelatedPages } from "@/components/RelatedPages";
 
@@ -319,6 +319,83 @@ const IMCUomo = () => {
                 <strong> IMC ≥ 40</strong> o con <strong>IMC ≥ 35 in presenza di comorbidità</strong> (diabete tipo 2,
                 ipertensione, apnee notturne). Il percorso prevede una valutazione multidisciplinare presso centri
                 specializzati riconosciuti dal Ministero della Salute.
+              </p>
+            </div>
+          </div>
+
+          {/* ISTAT Dati e Divario Nord-Sud */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-blue-500/10">
+                <TrendingUp className="w-6 h-6 text-blue-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Obesità maschile in Italia: dati ISTAT e divario Nord-Sud</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                I dati <strong>ISTAT</strong> più recenti confermano che <strong>l'11,8% degli uomini italiani è obeso</strong>, una percentuale che, pur essendo tra le più basse d'Europa, è in costante crescita. Il sistema di sorveglianza <strong>PASSI dell'ISS</strong> (Istituto Superiore di Sanità) rileva che la prevalenza di sovrappeso maschile raggiunge il <strong>44,7%</strong>, portando il totale di uomini in eccesso ponderale a oltre il <strong>56%</strong>. Tra i Paesi europei, solo la <strong>Romania (10,6%)</strong> e i <strong>Paesi Bassi (11,2%)</strong> presentano tassi di obesità maschile più bassi dell'Italia.
+              </p>
+              <p>
+                Il <strong>divario Nord-Sud</strong> nell'obesità maschile è uno dei fenomeni più studiati dall'epidemiologia italiana. In <strong>Campania</strong> il tasso di obesità maschile raggiunge il <strong>14,8%</strong>, in <strong>Sicilia</strong> il <strong>13,5%</strong> e in <strong>Puglia</strong> il <strong>13,2%</strong>. Al contrario, il <strong>Trentino-Alto Adige</strong> registra solo l'<strong>8,1%</strong>, la <strong>Lombardia</strong> il <strong>9,3%</strong> e il <strong>Veneto</strong> il <strong>9,8%</strong>. Questo divario è attribuito a differenze nel reddito medio, nel livello di istruzione, nella disponibilità di infrastrutture sportive e nelle abitudini alimentari regionali.
+              </p>
+              <p>
+                L'<strong>ISS</strong> evidenzia che la sedentarietà è il principale fattore di rischio modificabile: <strong>il 44% degli uomini del Sud Italia è fisicamente inattivo</strong>, contro il <strong>24% del Nord</strong>. La campagna nazionale <strong>„Guadagnare Salute"</strong> del Ministero della Salute mira a ridurre la sedentarietà promuovendo almeno <strong>150 minuti di attività fisica moderata a settimana</strong> e incentivando l'uso della bicicletta e gli spostamenti a piedi nei centri urbani.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-4 mt-6">
+              <div className="p-4 bg-muted/30 rounded-xl text-center">
+                <span className="text-2xl font-bold text-blue-500">14,8%</span>
+                <p className="text-sm text-muted-foreground mt-1">Campania (più alta)</p>
+              </div>
+              <div className="p-4 bg-muted/30 rounded-xl text-center">
+                <span className="text-2xl font-bold text-blue-500">11,8%</span>
+                <p className="text-sm text-muted-foreground mt-1">Media nazionale</p>
+              </div>
+              <div className="p-4 bg-muted/30 rounded-xl text-center">
+                <span className="text-2xl font-bold text-blue-500">8,1%</span>
+                <p className="text-sm text-muted-foreground mt-1">Trentino-Alto Adige (più bassa)</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Convivialità e Cultura Alimentare */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-amber-500/10">
+                <Utensils className="w-6 h-6 text-amber-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Convivialità italiana e impatto sul peso maschile</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                La <strong>convivialità</strong> — il piacere di mangiare insieme, condividere il pasto con famiglia e amici — è un pilastro della cultura italiana che influenza direttamente il rapporto degli uomini con il cibo e il peso. In Italia, un pranzo o una cena possono durare <strong>più di due ore</strong>, con antipasto, primo, secondo, contorno, formaggio e dolce. Questo modello tradizionale, se basato su porzioni generose, può facilmente superare le <strong>1.500 kcal per pasto</strong>.
+              </p>
+              <p>
+                Tuttavia, il <strong>paradosso della convivialità italiana</strong> è che mangiare lentamente e in compagnia favorisce la sazietà naturale. Studi dell'<strong>Università Federico II di Napoli</strong> dimostrano che chi mangia lentamente assume il <strong>15-20% in meno di calorie</strong> rispetto a chi consuma pasti veloci. La tradizione del <strong>pranzo al lavoro</strong> — ancora molto presente in Italia, a differenza di altri Paesi europei dove il „lunch break" è ridotto a un panino — contribuisce paradossalmente a un migliore controllo del peso.
+              </p>
+              <p>
+                Il <strong>consumo di vino</strong> merita un'analisi specifica per gli uomini italiani: il consumo medio è di <strong>37 litri pro capite all'anno</strong> (OIV), ma la tradizione del „bicchiere ai pasti" è associata a un rischio cardiovascolare inferiore rispetto al binge drinking nordeuropeo. Le <strong>Linee Guida del CREA</strong> raccomandano un massimo di <strong>2 bicchieri di vino al giorno per gli uomini</strong> (circa 300 ml), preferibilmente rosso e durante i pasti. Il vino rosso, ricco di <strong>resveratrolo</strong>, è parte integrante del modello mediterraneo, ma l'eccesso contribuisce all'aumento del IMC e al rischio di steatosi epatica.
+              </p>
+            </div>
+          </div>
+
+          {/* Dieta Mediterranea per uomini */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-success/10">
+                <MapPin className="w-6 h-6 text-success" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">La dieta mediterranea come strategia maschile anti-obesità</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                La <strong>dieta mediterranea</strong> offre benefici specifici per la salute maschile che vanno oltre il controllo del peso. Lo studio <strong>EPIC-Italy</strong>, che ha seguito oltre <strong>47.000 italiani</strong> per più di 15 anni, ha dimostrato che gli uomini con alta aderenza alla dieta mediterranea hanno un <strong>rischio inferiore del 25% di sviluppare sindrome metabolica</strong> e del <strong>30% di malattie cardiovascolari</strong>. L'effetto protettivo è particolarmente marcato negli uomini con IMC tra 25 e 30.
+              </p>
+              <p>
+                Le <strong>Linee Guida per una Sana Alimentazione</strong> del CREA-INRAN raccomandano per gli uomini italiani: almeno <strong>5 porzioni di frutta e verdura al giorno</strong>; <strong>legumi almeno 3 volte a settimana</strong> come alternativa alla carne; <strong>pesce azzurro 2-3 volte a settimana</strong> (alici, sardine, sgombro); <strong>olio extra vergine d'oliva</strong> come grasso principale (3-4 cucchiai al giorno); e <strong>cereali integrali</strong> a ogni pasto principale. Per un uomo di 1,77 m con attività moderata, il fabbisogno calorico è di circa <strong>2.200-2.400 kcal al giorno</strong>.
+              </p>
+              <p>
+                Il <strong>paradosso moderno</strong> è che, nonostante l'Italia sia la patria della dieta mediterranea, l'aderenza a questo modello alimentare è in calo soprattutto tra i giovani uomini: solo il <strong>41% degli uomini tra 18 e 35 anni</strong> segue regolarmente i principi della dieta mediterranea (Fondazione Dieta Mediterranea). L'aumento del consumo di <strong>junk food, delivery e piatti pronti</strong> sta erodendo questa tradizione alimentare protettiva, con un impatto diretto sull'aumento dell'IMC medio nelle fasce d'età più giovani.
               </p>
             </div>
           </div>

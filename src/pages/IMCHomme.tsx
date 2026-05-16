@@ -293,6 +293,75 @@ const IMCHomme = () => {
             </div>
           </div>
 
+          {/* Graisse viscérale et risques masculins */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-destructive/10">
+                <AlertTriangle className="w-6 h-6 text-destructive" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Graisse viscérale : le danger spécifique des hommes</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Les hommes stockent principalement les graisses au niveau <strong>abdominal</strong> (répartition androïde,
+                dite « en pomme »), contrairement aux femmes qui les accumulent plutôt sur les hanches et cuisses. Cette
+                <strong> graisse viscérale</strong>, qui entoure les organes internes (foie, intestins, pancréas), est la
+                plus dangereuse pour la santé. Selon l'<strong>INSERM</strong>, elle sécrète des substances inflammatoires
+                (cytokines) qui augmentent directement le risque de <strong>diabète de type 2</strong>, d'<strong>infarctus
+                du myocarde</strong> et d'<strong>accident vasculaire cérébral</strong>.
+              </p>
+              <p>
+                En France, les <strong>maladies cardiovasculaires</strong> sont la deuxième cause de mortalité masculine après
+                les cancers, avec <strong>70 000 décès par an</strong> chez les hommes (Santé Publique France). L'excès de
+                graisse abdominale est un facteur de risque majeur : un tour de taille supérieur à <strong>102 cm</strong>
+                multiplie par <strong>2,5</strong> le risque d'événement cardiovasculaire chez l'homme de plus de 45 ans.
+              </p>
+              <p>
+                Le surpoids masculin est aussi lié à des <strong>pathologies spécifiques</strong> souvent méconnues.
+                L'<strong>hypogonadisme</strong> (déficit en testostérone) touche <strong>30 % des hommes obèses</strong>
+                contre seulement 2 % des hommes de poids normal. Cette baisse de testostérone entraîne fatigue, perte
+                de masse musculaire, troubles de l'humeur et <strong>dysfonction érectile</strong>. L'obésité augmente
+                également le risque de <strong>syndrome d'apnée du sommeil</strong> (3 fois plus fréquent chez l'homme
+                que chez la femme), de <strong>stéatose hépatique</strong> (foie gras non alcoolique) et de certains
+                <strong> cancers</strong> (côlon, prostate avancé, rein).
+              </p>
+            </div>
+          </div>
+
+          {/* Alimentation masculine en France */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-success/10">
+                <Activity className="w-6 h-6 text-success" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Alimentation et mode de vie des hommes français</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Selon l'étude <strong>INCA 3</strong> (Individuelle Nationale des Consommations Alimentaires) de l'<strong>ANSES</strong>,
+                les hommes français consomment en moyenne <strong>2 400 kcal par jour</strong>, soit 300 kcal de plus que les femmes.
+                Cependant, la qualité nutritionnelle est souvent insuffisante : les hommes mangent <strong>30 % de fruits et légumes
+                en moins</strong> que les femmes, mais consomment <strong>50 % de viande rouge en plus</strong> et
+                <strong> deux fois plus d'alcool</strong>.
+              </p>
+              <p>
+                La consommation excessive d'alcool est un facteur majeur de surpoids masculin en France. Selon
+                <strong> Santé Publique France</strong>, <strong>33 % des hommes</strong> dépassent les repères de consommation
+                recommandés (10 verres par semaine maximum). L'alcool apporte des <strong>calories vides</strong> (7 kcal/g,
+                presque autant que les graisses) et favorise le stockage abdominal. Une consommation de 3 bières par jour
+                représente environ <strong>600 kcal supplémentaires</strong>, soit l'équivalent d'un repas complet.
+              </p>
+              <p>
+                Le <strong>PNNS 4</strong> recommande aux hommes actifs un apport de <strong>2 200 à 2 600 kcal par jour</strong>
+                selon le niveau d'activité physique. Les recommandations spécifiques incluent : au moins <strong>5 portions
+                de fruits et légumes</strong>, <strong>500 g maximum de viande rouge par semaine</strong>, <strong>2 portions
+                de poisson</strong> (dont un gras), des <strong>légumineuses deux fois par semaine</strong>, et une
+                <strong> limitation des charcuteries</strong> à 150 g par semaine. En France, le <strong>Nutri-Score</strong>
+                facilite le choix d'aliments de meilleure qualité nutritionnelle au supermarché.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content enrichi */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

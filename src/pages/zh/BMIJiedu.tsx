@@ -454,6 +454,43 @@ const BMIJiedu = () => {
             </div>
           </div>
 
+          {/* China-Specific Healthcare & TCM Content */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-primary/10">
+                <Heart className="w-6 h-6 text-primary" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">中国医疗保障体系中的肥胖治疗与中医体重管理</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                中国已建立覆盖<strong>13.6亿人口</strong>的基本医疗保险体系，包括<strong>城镇职工基本医疗保险</strong>、
+                <strong>城乡居民基本医疗保险</strong>和<strong>大病保险</strong>三层保障。在肥胖相关治疗方面，
+                基本医疗保险覆盖<strong>2型糖尿病、高血压、冠心病</strong>等肥胖并发症的门诊和住院治疗费用。
+                <strong>减重代谢手术（如袖状胃切除术、胃旁路手术）</strong>自2019年起被多个省份纳入
+                医保报销范围，适用于<strong>BMI&ge;32.5</strong>（按中国标准）且合并严重代谢疾病的患者。
+                三甲医院的<strong>内分泌科</strong>和<strong>营养科</strong>提供系统性肥胖评估和管理方案，
+                包括代谢手术术前评估、饮食干预、运动处方和心理辅导。
+                <strong>国家基本公共卫生服务</strong>中的慢性病管理项目为高血压和糖尿病患者提供免费的
+                定期BMI监测、血压和血糖检测，以及健康生活方式指导。
+              </p>
+              <p>
+                <strong>中医药</strong>在体重管理领域有着独特而系统的理论体系。中医认为肥胖的根本病机
+                是<strong>"脾虚痰湿"</strong>——脾胃功能虚弱导致水湿运化失常，痰湿内聚形成肥胖。
+                治疗原则以<strong>"健脾利湿、化痰消脂"</strong>为主。常用方剂包括：
+                <strong>防己黄芪汤</strong>（适用于气虚型肥胖）、<strong>温胆汤</strong>（适用于痰湿型肥胖）、
+                <strong>大柴胡汤</strong>（适用于肝郁化热型肥胖）。中医的<strong>针灸减肥</strong>——
+                尤其是<strong>耳穴压豆</strong>和<strong>体针</strong>——已有多项随机对照试验证明其在
+                降低BMI和腰围方面的有效性。中国约<strong>3500家中医医院</strong>的治未病中心
+                提供"BMI + 中医体质辨识"的综合评估服务，将现代BMI指标与
+                <strong>九种体质分类</strong>（平和质、气虚质、阳虚质、阴虚质、痰湿质、湿热质、
+                血瘀质、气郁质、特禀质）结合，为患者制定个性化的体重管理方案。
+                这种<strong>中西医结合</strong>的体重管理模式是中国医疗体系的独特优势，
+                体现了<strong>"辨证论治"</strong>的传统智慧与现代循证医学的深度融合。
+              </p>
+            </div>
+          </div>
+
           {/* SEO内容 */}
           <div className="glass-card p-8">
             <h2 className="text-2xl font-display font-bold mb-6">深入了解中国BMI标准与解读</h2>

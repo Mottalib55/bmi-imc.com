@@ -273,6 +273,27 @@ const InterpretacaoIMC = () => {
             </div>
           </div>
 
+          {/* SUS obesity care pathway and SNS Portugal */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-success/10">
+                <CheckCircle2 className="w-6 h-6 text-success" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Linha de cuidado da obesidade no SUS e SNS Portugal</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                O Ministerio da Saude do Brasil instituiu a <strong>Linha de Cuidado do Sobrepeso e da Obesidade</strong> como parte da <strong>Rede de Atencao a Saude das Pessoas com Doencas Cronicas</strong>. Essa linha de cuidado organiza o fluxo de atendimento desde a triagem inicial do IMC na Atencao Primaria ate o acompanhamento especializado em centros de referencia. As <strong>UBS (Unidades Basicas de Saude)</strong> sao a porta de entrada obrigatoria desse percurso: e na UBS que o agente comunitario de saude, o enfermeiro e o medico de familia realizam a primeira aferição de peso e altura, calculam o IMC e classificam o paciente segundo os criterios da <strong>ABESO (Associacao Brasileira para o Estudo da Obesidade)</strong>. Pacientes com IMC entre 25 e 29,9 recebem orientacao nutricional e encaminhamento para grupos de atividade fisica do <strong>Programa Academia da Saude</strong>, presente em mais de 4.800 municipios brasileiros.
+              </p>
+              <p>
+                Para pacientes com IMC acima de 30, as UBS acionam o <strong>NASF-AB (Nucleo Ampliado de Saude da Familia e Atencao Basica)</strong>, que oferece acompanhamento multidisciplinar com nutricionista, educador fisico e psicologo. Casos mais graves, com IMC acima de 40 ou IMC acima de 35 com comorbidades (diabetes tipo 2, hipertensao, apneia do sono), sao encaminhados aos <strong>ambulatorios de obesidade</strong> em hospitais de referencia, como o Hospital das Clinicas da USP, o Hospital Universitario da UFBA e o INTO (Instituto Nacional de Traumatologia e Ortopedia) no Rio de Janeiro. Nesses centros, a avaliacao vai muito alem do IMC, incluindo bioimpedancia, calorimetria indireta, polissonografia e avaliacoes cardiologicas completas, preparando o paciente para o tratamento clinico intensivo ou para a cirurgia bariatrica pelo SUS.
+              </p>
+              <p>
+                Em Portugal, o <strong>SNS (Servico Nacional de Saude)</strong> organiza o acompanhamento da obesidade atraves das <strong>Unidades de Saude Familiar (USF)</strong> e <strong>Unidades de Cuidados de Saude Personalizados (UCSP)</strong>. O medico de familia realiza a triagem do IMC e encaminha para consultas de nutricao ou para hospitais com <strong>consulta hospitalar de obesidade</strong>. O <strong>Programa Nacional para a Promocao da Alimentacao Saudavel (PNPAS)</strong> da DGS coordena as acoes de prevencao, incluindo a plataforma <strong>Nutricao.pt</strong> com orientacoes alimentares baseadas na dieta mediterranica. A cirurgia bariatrica tambem e coberta pelo SNS portugues, com criterios semelhantes aos do SUS brasileiro. A <strong>Sociedade Portuguesa para o Estudo da Obesidade (SPEO)</strong> publica diretrizes clinicas que orientam os profissionais do SNS no manejo da obesidade em todas as faixas etarias.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <h2 className="text-2xl font-display font-bold mb-6">Compreender a interpretacao do IMC no Brasil e em Portugal</h2>

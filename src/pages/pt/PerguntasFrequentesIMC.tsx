@@ -91,6 +91,26 @@ const PerguntasFrequentesIMC = () => {
     {
       question: "Qual é a diferença entre IMC e BMI?",
       answer: "Não há <strong>nenhuma diferença</strong>! IMC significa <strong>Índice de Massa Corporal</strong> (português) e BMI significa <strong>Body Mass Index</strong> (inglês). É exatamente o mesmo indicador com a mesma fórmula e os mesmos limites."
+    },
+    {
+      question: "O IMC é igual para todas as etnias?",
+      answer: "A OMS recomenda <strong>pontos de corte mais baixos para populações asiáticas</strong> (sobrepeso a partir de 23 e obesidade a partir de 27,5), pois estas apresentam maior risco metabólico com IMC menor. O Brasil, com sua composição étnica diversa — descendentes europeus, africanos, indígenas e asiáticos —, exige atenção especial. A composição corporal varia entre grupos étnicos: pessoas de ascendência africana tendem a ter maior densidade óssea e massa magra, enquanto descendentes asiáticos acumulam mais gordura visceral com IMC mais baixo. Profissionais de saúde devem considerar a etnia ao interpretar o IMC."
+    },
+    {
+      question: "O SUS cobre tratamento para obesidade?",
+      answer: "Sim. O <strong>SUS</strong> oferece acompanhamento multidisciplinar gratuito através do <strong>NASF</strong> (nutricionista, educador físico, psicólogo). A <strong>cirurgia bariátrica</strong> é coberta para pacientes com IMC≥40 ou IMC≥35 com comorbidades, mediante encaminhamento pela rede de atenção. As filas de espera podem chegar a 3 anos em alguns estados. Os <strong>CAPS</strong> oferecem suporte psicossocial para transtornos alimentares. Em Portugal, o <strong>SNS</strong> cobre consultas de nutrição nos centros de saúde e cirurgia bariátrica com critérios semelhantes aos da OMS."
+    },
+    {
+      question: "O que é a obesidade de peso normal (TOFI)?",
+      answer: "TOFI (<strong>Thin Outside, Fat Inside</strong>) descreve pessoas com IMC normal (18,5-24,9) mas com <strong>percentual de gordura corporal elevado</strong>, especialmente gordura visceral acumulada ao redor dos órgãos abdominais. É comum em populações sedentárias que não praticam exercícios de força. Estas pessoas apresentam riscos metabólicos semelhantes aos de obesos: resistência à insulina, colesterol elevado e inflamação crônica. Por isso, o IMC sozinho não é suficiente — medidas como circunferência da cintura e exames de composição corporal (bioimpedância, DEXA) são fundamentais."
+    },
+    {
+      question: "Como a alimentação brasileira tradicional ajuda no peso saudável?",
+      answer: "A dieta tradicional brasileira é protetora: <strong>arroz com feijão</strong> forma uma proteína completa com alto teor de fibras, frutas tropicais fornecem vitaminas e antioxidantes, e a mandioca oferece energia de baixo índice glicêmico. Porém, o Brasil é o <strong>4º maior mercado mundial de ultraprocessados</strong>. A classificação <strong>NOVA</strong>, criada pelo pesquisador brasileiro Carlos Monteiro (USP), categoriza alimentos pelo grau de processamento. O <strong>Guia Alimentar para a População Brasileira</strong> (2014) é considerado pela OMS referência mundial ao priorizar alimentos in natura sobre ultraprocessados."
+    },
+    {
+      question: "A partir de qual IMC é indicada a cirurgia bariátrica?",
+      answer: "No Brasil, os critérios para cirurgia bariátrica são: <strong>IMC≥40</strong> ou <strong>IMC≥35 com comorbidades</strong> (diabetes, hipertensão, apneia do sono). A <strong>Resolução CFM 2.131/2015</strong> permite cirurgia metabólica a partir de IMC≥30 com diabetes tipo 2 não controlado. O SUS exige acompanhamento prévio de 2 anos. A <strong>SBCBM</strong> (Sociedade Brasileira de Cirurgia Bariátrica e Metabólica) certifica centros de excelência. As técnicas disponíveis incluem bypass gástrico (Roux-en-Y), sleeve gástrico e banda gástrica ajustável."
     }
   ];
 
@@ -134,6 +154,22 @@ const PerguntasFrequentesIMC = () => {
           >
             Calcular meu IMC
           </Link>
+        </div>
+
+        {/* SUS/SNS coverage information */}
+        <div className="glass-card p-8 mt-8">
+          <h2 className="text-2xl font-display font-bold mb-6">IMC e acompanhamento gratuito pelo SUS e SNS</h2>
+          <div className="text-muted-foreground space-y-4">
+            <p>
+              No Brasil, o <strong>SUS (Sistema Unico de Saude)</strong> garante acompanhamento nutricional gratuito a toda a populacao. A triagem do IMC e realizada nas <strong>UBS (Unidades Basicas de Saude)</strong> e os dados sao registrados no <strong>SISVAN (Sistema de Vigilancia Alimentar e Nutricional)</strong>. Pacientes com IMC elevado recebem encaminhamento para nutricionistas e educadores fisicos do <strong>NASF-AB</strong>, e casos graves tem acesso a cirurgia bariatrica pelo SUS. O <strong>Disque Saude (136)</strong> orienta cidadaos sobre servicos disponiveis em cada municipio. Em Portugal, o <strong>SNS (Servico Nacional de Saude)</strong> oferece consultas de nutricao, acompanhamento com medico de familia nas <strong>USF (Unidades de Saude Familiar)</strong> e cobertura para cirurgia bariatrica. O <strong>PNPAS</strong> da DGS e a plataforma <strong>Nutricao.pt</strong> disponibilizam orientacoes alimentares baseadas na dieta mediterranica. Ambos os sistemas publicos reconhecem a obesidade como doenca cronica e oferecem tratamento multidisciplinar sem custo para o paciente.
+            </p>
+            <p>
+              A pesquisa <strong>VIGITEL</strong> (Vigilância de Fatores de Risco por Inquérito Telefônico), realizada anualmente pelo Ministério da Saúde, revela que <strong>60,3% dos adultos brasileiros estão com sobrepeso</strong> (IMC≥25) e <strong>25,9% são obesos</strong> (dados de 2023). As taxas variam por região: Sul e Sudeste apresentam maior prevalência de sobrepeso, enquanto Norte e Nordeste registram o crescimento mais acelerado. O <strong>Programa Academia da Saúde</strong> disponibiliza equipamentos de exercício ao ar livre e aulas gratuitas em mais de 4.000 municípios. O <strong>Guia Alimentar para a População Brasileira</strong> é considerado pela OMS um dos melhores guias alimentares do mundo, ao enfatizar alimentos in natura e minimamente processados em detrimento dos ultraprocessados.
+            </p>
+            <p>
+              Em Portugal, o <strong>Programa Nacional para a Promoção da Alimentação Saudável (PNPAS)</strong> e a <strong>Estratégia Nacional para a Atividade Física</strong> orientam as políticas de gestão do peso. A taxa de obesidade em Portugal é de aproximadamente <strong>22%</strong> (estudo IAN-AF), com prevalência mais elevada nos Açores e na Madeira. O SNS disponibiliza consultas de nutrição gratuitas nos centros de saúde, e o <strong>imposto sobre bebidas açucaradas</strong>, implementado em 2017, contribuiu para a redução do consumo de refrigerantes. Portugal também aprovou a cobertura de cirurgia bariátrica pelo SNS com critérios semelhantes às diretrizes da OMS, reforçando o compromisso com o tratamento da obesidade como doença crónica prioritária.
+            </p>
+          </div>
         </div>
 
         {/* SEO Schema */}

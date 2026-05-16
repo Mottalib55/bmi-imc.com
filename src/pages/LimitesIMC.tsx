@@ -358,6 +358,40 @@ const LimitesIMC = () => {
             </div>
           </div>
 
+          {/* Avenir de l'évaluation corporelle */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-primary/10">
+                <Globe className="w-6 h-6 text-primary" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Vers un remplacement de l'IMC ? Les pistes françaises</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Face aux limites reconnues de l'IMC, la recherche française explore activement des alternatives.
+                L'<strong>INSERM</strong> mène plusieurs programmes de recherche sur les biomarqueurs de l'obésité et
+                le <strong>phénotypage métabolique</strong>, qui permettent de caractériser la santé d'un individu bien
+                au-delà du simple ratio poids/taille. L'objectif est de remplacer progressivement la classification
+                basée sur l'IMC seul par une approche multidimensionnelle.
+              </p>
+              <p>
+                Le concept d'<strong>Edmonton Obesity Staging System</strong> (EOSS), promu par certains endocrinologues
+                français du réseau des CSO, propose une classification de l'obésité en 5 stades (0 à 4) basée non pas
+                sur l'IMC mais sur les <strong>complications réelles</strong> : métaboliques, fonctionnelles et psychologiques.
+                Un patient obèse sans complication (stade 0-1) n'est pas traité de la même façon qu'un patient avec
+                diabète et apnée du sommeil (stade 3). Cette approche est en cours d'évaluation par la <strong>Société
+                Française d'Endocrinologie</strong>.
+              </p>
+              <p>
+                Par ailleurs, les progrès de l'<strong>intelligence artificielle</strong> appliquée à l'imagerie médicale
+                permettent désormais d'estimer la composition corporelle à partir d'un simple scanner ou d'une IRM, sans
+                examen dédié. Des équipes de l'<strong>AP-HP</strong> (Assistance Publique - Hôpitaux de Paris) développent
+                des algorithmes capables d'évaluer automatiquement la graisse viscérale, la masse musculaire et la stéatose
+                hépatique, offrant un portrait bien plus complet que l'IMC.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <h2 className="text-2xl font-display font-bold mb-6">Limites de l'IMC : ce que disent la HAS et l'INSERM</h2>

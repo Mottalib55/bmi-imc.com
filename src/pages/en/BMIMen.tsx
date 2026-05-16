@@ -311,6 +311,33 @@ const BMIMen = () => {
             </div>
           </div>
 
+          {/* Male Obesity in the US: Key Health Risks */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-destructive/10">
+                <AlertTriangle className="w-6 h-6 text-destructive" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Male Obesity in the US: Key Health Risks</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                According to the <strong>CDC's NHANES survey</strong>, <strong>43% of American men are obese</strong> — slightly higher than the 41.9% rate observed in women. This makes male obesity one of the most pressing public health challenges in the United States. The disparity is particularly pronounced in men aged 40 to 59, where obesity rates peak at nearly 46%, driven by a combination of sedentary lifestyles, workplace stress, and declining metabolic rates.
+              </p>
+              <p>
+                <strong>Heart disease remains the number one killer of American men</strong>, accounting for roughly <strong>1 in 4 male deaths</strong> each year according to the CDC. The link between obesity and cardiovascular mortality is well established: excess abdominal fat increases inflammation, raises blood pressure, and worsens cholesterol profiles. The <strong>American Heart Association (AHA)</strong> recommends that men maintain a waist circumference below 40 inches, engage in at least 150 minutes of moderate aerobic activity per week, and undergo annual cardiovascular risk assessments beginning at age 40.
+              </p>
+              <p>
+                Beyond heart disease, male obesity is strongly associated with <strong>erectile dysfunction (ED)</strong> and <strong>low testosterone levels</strong>. Research published in the <em>Journal of Sexual Medicine</em> shows that men with a BMI above 30 are nearly twice as likely to experience ED compared to men at a healthy weight. Excess fat tissue converts testosterone into estrogen, leading to a hormonal imbalance that affects energy, mood, muscle mass, and sexual function. Weight loss of just 5-10% of body weight can significantly improve testosterone levels and sexual health.
+              </p>
+              <p>
+                The AHA's cardiovascular health guidelines for men emphasize a <strong>heart-healthy diet</strong> rich in fruits, vegetables, whole grains, and lean protein, combined with limiting sodium intake to under 2,300 mg per day. Men who smoke and are obese face a compounded cardiovascular risk — the combination increases heart attack probability by up to five times compared to non-smoking men at a healthy weight.
+              </p>
+              <p>
+                <strong>US employer wellness programs</strong> increasingly incorporate BMI screenings as part of their preventive health strategy. According to the Kaiser Family Foundation, over <strong>80% of large US employers</strong> now offer some form of wellness initiative, with BMI-based incentives being among the most common. Employees who achieve or maintain a healthy BMI can receive premium reductions, gift cards, or contributions to Health Savings Accounts (HSAs). These corporate programs have been shown to reduce absenteeism by 25% and lower healthcare costs by $3.27 for every dollar spent, making them a win-win for workers and employers alike.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

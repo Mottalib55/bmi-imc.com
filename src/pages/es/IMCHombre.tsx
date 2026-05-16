@@ -300,6 +300,30 @@ const IMCHombre = () => {
             </div>
           </div>
 
+          {/* Obesidad Masculina en el Mundo Hispanohablante */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-destructive/10">
+                <AlertTriangle className="w-6 h-6 text-destructive" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Obesidad Masculina en el Mundo Hispanohablante</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                La obesidad masculina en el mundo hispanohablante presenta patrones distintos segun la region. En <strong>Mexico</strong>, los datos de la <strong>ENSANUT</strong> revelan que el <strong>40% de los hombres adultos son obesos</strong>, una cifra que convierte al pais en uno de los mas afectados del continente. Esta epidemia esta impulsada por la rapida transicion nutricional: el abandono de alimentos tradicionales como el maiz, los frijoles y las verduras frescas en favor de productos ultraprocesados, comida rapida y bebidas azucaradas. El consumo promedio de refrescos en Mexico supera los 160 litros por persona al ano, uno de los mas altos del mundo.
+              </p>
+              <p>
+                La cultura del <strong>machismo</strong>, profundamente arraigada en muchas sociedades latinoamericanas, juega un papel significativo en la salud masculina. Muchos hombres consideran que acudir al medico es signo de debilidad, lo que resulta en <strong>diagnosticos tardios</strong> de enfermedades cronicas relacionadas con la obesidad como la diabetes tipo 2, la hipertension y las enfermedades cardiovasculares. Estudios de la OPS muestran que los hombres latinoamericanos visitan al medico un <strong>40% menos que las mujeres</strong>, y cuando lo hacen, suelen presentar condiciones mas avanzadas. Romper con estos estigmas culturales es esencial para mejorar la salud masculina en la region.
+              </p>
+              <p>
+                La <strong>urbanizacion acelerada y los empleos sedentarios</strong> han transformado el estilo de vida en America Latina. Ciudades como Ciudad de Mexico, Bogota, Lima y Buenos Aires concentran millones de trabajadores en oficinas, transporte publico prolongado y espacios reducidos que limitan la actividad fisica. El tiempo promedio de desplazamiento en Ciudad de Mexico supera las 2 horas diarias, restando tiempo para el ejercicio. Ademas, la proliferacion de aplicaciones de entrega de comida a domicilio ha incrementado el consumo de alimentos de alta densidad calorica y baja calidad nutricional entre los hombres jovenes profesionales.
+              </p>
+              <p>
+                En contraste, <strong>Espana presenta tasas de obesidad masculina significativamente menores</strong> que las de America Latina, en gran parte gracias a la <strong>dieta mediterranea</strong>. Este patron alimentario, reconocido por la UNESCO como Patrimonio Cultural Inmaterial de la Humanidad, se basa en aceite de oliva, pescado, legumbres, frutas, verduras y cereales integrales. Segun la AESAN, la obesidad masculina en Espana se situa alrededor del 23%, considerablemente inferior al 40% mexicano. Sin embargo, las generaciones mas jovenes espanolas estan adoptando habitos alimentarios menos saludables, con un aumento del consumo de comida rapida que amenaza las ventajas tradicionales de la dieta mediterranea.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

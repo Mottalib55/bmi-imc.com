@@ -491,6 +491,66 @@ const BMISportler = () => {
             </Link>
           </div>
 
+          {/* DOSB and German Sports Culture */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-orange-500/10">
+                <Dumbbell className="w-6 h-6 text-orange-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">DOSB-Protokolle und die deutsche Sportverein-Kultur</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Der <strong>Deutsche Olympische Sportbund (DOSB)</strong> ist mit rund 27 Millionen Mitgliedern in
+                etwa 87.000 Vereinen der Dachverband des deutschen Sports. Im Bereich der Leistungsdiagnostik
+                hat der DOSB gemeinsam mit den Olympiastützpunkten standardisierte <strong>Körperkompositionsprotokolle</strong> entwickelt,
+                die weit über den BMI hinausgehen. Kaderathleten werden mindestens zweimal jährlich einer umfassenden
+                Analyse unterzogen, die DEXA-Scans, Bioimpedanzanalyse (BIA) und Hautfaltendickemessungen nach der
+                ISAK-Methode (International Society for the Advancement of Kinanthropometry) umfasst. Der BMI wird
+                dabei lediglich als Verwaltungskenngröße erfasst, nicht als Leistungs- oder Gesundheitsindikator.
+              </p>
+              <p>
+                Im <strong>Bundesliga-Fußball</strong> zeigt sich die Unzulänglichkeit des BMI besonders deutlich:
+                Eine Auswertung der Kaderdaten der Saison 2023/24 ergab, dass rund 38 % aller Feldspieler einen
+                BMI von 25 oder höher aufweisen und damit formal als "übergewichtig" gelten -- obwohl ihre
+                Körperfettwerte zwischen 8 und 12 % liegen. Torhüter wie Manuel Neuer oder Marc-André ter Stegen
+                erreichen durch ihre Körpergröße und Muskelmasse BMI-Werte knapp unter oder über der Übergewichtsgrenze.
+                Die sportmedizinischen Abteilungen der Bundesligavereine nutzen stattdessen regelmäßige
+                BIA-Messungen und Leistungstests zur Beurteilung der körperlichen Verfassung.
+              </p>
+              <p>
+                Im <strong>Biathlon</strong>, einer der beliebtesten Wintersportarten im deutschsprachigen Raum, zeigt sich
+                ein anderes Bild: Deutsche Athleten wie Benedikt Doll oder Denise Herrmann-Wick weisen BMI-Werte
+                im Bereich von 21 bis 23 auf. Das <strong>Institut für Angewandte Trainingswissenschaft (IAT)</strong> in Leipzig,
+                das zentrale Forschungsinstitut des deutschen Spitzensports, hat in Studien gezeigt, dass bei
+                Ausdauersportlern der BMI zwar näher am Bevölkerungsdurchschnitt liegt, aber dennoch keine
+                Rückschlüsse auf die aerobe Kapazität oder die Wettkampfleistung erlaubt. Bei deutschen
+                Olympiateilnehmern in Tokio 2021 und Paris 2024 variierte der BMI je nach Sportart zwischen
+                17,5 (Rhythmische Sportgymnastik) und 38,2 (Gewichtheben Superschwergewicht).
+              </p>
+              <p>
+                Die <strong>Deutsche Gesellschaft für Sportmedizin und Prävention (DGSP)</strong>, gegründet 1912
+                als eine der ältesten sportmedizinischen Fachgesellschaften der Welt, hat die Entwicklung
+                der modernen Sportmedizin maßgeblich geprägt. Ihre Leitlinie zur "sportärztlichen Vorsorgeuntersuchung"
+                empfiehlt ausdrücklich, den BMI bei sportlich aktiven Menschen durch den <strong>Taillenumfang</strong>,
+                die <strong>Bioimpedanzanalyse</strong> und den <strong>FFMI</strong> zu ergänzen. In der Schweiz
+                verfolgt <strong>Swiss Olympic</strong> einen ähnlichen Ansatz, und der <strong>Österreichische
+                Sportärzteverband (ÖGSMP)</strong> hat eigene Richtlinien zur Körperkompositionsanalyse publiziert.
+              </p>
+              <p>
+                Ein einzigartiges Merkmal des deutschen Sportsystems ist die <strong>Sportverein-Kultur</strong>.
+                Mit einer Vereinsdichte, die weltweit ihresgleichen sucht, bieten deutsche Sportvereine
+                nicht nur Training, sondern oft auch sportmedizinische Beratung an. Viele Vereine arbeiten
+                mit niedergelassenen Sportärzten zusammen, die Mitgliedern eine Körperkompositionsanalyse
+                anbieten. Die <strong>Landessportbünde</strong> fördern zudem Fortbildungen für Trainer im Bereich
+                Ernährung und Körperzusammensetzung. Das Ergebnis: Sportvereinsmitglieder in Deutschland haben
+                laut einer Studie der Universität Bayreuth im Durchschnitt einen um 1,8 Punkte niedrigeren BMI
+                als Nicht-Mitglieder -- wobei der Unterschied in der Körperzusammensetzung noch deutlicher
+                ausfällt, da Vereinsmitglieder mehr Muskelmasse und weniger Körperfett aufweisen.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

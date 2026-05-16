@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 import { Header } from "@/components/Header";
 import { BMIGauge } from "@/components/BMIGauge";
-import { Users, Heart, Target, Baby, Scale, Activity, AlertTriangle, CheckCircle2, Sparkles, Globe } from "lucide-react";
+import { Users, Heart, Target, Baby, Scale, Activity, AlertTriangle, CheckCircle2, Sparkles, Globe, TrendingUp, Shield, MapPin } from "lucide-react";
 import { Slider } from "@/components/ui/slider";
 import { RelatedPages } from "@/components/RelatedPages";
 
@@ -357,6 +357,69 @@ const IMCDonna = () => {
                 Per mantenere un <strong>IMC sano dopo i 50 anni</strong> o un <strong>IMC dopo i 60 anni</strong> nella norma,
                 privilegiate un'alimentazione ricca di <strong>proteine</strong> e <strong>calcio</strong>,
                 e mantenete un'attività fisica regolare che includa il <strong>rafforzamento muscolare</strong>.
+              </p>
+            </div>
+          </div>
+
+          {/* ISTAT Dati Femminili */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-pink-500/10">
+                <TrendingUp className="w-6 h-6 text-pink-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Obesità femminile in Italia: 9,8% ISTAT e il primato europeo</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Con un tasso di obesità femminile del <strong>9,8%</strong> secondo i dati <strong>ISTAT</strong>, le donne italiane detengono uno dei <strong>tassi più bassi dell'intera Unione Europea</strong>. Solo la <strong>Romania (9,4%)</strong> e i <strong>Paesi Bassi (9,6%)</strong> registrano valori comparabili. Questa posizione privilegiata è il risultato di una combinazione unica di fattori: la tradizione della <strong>dieta mediterranea</strong>, un forte legame culturale con il cibo di qualità e una concezione del pasto come momento sociale e non semplice nutrimento.
+              </p>
+              <p>
+                Tuttavia, il sistema di sorveglianza <strong>PASSI dell'ISS</strong> segnala tendenze preoccupanti: la prevalenza di sovrappeso femminile è passata dal <strong>24,3% al 27%</strong> negli ultimi dieci anni, con un aumento particolarmente marcato nelle donne tra <strong>35 e 49 anni</strong>. Le cause principali sono l'aumento della sedentarietà, il crescente consumo di alimenti ultraprocessati e la riduzione del tempo dedicato alla preparazione dei pasti casalinghi. Il <strong>divario Nord-Sud</strong> è ancora più evidente nelle donne: la <strong>Campania registra il 15,8%</strong> di obesità femminile, contro il <strong>5,1% della provincia di Bolzano</strong>.
+              </p>
+              <p>
+                Il programma <strong>OKkio alla Salute</strong> dell'ISS, pur concentrandosi sull'obesità infantile, ha rilevato una <strong>correlazione diretta tra l'IMC della madre e quello dei figli</strong>: le madri obese hanno una probabilità <strong>3 volte superiore</strong> di avere figli in sovrappeso. Questo dato evidenzia l'importanza del controllo del peso femminile non solo per la salute individuale, ma anche per la prevenzione dell'obesità nelle generazioni future. Le campagne di <strong>educazione alimentare</strong> rivolte alle madri rappresentano quindi un investimento a lungo termine nella salute pubblica italiana.
+              </p>
+            </div>
+          </div>
+
+          {/* Bellezza e Cultura Italiana */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-purple-500/10">
+                <Shield className="w-6 h-6 text-purple-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Canoni di bellezza italiani e rapporto con il peso</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                I <strong>canoni di bellezza italiani</strong> hanno storicamente valorizzato le forme morbide e la „bellezza mediterranea", differenziandosi dai modelli anglosassoni orientati alla magrezza estrema. Dalle <strong>Madonne rinascimentali di Botticelli</strong> alle icone del cinema italiano come <strong>Sophia Loren e Monica Bellucci</strong>, la tradizione estetica italiana ha celebrato la donna con curve armoniose. Questo patrimonio culturale contribuisce a un rapporto più equilibrato con il peso e l'immagine corporea.
+              </p>
+              <p>
+                Tuttavia, l'influenza dei <strong>social media e dei modelli estetici globalizzati</strong> sta modificando questa tradizione. La <strong>SIGO (Società Italiana di Ginecologia e Ostetricia)</strong> riporta un aumento dei <strong>disturbi alimentari</strong> tra le giovani italiane: circa <strong>3 milioni di italiane</strong> soffrono di anoressia, bulimia o binge eating. L'Italia è stata il primo Paese al mondo a <strong>vietare per legge le modelle con IMC inferiore a 18,5</strong> dalle passerelle della moda, un provvedimento pionieristico che ha ispirato legislazioni simili in Francia e Spagna.
+              </p>
+              <p>
+                La <strong>concezione italiana della bellezza femminile</strong> è indissolubilmente legata al concetto di <strong>„benessere"</strong>: stare bene fisicamente e mentalmente, mangiare con piacere senza eccessi, muoversi con naturalezza nella vita quotidiana. Questo approccio olistico, promosso anche dal <strong>Ministero della Salute</strong> attraverso campagne come „Guadagnare Salute — Rendere facili le scelte salutari", favorisce un rapporto sano con il proprio corpo e contribuisce a mantenere l'IMC femminile italiano tra i più bassi d'Europa.
+              </p>
+            </div>
+          </div>
+
+          {/* SSN e Salute Femminile Approfondimento */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-pink-500/10">
+                <MapPin className="w-6 h-6 text-pink-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Il SSN, la dieta mediterranea femminile e la prevenzione dell'osteoporosi</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Il <strong>Servizio Sanitario Nazionale (SSN)</strong> offre alle donne italiane un percorso strutturato di prevenzione e cura dell'obesità. I <strong>LEA (Livelli Essenziali di Assistenza)</strong> garantiscono l'accesso gratuito a <strong>consulenze nutrizionali presso le ASL</strong>, programmi di educazione alimentare e, per i casi con IMC ≥ 35 con comorbidità, la <strong>chirurgia bariatrica</strong> presso centri accreditati. Le <strong>20 Regioni italiane</strong> gestiscono autonomamente i servizi sanitari, il che genera differenze nell'accesso: nel <strong>Lazio e in Lombardia</strong> i tempi di attesa per una consulenza nutrizionale ASL sono di circa <strong>30 giorni</strong>, mentre in <strong>Calabria</strong> possono superare i <strong>6 mesi</strong>.
+              </p>
+              <p>
+                La <strong>prevenzione dell'osteoporosi</strong> è strettamente legata al controllo dell'IMC nelle donne. Le donne italiane con <strong>IMC inferiore a 20</strong> hanno un rischio di frattura osteoporotica <strong>doppio</strong> rispetto a quelle con peso normale. La <strong>Società Italiana dell'Osteoporosi (SIOMMMS)</strong> raccomanda alle donne in menopausa un apporto di <strong>1.200 mg di calcio</strong> e <strong>800-1.000 UI di vitamina D al giorno</strong>. Il SSN offre gratuitamente la <strong>densitometria ossea (MOC)</strong> alle donne over 65 o a quelle con fattori di rischio specifici, incluso un IMC basso persistente.
+              </p>
+              <p>
+                Per quanto riguarda la <strong>dieta mediterranea e la salute femminile</strong>, lo studio <strong>PREDIMED</strong> ha dimostrato che le donne che seguono questo modello alimentare hanno un <strong>rischio ridotto del 68% di tumore al seno</strong> rispetto a chi segue una dieta occidentale standard. Le <strong>Linee Guida CREA</strong> raccomandano alle donne italiane in particolare: <strong>pesce azzurro 2-3 volte a settimana</strong> per gli omega-3; <strong>legumi quotidianamente</strong> per le proteine vegetali e il ferro; <strong>latticini freschi</strong> come yogurt e ricotta per il calcio; e <strong>frutta secca a guscio</strong> (30 g al giorno) per i grassi polinsaturi e la vitamina E.
               </p>
             </div>
           </div>

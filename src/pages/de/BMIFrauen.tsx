@@ -1,7 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 import { Header } from "@/components/Header";
 import { BMIGauge } from "@/components/BMIGauge";
-import { Users, Heart, Target, Baby, Scale, Activity, AlertTriangle, CheckCircle2, Sparkles, Globe } from "lucide-react";
+import { Users, Heart, Target, Baby, Scale, Activity, AlertTriangle, CheckCircle2, Sparkles, Globe, TrendingUp, Utensils, Shield } from "lucide-react";
 import { Slider } from "@/components/ui/slider";
 import { RelatedPages } from "@/components/RelatedPages";
 
@@ -319,6 +319,69 @@ const BMIFrauen = () => {
                 <span className="text-2xl font-bold text-pink-500">37%</span>
                 <p className="text-sm text-muted-foreground mt-1">Schweiz</p>
               </div>
+            </div>
+          </div>
+
+          {/* Adipositas-Statistiken Frauen */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-pink-500/10">
+                <TrendingUp className="w-6 h-6 text-pink-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Adipositas bei Frauen in Deutschland: RKI-Daten und Trends</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Die <strong>RKI-Studie GEDA</strong> zeigt, dass <strong>53% der Frauen in Deutschland</strong> übergewichtig oder adipös sind, wobei <strong>24% als adipös</strong> eingestuft werden (BMI ≥ 30). Im europäischen Vergleich liegt Deutschland damit im oberen Mittelfeld. Besonders betroffen sind Frauen in der <strong>Altersgruppe 55-70 Jahre</strong>, wo die Adipositasrate auf über 30% steigt – eine Folge hormoneller Veränderungen, veränderter Lebensgewohnheiten und nachlassender körperlicher Aktivität.
+              </p>
+              <p>
+                Die <strong>DGE-Empfehlungen für Frauen</strong> unterscheiden sich in wesentlichen Punkten von denen für Männer: Der tägliche Kalorienbedarf liegt bei <strong>1.800-2.000 kcal</strong> (gegenüber 2.200-2.400 kcal bei Männern), der <strong>Eisenbedarf ist mit 15 mg/Tag</strong> deutlich höher (Männer: 10 mg), und die DGE empfiehlt Frauen im gebärfähigen Alter eine tägliche Zufuhr von <strong>400 μg Folsäure</strong>. Bei Übergewicht rät die DGE zu einer <strong>moderaten Kalorienreduktion</strong> von maximal 500 kcal täglich in Kombination mit regelmäßiger Bewegung.
+              </p>
+              <p>
+                Regional betrachtet gibt es innerhalb Deutschlands erhebliche Unterschiede: In <strong>Sachsen-Anhalt</strong> sind 28% der Frauen adipös, während in <strong>Hamburg</strong> nur 15% betroffen sind. Diese Diskrepanz hängt mit sozioökonomischen Faktoren, Bildungsniveau und dem Zugang zu Gesundheitsangeboten zusammen. Die <strong>BZgA</strong> hat spezielle Programme entwickelt, die sich an Frauen in sozial benachteiligten Regionen richten.
+              </p>
+            </div>
+          </div>
+
+          {/* Schwangerschaft und Hebamme */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-purple-500/10">
+                <Baby className="w-6 h-6 text-purple-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Gewichtsmanagement in der Schwangerschaft: Das deutsche Hebammensystem</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Das deutsche <strong>Hebammensystem</strong> ist weltweit einzigartig: Jede schwangere Frau hat gesetzlichen Anspruch auf <strong>Hebammenhilfe</strong> – von der Schwangerschaft über die Geburt bis 12 Wochen nach der Entbindung, vollständig von der gesetzlichen Krankenkasse (GKV) übernommen. Die <strong>Mutterschaftsrichtlinien</strong> schreiben vor, dass der BMI bei der Erstuntersuchung im <strong>Mutterpass</strong> dokumentiert wird und das Gewicht bei jeder Vorsorgeuntersuchung kontrolliert wird.
+              </p>
+              <p>
+                Die empfohlene <strong>Gewichtszunahme in der Schwangerschaft</strong> richtet sich nach dem Ausgangs-BMI: Bei <strong>Normalgewicht (BMI 18,5-24,9): 11,5-16 kg</strong>, bei <strong>Übergewicht (BMI 25-29,9): 7-11,5 kg</strong>, und bei <strong>Adipositas (BMI ≥ 30): 5-9 kg</strong>. Eine übermäßige Gewichtszunahme erhöht das Risiko für <strong>Schwangerschaftsdiabetes</strong>, der in Deutschland etwa 13% aller Schwangerschaften betrifft (DGGG).
+              </p>
+              <p>
+                Die <strong>Deutsche Gesellschaft für Gynäkologie und Geburtshilfe (DGGG)</strong> betont, dass ein <strong>BMI über 30 zu Beginn der Schwangerschaft</strong> als Risikofaktor gilt und eine intensivere Betreuung erfordert. Das <strong>Nationale Zentrum Frühe Hilfen (NZFH)</strong> bietet in Zusammenarbeit mit den Kommunen zusätzliche Unterstützung für Schwangere und junge Mütter mit Gewichtsproblemen an.
+              </p>
+            </div>
+          </div>
+
+          {/* Körperbild und Osteoporose */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-pink-500/10">
+                <Shield className="w-6 h-6 text-pink-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Körperbild, Osteoporose-Prävention und Frauengesundheit</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Das <strong>Körperbild deutscher Frauen</strong> wird von verschiedenen kulturellen Faktoren geprägt. Im Vergleich zu anderen Ländern zeigt sich in Deutschland eine <strong>pragmatischere Einstellung zum Körpergewicht</strong>: Laut einer Studie der Universität Leipzig sind 68% der deutschen Frauen „eher zufrieden" mit ihrem Körper – ein höherer Wert als in vielen südeuropäischen Ländern. Gleichzeitig warnt die <strong>Bundeszentrale für gesundheitliche Aufklärung (BZgA)</strong> vor den Gefahren von Essstörungen, die etwa <strong>5% der Frauen zwischen 15 und 35 Jahren</strong> betreffen.
+              </p>
+              <p>
+                Ein besonders wichtiges Thema für Frauen ist die <strong>Osteoporose-Prävention</strong>: In Deutschland leiden schätzungsweise <strong>6 Millionen Menschen</strong> an Osteoporose, davon <strong>80% Frauen</strong> (DVO – Dachverband Osteologie). Ein zu niedriger BMI (unter 20) ist ein eigenständiger Risikofaktor. Die DGE empfiehlt Frauen ab 50 Jahren eine tägliche <strong>Kalziumzufuhr von 1.000 mg</strong> und <strong>20 μg Vitamin D</strong>. Regelmäßiges Krafttraining und gewichtsbelastendes Training stärken die Knochendichte und beugen Osteoporose vor.
+              </p>
+              <p>
+                Die <strong>gesetzlichen Krankenkassen</strong> übernehmen für Frauen ab 50 Jahren eine <strong>DXA-Knochendichtemessung</strong> bei begründetem Verdacht auf Osteoporose. Darüber hinaus bieten viele Krankenkassen spezielle <strong>Frauengesundheitsprogramme</strong> an, die Ernährungsberatung, Bewegungskurse und psychologische Unterstützung kombinieren – ein ganzheitlicher Ansatz, der den BMI als einen von mehreren Gesundheitsindikatoren betrachtet.
+              </p>
             </div>
           </div>
 

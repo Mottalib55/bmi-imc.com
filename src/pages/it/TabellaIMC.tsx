@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header";
-import { Table, Scale, AlertTriangle, CheckCircle2, Globe } from "lucide-react";
+import { Table, Scale, AlertTriangle, CheckCircle2, Globe, BookOpen, Activity, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RelatedPages } from "@/components/RelatedPages";
 
@@ -447,6 +447,114 @@ const TabellaIMC = () => {
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+
+          {/* ISTAT e ISS: dati sulla distribuzione dell'IMC in Italia */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-destructive/10">
+                <Activity className="w-6 h-6 text-destructive" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">ISTAT e ISS: il quadro completo dell'obesit&agrave; in Italia</h2>
+            </div>
+            <p className="text-muted-foreground mb-6">
+              L'Italia rappresenta un caso unico nel panorama europeo dell'obesit&agrave;. Con un tasso nazionale del <strong>10,8%</strong> secondo i dati ISTAT pi&ugrave; recenti (Indagine multiscopo "Aspetti della vita quotidiana"), il paese mantiene uno dei livelli pi&ugrave; bassi dell'Europa occidentale, ben al di sotto della media europea del 16,5%. Tuttavia, questo dato nazionale nasconde profondi divari territoriali e tendenze preoccupanti.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="p-5 rounded-xl bg-primary/5 border border-primary/20">
+                <h4 className="font-bold mb-3">Divario Nord-Sud: i dati regionali</h4>
+                <ul className="text-muted-foreground space-y-2 text-sm">
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-success mt-2 flex-shrink-0" />
+                    <span><strong>Trentino-Alto Adige: 7,9%</strong> di obesit&agrave;, il tasso pi&ugrave; basso d'Italia. L'elevato livello di reddito, l'accesso a prodotti locali di qualit&agrave; e la cultura dell'attivit&agrave; fisica all'aperto contribuiscono a questo risultato.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-success mt-2 flex-shrink-0" />
+                    <span><strong>Lombardia e Veneto: 8,5-9,2%</strong>, tassi inferiori alla media nazionale, favoriti da una forte rete di servizi sanitari e da una maggiore offerta di cibi freschi.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-destructive mt-2 flex-shrink-0" />
+                    <span><strong>Campania: 13,2%</strong>, il dato regionale pi&ugrave; alto. La combinazione di fattori socioeconomici sfavorevoli, minore accesso a cibi freschi di qualit&agrave; e diffusione di abitudini alimentari squilibrate spiega il divario.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-destructive mt-2 flex-shrink-0" />
+                    <span><strong>Sicilia e Calabria: 12,5-13%</strong>, tassi simili alla Campania. Il paradosso &egrave; che proprio nelle regioni dove nacque la dieta mediterranea, l'obesit&agrave; &egrave; oggi pi&ugrave; diffusa.</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="p-5 rounded-xl bg-info/5 border border-info/20">
+                <h4 className="font-bold mb-3">Dati ISS e sorveglianza PASSI</h4>
+                <p className="text-muted-foreground text-sm mb-3">
+                  Il sistema di sorveglianza <strong>PASSI</strong> (Progressi delle Aziende Sanitarie per la Salute in Italia), coordinato dall'<strong>Istituto Superiore di Sanit&agrave; (ISS)</strong>, raccoglie dati continui sullo stato di salute degli adulti italiani attraverso interviste telefoniche in tutte le ASL del paese.
+                </p>
+                <ul className="text-muted-foreground space-y-2 text-sm">
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-warning mt-2 flex-shrink-0" />
+                    <span>Il <strong>31,5% degli adulti italiani</strong> &egrave; in sovrappeso (IMC 25-29,9), con prevalenza maggiore tra gli uomini (40%) rispetto alle donne (24%)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-info mt-2 flex-shrink-0" />
+                    <span>La prevalenza dell'obesit&agrave; cresce con l'et&agrave;: dal 3% nella fascia 18-24 anni al 15% tra i 50-69 anni</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-info mt-2 flex-shrink-0" />
+                    <span>Il <strong>45% degli adulti italiani sedentari</strong> ha un IMC superiore a 25, contro il 28% di chi pratica attivit&agrave; fisica regolare</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <div className="w-2 h-2 rounded-full bg-info mt-2 flex-shrink-0" />
+                    <span>Il sistema <strong>OKkio alla Salute</strong> monitora l'obesit&agrave; infantile: il 20,4% dei bambini di 8-9 anni &egrave; in sovrappeso e il 9,4% &egrave; obeso</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p className="text-muted-foreground text-sm">
+              Il costo annuale dell'obesit&agrave; per il sistema sanitario italiano &egrave; stimato in circa <strong>9 miliardi di euro</strong> (fonte: Italian Barometer Diabetes Observatory), pari al 4% della spesa sanitaria pubblica. L'ISS raccomanda un approccio integrato che combini prevenzione primaria (educazione alimentare e promozione dell'attivit&agrave; fisica), screening sistematico dell'IMC nelle cure primarie e trattamento specialistico per le forme gravi.
+            </p>
+          </div>
+
+          {/* Ancel Keys e la dieta mediterranea nel Cilento */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-success/10">
+                <Heart className="w-6 h-6 text-success" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Ancel Keys e lo Studio delle Sette Nazioni: come il Cilento ha cambiato la nutrizione mondiale</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                La comprensione del rapporto tra alimentazione, IMC e salute cardiovascolare deve molto al lavoro del fisiologo americano <strong>Ancel Keys</strong> (1904-2004), che nel 1958 avvi&ograve; il celebre <strong>Seven Countries Study</strong> (Studio delle Sette Nazioni). Questo studio longitudinale, che segui&igrave; oltre 12.000 uomini in sette paesi per decenni, rivel&ograve; che le popolazioni del <strong>Cilento</strong> (Campania meridionale) presentavano tassi di malattie cardiovascolari e obesit&agrave; straordinariamente bassi rispetto alle popolazioni nordamericane e nordeuropee.
+              </p>
+              <p>
+                Keys, che visse a <strong>Pioppi</strong> (comune di Pollica, Salerno) per oltre 28 anni fino alla sua morte a 100 anni, document&ograve; che la dieta dei contadini cilentani -- basata su <strong>olio extravergine d'oliva, verdure di stagione, legumi, pane integrale, pesce e vino rosso in moderazione</strong> -- era associata a un IMC medio di 22-23 e a una longevit&agrave; eccezionale. Queste osservazioni gettarono le basi scientifiche del concetto di <strong>dieta mediterranea</strong>.
+              </p>
+              <p>
+                Il paradosso odierno &egrave; significativo: le regioni del Sud Italia dove Keys condusse le sue ricerche registrano oggi i tassi di obesit&agrave; pi&ugrave; alti del paese. La globalizzazione alimentare, l'abbandono delle pratiche agricole tradizionali, l'urbanizzazione e la diffusione capillare di alimenti ultraprocessati hanno eroso il modello alimentare che aveva reso il Cilento un esempio mondiale di salute. Questo fenomeno, studiato ampiamente dall'ISS, dimostra che la dieta mediterranea non &egrave; solo un patrimonio da celebrare, ma un modello che va attivamente difeso e promosso attraverso politiche educative e sanitarie mirate.
+              </p>
+            </div>
+          </div>
+
+          {/* Slow Food e impatto sull'IMC */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-primary/10">
+                <BookOpen className="w-6 h-6 text-primary" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Slow Food, biodiversit&agrave; e prevenzione dell'obesit&agrave;</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Il movimento <strong>Slow Food</strong>, fondato a <strong>Bra (Piemonte)</strong> nel 1986 da Carlo Petrini, rappresenta una delle risposte culturali italiane pi&ugrave; originali alla globalizzazione alimentare e ai suoi effetti sull'aumento dell'IMC nella popolazione. Nato come reazione all'apertura del primo McDonald's a Piazza di Spagna a Roma, Slow Food ha sviluppato una filosofia del "cibo buono, pulito e giusto" che promuove la biodiversit&agrave; alimentare, la produzione locale e il ritorno a pratiche gastronomiche tradizionali.
+              </p>
+              <p>
+                L'impatto di Slow Food sulla prevenzione dell'obesit&agrave; opera su molteplici livelli. I <strong>Presidi Slow Food</strong> (oltre 600 in Italia) salvaguardano variet&agrave; vegetali e razze animali tradizionali, mantenendo viva una diversit&agrave; alimentare che contrasta l'omologazione dei prodotti industriali. L'<strong>Universit&agrave; di Scienze Gastronomiche di Pollenzo</strong> (Cuneo), fondata da Slow Food nel 2004, forma professionisti che uniscono conoscenze nutrizionali, agronomiche e culturali, promuovendo un approccio olistico all'alimentazione.
+              </p>
+              <p>
+                Il progetto <strong>"Orto in Condotta"</strong> di Slow Food Italia coinvolge oltre 600 scuole in tutta la penisola, insegnando ai bambini a coltivare e cucinare ortaggi, a riconoscere i prodotti di stagione e a sviluppare un rapporto consapevole con il cibo. Studi dell'<strong>INRAN</strong> (oggi CREA-Alimenti e Nutrizione) hanno dimostrato che i bambini partecipanti a programmi di educazione alimentare pratica presentano un consumo di frutta e verdura superiore del 30% rispetto ai coetanei e un IMC medio inferiore.
+              </p>
+              <p>
+                La filosofia Slow Food, unita al patrimonio della dieta mediterranea e al sistema DOP/IGP italiano (oltre 320 prodotti certificati, il primato europeo), costituisce un ecosistema culturale e alimentare che contribuisce a mantenere il tasso di obesit&agrave; italiano tra i pi&ugrave; bassi d'Europa. Tuttavia, come sottolineano i ricercatori dell'ISS, questo vantaggio non &egrave; scontato: senza politiche attive di educazione alimentare e di contrasto alla pubblicit&agrave; di cibi ultraprocessati rivolti ai giovani, l'Italia rischia di allinearsi progressivamente ai livelli di obesit&agrave; dei paesi nordeuropei.
+              </p>
             </div>
           </div>
 

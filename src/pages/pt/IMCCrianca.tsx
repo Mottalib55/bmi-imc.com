@@ -351,6 +351,27 @@ const IMCCrianca = () => {
             </div>
           </div>
 
+          {/* SISVAN, PNAE and COSI Portugal data */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-cyan-500/10">
+                <Globe className="w-6 h-6 text-cyan-500" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Vigilancia nutricional infantil: SISVAN, PNAE e COSI Portugal</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                O <strong>SISVAN (Sistema de Vigilancia Alimentar e Nutricional)</strong> e o principal instrumento de monitoramento do estado nutricional de criancas e adolescentes no ambito do SUS. Criado em 1990 e informatizado a partir de 2003 com o SISVAN Web, o sistema coleta dados antropometricos (peso, altura, IMC por idade) de todas as criancas atendidas nas Unidades Basicas de Saude (UBS) do pais. Em 2023, o SISVAN registrou dados de mais de <strong>15 milhoes de criancas menores de 10 anos</strong>, revelando que a prevalencia de excesso de peso infantil varia drasticamente entre regioes: enquanto o Sul e Sudeste apresentam taxas acima de 35%, o Norte e Nordeste ainda enfrentam focos significativos de desnutricao cronica, especialmente em comunidades indigenas e quilombolas. Esses dados alimentam diretamente as politicas publicas do Ministerio da Saude, incluindo a <strong>PNAN (Politica Nacional de Alimentacao e Nutricao)</strong>, que orienta acoes de prevencao e tratamento da obesidade infantil em nivel municipal.
+              </p>
+              <p>
+                O <strong>PNAE (Programa Nacional de Alimentacao Escolar)</strong>, gerenciado pelo FNDE (Fundo Nacional de Desenvolvimento da Educacao), e um dos maiores programas de alimentacao escolar do planeta. Alem de fornecer refeicoes a mais de 40 milhoes de estudantes, o PNAE exige que <strong>cada municipio tenha nutricionistas responsaveis tecnicos</strong> pelos cardapios, que devem respeitar a cultura alimentar regional e incluir no minimo 30% de alimentos provenientes da agricultura familiar. Os dados nutricionais dos alunos coletados pelo PNAE sao integrados ao SISVAN, criando um panorama abrangente da saude nutricional infantil brasileira. Desde 2009, a <strong>Lei 11.947</strong> proibe a oferta de refrigerantes e alimentos ultraprocessados nas escolas publicas brasileiras, uma medida que antecipou tendencias internacionais de regulacao alimentar escolar.
+              </p>
+              <p>
+                Em Portugal, o <strong>COSI (Childhood Obesity Surveillance Initiative)</strong>, coordenado pelo <strong>INSA (Instituto Nacional de Saude Doutor Ricardo Jorge)</strong>, integra a iniciativa europeia da OMS e monitora o estado nutricional de criancas entre 6 e 8 anos. O estudo COSI Portugal revelou uma <strong>reducao consistente da obesidade infantil na ultima decada</strong>, passando de 15,3% de criancas com obesidade em 2008 para cerca de 7,7% nas avaliacoes mais recentes, um dos maiores declivos registrados na Europa. Essa melhoria e atribuida a um conjunto de politicas publicas coordenadas: o <strong>PNPAS (Programa Nacional para a Promocao da Alimentacao Saudavel)</strong> da DGS, a implementacao do imposto sobre bebidas acucaradas em 2017, a restricao de publicidade de alimentos nao saudaveis para criancas e a melhoria dos cardapios em cantinas escolares. O modelo portugues e hoje citado pela OMS como referencia europeia em combate a obesidade infantil.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <div className="flex items-center gap-3 mb-6">

@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header";
-import { AlertTriangle, XCircle, CheckCircle2, Users, Dumbbell, Baby, Clock, Globe, Scale } from "lucide-react";
+import { AlertTriangle, XCircle, CheckCircle2, Users, Dumbbell, Baby, Clock, Globe, Scale, Cpu, FlaskConical, Landmark, Ruler } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RelatedPages } from "@/components/RelatedPages";
 
@@ -128,7 +128,7 @@ const BMILimitations = () => {
                 <p className="text-sm text-muted-foreground">
                   High muscle mass gives "overweight" or "obese" BMI while body fat is minimal.
                 </p>
-                <Link to="/en/bmi-athletes" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/bmi-athletes" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   Learn more →
                 </Link>
               </div>
@@ -141,7 +141,7 @@ const BMILimitations = () => {
                 <p className="text-sm text-muted-foreground">
                   Adult thresholds don't apply. Age and sex-specific body mass curves must be used.
                 </p>
-                <Link to="/en/bmi-children" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/bmi-children" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   Learn more →
                 </Link>
               </div>
@@ -164,7 +164,7 @@ const BMILimitations = () => {
                 <p className="text-sm text-muted-foreground">
                   Weight gain is normal and desirable during pregnancy. Pre-pregnancy BMI serves as reference.
                 </p>
-                <Link to="/en/bmi-women" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/bmi-women" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   Learn more →
                 </Link>
               </div>
@@ -277,6 +277,187 @@ const BMILimitations = () => {
             </div>
           </div>
 
+          {/* Future of Body Assessment */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-primary/10">
+                <FlaskConical className="w-6 h-6 text-primary" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">The Future of Body Assessment: Beyond BMI</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Researchers are actively developing new metrics to replace or supplement BMI. One of the most
+                promising is the <strong>Body Roundness Index (BRI)</strong>, proposed by Dr Diana Thomas and
+                colleagues at the US Military Academy at West Point. BRI uses waist circumference and height
+                to estimate body shape as an ellipse, providing a more nuanced picture of central adiposity
+                than BMI alone. A <strong>2024 study published in JAMA Network Open</strong>, analysing data
+                from over <strong>32,000 participants</strong> in the US National Health and Nutrition Examination
+                Survey (NHANES), found that BRI was a stronger predictor of all-cause mortality than BMI,
+                particularly for identifying metabolically unhealthy individuals who fall within the "normal"
+                BMI range. BRI values typically range from 1 to 15, with higher values indicating greater
+                central body roundness and associated health risks.
+              </p>
+              <p>
+                The <strong>UK Biobank</strong>, one of the world's largest biomedical databases with data from
+                over <strong>500,000 participants</strong> aged 40-69 across the United Kingdom, has produced
+                landmark findings on BMI versus body composition. Studies using UK Biobank data demonstrated
+                that individuals classified as "normal weight" by BMI but with high body fat percentage —
+                a condition termed <strong>"normal weight obesity"</strong> — had significantly elevated risks
+                of cardiovascular disease, metabolic syndrome, and mortality compared to their truly lean
+                counterparts. A <strong>2023 analysis</strong> in <strong>The Lancet Regional Health - Europe</strong> found
+                that waist-to-hip ratio derived from UK Biobank imaging data outperformed BMI in predicting
+                type 2 diabetes risk across all ethnic groups studied, reinforcing calls for multi-metric
+                health assessments.
+              </p>
+            </div>
+          </div>
+
+          {/* AI and Technology-Based Assessment */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-info/10">
+                <Cpu className="w-6 h-6 text-info" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">AI-Based Body Composition Assessment</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                While <strong>DEXA (Dual-Energy X-ray Absorptiometry)</strong> scans remain the clinical gold
+                standard for body composition analysis, they require specialised equipment, cost between
+                <strong> $75 and $300 USD</strong> per scan, and expose patients to low-level radiation. A new
+                generation of <strong>AI-powered alternatives</strong> is emerging in the US, UK, and Australia
+                that could democratise access to accurate body composition data.
+              </p>
+              <p>
+                <strong>3D body scanning</strong> technology, pioneered by companies like <strong>Styku</strong> (US)
+                and <strong>Size Stream</strong>, uses infrared sensors to create a full 3D body model in seconds.
+                These systems extract hundreds of measurements — including waist circumference, body fat
+                distribution, and lean mass estimates — with accuracy approaching DEXA for many metrics. Several
+                <strong> NHS trusts</strong> in England have begun pilot programmes using 3D scanning in weight
+                management clinics, and <strong>Australian researchers at the University of Sydney</strong> have
+                validated smartphone-based 3D scanning against DEXA with correlation coefficients above 0.95 for
+                body fat percentage estimation.
+              </p>
+              <p>
+                <strong>Smartphone AI apps</strong> are also advancing rapidly. Applications developed in the US and
+                Australia now use machine learning models trained on thousands of DEXA-validated body scans to
+                estimate body fat percentage from two standard smartphone photos. The <strong>US Navy</strong> has
+                tested AI-based body composition tools as potential replacements for its tape-measure body fat
+                protocol, and the <strong>Australian Defence Force</strong> is evaluating similar technology.
+                While these tools are not yet replacements for clinical DEXA, they represent a significant step
+                toward making body composition assessment accessible, affordable, and free from the oversimplification
+                inherent in BMI.
+              </p>
+            </div>
+          </div>
+
+          {/* The 2023 AMA Policy Change */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-warning/10">
+                <Landmark className="w-6 h-6 text-warning" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">The 2023 AMA Policy Change</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                In <strong>June 2023</strong>, the <strong>American Medical Association (AMA)</strong> adopted a
+                landmark policy that formally recognised BMI's significant limitations as a sole measure of
+                individual health. The AMA's Council on Science and Public Health concluded that BMI is an
+                "imperfect way to measure body fat in multiple groups" and specifically acknowledged that the
+                metric carries <strong>racial and ethnic biases</strong> rooted in its historical development using
+                predominantly white European populations. This policy represented the most significant institutional
+                shift in how the US medical establishment views BMI in decades.
+              </p>
+              <p>
+                The AMA now recommends that BMI should be used <strong>in conjunction with other valid measures</strong> of
+                health risk, including but not limited to: <strong>waist circumference</strong>, <strong>body
+                composition measurements</strong>, <strong>metabolic markers</strong> (such as blood glucose, lipid
+                panels, and inflammatory markers), <strong>genetic and familial predispositions</strong>, and
+                the overall clinical picture of a patient. The policy explicitly discourages using BMI as the sole
+                criterion for denying insurance coverage or determining clinical eligibility for treatments.
+              </p>
+              <p>
+                This US policy shift echoes guidance already established in the United Kingdom. The <strong>UK's
+                National Institute for Health and Care Excellence (NICE)</strong> published clinical guideline
+                <strong>CG189</strong> which recommends that healthcare professionals use <strong>waist
+                circumference alongside BMI</strong> to assess health risk in adults with a BMI under 35. NICE
+                explicitly notes that waist circumference provides additional predictive power for type 2 diabetes,
+                cardiovascular disease, and all-cause mortality beyond what BMI alone can offer. In
+                <strong> Australia</strong>, the National Health and Medical Research Council (NHMRC) similarly
+                recommends combining BMI with waist circumference in its Clinical Practice Guidelines for the
+                Management of Overweight and Obesity, noting that BMI alone fails to capture the cardiometabolic
+                risks associated with central adiposity that are particularly prevalent in Aboriginal and Torres
+                Strait Islander populations.
+              </p>
+            </div>
+          </div>
+
+          {/* Better Alternatives Available Today */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-success/10">
+                <Ruler className="w-6 h-6 text-success" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Better Alternatives Available Today</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                The good news is that several <strong>validated, accessible alternatives to BMI</strong> are
+                available today for individuals who want a more accurate picture of their health. These range
+                from free measurements you can take at home to clinical-grade assessments available at private
+                facilities throughout the US, UK, and Australia.
+              </p>
+              <h4 className="font-bold text-foreground">Waist Circumference</h4>
+              <p>
+                The <strong>NHS (UK)</strong> formally recommends waist circumference measurement alongside BMI
+                as part of routine health assessments. Their guidelines state that for men, a waist circumference
+                of <strong>94 cm (37 inches) or more</strong> indicates moderate cardiometabolic risk, while
+                <strong> 102 cm (40 inches) or more</strong> indicates high risk. For women, the thresholds are
+                <strong> 80 cm (31.5 inches)</strong> for moderate risk and <strong>88 cm (34.5 inches)</strong> for
+                high risk. This measurement takes less than 30 seconds, requires only a tape measure, and captures
+                visceral fat distribution that BMI completely misses.
+              </p>
+              <h4 className="font-bold text-foreground">Body Fat Percentage</h4>
+              <p>
+                Measuring actual body fat percentage removes the ambiguity inherent in BMI. Several options exist:
+                <strong> smart scales</strong> using bioelectrical impedance are widely available for $30-100 and
+                provide reasonable estimates (typically within 3-5% of clinical measurements); <strong>DEXA
+                scans</strong> are available at private clinics and universities for approximately <strong>$100-200
+                USD</strong> (or GBP 100-150 in the UK) and provide the clinical gold standard for body composition
+                analysis; and <strong>BodPod</strong> (air displacement plethysmography) is available at sports
+                science laboratories and some university facilities, offering DEXA-comparable accuracy without
+                radiation exposure.
+              </p>
+              <h4 className="font-bold text-foreground">Waist-to-Height Ratio</h4>
+              <p>
+                The <strong>waist-to-height ratio (WHtR)</strong> is increasingly regarded by researchers as
+                a superior screening tool to BMI for cardiovascular and metabolic risk. The rule is simple:
+                your waist circumference should be <strong>less than half your height</strong> (a ratio below
+                0.5). This threshold applies universally regardless of sex, age, or ethnicity, making it more
+                equitable than BMI. The <strong>Ashwell Shape Chart</strong>, developed by Dr Margaret Ashwell
+                in the UK, provides a visual tool for self-assessment using this ratio. A 2023 meta-analysis
+                covering over 300,000 participants confirmed that WHtR outperformed BMI in predicting
+                cardiometabolic risk across diverse populations.
+              </p>
+              <h4 className="font-bold text-foreground">Edmonton Obesity Staging System (EOSS)</h4>
+              <p>
+                The <strong>Edmonton Obesity Staging System</strong>, developed by Dr Arya Sharma at the
+                University of Alberta, represents a fundamentally different approach to weight-related health
+                assessment. Rather than relying on a single number, EOSS classifies patients into <strong>five
+                stages (0-4)</strong> based on the actual presence of metabolic, physical, and psychological
+                complications. Stage 0 indicates no apparent risk factors, while Stage 4 indicates severe
+                end-stage chronic disease. Research published in the <strong>Canadian Medical Association
+                Journal</strong> demonstrated that EOSS predicted mortality significantly better than BMI
+                alone, and crucially, many individuals with "obese" BMI values fell into low-risk EOSS stages
+                while some with "normal" BMI showed high-risk staging. Both the <strong>UK's Royal College
+                of Physicians</strong> and <strong>Obesity Canada</strong> have endorsed clinical approaches
+                that incorporate staging systems like EOSS rather than relying on BMI alone.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <h2 className="text-2xl font-display font-bold mb-6">Understanding BMI limitations</h2>
@@ -306,7 +487,7 @@ const BMILimitations = () => {
               Now that you know the limitations, use our calculator as a first indicator
             </p>
             <Link
-              to="/en/bmi"
+              to="/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
               Calculate my BMI

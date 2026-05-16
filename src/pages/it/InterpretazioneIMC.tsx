@@ -310,6 +310,52 @@ const InterpretazioneIMC = () => {
             </div>
           </div>
 
+          {/* SSN Obesity Pathways, LEA & Weight Stigma */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-primary/10">
+                <Heart className="w-6 h-6 text-primary" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">Percorsi di cura dell'obesit&agrave; nel SSN e lo stigma del peso in Italia</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Il <strong>Servizio Sanitario Nazionale (SSN)</strong> italiano ha strutturato percorsi diagnostico-terapeutici
+                assistenziali (PDTA) specifici per l'obesit&agrave; che vanno ben oltre la semplice misurazione dell'IMC. I
+                <strong> LEA (Livelli Essenziali di Assistenza)</strong>, aggiornati con il DPCM del 12 gennaio 2017, garantiscono
+                a tutti i cittadini italiani il diritto a visite specialistiche endocrinologiche e dietologiche con impegnativa del
+                medico di base, esami ematochimici per la valutazione del profilo metabolico (glicemia, emoglobina glicata,
+                colesterolo HDL/LDL, trigliceridi, funzionalit&agrave; tiroidea), e percorsi riabilitativi multidisciplinari
+                presso le ASL. Per i pazienti con IMC &ge;40, o &ge;35 con comorbidit&agrave; documentate, il SSN copre
+                integralmente la <strong>chirurgia bariatrica</strong> (sleeve gastrectomy, bypass gastrico, bendaggio gastrico)
+                presso i centri accreditati dalla <strong>SICOB (Societ&agrave; Italiana di Chirurgia dell'Obesit&agrave;)</strong>,
+                che conta oltre 100 centri certificati sul territorio nazionale.
+              </p>
+              <p>
+                Tuttavia, l'accesso effettivo a questi servizi rivela le <strong>disuguaglianze regionali</strong> del SSN.
+                Le liste d'attesa per una prima visita dietologica nel SSN variano da 2-3 settimane in Lombardia e Veneto a
+                oltre 6 mesi in Calabria e Sicilia. La rete dei <strong>centri per la cura dell'obesit&agrave;</strong> &egrave;
+                concentrata nel Centro-Nord: il Piemonte conta 15 centri SICOB accreditati, la Campania solo 6, nonostante
+                abbia una popolazione e una prevalenza di obesit&agrave; superiori. L'<strong>ADI (Associazione Italiana di
+                Dietetica e Nutrizione Clinica)</strong> ha pi&ugrave; volte denunciato questa disparit&agrave;, chiedendo
+                l'inserimento dell'obesit&agrave; come malattia cronica nei LEA con percorsi dedicati uniformi su tutto il
+                territorio nazionale.
+              </p>
+              <p>
+                Lo <strong>stigma del peso</strong> in Italia presenta sfumature culturali uniche. In un Paese dove la
+                convivialit&agrave; a tavola &egrave; un valore fondamentale e la cultura gastronomica &egrave; parte
+                dell'identit&agrave; nazionale, le persone obese si trovano in una posizione paradossale: da un lato, la
+                cultura italiana celebra il cibo e il piacere della tavola; dall'altro, la pressione estetica &egrave; forte,
+                alimentata dall'industria della moda e dai media. L'<strong>Universit&agrave; di Padova</strong>, attraverso
+                il Dipartimento di Psicologia dello Sviluppo e della Socializzazione, ha condotto ricerche pioneristiche sullo
+                stigma del peso in Italia, evidenziando come il <em>weight bias</em> sia presente anche tra i professionisti
+                sanitari italiani, con conseguenze negative sull'aderenza ai percorsi di cura. Le campagne di sensibilizzazione
+                dell'<strong>OPEN (Obesity Policy Engagement Network) Italia</strong> stanno lavorando per combattere questa
+                discriminazione e promuovere un approccio al peso corporeo basato sulla salute e non sull'estetica.
+              </p>
+            </div>
+          </div>
+
           {/* SEO Content */}
           <div className="glass-card p-8">
             <h2 className="text-2xl font-display font-bold mb-6">Interpretazione IMC in Italia: guida completa</h2>

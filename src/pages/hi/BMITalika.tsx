@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header";
-import { Table, Scale, AlertTriangle, CheckCircle2, Globe } from "lucide-react";
+import { Table, Scale, AlertTriangle, CheckCircle2, Globe, BookOpen, Activity, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RelatedPages } from "@/components/RelatedPages";
 
@@ -585,6 +585,110 @@ const BMITalika = () => {
                 </ul>
               </div>
             </div>
+          </div>
+
+          {/* India NFHS-5 Deep Dive and Diabetes Capital */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-destructive/10">
+                <Activity className="w-6 h-6 text-destructive" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">भारत: "मधुमेह की राजधानी" — कम BMI पर अधिक खतरा</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4 mb-6">
+              <p>भारत को विश्व की <strong>"मधुमेह की राजधानी"</strong> कहा जाता है, और इसका एक प्रमुख कारण है भारतीयों की <strong>कम BMI पर भी मधुमेह विकसित करने की आनुवंशिक प्रवृत्ति</strong>। अंतर्राष्ट्रीय मधुमेह संघ (IDF) के अनुसार, भारत में <strong>10.1 करोड़ से अधिक</strong> वयस्क मधुमेह से पीड़ित हैं, और यह संख्या 2045 तक 13.4 करोड़ तक पहुँचने का अनुमान है।</p>
+              <p>सबसे चिंताजनक बात यह है कि भारत में मधुमेह के <strong>50% से अधिक रोगियों का BMI 25 से कम</strong> होता है — यानी WHO के अंतरराष्ट्रीय मानक के अनुसार वे "सामान्य वजन" की श्रेणी में आते हैं। यह इस बात को पुष्ट करता है कि <strong>ICMR द्वारा निर्धारित कम BMI कटऑफ</strong> (अधिक वजन: 23, मोटापा: 25) भारतीयों के लिए अधिक उपयुक्त हैं।</p>
+              <p>NFHS-5 (2019-21) के आँकड़ों के अनुसार, भारत में <strong>40.3% वयस्क</strong> (पुरुष और महिला मिलाकर) अधिक वजन या मोटापे की श्रेणी में आते हैं — यदि ICMR एशियाई कटऑफ (BMI ≥ 23) का उपयोग किया जाए। यह आँकड़ा WHO मानक (BMI ≥ 25) से कहीं अधिक है, जो लगभग 24% दर्शाता है। इसका अर्थ है कि <strong>लगभग 16% भारतीय वयस्क</strong> ऐसे हैं जो WHO मानक से "सामान्य" दिखते हैं लेकिन वास्तव में स्वास्थ्य जोखिम में हैं।</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="p-5 rounded-xl bg-destructive/5 border border-destructive/20">
+                <h4 className="font-bold text-destructive text-lg mb-3">आनुवंशिक प्रवृत्ति के मुख्य कारक</h4>
+                <ul className="text-sm text-muted-foreground space-y-2">
+                  <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-destructive mt-1 flex-shrink-0" /><span><strong>थ्रिफ्टी जीन परिकल्पना:</strong> हजारों वर्षों के अकाल और खाद्य अनिश्चितता ने भारतीय जीनोम को ऊर्जा संग्रहण में अत्यधिक कुशल बनाया है</span></li>
+                  <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-destructive mt-1 flex-shrink-0" /><span><strong>जन्म के समय कम वजन:</strong> भारत में 18% शिशु कम वजन के साथ जन्म लेते हैं, जो बाद में इंसुलिन प्रतिरोध का जोखिम बढ़ाता है</span></li>
+                  <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-destructive mt-1 flex-shrink-0" /><span><strong>पतला-मोटा (Thin-Fat) phenotype:</strong> भारतीय शिशुओं में जन्म से ही कम मांसपेशी और अधिक वसा का अनुपात होता है</span></li>
+                  <li className="flex items-start gap-2"><AlertTriangle className="w-4 h-4 text-destructive mt-1 flex-shrink-0" /><span><strong>अग्न्याशय बीटा-सेल अपर्याप्तता:</strong> भारतीयों में इंसुलिन उत्पादन क्षमता पश्चिमी जनसंख्या की तुलना में कम होती है</span></li>
+                </ul>
+              </div>
+              <div className="p-5 rounded-xl bg-warning/5 border border-warning/20">
+                <h4 className="font-bold text-warning text-lg mb-3">NFHS-5 प्रमुख निष्कर्ष</h4>
+                <ul className="text-sm text-muted-foreground space-y-2">
+                  <li className="flex items-start gap-2"><Activity className="w-4 h-4 text-warning mt-1 flex-shrink-0" /><span>ICMR कटऑफ से <strong>40.3%</strong> वयस्क अधिक वजन/मोटापे में</span></li>
+                  <li className="flex items-start gap-2"><Activity className="w-4 h-4 text-warning mt-1 flex-shrink-0" /><span>शहरी क्षेत्रों में मोटापा दर ग्रामीण से <strong>दोगुनी</strong></span></li>
+                  <li className="flex items-start gap-2"><Activity className="w-4 h-4 text-warning mt-1 flex-shrink-0" /><span>पिछले 10 वर्षों में मोटापा दर में <strong>40% वृद्धि</strong></span></li>
+                  <li className="flex items-start gap-2"><Activity className="w-4 h-4 text-warning mt-1 flex-shrink-0" /><span>दक्षिण भारत में मधुमेह दर उत्तर भारत से अधिक</span></li>
+                </ul>
+              </div>
+            </div>
+            <p className="text-xs text-muted-foreground mt-4">स्रोत: IDF Diabetes Atlas (2021), NFHS-5 (2019-21), Lancet Diabetes & Endocrinology</p>
+          </div>
+
+          {/* ICMR-NIN Dietary Guidelines */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-success/10">
+                <BookOpen className="w-6 h-6 text-success" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">ICMR-NIN आहार दिशानिर्देश: भारतीयों के लिए स्वस्थ BMI कैसे बनाए रखें</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4 mb-6">
+              <p><strong>भारतीय आयुर्विज्ञान अनुसंधान परिषद (ICMR)</strong> और <strong>राष्ट्रीय पोषण संस्थान (NIN), हैदराबाद</strong> ने भारतीय जनसंख्या के लिए विशेष आहार दिशानिर्देश जारी किए हैं। ये दिशानिर्देश भारतीय खाद्य संस्कृति, उपलब्ध खाद्य पदार्थों और भारतीयों की विशिष्ट पोषण आवश्यकताओं को ध्यान में रखकर बनाए गए हैं।</p>
+              <p>ICMR-NIN दिशानिर्देशों के अनुसार, एक स्वस्थ भारतीय वयस्क (मध्यम शारीरिक गतिविधि) के लिए दैनिक आहार में निम्नलिखित शामिल होने चाहिए: <strong>अनाज और मोटा अनाज (बाजरा) 270-340 ग्राम</strong>, <strong>दालें 60-90 ग्राम</strong>, <strong>दूध/दही 300-400 मिली</strong>, <strong>सब्जियाँ 300-400 ग्राम</strong> (जिसमें हरी पत्तेदार सब्जियाँ 100 ग्राम), <strong>फल 100-150 ग्राम</strong>, और <strong>तेल/वसा 25-30 ग्राम</strong> (कुल दैनिक सेवन)।</p>
+              <p>विशेष रूप से उल्लेखनीय है कि ICMR-NIN ने भारतीय आहार में <strong>बाजरा (millets) को पुनः शामिल करने</strong> पर बल दिया है। रागी (फिंगर मिलेट), ज्वार (सोरघम), और बाजरा (पर्ल मिलेट) जैसे मोटे अनाज कम ग्लाइसेमिक इंडेक्स वाले होते हैं, जो रक्त शर्करा को नियंत्रित रखने में सहायक हैं। यह विशेष रूप से भारतीयों के लिए महत्वपूर्ण है, जो मधुमेह के प्रति अधिक संवेदनशील हैं। संयुक्त राष्ट्र ने 2023 को "अंतर्राष्ट्रीय बाजरा वर्ष" घोषित किया था, जो भारत की ही पहल पर हुआ था।</p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-4 mb-6">
+              <div className="p-4 rounded-xl bg-success/5 border border-success/20">
+                <h4 className="font-bold text-success mb-2">स्वस्थ BMI के लिए आहार</h4>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>-- दालें और फलियाँ प्रतिदिन</li>
+                  <li>-- बाजरा/रागी/ज्वार को गेहूँ के विकल्प के रूप में</li>
+                  <li>-- ताज़ी मौसमी सब्जियाँ और फल</li>
+                  <li>-- चीनी 20 ग्राम/दिन से कम</li>
+                  <li>-- नमक 5 ग्राम/दिन से कम</li>
+                </ul>
+              </div>
+              <div className="p-4 rounded-xl bg-warning/5 border border-warning/20">
+                <h4 className="font-bold text-warning mb-2">शहरी जीवनशैली जोखिम</h4>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>-- मैदा (रिफाइंड आटा) का अत्यधिक सेवन</li>
+                  <li>-- तले हुए नाश्ते (समोसे, पकौड़े)</li>
+                  <li>-- मीठी चाय/कॉफी दिन में 5-6 बार</li>
+                  <li>-- बैठे रहने वाली नौकरियाँ</li>
+                  <li>-- फूड डिलीवरी ऐप्स का बढ़ता उपयोग</li>
+                </ul>
+              </div>
+              <div className="p-4 rounded-xl bg-primary/5 border border-primary/20">
+                <h4 className="font-bold text-primary mb-2">शारीरिक गतिविधि सुझाव</h4>
+                <ul className="text-sm text-muted-foreground space-y-1">
+                  <li>-- प्रतिदिन 30-45 मिनट तेज चलना</li>
+                  <li>-- योग और प्राणायाम सप्ताह में 5 दिन</li>
+                  <li>-- सीढ़ियों का उपयोग (लिफ्ट के बजाय)</li>
+                  <li>-- कार्यस्थल पर हर घंटे 5 मिनट का ब्रेक</li>
+                  <li>-- साइकिलिंग या तैराकी सप्ताह में 2-3 बार</li>
+                </ul>
+              </div>
+            </div>
+            <p className="text-xs text-muted-foreground mt-4">स्रोत: ICMR-NIN Dietary Guidelines for Indians (2024), National Institute of Nutrition, Hyderabad</p>
+          </div>
+
+          {/* Urban vs Rural Divide */}
+          <div className="glass-card p-8">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 rounded-xl bg-info/10">
+                <Heart className="w-6 h-6 text-info" />
+              </div>
+              <h2 className="text-2xl font-display font-bold">शहरी बनाम ग्रामीण: भारत का दोहरा पोषण संकट</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4 mb-6">
+              <p>भारत एक अद्वितीय <strong>"दोहरे पोषण बोझ"</strong> (Double Burden of Malnutrition) से जूझ रहा है, जहाँ एक ही देश में कुपोषण और मोटापा साथ-साथ मौजूद हैं। NFHS-5 के आँकड़े इस विभाजन को स्पष्ट रूप से दर्शाते हैं: शहरी भारत में महिलाओं में अधिक वजन/मोटापा दर <strong>33.2%</strong> है, जबकि ग्रामीण भारत में यह <strong>19.7%</strong> है। इसके विपरीत, ग्रामीण महिलाओं में कम वजन दर <strong>21.7%</strong> है, जो शहरी <strong>12.4%</strong> से बहुत अधिक है।</p>
+              <p>यह विभाजन केवल आर्थिक नहीं है — इसके पीछे गहरे सामाजिक और सांस्कृतिक कारण हैं। शहरी क्षेत्रों में <strong>पोषण संक्रमण</strong> (Nutrition Transition) तेज़ी से हो रहा है: पारंपरिक भारतीय भोजन (दाल-चावल, रोटी-सब्जी) की जगह प्रसंस्कृत खाद्य पदार्थ, पिज़्ज़ा, बर्गर, और मीठे पेय पदार्थ ले रहे हैं। साथ ही, शहरी नौकरियों में बैठकर काम करने की प्रवृत्ति ने शारीरिक गतिविधि को काफी कम कर दिया है। दिल्ली, मुंबई, बेंगलुरु और हैदराबाद जैसे महानगरों में लंबे आवागमन समय (daily commute) और तनावपूर्ण कार्य संस्कृति भी BMI बढ़ाने में योगदान देती है।</p>
+              <p>ग्रामीण क्षेत्रों में समस्या अलग प्रकार की है। यहाँ <strong>खाद्य असुरक्षा</strong>, सीमित आहार विविधता, और पोषण शिक्षा की कमी के कारण कुपोषण व्याप्त है। बिहार, झारखंड, मध्य प्रदेश और छत्तीसगढ़ जैसे राज्यों में ग्रामीण महिलाओं में कम वजन दर 25% से अधिक है। हालाँकि, एक चिंताजनक प्रवृत्ति यह है कि ग्रामीण क्षेत्रों में भी मोटापा तेज़ी से बढ़ रहा है — पिछले दशक में ग्रामीण मोटापा दर में <strong>55% की वृद्धि</strong> हुई है, जो शहरी वृद्धि दर (33%) से अधिक है। इसका कारण ग्रामीण क्षेत्रों में भी प्रसंस्कृत खाद्य पदार्थों और मीठे पेय पदार्थों की बढ़ती उपलब्धता और खपत है।</p>
+            </div>
+            <div className="p-4 rounded-xl bg-warning/5 border border-warning/20">
+              <h4 className="font-bold text-warning mb-2">भारत सरकार की पहल</h4>
+              <p className="text-sm text-muted-foreground">भारत सरकार ने इस दोहरे बोझ से निपटने के लिए कई कार्यक्रम शुरू किए हैं: <strong>Eat Right India</strong> अभियान (FSSAI), <strong>Fit India Movement</strong>, <strong>POSHAN Abhiyaan</strong> (राष्ट्रीय पोषण मिशन), और <strong>Ayushman Bharat</strong> (स्वास्थ्य बीमा)। FSSAI ने खाद्य पदार्थों पर अनिवार्य पोषण लेबलिंग और "रेड-एम्बर-ग्रीन" कलर कोडिंग प्रणाली भी लागू की है। इन पहलों का लक्ष्य 2030 तक भारत में मोटापा दर की वृद्धि को रोकना और कुपोषण को 10% से नीचे लाना है।</p>
+            </div>
+            <p className="text-xs text-muted-foreground mt-4">स्रोत: NFHS-5 (2019-21), FSSAI Eat Right India, WHO India Country Profile</p>
           </div>
 
           {/* SEO / Understanding section */}
