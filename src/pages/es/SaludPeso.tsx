@@ -502,7 +502,7 @@ const SaludPeso = () => {
                 derechohabientes y ofrece consultas de nutrición, pero la demanda supera ampliamente la capacidad: se
                 estima que hay menos de un nutriólogo por cada 10&nbsp;000 asegurados. El ISSSTE y el sistema público
                 INSABI/IMSS-Bienestar atienden al resto de la población, aunque con recursos aún más limitados. La
-                cirugía bariátrica, recomendada para pacientes con obesidad severa (IMC {"\u2265"} 40 o {"\u2265"} 35 con
+                cirugía bariátrica, recomendada para pacientes con obesidad severa (IMC {"≥"} 40 o {"≥"} 35 con
                 comorbilidades), está disponible en hospitales de tercer nivel, pero las listas de espera pueden superar
                 los dos años.
               </p>

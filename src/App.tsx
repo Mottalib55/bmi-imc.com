@@ -119,6 +119,12 @@ import BMIChangjianwenti from "./pages/zh/BMIChangjianwenti";
 import JiankangTizhong from "./pages/zh/JiankangTizhong";
 
 
+// About & Legal pages
+import About from "./pages/About";
+import APropos from "./pages/APropos";
+import Legal from "./pages/Legal";
+import MentionsLegales from "./pages/MentionsLegales";
+
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -246,6 +252,12 @@ const App = () => (
           <Route path="/zh/bmi-changjianwenti" element={<BMIChangjianwenti />} />
           <Route path="/zh/jiankang-tizhong" element={<JiankangTizhong />} />
 
+
+          {/* About & Legal pages */}
+          <Route path="/about" element={<About />} />
+          <Route path="/a-propos" element={<APropos />} />
+          <Route path="/legal" element={<Legal />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
