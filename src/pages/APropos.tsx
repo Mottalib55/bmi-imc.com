@@ -33,10 +33,10 @@ const APropos = () => {
               <span>MBA, INSEAD</span>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Mottalib Radif est un professionnel de la finance et un promoteur de la sante numerique,
-              diplome d'un MBA de l'INSEAD, l'une des meilleures ecoles de commerce au monde. Passionne
-              par l'accessibilite des outils de sante et de finance pour tous, il a fonde BMI-IMC.com
-              pour fournir des calculateurs IMC gratuits, precis et faciles a utiliser dans plusieurs langues.
+              Passionne par la sante et les outils numeriques au service du bien-etre, diplome MBA de l'INSEAD.
+              Specialise dans la creation d'outils de sante accessibles et fondes sur les donnees medicales
+              officielles. Il a fonde BMI-IMC.com pour fournir des calculateurs IMC gratuits, precis et faciles
+              a utiliser dans plusieurs langues, bases sur les normes de l'OMS.
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm">
               <Mail className="w-4 h-4 text-primary" />

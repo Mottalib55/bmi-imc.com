@@ -33,10 +33,9 @@ const About = () => {
               <span>MBA, INSEAD</span>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Mottalib Radif is a finance professional and digital health advocate with an MBA from INSEAD,
-              one of the world's leading business schools. Passionate about making health and financial tools
-              accessible to everyone, he founded BMI-IMC.com to provide free, accurate, and easy-to-use
-              BMI calculators in multiple languages.
+              Passionate about health and digital wellness tools, MBA INSEAD graduate. Specialized in creating
+              accessible health tools based on official medical data. He founded BMI-IMC.com to provide free,
+              accurate, and easy-to-use BMI calculators in multiple languages based on WHO standards.
             </p>
             <div className="mt-3 flex items-center gap-2 text-sm">
               <Mail className="w-4 h-4 text-primary" />

@@ -3,15 +3,15 @@ import { getCurrentLang } from "@/config/routes";
 import { useLocation } from "react-router-dom";
 
 const i18n: Record<string, { writtenBy: string; credentials: string; aboutPath: string }> = {
-  fr: { writtenBy: "Rédigé par", credentials: "MBA INSEAD · Expert Santé & Finance", aboutPath: "/a-propos" },
-  en: { writtenBy: "Written by", credentials: "MBA INSEAD · Health & Finance Expert", aboutPath: "/about" },
-  es: { writtenBy: "Escrito por", credentials: "MBA INSEAD · Experto en Salud y Finanzas", aboutPath: "/about" },
-  pt: { writtenBy: "Escrito por", credentials: "MBA INSEAD · Especialista em Saúde e Finanças", aboutPath: "/about" },
-  de: { writtenBy: "Verfasst von", credentials: "MBA INSEAD · Gesundheits- & Finanzexperte", aboutPath: "/about" },
-  it: { writtenBy: "Scritto da", credentials: "MBA INSEAD · Esperto di Salute e Finanza", aboutPath: "/about" },
-  hi: { writtenBy: "लेखक", credentials: "MBA INSEAD · स्वास्थ्य और वित्त विशेषज्ञ", aboutPath: "/about" },
-  zh: { writtenBy: "作者", credentials: "MBA INSEAD · 健康与金融专家", aboutPath: "/about" },
-  ar: { writtenBy: "بقلم", credentials: "MBA INSEAD · خبير في الصحة والمالية", aboutPath: "/about" },
+  fr: { writtenBy: "Rédigé par", credentials: "MBA INSEAD · Passionné de santé et outils numériques", aboutPath: "/a-propos" },
+  en: { writtenBy: "Written by", credentials: "MBA INSEAD · Health and Digital Wellness Tools Specialist", aboutPath: "/about" },
+  es: { writtenBy: "Escrito por", credentials: "MBA INSEAD · Especialista en herramientas digitales de salud", aboutPath: "/about" },
+  pt: { writtenBy: "Escrito por", credentials: "MBA INSEAD · Especialista em ferramentas digitais de saúde", aboutPath: "/about" },
+  de: { writtenBy: "Verfasst von", credentials: "MBA INSEAD · Spezialist für digitale Gesundheitstools", aboutPath: "/about" },
+  it: { writtenBy: "Scritto da", credentials: "MBA INSEAD · Specialista in strumenti digitali per la salute", aboutPath: "/about" },
+  hi: { writtenBy: "लेखक", credentials: "MBA INSEAD · स्वास्थ्य और डिजिटल उपकरण विशेषज्ञ", aboutPath: "/about" },
+  zh: { writtenBy: "作者", credentials: "MBA INSEAD · 健康与数字健康工具专家", aboutPath: "/about" },
+  ar: { writtenBy: "بقلم", credentials: "MBA INSEAD · متخصص في أدوات الصحة الرقمية", aboutPath: "/about" },
 };
 
 export const AuthorByline = () => {
