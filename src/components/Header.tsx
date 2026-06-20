@@ -326,6 +326,13 @@ export const Header = () => {
   ];
 
   return (
+    <>
+    <a
+      href="#main-content"
+      className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-primary focus:text-primary-foreground focus:text-sm focus:font-medium"
+    >
+      Skip to content
+    </a>
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-xl">
       <div className="container max-w-6xl mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
@@ -426,5 +433,6 @@ export const Header = () => {
         )}
       </div>
     </header>
+    </>
   );
 };

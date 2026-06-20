@@ -1280,4 +1280,36 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Utility pages -->
+  <url>
+    <loc>https://bmi-imc.com/about/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bmi-imc.com/a-propos/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://bmi-imc.com/glossary/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bmi-imc.com/widget/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://bmi-imc.com/legal/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://bmi-imc.com/mentions-legales/</loc>
+    <lastmod>2026-06-20</lastmod>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>

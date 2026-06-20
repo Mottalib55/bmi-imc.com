@@ -126,6 +126,8 @@ import Legal from "./pages/Legal";
 import MentionsLegales from "./pages/MentionsLegales";
 
 import NotFound from "./pages/NotFound";
+import Glossary from "./pages/Glossary";
+import Widget from "./pages/Widget";
 
 const queryClient = new QueryClient();
 
@@ -258,6 +260,8 @@ const App = () => (
           <Route path="/a-propos" element={<APropos />} />
           <Route path="/legal" element={<Legal />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
+          <Route path="/glossary" element={<Glossary />} />
+          <Route path="/widget" element={<Widget />} />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

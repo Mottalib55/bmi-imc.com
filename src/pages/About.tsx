@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Mail, ExternalLink, GraduationCap, Shield, Heart, BookOpen, Globe, Scale, AlertTriangle } from "lucide-react";
+import { Footer } from "@/components/Footer";
 
 const About = () => {
   return (
@@ -13,7 +14,7 @@ const About = () => {
       </Helmet>
       <Header />
 
-      <div className="container max-w-4xl py-12 px-4">
+      <main id="main-content" className="container max-w-4xl py-12 px-4">
         <h1 className="text-4xl font-display font-bold mb-8 gradient-text">About BMI-IMC.com</h1>
 
         {/* Author Card */}
@@ -336,14 +337,9 @@ const About = () => {
           </div>
         </section>
 
-        {/* Footer links */}
-        <div className="border-t border-border pt-6 mt-10 flex flex-wrap gap-4 text-sm text-muted-foreground">
-          <Link to="/" className="hover:text-primary">BMI Calculator</Link>
-          <Link to="/legal" className="hover:text-primary">Legal Notice</Link>
-          <Link to="/imc" className="hover:text-primary">Calculateur IMC (FR)</Link>
-          <Link to="/a-propos" className="hover:text-primary">A propos (FR)</Link>
-        </div>
-      </div>
+      </main>
+
+      <Footer />
     </div>
   );
 };

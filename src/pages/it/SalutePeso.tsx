@@ -2,6 +2,9 @@ import { Header } from "@/components/Header";
 import { Heart, Activity, Apple, Moon, Brain, Scale, TrendingUp, AlertTriangle, CheckCircle2, BookOpen, Globe, Users, Stethoscope } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RelatedPages } from "@/components/RelatedPages";
+import { Footer } from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { AuthorByline } from "@/components/AuthorByline";
 
 const SalutePeso = () => {
   return (
@@ -13,7 +16,8 @@ const SalutePeso = () => {
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-primary/5 blur-3xl animate-float" style={{ animationDelay: "-3s" }} />
       </div>
 
-      <div className="container max-w-6xl py-8 px-4 md:py-12">
+      <main id="main-content" className="container max-w-6xl py-8 px-4 md:py-12">
+        <Breadcrumbs />
         <header className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-success/10 text-success text-sm font-medium mb-6">
             <Heart className="w-4 h-4" />
@@ -574,10 +578,10 @@ const SalutePeso = () => {
 
         <RelatedPages />
 
-        <footer className="text-center mt-16 text-sm text-muted-foreground">
-          <p>&copy; 2024 Salute e Peso</p>
-        </footer>
-      </div>
+        <AuthorByline />
+      </main>
+
+      <Footer />
     </div>
   );
 };

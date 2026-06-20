@@ -1,10 +1,12 @@
 import { useState, useCallback } from "react";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import { BMICalculator } from "@/components/BMICalculator";
 import { BMIGauge } from "@/components/BMIGauge";
 import { BMIDetails } from "@/components/BMIDetails";
 import { BMIInfo } from "@/components/BMIInfo";
 import { SEOContent } from "@/components/SEOContent";
+import { AuthorByline } from "@/components/AuthorByline";
 import { Activity } from "lucide-react";
 import { RelatedPages } from "@/components/RelatedPages";
 
@@ -30,7 +32,7 @@ const Index = () => {
         <div className="absolute top-1/2 left-1/2 w-[300px] h-[300px] rounded-full bg-age/5 blur-3xl animate-float" style={{ animationDelay: "-1.5s" }} />
       </div>
 
-      <div className="container max-w-6xl py-8 px-4 md:py-16">
+      <main id="main-content" className="container max-w-6xl py-8 px-4 md:py-16">
         {/* Header */}
         <header className="text-center mb-12 md:mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
@@ -60,16 +62,12 @@ const Index = () => {
         {/* SEO Content */}
         <SEOContent />
 
-        {/* Footer */}
-
         <RelatedPages />
 
-        <footer className="text-center mt-16 text-sm text-muted-foreground">
-          <p>
-            © 2024 Calculateur IMC • Outil informatif uniquement
-          </p>
-        </footer>
-      </div>
+        <AuthorByline />
+      </main>
+
+      <Footer />
     </div>
   );
 };

@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 
 const i18n: Record<string, { writtenBy: string; credentials: string; aboutPath: string }> = {
   fr: { writtenBy: "Rédigé par", credentials: "MBA INSEAD · Passionné de santé et outils numériques", aboutPath: "/a-propos" },
-  en: { writtenBy: "Written by", credentials: "MBA INSEAD · Health and Digital Wellness Tools Specialist", aboutPath: "/about" },
+  en: { writtenBy: "Written by", credentials: "MBA INSEAD · Finance Enthusiast · Health and Digital Wellness Tools Specialist", aboutPath: "/about" },
   es: { writtenBy: "Escrito por", credentials: "MBA INSEAD · Especialista en herramientas digitales de salud", aboutPath: "/about" },
   pt: { writtenBy: "Escrito por", credentials: "MBA INSEAD · Especialista em ferramentas digitais de saúde", aboutPath: "/about" },
   de: { writtenBy: "Verfasst von", credentials: "MBA INSEAD · Spezialist für digitale Gesundheitstools", aboutPath: "/about" },

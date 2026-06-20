@@ -561,6 +561,19 @@ export const defaultSEO: PageSEO[] = [
     title: "健康体重管理指南 — 科学饮食与运动建议",
     description: "循证医学指导的健康体重管理方案。均衡饮食建议、推荐运动量、份量控制技巧和可持续的长期体重维护习惯，科学减重不反弹。",
   },
+  // --- Utility pages ---
+  {
+    path: "/glossary",
+    lang: "en",
+    title: "BMI Glossary - 35+ Health & Weight Terms Defined",
+    description: "Complete glossary of BMI, body mass index, obesity, underweight, healthy weight, metabolic rate, body fat percentage and 30+ health terms with WHO and CDC definitions.",
+  },
+  {
+    path: "/widget",
+    lang: "en",
+    title: "Free BMI Calculator Widget - Embed on Your Website",
+    description: "Add a free BMI calculator widget to your website or blog. Copy the embed code and paste it into your HTML. Lightweight, responsive, no dependencies required.",
+  },
 ];
 
 const STORAGE_KEY = "seo-overrides";

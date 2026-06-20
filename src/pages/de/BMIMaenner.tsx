@@ -4,6 +4,9 @@ import { BMIGauge } from "@/components/BMIGauge";
 import { User, Dumbbell, Target, Heart, Scale, Activity, AlertTriangle, CheckCircle2, Globe, TrendingUp, Utensils, Shield } from "lucide-react";
 import { Slider } from "@/components/ui/slider";
 import { RelatedPages } from "@/components/RelatedPages";
+import { Footer } from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { AuthorByline } from "@/components/AuthorByline";
 
 const BMIMaenner = () => {
   const [bmi, setBmi] = useState<number | null>(null);
@@ -40,7 +43,8 @@ const BMIMaenner = () => {
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-primary/5 blur-3xl animate-float" style={{ animationDelay: "-3s" }} />
       </div>
 
-      <div className="container max-w-6xl py-8 px-4 md:py-12">
+      <main id="main-content" className="container max-w-6xl py-8 px-4 md:py-12">
+        <Breadcrumbs />
         <header className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 text-blue-500 text-sm font-medium mb-6">
             <User className="w-4 h-4" />
@@ -395,10 +399,10 @@ const BMIMaenner = () => {
 
         <RelatedPages />
 
-        <footer className="text-center mt-16 text-sm text-muted-foreground">
-          <p>© 2024 BMI-Rechner für Männer - Informationswerkzeug</p>
-        </footer>
-      </div>
+        <AuthorByline />
+      </main>
+
+      <Footer />
     </div>
   );
 };

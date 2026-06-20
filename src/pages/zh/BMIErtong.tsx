@@ -5,6 +5,9 @@ import { Baby, AlertTriangle, Scale, Activity, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Slider } from "@/components/ui/slider";
 import { RelatedPages } from "@/components/RelatedPages";
+import { Footer } from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { AuthorByline } from "@/components/AuthorByline";
 
 const bmiPercentilesData: Record<string, Record<number, { p3: number; p15: number; p50: number; p85: number; p97: number }>> = {
   boy: {
@@ -99,7 +102,8 @@ const BMIErtong = () => {
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-primary/5 blur-3xl animate-float" style={{ animationDelay: "-3s" }} />
       </div>
 
-      <div className="container max-w-6xl py-8 px-4 md:py-12">
+      <main id="main-content" className="container max-w-6xl py-8 px-4 md:py-12">
+        <Breadcrumbs />
         <header className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-500/10 text-green-500 text-sm font-medium mb-6">
             <Baby className="w-4 h-4" />
@@ -656,10 +660,10 @@ const BMIErtong = () => {
 
         <RelatedPages />
 
-        <footer className="text-center mt-16 text-sm text-muted-foreground">
-          <p>&copy; 2024 儿童BMI计算器 - 仅供参考</p>
-        </footer>
-      </div>
+        <AuthorByline />
+      </main>
+
+      <Footer />
     </div>
   );
 };

@@ -5,6 +5,9 @@ import { Dumbbell, AlertTriangle, Target, Scale, Activity, TrendingUp, Globe } f
 import { Link } from "react-router-dom";
 import { Slider } from "@/components/ui/slider";
 import { RelatedPages } from "@/components/RelatedPages";
+import { Footer } from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { AuthorByline } from "@/components/AuthorByline";
 
 const IMCRiyadi = () => {
   const [bmi, setBmi] = useState<number | null>(null);
@@ -32,7 +35,8 @@ const IMCRiyadi = () => {
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-primary/5 blur-3xl animate-float" style={{ animationDelay: "-3s" }} />
       </div>
 
-      <div className="container max-w-6xl py-8 px-4 md:py-12">
+      <main id="main-content" className="container max-w-6xl py-8 px-4 md:py-12">
+        <Breadcrumbs />
         <header className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-500/10 text-orange-500 text-sm font-medium mb-6">
             <Dumbbell className="w-4 h-4" />
@@ -337,10 +341,10 @@ const IMCRiyadi = () => {
 
         <RelatedPages />
 
-        <footer className="text-center mt-16 text-sm text-muted-foreground">
-          <p>© 2024 حاسبة مؤشر كتلة الجسم للرياضيين العرب - أداة إعلامية وليست بديلاً عن استشارة الطبيب</p>
-        </footer>
-      </div>
+        <AuthorByline />
+      </main>
+
+      <Footer />
     </div>
   );
 };

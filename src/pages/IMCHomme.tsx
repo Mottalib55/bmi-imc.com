@@ -5,6 +5,8 @@ import { BMIGauge } from "@/components/BMIGauge";
 import { BMIDetails } from "@/components/BMIDetails";
 import { User, Dumbbell, Target, Heart, Scale, TrendingUp, Activity, AlertTriangle, CheckCircle2, Globe, BookOpen } from "lucide-react";
 import { RelatedPages } from "@/components/RelatedPages";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { AuthorByline } from "@/components/AuthorByline";
 
 const IMCHomme = () => {
   const [bmi, setBmi] = useState<number | null>(null);
@@ -27,7 +29,8 @@ const IMCHomme = () => {
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-primary/5 blur-3xl animate-float" style={{ animationDelay: "-3s" }} />
       </div>
 
-      <div className="container max-w-6xl py-8 px-4 md:py-12">
+      <main id="main-content" className="container max-w-6xl py-8 px-4 md:py-12">
+        <Breadcrumbs />
         {/* Header */}
         <header className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 text-blue-500 text-sm font-medium mb-6">
@@ -397,10 +400,10 @@ const IMCHomme = () => {
 
         <RelatedPages />
 
-        <footer className="text-center mt-16 text-sm text-muted-foreground">
-          <p>© 2024 Calculateur IMC Homme - Outil informatif uniquement</p>
-        </footer>
-      </div>
+        <AuthorByline />
+      </main>
+
+      <Footer />
     </div>
   );
 };

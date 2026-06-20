@@ -2,6 +2,9 @@ import { Header } from "@/components/Header";
 import { Table as TableIcon, Scale, AlertTriangle, CheckCircle2, Heart, Activity, Globe, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RelatedPages } from "@/components/RelatedPages";
+import { Footer } from "@/components/Footer";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { AuthorByline } from "@/components/AuthorByline";
 
 const BMIBiao = () => {
   return (
@@ -12,7 +15,8 @@ const BMIBiao = () => {
         <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-primary/5 blur-3xl animate-float" />
       </div>
 
-      <div className="container max-w-6xl py-8 px-4 md:py-12">
+      <main id="main-content" className="container max-w-6xl py-8 px-4 md:py-12">
+        <Breadcrumbs />
         <header className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
             <TableIcon className="w-4 h-4" />
@@ -860,10 +864,10 @@ const BMIBiao = () => {
 
         <RelatedPages />
 
-        <footer className="text-center mt-16 text-sm text-muted-foreground">
-          <p>&copy; 2024 BMI分类表 — 中国标准 WS/T 428-2013</p>
-        </footer>
-      </div>
+        <AuthorByline />
+      </main>
+
+      <Footer />
     </div>
   );
 };

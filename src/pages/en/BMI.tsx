@@ -1,10 +1,13 @@
 import { useState, useCallback, useEffect } from "react";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import { BMIGauge } from "@/components/BMIGauge";
+import { AuthorByline } from "@/components/AuthorByline";
 import { Calculator, Activity, Target, BookOpen, Scale, TrendingUp, Heart, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Slider } from "@/components/ui/slider";
 import { RelatedPages } from "@/components/RelatedPages";
+import { Helmet } from "react-helmet-async";
 
 const kgToLbs = (kg: number) => Math.round(kg * 2.20462);
 const cmToFtIn = (cm: number) => {
@@ -38,8 +41,23 @@ const BMI = () => {
     calculateBMI(weight, value[0]);
   };
 
+  const searchActionJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "BMI-IMC",
+    "url": "https://bmi-imc.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://bmi-imc.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(searchActionJsonLd)}</script>
+      </Helmet>
       <Header />
 
       <div className="fixed inset-0 -z-10 overflow-hidden">
@@ -47,7 +65,7 @@ const BMI = () => {
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-purple-500/5 blur-3xl animate-float" style={{ animationDelay: "-3s" }} />
       </div>
 
-      <div className="container max-w-6xl py-8 px-4 md:py-12">
+      <main id="main-content" className="container max-w-6xl py-8 px-4 md:py-12">
         <header className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
             <Calculator className="w-4 h-4" />
@@ -431,10 +449,10 @@ const BMI = () => {
 
         <RelatedPages />
 
-        <footer className="text-center mt-16 text-sm text-muted-foreground">
-          <p>&copy; 2024 Free BMI Calculator - Body Mass Index Tool</p>
-        </footer>
-      </div>
+        <AuthorByline />
+      </main>
+
+      <Footer />
     </div>
   );
 };
