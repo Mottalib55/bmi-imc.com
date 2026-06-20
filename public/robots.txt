@@ -14,5 +14,6 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /embed/
+Disallow: /*?*
 
 Sitemap: https://bmi-imc.com/sitemap.xml
