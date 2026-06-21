@@ -39,3 +39,19 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: /www/
+
+      - name: Post-deploy verification
+        run: |
+          sleep 10
+          for url in \
+            "https://bmi-imc.com/" \
+            "https://bmi-imc.com/sitemap.xml" \
+            "https://bmi-imc.com/robots.txt"; do
+            status=$(curl -s -o /dev/null -w "%{http_code}" "$url")
+            echo "$url → $status"
+            if [ "$status" -ne 200 ]; then
+              echo "::error::$url returned $status"
+              exit 1
+            fi
+          done
+          echo "All post-deploy checks passed"

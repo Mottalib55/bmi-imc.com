@@ -566,7 +566,7 @@ export const defaultSEO: PageSEO[] = [
     path: "/glossary",
     lang: "en",
     title: "BMI Glossary - 35+ Health & Weight Terms Defined",
-    description: "Complete glossary of BMI, body mass index, obesity, underweight, healthy weight, metabolic rate, body fat percentage and 30+ health terms with WHO and CDC definitions.",
+    description: "Complete glossary of BMI, body mass index, obesity, underweight, healthy weight, metabolic rate, body fat percentage and 30+ health terms with WHO definitions.",
   },
   {
     path: "/widget",
