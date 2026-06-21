@@ -128,11 +128,7 @@ for (const entry of seoEntries) {
   html = html.replaceAll("__OG_LOCALE__", ogLocale);
   html = html.replace("__HREFLANG__", hreflangTags);
 
-  // Inject a static H1 inside root div for SEO crawlers that don't execute JS
-  html = html.replace(
-    '<div id="root"></div>',
-    `<div id="root"><h1 class="sr-only">${title}</h1></div>`
-  );
+  // Static H1 + description are already in the template for SEO crawlers
 
   if (path === "/") {
     // Homepage (EN) → overwrite dist/index.html directly
