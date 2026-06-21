@@ -40,3 +40,18 @@ jobs:
 
       - id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Post-deploy verification
+        run: |
+          sleep 15
+          for url in \
+            "https://bmi-imc.com/" \
+            "https://bmi-imc.com/sitemap.xml" \
+            "https://bmi-imc.com/robots.txt"; do
+            status=$(curl -s -o /dev/null -w "%{http_code}" "$url")
+            echo "$url → $status"
+            if [ "$status" -ne 200 ]; then
+              echo "::warning::$url returned $status (may need cache refresh)"
+            fi
+          done
+          echo "Post-deploy checks complete"
