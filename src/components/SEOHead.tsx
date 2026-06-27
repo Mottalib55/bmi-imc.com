@@ -8,11 +8,46 @@ const DOMAIN = "https://bmi-imc.com";
 const withTrailingSlash = (path: string): string =>
   path.endsWith("/") ? path : `${path}/`;
 
+// Pages that should NOT get MedicalWebPage schema
+const UTILITY_PATHS = ["/about", "/a-propos", "/legal", "/mentions-legales", "/widget", "/glossary"];
+
+const isContentPage = (path: string): boolean =>
+  !UTILITY_PATHS.includes(path);
+
 export const SEOHead = () => {
   const { pathname } = useLocation();
   const seo = getSEOForPath(pathname);
   const alternates = getAlternates(pathname);
   const canonicalUrl = `${DOMAIN}${withTrailingSlash(seo.path)}`;
+
+  const articleJsonLd = isContentPage(seo.path) ? {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "headline": seo.title,
+    "description": seo.description,
+    "url": canonicalUrl,
+    "inLanguage": seo.lang,
+    "datePublished": "2026-05-16",
+    "dateModified": "2026-06-27",
+    "author": {
+      "@type": "Person",
+      "name": "Mottalib Radif",
+      "url": `${DOMAIN}/about/`,
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "BMI-IMC",
+      "url": DOMAIN,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${DOMAIN}/logo-512.png`,
+      },
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": canonicalUrl,
+    },
+  } : null;
 
   return (
     <Helmet>
@@ -45,6 +80,9 @@ export const SEOHead = () => {
       ))}
       {alternates && (
         <link rel="alternate" hrefLang="x-default" href={`${DOMAIN}${withTrailingSlash(alternates.en)}`} />
+      )}
+      {articleJsonLd && (
+        <script type="application/ld+json">{JSON.stringify(articleJsonLd)}</script>
       )}
     </Helmet>
   );

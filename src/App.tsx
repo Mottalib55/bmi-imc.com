@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -5,129 +6,130 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { SEOHead } from "@/components/SEOHead";
+import PageLoader from "@/components/PageLoader";
 
 // Main pages
-import Index from "./pages/Index";
-import IMCHomme from "./pages/IMCHomme";
-import IMCFemme from "./pages/IMCFemme";
-import IMCSportif from "./pages/IMCSportif";
-import IMCEnfant from "./pages/IMCEnfant";
+const Index = lazy(() => import("./pages/Index"));
+const IMCHomme = lazy(() => import("./pages/IMCHomme"));
+const IMCFemme = lazy(() => import("./pages/IMCFemme"));
+const IMCSportif = lazy(() => import("./pages/IMCSportif"));
+const IMCEnfant = lazy(() => import("./pages/IMCEnfant"));
 
 // Explanatory pages
-import TableauIMC from "./pages/TableauIMC";
-import InterpretationIMC from "./pages/InterpretationIMC";
-import LimitesIMC from "./pages/LimitesIMC";
+const TableauIMC = lazy(() => import("./pages/TableauIMC"));
+const InterpretationIMC = lazy(() => import("./pages/InterpretationIMC"));
+const LimitesIMC = lazy(() => import("./pages/LimitesIMC"));
 
 // Complementary pages
-import FAQIMC from "./pages/FAQIMC";
-import SanteEtPoids from "./pages/SanteEtPoids";
+const FAQIMC = lazy(() => import("./pages/FAQIMC"));
+const SanteEtPoids = lazy(() => import("./pages/SanteEtPoids"));
 
 // English pages
-import BMI from "./pages/en/BMI";
-import BMIMen from "./pages/en/BMIMen";
-import BMIWomen from "./pages/en/BMIWomen";
-import BMIAthletes from "./pages/en/BMIAthletes";
-import BMIChildren from "./pages/en/BMIChildren";
-import BMITable from "./pages/en/BMITable";
-import BMIInterpretation from "./pages/en/BMIInterpretation";
-import BMILimitations from "./pages/en/BMILimitations";
-import BMIFAQ from "./pages/en/BMIFAQ";
-import HealthWeight from "./pages/en/HealthWeight";
+const BMI = lazy(() => import("./pages/en/BMI"));
+const BMIMen = lazy(() => import("./pages/en/BMIMen"));
+const BMIWomen = lazy(() => import("./pages/en/BMIWomen"));
+const BMIAthletes = lazy(() => import("./pages/en/BMIAthletes"));
+const BMIChildren = lazy(() => import("./pages/en/BMIChildren"));
+const BMITable = lazy(() => import("./pages/en/BMITable"));
+const BMIInterpretation = lazy(() => import("./pages/en/BMIInterpretation"));
+const BMILimitations = lazy(() => import("./pages/en/BMILimitations"));
+const BMIFAQ = lazy(() => import("./pages/en/BMIFAQ"));
+const HealthWeight = lazy(() => import("./pages/en/HealthWeight"));
 
 // Spanish pages
-import IMCEs from "./pages/es/IMC";
-import IMCHombre from "./pages/es/IMCHombre";
-import IMCMujer from "./pages/es/IMCMujer";
-import IMCDeportista from "./pages/es/IMCDeportista";
-import IMCNino from "./pages/es/IMCNino";
-import TablaIMC from "./pages/es/TablaIMC";
-import InterpretacionIMC from "./pages/es/InterpretacionIMC";
-import LimitacionesIMC from "./pages/es/LimitacionesIMC";
-import PreguntasFrecuentesIMC from "./pages/es/PreguntasFrecuentesIMC";
-import SaludPeso from "./pages/es/SaludPeso";
+const IMCEs = lazy(() => import("./pages/es/IMC"));
+const IMCHombre = lazy(() => import("./pages/es/IMCHombre"));
+const IMCMujer = lazy(() => import("./pages/es/IMCMujer"));
+const IMCDeportista = lazy(() => import("./pages/es/IMCDeportista"));
+const IMCNino = lazy(() => import("./pages/es/IMCNino"));
+const TablaIMC = lazy(() => import("./pages/es/TablaIMC"));
+const InterpretacionIMC = lazy(() => import("./pages/es/InterpretacionIMC"));
+const LimitacionesIMC = lazy(() => import("./pages/es/LimitacionesIMC"));
+const PreguntasFrecuentesIMC = lazy(() => import("./pages/es/PreguntasFrecuentesIMC"));
+const SaludPeso = lazy(() => import("./pages/es/SaludPeso"));
 
 // Portuguese pages
-import IMCPt from "./pages/pt/IMC";
-import IMCHomemPt from "./pages/pt/IMCHomem";
-import IMCMulherPt from "./pages/pt/IMCMulher";
-import IMCAtleta from "./pages/pt/IMCAtleta";
-import IMCCrianca from "./pages/pt/IMCCrianca";
-import TabelaIMC from "./pages/pt/TabelaIMC";
-import InterpretacaoIMC from "./pages/pt/InterpretacaoIMC";
-import LimitacoesIMC from "./pages/pt/LimitacoesIMC";
-import PerguntasFrequentesIMC from "./pages/pt/PerguntasFrequentesIMC";
-import SaudePeso from "./pages/pt/SaudePeso";
+const IMCPt = lazy(() => import("./pages/pt/IMC"));
+const IMCHomemPt = lazy(() => import("./pages/pt/IMCHomem"));
+const IMCMulherPt = lazy(() => import("./pages/pt/IMCMulher"));
+const IMCAtleta = lazy(() => import("./pages/pt/IMCAtleta"));
+const IMCCrianca = lazy(() => import("./pages/pt/IMCCrianca"));
+const TabelaIMC = lazy(() => import("./pages/pt/TabelaIMC"));
+const InterpretacaoIMC = lazy(() => import("./pages/pt/InterpretacaoIMC"));
+const LimitacoesIMC = lazy(() => import("./pages/pt/LimitacoesIMC"));
+const PerguntasFrequentesIMC = lazy(() => import("./pages/pt/PerguntasFrequentesIMC"));
+const SaudePeso = lazy(() => import("./pages/pt/SaudePeso"));
 
 // Arabic pages
-import IMCAr from "./pages/ar/IMC";
-import IMCRajul from "./pages/ar/IMCRajul";
-import IMCMaraa from "./pages/ar/IMCMaraa";
-import IMCRiyadi from "./pages/ar/IMCRiyadi";
-import IMCTifl from "./pages/ar/IMCTifl";
-import JadwalIMC from "./pages/ar/JadwalIMC";
-import TafsirIMC from "./pages/ar/TafsirIMC";
-import HududIMC from "./pages/ar/HududIMC";
-import AsilaIMC from "./pages/ar/AsilaIMC";
-import SihaWazn from "./pages/ar/SihaWazn";
+const IMCAr = lazy(() => import("./pages/ar/IMC"));
+const IMCRajul = lazy(() => import("./pages/ar/IMCRajul"));
+const IMCMaraa = lazy(() => import("./pages/ar/IMCMaraa"));
+const IMCRiyadi = lazy(() => import("./pages/ar/IMCRiyadi"));
+const IMCTifl = lazy(() => import("./pages/ar/IMCTifl"));
+const JadwalIMC = lazy(() => import("./pages/ar/JadwalIMC"));
+const TafsirIMC = lazy(() => import("./pages/ar/TafsirIMC"));
+const HududIMC = lazy(() => import("./pages/ar/HududIMC"));
+const AsilaIMC = lazy(() => import("./pages/ar/AsilaIMC"));
+const SihaWazn = lazy(() => import("./pages/ar/SihaWazn"));
 
 // German pages
-import BMIDe from "./pages/de/BMI";
-import BMIMaenner from "./pages/de/BMIMaenner";
-import BMIFrauen from "./pages/de/BMIFrauen";
-import BMISportler from "./pages/de/BMISportler";
-import BMIKinder from "./pages/de/BMIKinder";
-import BMITabelle from "./pages/de/BMITabelle";
-import BMIInterpretationDe from "./pages/de/BMIInterpretation";
-import BMIGrenzen from "./pages/de/BMIGrenzen";
-import BMIFAQDe from "./pages/de/BMIFAQ";
-import GesundheitGewicht from "./pages/de/GesundheitGewicht";
+const BMIDe = lazy(() => import("./pages/de/BMI"));
+const BMIMaenner = lazy(() => import("./pages/de/BMIMaenner"));
+const BMIFrauen = lazy(() => import("./pages/de/BMIFrauen"));
+const BMISportler = lazy(() => import("./pages/de/BMISportler"));
+const BMIKinder = lazy(() => import("./pages/de/BMIKinder"));
+const BMITabelle = lazy(() => import("./pages/de/BMITabelle"));
+const BMIInterpretationDe = lazy(() => import("./pages/de/BMIInterpretation"));
+const BMIGrenzen = lazy(() => import("./pages/de/BMIGrenzen"));
+const BMIFAQDe = lazy(() => import("./pages/de/BMIFAQ"));
+const GesundheitGewicht = lazy(() => import("./pages/de/GesundheitGewicht"));
 
 // Italian pages
-import IMCIt from "./pages/it/IMC";
-import IMCUomo from "./pages/it/IMCUomo";
-import IMCDonna from "./pages/it/IMCDonna";
-import IMCSportivo from "./pages/it/IMCSportivo";
-import IMCBambino from "./pages/it/IMCBambino";
-import TabellaIMC from "./pages/it/TabellaIMC";
-import InterpretazioneIMC from "./pages/it/InterpretazioneIMC";
-import LimitiIMC from "./pages/it/LimitiIMC";
-import DomandeFrequentiIMC from "./pages/it/DomandeFrequentiIMC";
-import SalutePeso from "./pages/it/SalutePeso";
+const IMCIt = lazy(() => import("./pages/it/IMC"));
+const IMCUomo = lazy(() => import("./pages/it/IMCUomo"));
+const IMCDonna = lazy(() => import("./pages/it/IMCDonna"));
+const IMCSportivo = lazy(() => import("./pages/it/IMCSportivo"));
+const IMCBambino = lazy(() => import("./pages/it/IMCBambino"));
+const TabellaIMC = lazy(() => import("./pages/it/TabellaIMC"));
+const InterpretazioneIMC = lazy(() => import("./pages/it/InterpretazioneIMC"));
+const LimitiIMC = lazy(() => import("./pages/it/LimitiIMC"));
+const DomandeFrequentiIMC = lazy(() => import("./pages/it/DomandeFrequentiIMC"));
+const SalutePeso = lazy(() => import("./pages/it/SalutePeso"));
 
 // Hindi pages
-import BMIHi from "./pages/hi/BMI";
-import BMIPurush from "./pages/hi/BMIPurush";
-import BMIMahila from "./pages/hi/BMIMahila";
-import BMIKhiladi from "./pages/hi/BMIKhiladi";
-import BMIBachche from "./pages/hi/BMIBachche";
-import BMITalika from "./pages/hi/BMITalika";
-import BMIVyakhya from "./pages/hi/BMIVyakhya";
-import BMISeemayen from "./pages/hi/BMISeemayen";
-import BMIPrashn from "./pages/hi/BMIPrashn";
-import SwasthyaVajan from "./pages/hi/SwasthyaVajan";
+const BMIHi = lazy(() => import("./pages/hi/BMI"));
+const BMIPurush = lazy(() => import("./pages/hi/BMIPurush"));
+const BMIMahila = lazy(() => import("./pages/hi/BMIMahila"));
+const BMIKhiladi = lazy(() => import("./pages/hi/BMIKhiladi"));
+const BMIBachche = lazy(() => import("./pages/hi/BMIBachche"));
+const BMITalika = lazy(() => import("./pages/hi/BMITalika"));
+const BMIVyakhya = lazy(() => import("./pages/hi/BMIVyakhya"));
+const BMISeemayen = lazy(() => import("./pages/hi/BMISeemayen"));
+const BMIPrashn = lazy(() => import("./pages/hi/BMIPrashn"));
+const SwasthyaVajan = lazy(() => import("./pages/hi/SwasthyaVajan"));
 
 // Chinese pages
-import BMIZh from "./pages/zh/BMI";
-import BMINanxing from "./pages/zh/BMINanxing";
-import BMINvxing from "./pages/zh/BMINvxing";
-import BMIYundongyuan from "./pages/zh/BMIYundongyuan";
-import BMIErtong from "./pages/zh/BMIErtong";
-import BMIBiao from "./pages/zh/BMIBiao";
-import BMIJiedu from "./pages/zh/BMIJiedu";
-import BMIJuxianxing from "./pages/zh/BMIJuxianxing";
-import BMIChangjianwenti from "./pages/zh/BMIChangjianwenti";
-import JiankangTizhong from "./pages/zh/JiankangTizhong";
-
+const BMIZh = lazy(() => import("./pages/zh/BMI"));
+const BMINanxing = lazy(() => import("./pages/zh/BMINanxing"));
+const BMINvxing = lazy(() => import("./pages/zh/BMINvxing"));
+const BMIYundongyuan = lazy(() => import("./pages/zh/BMIYundongyuan"));
+const BMIErtong = lazy(() => import("./pages/zh/BMIErtong"));
+const BMIBiao = lazy(() => import("./pages/zh/BMIBiao"));
+const BMIJiedu = lazy(() => import("./pages/zh/BMIJiedu"));
+const BMIJuxianxing = lazy(() => import("./pages/zh/BMIJuxianxing"));
+const BMIChangjianwenti = lazy(() => import("./pages/zh/BMIChangjianwenti"));
+const JiankangTizhong = lazy(() => import("./pages/zh/JiankangTizhong"));
 
 // About & Legal pages
-import About from "./pages/About";
-import APropos from "./pages/APropos";
-import Legal from "./pages/Legal";
-import MentionsLegales from "./pages/MentionsLegales";
+const About = lazy(() => import("./pages/About"));
+const APropos = lazy(() => import("./pages/APropos"));
+const Legal = lazy(() => import("./pages/Legal"));
+const MentionsLegales = lazy(() => import("./pages/MentionsLegales"));
 
+// Keep NotFound static (small, needed for fallback)
 import NotFound from "./pages/NotFound";
-import Glossary from "./pages/Glossary";
-import Widget from "./pages/Widget";
+const Glossary = lazy(() => import("./pages/Glossary"));
+const Widget = lazy(() => import("./pages/Widget"));
 
 const queryClient = new QueryClient();
 
@@ -139,6 +141,7 @@ const App = () => (
       <HelmetProvider>
       <BrowserRouter>
         <SEOHead />
+        <Suspense fallback={<PageLoader />}>
         <Routes>
           {/* Homepage = English */}
           <Route path="/" element={<BMI />} />
@@ -266,6 +269,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        </Suspense>
       </BrowserRouter>
       </HelmetProvider>
     </TooltipProvider>

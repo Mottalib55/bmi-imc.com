@@ -574,6 +574,30 @@ export const defaultSEO: PageSEO[] = [
     title: "Free BMI Calculator Widget - Embed on Your Website",
     description: "Add a free BMI calculator widget to your website or blog. Copy the embed code and paste it into your HTML. Lightweight, responsive, no dependencies required.",
   },
+  {
+    path: "/about",
+    lang: "en",
+    title: "About BMI-IMC — Free BMI Calculator by Mottalib Radif",
+    description: "Learn about BMI-IMC.com, a free Body Mass Index calculator created by Mottalib Radif, MBA INSEAD. Accurate BMI calculations based on WHO standards in 9 languages.",
+  },
+  {
+    path: "/a-propos",
+    lang: "fr",
+    title: "À Propos de BMI-IMC — Calculateur IMC Gratuit par Mottalib Radif",
+    description: "Découvrez BMI-IMC.com, un calculateur d'indice de masse corporelle gratuit créé par Mottalib Radif, MBA INSEAD. Calculs IMC fiables selon les normes OMS en 9 langues.",
+  },
+  {
+    path: "/legal",
+    lang: "en",
+    title: "Legal Notice — BMI-IMC.com",
+    description: "Legal notice and terms of use for BMI-IMC.com, a free BMI calculator. Publisher information, intellectual property, privacy policy and disclaimer.",
+  },
+  {
+    path: "/mentions-legales",
+    lang: "fr",
+    title: "Mentions Légales — BMI-IMC.com",
+    description: "Mentions légales et conditions d'utilisation de BMI-IMC.com, calculateur IMC gratuit. Informations éditeur, propriété intellectuelle et politique de confidentialité.",
+  },
 ];
 
 const STORAGE_KEY = "seo-overrides";

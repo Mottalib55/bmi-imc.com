@@ -133,8 +133,12 @@ for (const entry of seoEntries) {
   if (path === "/") {
     // Homepage (EN) → overwrite dist/index.html directly
     writeFileSync(join(DIST, "index.html"), html);
-    // Also copy as 404.html for SPA fallback
-    writeFileSync(join(DIST, "404.html"), html);
+    // Also copy as 404.html for SPA fallback — but mark as noindex
+    const html404 = html.replace(
+      '<meta name="robots" content="index, follow" />',
+      '<meta name="robots" content="noindex, follow" />'
+    );
+    writeFileSync(join(DIST, "404.html"), html404);
     generated++;
   } else {
     // Strip leading slash for directory path
