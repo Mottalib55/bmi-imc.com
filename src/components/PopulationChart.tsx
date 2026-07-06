@@ -88,7 +88,7 @@ export const PopulationChart = ({ bmi, age }: PopulationChartProps) => {
             <div>
               <p className="text-sm text-muted-foreground">Votre percentile</p>
               <p className="text-4xl font-display font-bold gradient-text">
-                {percentile.toFixed(0)}%
+                {percentile.toFixed(0).replace('.', ',')}%
               </p>
             </div>
             <div className="text-right">
@@ -98,8 +98,8 @@ export const PopulationChart = ({ bmi, age }: PopulationChartProps) => {
               </div>
               <p className="text-sm text-muted-foreground mt-1">
                 {percentile < 50 
-                  ? `Plus mince que ${(100 - percentile).toFixed(0)}% des gens`
-                  : `IMC plus élevé que ${percentile.toFixed(0)}% des gens`
+                  ? `Plus mince que ${(100 - percentile).toFixed(0).replace('.', ',')}% des gens`
+                  : `IMC plus élevé que ${percentile.toFixed(0).replace('.', ',')}% des gens`
                 }
               </p>
             </div>
@@ -126,7 +126,7 @@ export const PopulationChart = ({ bmi, age }: PopulationChartProps) => {
               axisLine={false}
               tickLine={false}
               tick={{ fill: 'hsl(215, 16%, 47%)', fontSize: 12 }}
-              tickFormatter={(value) => value.toFixed(0)}
+              tickFormatter={(value) => value.toFixed(0).replace('.', ',')}
               ticks={[15, 18.5, 25, 30, 40]}
             />
             <YAxis hide />
@@ -137,8 +137,8 @@ export const PopulationChart = ({ bmi, age }: PopulationChartProps) => {
                 borderRadius: '12px',
                 boxShadow: '0 10px 40px -10px rgba(0,0,0,0.1)',
               }}
-              formatter={(value: number) => [`${(value).toFixed(1)}%`, 'Distribution']}
-              labelFormatter={(label) => `IMC: ${Number(label).toFixed(1)}`}
+              formatter={(value: number) => [`${(value).toFixed(1).replace('.', ',')}%`, 'Distribution']}
+              labelFormatter={(label) => `IMC: ${Number(label).toFixed(1).replace('.', ',')}`}
             />
             <Area
               type="monotone"
@@ -169,7 +169,7 @@ export const PopulationChart = ({ bmi, age }: PopulationChartProps) => {
             className="px-3 py-1 rounded-full text-sm font-semibold text-white shadow-lg"
             style={{ backgroundColor: getZoneColor(bmi) }}
           >
-            Vous : {bmi.toFixed(1)}
+            Vous : {bmi.toFixed(1).replace('.', ',')}
           </div>
         </div>
       )}

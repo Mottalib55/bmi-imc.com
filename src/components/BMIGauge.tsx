@@ -332,6 +332,11 @@ export const BMIGauge = ({ bmi }: BMIGaugeProps) => {
     return t.comments.obesityMorbid;
   };
 
+  const formatNum = (n: number, digits: number) => {
+    const str = n.toFixed(digits);
+    return (lang === 'fr' || lang === 'de') ? str.replace('.', ',') : str;
+  };
+
   const category = bmi ? getCategory(bmi) : null;
   const position = bmi ? getPosition(animatedBmi) : 0;
 
@@ -354,7 +359,7 @@ export const BMIGauge = ({ bmi }: BMIGaugeProps) => {
           <div className={`transition-transform duration-150 ${isChanging ? 'scale-105' : 'scale-100'}`}>
             <div className="relative inline-flex items-center justify-center">
               <span className={`text-6xl md:text-7xl font-display font-bold transition-colors duration-200 ${category?.color}`}>
-                {animatedBmi.toFixed(1)}
+                {formatNum(animatedBmi, 1)}
               </span>
               <div className={`absolute -right-10 p-2 rounded-full transition-all duration-200 ${
                 isChanging ? 'opacity-100 scale-100' : 'opacity-0 scale-75'

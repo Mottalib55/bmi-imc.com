@@ -11,11 +11,11 @@ const i18n: Record<Lang, {
   aboutPath: string;
   legalPath: string;
 }> = {
-  fr: { copyright: "BMI-IMC.com - Calculateur IMC Gratuit", about: "A propos", legal: "Mentions Legales", glossary: "Glossaire", widget: "Widget", calculator: "Calculateur IMC", aboutPath: "/a-propos", legalPath: "/mentions-legales" },
+  fr: { copyright: "BMI-IMC.com - Calculateur IMC Gratuit", about: "À propos", legal: "Mentions Légales", glossary: "Glossaire", widget: "Widget", calculator: "Calculateur IMC", aboutPath: "/a-propos", legalPath: "/mentions-legales" },
   en: { copyright: "BMI-IMC.com - Free BMI Calculator", about: "About", legal: "Legal Notice", glossary: "Glossary", widget: "Widget", calculator: "BMI Calculator", aboutPath: "/about", legalPath: "/legal" },
   es: { copyright: "BMI-IMC.com - Calculadora IMC Gratis", about: "Acerca de", legal: "Aviso Legal", glossary: "Glosario", widget: "Widget", calculator: "Calculadora IMC", aboutPath: "/about", legalPath: "/legal" },
   pt: { copyright: "BMI-IMC.com - Calculadora IMC Gratis", about: "Sobre", legal: "Aviso Legal", glossary: "Glossario", widget: "Widget", calculator: "Calculadora IMC", aboutPath: "/about", legalPath: "/legal" },
-  de: { copyright: "BMI-IMC.com - BMI Rechner Kostenlos", about: "Uber uns", legal: "Impressum", glossary: "Glossar", widget: "Widget", calculator: "BMI-Rechner", aboutPath: "/about", legalPath: "/legal" },
+  de: { copyright: "BMI-IMC.com - BMI Rechner Kostenlos", about: "Über uns", legal: "Impressum", glossary: "Glossar", widget: "Widget", calculator: "BMI-Rechner", aboutPath: "/about", legalPath: "/legal" },
   it: { copyright: "BMI-IMC.com - Calcolatore IMC Gratis", about: "Chi siamo", legal: "Note Legali", glossary: "Glossario", widget: "Widget", calculator: "Calcolatore IMC", aboutPath: "/about", legalPath: "/legal" },
   hi: { copyright: "BMI-IMC.com - मुफ्त BMI कैलकुलेटर", about: "हमारे बारे में", legal: "कानूनी", glossary: "शब्दावली", widget: "विजेट", calculator: "BMI कैलकुलेटर", aboutPath: "/about", legalPath: "/legal" },
   zh: { copyright: "BMI-IMC.com - 免费BMI计算器", about: "关于我们", legal: "法律声明", glossary: "术语表", widget: "小工具", calculator: "BMI计算器", aboutPath: "/about", legalPath: "/legal" },

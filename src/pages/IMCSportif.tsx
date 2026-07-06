@@ -79,7 +79,7 @@ const IMCSportif = () => {
             </p>
             <div className="bg-muted/30 rounded-xl p-4 text-center">
               <p className="text-sm text-muted-foreground mb-2">FFMI estimé (avec 15% de masse grasse)</p>
-              <p className="text-3xl font-bold text-orange-500">{ffmi?.toFixed(1)}</p>
+              <p className="text-3xl font-bold text-orange-500">{ffmi?.toFixed(1).replace('.', ',')}</p>
               <p className="text-xs text-muted-foreground mt-2">
                 Naturel : 18-25 | Dopage probable : &gt;25
               </p>

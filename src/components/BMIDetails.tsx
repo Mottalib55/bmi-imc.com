@@ -25,7 +25,7 @@ export const BMIDetails = ({ bmi, weight, height }: BMIDetailsProps) => {
   const getIdealWeightMessage = () => {
     if (bmi < 18.5) {
       return {
-        message: `Vous pourriez prendre entre ${Math.abs(weightToIdealMax).toFixed(1)} et ${Math.abs(weightToIdealMin).toFixed(1)} kg`,
+        message: `Vous pourriez prendre entre ${Math.abs(weightToIdealMax).toFixed(1).replace('.', ',')} et ${Math.abs(weightToIdealMin).toFixed(1).replace('.', ',')} kg`,
         icon: TrendingUp,
         color: "text-info",
       };
@@ -37,7 +37,7 @@ export const BMIDetails = ({ bmi, weight, height }: BMIDetailsProps) => {
       };
     } else {
       return {
-        message: `Objectif : perdre entre ${weightToIdealMin.toFixed(1)} et ${weightToIdealMax.toFixed(1)} kg`,
+        message: `Objectif : perdre entre ${weightToIdealMin.toFixed(1).replace('.', ',')} et ${weightToIdealMax.toFixed(1).replace('.', ',')} kg`,
         icon: TrendingDown,
         color: "text-warning",
       };
@@ -68,7 +68,7 @@ export const BMIDetails = ({ bmi, weight, height }: BMIDetailsProps) => {
               <span className="text-muted-foreground text-xs md:text-sm"> kg</span>
             </div>
             <div className="pt-1 px-2 md:px-3">
-              <span className="text-accent">{heightM.toFixed(2)}</span>
+              <span className="text-accent">{heightM.toFixed(2).replace('.', ',')}</span>
               <span className="text-muted-foreground text-xs md:text-sm"> m</span>
               <span className="align-super text-xs">2</span>
             </div>
@@ -79,11 +79,11 @@ export const BMIDetails = ({ bmi, weight, height }: BMIDetailsProps) => {
               <span className="text-primary">{weight}</span>
             </div>
             <div className="pt-1 px-2 md:px-3">
-              <span className="text-accent">{(heightM * heightM).toFixed(3)}</span>
+              <span className="text-accent">{(heightM * heightM).toFixed(3).replace('.', ',')}</span>
             </div>
           </div>
           <span className="shrink-0">=</span>
-          <span className="text-xl md:text-2xl font-bold gradient-text shrink-0">{bmi.toFixed(2)}</span>
+          <span className="text-xl md:text-2xl font-bold gradient-text shrink-0">{bmi.toFixed(2).replace('.', ',')}</span>
         </div>
       </div>
 
@@ -103,7 +103,7 @@ export const BMIDetails = ({ bmi, weight, height }: BMIDetailsProps) => {
           <Target className="w-5 h-5 text-success mx-auto mb-2" />
           <p className="text-xs text-muted-foreground">Poids idéal (IMC 18.5-25)</p>
           <p className="text-xl font-bold text-success">
-            {idealWeightMin.toFixed(1)} - {idealWeightMax.toFixed(1)} kg
+            {idealWeightMin.toFixed(1).replace('.', ',')} - {idealWeightMax.toFixed(1).replace('.', ',')} kg
           </p>
         </div>
       </div>
