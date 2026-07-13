@@ -5,6 +5,9 @@ import { getAlternates, localeMap, type Lang } from "@/config/routes";
 
 const DOMAIN = "https://bmi-imc.com";
 
+// Languages with matching body content — others get noindex
+const INDEXED_LANGS = new Set(["en", "fr"]);
+
 const withTrailingSlash = (path: string): string =>
   path.endsWith("/") ? path : `${path}/`;
 
@@ -49,11 +52,14 @@ export const SEOHead = () => {
     },
   } : null;
 
+  const isIndexed = INDEXED_LANGS.has(seo.lang);
+
   return (
     <Helmet>
       <html lang={seo.lang} />
       <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
+      {!isIndexed && <meta name="robots" content="noindex, follow" />}
       <link rel="canonical" href={canonicalUrl} />
       <meta property="og:title" content={seo.title} />
       <meta property="og:description" content={seo.description} />
@@ -66,7 +72,7 @@ export const SEOHead = () => {
       <meta property="og:image:type" content="image/png" />
       <meta property="og:locale" content={localeMap[seo.lang as Lang] || "en_US"} />
       {alternates && Object.entries(alternates)
-        .filter(([lang]) => lang !== seo.lang)
+        .filter(([lang]) => lang !== seo.lang && INDEXED_LANGS.has(lang))
         .map(([lang]) => (
           <meta key={`og-alt-${lang}`} property="og:locale:alternate" content={localeMap[lang as Lang]} />
         ))
@@ -75,9 +81,12 @@ export const SEOHead = () => {
       <meta name="twitter:title" content={seo.title} />
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={`${DOMAIN}/og-image.png`} />
-      {alternates && Object.entries(alternates).map(([lang, path]) => (
-        <link key={`hreflang-${lang}`} rel="alternate" hrefLang={lang} href={`${DOMAIN}${withTrailingSlash(path)}`} />
-      ))}
+      {alternates && Object.entries(alternates)
+        .filter(([lang]) => INDEXED_LANGS.has(lang))
+        .map(([lang, path]) => (
+          <link key={`hreflang-${lang}`} rel="alternate" hrefLang={lang} href={`${DOMAIN}${withTrailingSlash(path)}`} />
+        ))
+      }
       {alternates && (
         <link rel="alternate" hrefLang="x-default" href={`${DOMAIN}${withTrailingSlash(alternates.en)}`} />
       )}

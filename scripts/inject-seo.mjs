@@ -78,7 +78,12 @@ const localeMap = {
 };
 
 // ---------------------------------------------------------------------------
-// 4. Build a lookup: path → alternates (for hreflang)
+// 4. Languages with matching body content (others get noindex)
+// ---------------------------------------------------------------------------
+const INDEXED_LANGS = new Set(["en", "fr"]);
+
+// ---------------------------------------------------------------------------
+// 5. Build a lookup: path → alternates (for hreflang, EN/FR only)
 // ---------------------------------------------------------------------------
 function getAlternates(path) {
   for (const routes of Object.values(routeMap)) {
@@ -93,8 +98,10 @@ function buildHreflangTags(path) {
   const alternates = getAlternates(path);
   if (!alternates) return "";
 
+  // Only emit hreflang for languages that have proper body content
   const tags = [];
   for (const [lang, altPath] of Object.entries(alternates)) {
+    if (!INDEXED_LANGS.has(lang)) continue;
     const href = `${BASE_URL}${altPath === "/" ? "/" : altPath + "/"}`;
     tags.push(`<link rel="alternate" hreflang="${lang}" href="${href}" />`);
   }
@@ -108,7 +115,7 @@ function buildHreflangTags(path) {
 }
 
 // ---------------------------------------------------------------------------
-// 5. Read the template and inject SEO for each page
+// 6. Read the template and inject SEO for each page
 // ---------------------------------------------------------------------------
 const template = readFileSync(join(DIST, "index.html"), "utf-8");
 
@@ -127,6 +134,14 @@ for (const entry of seoEntries) {
   html = html.replaceAll("__CANONICAL__", canonical);
   html = html.replaceAll("__OG_LOCALE__", ogLocale);
   html = html.replace("__HREFLANG__", hreflangTags);
+
+  // noindex for languages without matching body content (content is FR/EN only)
+  if (!INDEXED_LANGS.has(lang)) {
+    html = html.replace(
+      '<meta name="robots" content="index, follow" />',
+      '<meta name="robots" content="noindex, follow" />'
+    );
+  }
 
   // Static H1 + description are already in the template for SEO crawlers
 
