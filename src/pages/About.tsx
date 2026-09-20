@@ -8,8 +8,8 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>About BMI-IMC — Free BMI Calculator by Mottalib Radif</title>
-        <meta name="description" content="Learn about BMI-IMC.com, a free Body Mass Index calculator created by Mottalib Radif, MBA INSEAD. Accurate BMI calculations based on WHO standards in 9 languages." />
+        <title>About BMI-IMC — Free BMI Calculator by Radif Partners</title>
+        <meta name="description" content="Learn about BMI-IMC.com, a free Body Mass Index calculator created by Radif Partners, Publisher of calculators and practical guides. Accurate BMI calculations based on WHO standards in 9 languages." />
         <link rel="canonical" href="https://bmi-imc.com/about/" />
       </Helmet>
       <Header />
@@ -19,23 +19,16 @@ const About = () => {
 
         {/* Author Card */}
         <div className="flex flex-col md:flex-row items-center md:items-start gap-6 rounded-xl border border-border bg-muted/30 p-6 mb-10">
-          <img
-            src="/team/mottalib-radif.jpg"
-            alt="Mottalib Radif — Founder & Editor of BMI-IMC.com"
-            className="h-32 w-32 rounded-full object-cover shadow-lg"
-            width={128}
-            height={128}
-          />
           <div>
-            <h2 className="text-2xl font-bold">Mottalib Radif</h2>
+            <h2 className="text-2xl font-bold">Radif Partners</h2>
             <p className="text-primary font-medium mb-2">Founder & Editor</p>
             <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
               <GraduationCap className="w-4 h-4" />
-              <span>MBA, INSEAD</span>
+              <span>Publisher of calculators and practical guides</span>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Passionate about health and digital wellness tools, MBA INSEAD graduate. Specialized in creating
-              accessible health tools based on official medical data. Mottalib Radif, MBA INSEAD, founded BMI-IMC.com to provide free,
+              Passionate about health and digital wellness tools, Publisher of calculators and practical guides graduate. Specialized in creating
+              accessible health tools based on official medical data. Radif Partners, Publisher of calculators and practical guides, founded BMI-IMC.com to provide free,
               accurate, and easy-to-use BMI calculators in multiple languages based on WHO standards. His background
               combines analytical rigor with a deep commitment to making health literacy accessible to people
               around the world, regardless of their language or geographic location.
@@ -265,7 +258,7 @@ const About = () => {
             rates, recommended dietary guidelines, and healthcare system structures vary significantly between
             regions. The content on BMI-IMC.com acknowledges these differences and provides contextually
             relevant information to users worldwide. This commitment to linguistic and cultural accessibility
-            is central to the vision of Mottalib Radif, MBA INSEAD, who designed the platform to serve a
+            is central to the vision of Radif Partners, Publisher of calculators and practical guides, who designed the platform to serve a
             truly global audience.
           </p>
         </section>
@@ -316,7 +309,7 @@ const About = () => {
             individuals who may benefit from further medical evaluation. By providing free, instant BMI
             calculations in nine languages, BMI-IMC.com aims to contribute to global health literacy and
             empower individuals to take proactive steps toward understanding their weight status and overall
-            health. This is the core motivation behind the work of Mottalib Radif, MBA INSEAD, and the
+            health. This is the core motivation behind the work of Radif Partners, Publisher of calculators and practical guides, and the
             entire BMI-IMC.com project.
           </p>
         </section>

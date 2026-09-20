@@ -29,12 +29,12 @@ const Legal = () => {
             <h2 className="text-xl font-bold text-foreground">1. Publisher Information</h2>
             <p>
               The website bmi-imc.com is published by:<br />
-              <strong>Mottalib Radif</strong><br />
+              <strong>Radif Partners</strong><br />
               Email:{" "}
               <a href="mailto:contact@bmi-imc.com" className="text-primary hover:underline">
                 contact@bmi-imc.com
               </a><br />
-              Editor-in-Chief: Mottalib Radif
+              Editor-in-Chief: Radif Partners
             </p>
             <p>
               The publisher assumes editorial responsibility for all content published on the website,
@@ -80,15 +80,15 @@ const Legal = () => {
             <p>
               All content on bmi-imc.com, including but not limited to text, graphics, logos, icons,
               images, audio clips, digital downloads, software, calculation algorithms, source code,
-              page layouts and design elements, is the property of Mottalib Radif or its content
+              page layouts and design elements, is the property of Radif Partners or its content
               suppliers and is protected by international copyright laws and intellectual property
               regulations. The compilation of all content on this site is the exclusive property of
-              Mottalib Radif.
+              Radif Partners.
             </p>
             <p>
               You may not reproduce, distribute, display, sell, lease, transmit, create derivative works
               from, translate, modify, reverse-engineer, disassemble, decompile, or otherwise exploit
-              this website or any portion of it unless expressly permitted by Mottalib Radif in writing.
+              this website or any portion of it unless expressly permitted by Radif Partners in writing.
               This prohibition includes reproduction of texts, copying of the calculator source code,
               substantial extraction of database content, and any form of scraping or automated content
               extraction.

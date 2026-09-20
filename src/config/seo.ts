@@ -577,14 +577,14 @@ export const defaultSEO: PageSEO[] = [
   {
     path: "/about",
     lang: "en",
-    title: "About BMI-IMC — Free BMI Calculator by Mottalib Radif",
-    description: "Learn about BMI-IMC.com, a free Body Mass Index calculator created by Mottalib Radif, MBA INSEAD. Accurate BMI calculations based on WHO standards in 9 languages.",
+    title: "About BMI-IMC — Free BMI Calculator by Radif Partners",
+    description: "Learn about BMI-IMC.com, a free Body Mass Index calculator created by Radif Partners, Éditeur de calculateurs et de guides pratiques. Accurate BMI calculations based on WHO standards in 9 languages.",
   },
   {
     path: "/a-propos",
     lang: "fr",
-    title: "À Propos de BMI-IMC — Calculateur IMC Gratuit par Mottalib Radif",
-    description: "Découvrez BMI-IMC.com, un calculateur d'indice de masse corporelle gratuit créé par Mottalib Radif, MBA INSEAD. Calculs IMC fiables selon les normes OMS en 9 langues.",
+    title: "À Propos de BMI-IMC — Calculateur IMC Gratuit par Radif Partners",
+    description: "Découvrez BMI-IMC.com, un calculateur d'indice de masse corporelle gratuit créé par Radif Partners, Éditeur de calculateurs et de guides pratiques. Calculs IMC fiables selon les normes OMS en 9 langues.",
   },
   {
     path: "/legal",

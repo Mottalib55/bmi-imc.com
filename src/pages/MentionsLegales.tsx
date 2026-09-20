@@ -30,7 +30,7 @@ const MentionsLegales = () => {
             <h2 className="text-xl font-bold text-foreground">1. Éditeur du site</h2>
             <p>
               Le site bmi-imc.com est édité par :<br />
-              <strong>Mottalib Radif</strong><br />
+              <strong>Radif Partners</strong><br />
               Email :{" "}
               <a href="mailto:contact@bmi-imc.com" className="text-primary hover:underline">
                 contact@bmi-imc.com
@@ -48,7 +48,7 @@ const MentionsLegales = () => {
           <section>
             <h2 className="text-xl font-bold text-foreground">2. Directeur de la publication</h2>
             <p>
-              Le directeur de la publication du site bmi-imc.com est Mottalib Radif, en qualité de
+              Le directeur de la publication du site bmi-imc.com est Radif Partners, en qualité de
               fondateur et éditeur. Conformément aux articles 93-2 et 93-3 de la loi n° 82-652 du
               29 juillet 1982 sur la communication audiovisuelle, modifiée par la loi n° 2004-575 du
               21 juin 2004, le directeur de la publication est la personne physique responsable du

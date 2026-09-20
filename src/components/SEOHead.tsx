@@ -33,8 +33,8 @@ export const SEOHead = () => {
     "datePublished": "2026-05-16",
     "dateModified": "2026-06-27",
     "author": {
-      "@type": "Person",
-      "name": "Mottalib Radif",
+      "@type": "Organization",
+      "name": "Radif Partners",
       "url": `${DOMAIN}/about/`,
     },
     "publisher": {

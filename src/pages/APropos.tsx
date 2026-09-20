@@ -7,8 +7,8 @@ const APropos = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>À propos de BMI-IMC — Calculateur IMC Gratuit par Mottalib Radif</title>
-        <meta name="description" content="Découvrez BMI-IMC.com, un calculateur d'Indice de Masse Corporelle gratuit créé par Mottalib Radif, MBA INSEAD. Calculs IMC précis basés sur les normes OMS en 9 langues." />
+        <title>À propos de BMI-IMC — Calculateur IMC Gratuit par Radif Partners</title>
+        <meta name="description" content="Découvrez BMI-IMC.com, un calculateur d'Indice de Masse Corporelle gratuit créé par Radif Partners, Éditeur de calculateurs et de guides pratiques. Calculs IMC précis basés sur les normes OMS en 9 langues." />
         <link rel="canonical" href="https://bmi-imc.com/a-propos/" />
       </Helmet>
       <Header />
@@ -18,24 +18,17 @@ const APropos = () => {
 
         {/* Author Card */}
         <div className="flex flex-col md:flex-row items-center md:items-start gap-6 rounded-xl border border-border bg-muted/30 p-6 mb-10">
-          <img
-            src="/team/mottalib-radif.jpg"
-            alt="Mottalib Radif — Fondateur et Éditeur de BMI-IMC.com"
-            className="h-32 w-32 rounded-full object-cover shadow-lg"
-            width={128}
-            height={128}
-          />
           <div>
-            <h2 className="text-2xl font-bold">Mottalib Radif</h2>
+            <h2 className="text-2xl font-bold">Radif Partners</h2>
             <p className="text-primary font-medium mb-2">Fondateur et Éditeur</p>
             <div className="flex items-center gap-2 text-sm text-muted-foreground mb-3">
               <GraduationCap className="w-4 h-4" />
-              <span>MBA, INSEAD</span>
+              <span>Éditeur de calculateurs et de guides pratiques</span>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Passionné par la santé et les outils numériques au service du bien-être, diplômé MBA de l'INSEAD.
+              Passionné par la santé et les outils numériques au service du bien-être, diplômé MBA de l'Éditeur de calculateurs et de guides pratiques.
               Spécialisé dans la création d'outils de santé accessibles et fondés sur les données médicales
-              officielles. Mottalib Radif, MBA INSEAD, a fondé BMI-IMC.com pour fournir des calculateurs IMC gratuits, précis et faciles
+              officielles. Radif Partners, Éditeur de calculateurs et de guides pratiques, a fondé BMI-IMC.com pour fournir des calculateurs IMC gratuits, précis et faciles
               à utiliser dans plusieurs langues, basés sur les normes de l'OMS. Son parcours allie rigueur
               analytique et engagement profond en faveur de la littératie en santé accessible à tous,
               quelle que soit la langue ou la localisation géographique.
@@ -286,7 +279,7 @@ const APropos = () => {
             systèmes de santé varient considérablement d'une région à l'autre. Le contenu de BMI-IMC.com
             reconnaît ces différences et fournit des informations contextuellement pertinentes aux
             utilisateurs du monde entier. Cet engagement envers l'accessibilité linguistique et culturelle
-            est au cœur de la vision de Mottalib Radif, MBA INSEAD, qui a conçu la plateforme pour servir
+            est au cœur de la vision de Radif Partners, Éditeur de calculateurs et de guides pratiques, qui a conçu la plateforme pour servir
             un public véritablement mondial.
           </p>
         </section>
@@ -338,7 +331,7 @@ const APropos = () => {
             approfondie. En fournissant des calculs d'IMC gratuits et instantanés en neuf langues,
             BMI-IMC.com vise à contribuer à la littératie mondiale en santé et à permettre aux individus
             de prendre des mesures proactives pour comprendre leur statut pondéral et leur santé globale.
-            C'est la motivation centrale du travail de Mottalib Radif, MBA INSEAD, et de l'ensemble du
+            C'est la motivation centrale du travail de Radif Partners, Éditeur de calculateurs et de guides pratiques, et de l'ensemble du
             projet BMI-IMC.com.
           </p>
         </section>
