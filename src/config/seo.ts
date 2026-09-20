@@ -78,7 +78,7 @@ export const defaultSEO: PageSEO[] = [
   {
     path: "/bmi-men",
     lang: "en",
-    title: "BMI for Men — Ideal Weight by Height and Age (Chart)",
+    title: "Ideal BMI for Men — Weight by Height and Age Chart",
     description: "Calculate your male BMI and find your ideal weight range by height. Age-specific chart, waist circumference thresholds, and when your BMI may be misleading.",
   },
   {
