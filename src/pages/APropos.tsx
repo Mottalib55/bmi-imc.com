@@ -26,7 +26,7 @@ const APropos = () => {
               <span>Éditeur de calculateurs et de guides pratiques</span>
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Passionné par la santé et les outils numériques au service du bien-être, diplômé MBA de l'Éditeur de calculateurs et de guides pratiques.
+              Passionné par la santé et les outils numériques au service du bien-être.
               Spécialisé dans la création d'outils de santé accessibles et fondés sur les données médicales
               officielles. Radif Partners, Éditeur de calculateurs et de guides pratiques, a fondé BMI-IMC.com pour fournir des calculateurs IMC gratuits, précis et faciles
               à utiliser dans plusieurs langues, basés sur les normes de l'OMS. Son parcours allie rigueur

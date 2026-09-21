@@ -430,7 +430,7 @@ export const BMIGauge = ({ bmi }: BMIGaugeProps) => {
                 isActive ? `${cat.color}/20 ring-2 ring-offset-1` : 'bg-muted/30'
               }`}
               style={{
-                ringColor: isActive ? (cat.color === 'bg-info' ? '#3b82f6' : cat.color === 'bg-success' ? '#22c55e' : cat.color === 'bg-warning' ? '#eab308' : '#ef4444') : 'transparent'
+                ['--tw-ring-color' as string]: isActive ? (cat.color === 'bg-info' ? '#3b82f6' : cat.color === 'bg-success' ? '#22c55e' : cat.color === 'bg-warning' ? '#eab308' : '#ef4444') : 'transparent'
               }}
             >
               <div className={`w-2.5 h-2.5 rounded-full ${cat.color}`} />

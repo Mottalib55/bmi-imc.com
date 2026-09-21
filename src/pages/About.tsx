@@ -29,7 +29,7 @@ const About = () => {
             <p className="text-muted-foreground leading-relaxed">
               Passionate about health and digital wellness tools, Publisher of calculators and practical guides graduate. Specialized in creating
               accessible health tools based on official medical data. Radif Partners, Publisher of calculators and practical guides, founded BMI-IMC.com to provide free,
-              accurate, and easy-to-use BMI calculators in multiple languages based on WHO standards. His background
+              accurate, and easy-to-use BMI calculators in multiple languages based on WHO standards. Our background
               combines analytical rigor with a deep commitment to making health literacy accessible to people
               around the world, regardless of their language or geographic location.
             </p>

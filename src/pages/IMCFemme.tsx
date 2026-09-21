@@ -1,5 +1,6 @@
 import { useState, useCallback } from "react";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import { BMICalculator } from "@/components/BMICalculator";
 import { BMIGauge } from "@/components/BMIGauge";
 import { BMIDetails } from "@/components/BMIDetails";

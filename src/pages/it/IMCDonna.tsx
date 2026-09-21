@@ -1,5 +1,6 @@
 import { useState, useCallback, useEffect } from "react";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import { BMIGauge } from "@/components/BMIGauge";
 import { Users, Heart, Target, Baby, Scale, Activity, AlertTriangle, CheckCircle2, Sparkles, Globe, TrendingUp, Shield, MapPin } from "lucide-react";
 import { Slider } from "@/components/ui/slider";
