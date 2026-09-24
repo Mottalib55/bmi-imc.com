@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { ChevronRight, Home } from "lucide-react";
 import { getCurrentLang, getPageType, routeMap, type Lang } from "@/config/routes";
+import { dateDePage, dateLisible, LIBELLE_MAJ } from "@/lib/page-date";
 
 const DOMAIN = "https://bmi-imc.com";
 
@@ -36,6 +37,7 @@ const withTrailingSlash = (path: string): string =>
 export const Breadcrumbs = () => {
   const { pathname } = useLocation();
   const lang = getCurrentLang(pathname);
+  const iso = dateDePage(location.pathname);
   const pageType = getPageType(pathname);
   const isRtl = lang === "ar";
 
@@ -93,6 +95,15 @@ export const Breadcrumbs = () => {
           </li>
         </ol>
       </nav>
+      {/* §8.4 : la date de mise à jour doit se lire en haut de la page. Le fil
+          d'Ariane la porte, parce qu'il précède le titre sur toutes les pages
+          et que la date y est lue comme une information, pas comme un ornement. */}
+      {iso && (
+        <p className="-mt-4 mb-6 text-xs text-muted-foreground" dir={isRtl ? "rtl" : undefined}>
+          {LIBELLE_MAJ[lang] ?? LIBELLE_MAJ.fr}{" "}
+          <time dateTime={iso}>{dateLisible(iso, lang)}</time>
+        </p>
+      )}
     </>
   );
 };

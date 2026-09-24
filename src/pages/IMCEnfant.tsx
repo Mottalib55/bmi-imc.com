@@ -1,4 +1,6 @@
 import { Header } from "@/components/Header";
+import { ResumeCitable } from "@/components/ResumeCitable";
+import { FaqSection } from "@/components/FaqSection";
 import { Baby, AlertTriangle, TrendingUp, BookOpen, Stethoscope, Globe, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RelatedPages } from "@/components/RelatedPages";
@@ -30,6 +32,9 @@ const IMCEnfant = () => {
             Comprendre l'IMC pédiatrique en France : courbes INSERM, rebond d'adiposité et suivi PMI. <strong>17% des enfants français</strong> sont en surpoids (étude Esteban, Santé Publique France).
           </p>
         </header>
+
+        {/* §21 : paragraphe citable, hors du <header>. */}
+        <ResumeCitable />
 
         {/* Medical Warning */}
         <div className="bg-destructive/10 border border-destructive/20 rounded-xl p-6 mb-8">
@@ -376,6 +381,7 @@ const IMCEnfant = () => {
         </div>
 
 
+        <FaqSection />
         <RelatedPages />
 
         <AuthorByline />

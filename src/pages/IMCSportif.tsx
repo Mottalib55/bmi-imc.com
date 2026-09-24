@@ -1,5 +1,7 @@
 import { useState, useCallback } from "react";
 import { Header } from "@/components/Header";
+import { ResumeCitable } from "@/components/ResumeCitable";
+import { FaqSection } from "@/components/FaqSection";
 import { BMICalculator } from "@/components/BMICalculator";
 import { BMIGauge } from "@/components/BMIGauge";
 import { Dumbbell, AlertTriangle, Target, Scale, Activity, TrendingUp, Globe } from "lucide-react";
@@ -45,6 +47,9 @@ const IMCSportif = () => {
             Pourquoi l'IMC classe Teddy Riner « obèse » et Antoine Dupont en « surpoids » — et quelles alternatives utiliser pour les sportifs français
           </p>
         </header>
+
+        {/* §21 : paragraphe citable, hors du <header>. */}
+        <ResumeCitable />
 
         {/* Warning Banner */}
         <div className="bg-orange-500/10 border border-orange-500/20 rounded-xl p-6 mb-8">
@@ -421,6 +426,7 @@ const IMCSportif = () => {
         </div>
 
 
+        <FaqSection />
         <RelatedPages />
 
         <AuthorByline />

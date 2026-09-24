@@ -1,4 +1,6 @@
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { MiseAJour } from "@/components/MiseAJour";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
@@ -6,7 +8,7 @@ const MentionsLegales = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Mentions Légales — BMI-IMC.com</title>
+        <title>Mentions légales de BMI-IMC.com : éditeur, hébergeur</title>
         <meta name="description" content="Mentions légales et conditions d'utilisation de BMI-IMC.com, calculateur IMC gratuit. Informations éditeur, propriété intellectuelle, politique de confidentialité." />
         <meta name="robots" content="noindex, follow" />
         <link rel="canonical" href="https://bmi-imc.com/mentions-legales/" />
@@ -15,6 +17,8 @@ const MentionsLegales = () => {
 
       <div className="container max-w-4xl py-12 px-4">
         <h1 className="text-4xl font-display font-bold mb-8">Mentions Légales</h1>
+        {/* §8.4 : date de mise à jour, juste sous le titre. */}
+        <MiseAJour />
 
         <div className="prose prose-gray max-w-none space-y-8 text-muted-foreground">
 
@@ -314,6 +318,7 @@ const MentionsLegales = () => {
           <Link to="/legal" className="hover:text-primary">Legal Notice (EN)</Link>
         </div>
       </div>
+    <Footer />
     </div>
   );
 };

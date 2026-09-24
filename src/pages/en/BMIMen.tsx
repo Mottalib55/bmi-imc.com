@@ -1,5 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 import { Header } from "@/components/Header";
+import { ResumeCitable } from "@/components/ResumeCitable";
+import { FaqSection } from "@/components/FaqSection";
 import { BMIGauge } from "@/components/BMIGauge";
 import { User, Dumbbell, Target, Heart, Scale, Activity, AlertTriangle, CheckCircle2, Globe } from "lucide-react";
 import { Slider } from "@/components/ui/slider";
@@ -63,6 +65,9 @@ const BMIMen = () => {
             In the US, 43% of men are obese (CDC, NHANES 2023). Calculate your BMI with US and UK male health guidelines from the CDC, NHS, and AHA.
           </p>
         </header>
+
+        {/* §21 : paragraphe citable, hors du <header>. */}
+        <ResumeCitable />
 
         {/* Calculator */}
         <div className="grid lg:grid-cols-2 gap-6 md:gap-8 mb-8">
@@ -374,6 +379,7 @@ const BMIMen = () => {
         </div>
 
 
+        <FaqSection />
         <RelatedPages />
 
         <AuthorByline />

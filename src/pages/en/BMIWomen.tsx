@@ -1,5 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 import { Header } from "@/components/Header";
+import { ResumeCitable } from "@/components/ResumeCitable";
+import { FaqSection } from "@/components/FaqSection";
 import { BMIGauge } from "@/components/BMIGauge";
 import { Users, Heart, Target, Baby, Scale, Activity, AlertTriangle, CheckCircle2, Sparkles, Globe } from "lucide-react";
 import { Slider } from "@/components/ui/slider";
@@ -63,6 +65,9 @@ const BMIWomen = () => {
             In the US, 42% of women are obese (CDC, NHANES 2023). BMI calculator with guidelines from CDC, ACOG, NAMS, and NHS.
           </p>
         </header>
+
+        {/* §21 : paragraphe citable, hors du <header>. */}
+        <ResumeCitable />
 
         {/* Calculator */}
         <div className="grid lg:grid-cols-2 gap-6 md:gap-8 mb-8">
@@ -405,6 +410,7 @@ const BMIWomen = () => {
         </div>
 
 
+        <FaqSection />
         <RelatedPages />
 
         <AuthorByline />

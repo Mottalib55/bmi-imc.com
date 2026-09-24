@@ -1,5 +1,7 @@
 import { useState, useCallback } from "react";
 import { Header } from "@/components/Header";
+import { ResumeCitable } from "@/components/ResumeCitable";
+import { FaqSection } from "@/components/FaqSection";
 import { Footer } from "@/components/Footer";
 import { BMICalculator } from "@/components/BMICalculator";
 import { BMIGauge } from "@/components/BMIGauge";
@@ -45,6 +47,9 @@ const IMCHomme = () => {
             En France, <strong>47% des hommes sont en surpoids ou obèses</strong> (Santé Publique France, ObÉpi-Roche 2023). Calculateur d'IMC adapté au profil masculin français avec des références HAS et INSERM.
           </p>
         </header>
+
+        {/* §21 : paragraphe citable, hors du <header>. */}
+        <ResumeCitable />
 
         {/* Calculator Section */}
         <div className="grid lg:grid-cols-2 gap-6 md:gap-8 mb-8">
@@ -399,6 +404,7 @@ const IMCHomme = () => {
 
         {/* Footer */}
 
+        <FaqSection />
         <RelatedPages />
 
         <AuthorByline />

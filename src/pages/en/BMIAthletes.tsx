@@ -1,5 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 import { Header } from "@/components/Header";
+import { ResumeCitable } from "@/components/ResumeCitable";
+import { FaqSection } from "@/components/FaqSection";
 import { BMIGauge } from "@/components/BMIGauge";
 import { Dumbbell, AlertTriangle, Target, Scale, Activity, TrendingUp, Globe } from "lucide-react";
 import { Slider } from "@/components/ui/slider";
@@ -67,6 +69,9 @@ const BMIAthletes = () => {
             Why does the NFL classify most linemen as "obese"? 60% of NBA players are "overweight" by BMI. Understanding why BMI fails American and British athletes.
           </p>
         </header>
+
+        {/* §21 : paragraphe citable, hors du <header>. */}
+        <ResumeCitable />
 
         {/* Warning Banner */}
         <div className="bg-orange-500/10 border border-orange-500/20 rounded-xl p-6 mb-8">
@@ -526,6 +531,7 @@ const BMIAthletes = () => {
         </div>
 
 
+        <FaqSection />
         <RelatedPages />
 
         <AuthorByline />

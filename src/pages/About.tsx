@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { MiseAJour } from "@/components/MiseAJour";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Mail, ExternalLink, GraduationCap, Shield, Heart, BookOpen, Globe, Scale, AlertTriangle } from "lucide-react";
@@ -8,7 +9,7 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>About BMI-IMC — Free BMI Calculator by Radif Partners</title>
+        <title>BMI-IMC.com: who publishes it, and how it is built</title>
         <meta name="description" content="Learn about BMI-IMC.com, a free Body Mass Index calculator created by Radif Partners, Publisher of calculators and practical guides. Accurate BMI calculations based on WHO standards in 9 languages." />
         <link rel="canonical" href="https://bmi-imc.com/about/" />
       </Helmet>
@@ -16,6 +17,8 @@ const About = () => {
 
       <main id="main-content" className="container max-w-4xl py-12 px-4">
         <h1 className="text-4xl font-display font-bold mb-8 gradient-text">About BMI-IMC.com</h1>
+        {/* §8.4 : date de mise à jour, juste sous le titre. */}
+        <MiseAJour />
 
         {/* Author Card */}
         <div className="flex flex-col md:flex-row items-center md:items-start gap-6 rounded-xl border border-border bg-muted/30 p-6 mb-10">

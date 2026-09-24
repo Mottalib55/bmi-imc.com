@@ -1,5 +1,8 @@
 import { useState, useCallback } from "react";
 import { Header } from "@/components/Header";
+import { ResumeCitable } from "@/components/ResumeCitable";
+import { FaqSection } from "@/components/FaqSection";
+import { MiseAJour } from "@/components/MiseAJour";
 import { Footer } from "@/components/Footer";
 import { BMICalculator } from "@/components/BMICalculator";
 import { BMIGauge } from "@/components/BMIGauge";
@@ -42,10 +45,15 @@ const Index = () => {
           <h1 className="text-4xl md:text-6xl font-display font-bold mb-4">
             <span className="gradient-text">Calcul IMC Gratuit en Ligne</span>
           </h1>
+        {/* §8.4 : date de mise à jour, juste sous le titre. */}
+        <MiseAJour />
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Découvrez votre indice de masse corporelle avec des conseils adaptés à votre âge
           </p>
         </header>
+
+        {/* §21 : paragraphe citable, hors du <header>. */}
+        <ResumeCitable />
 
         {/* Top Row - Calculator and Gauge side by side */}
         <div className="grid lg:grid-cols-2 gap-6 md:gap-8 mb-6 md:mb-8">
@@ -62,6 +70,7 @@ const Index = () => {
         {/* SEO Content */}
         <SEOContent />
 
+        <FaqSection />
         <RelatedPages />
 
         <AuthorByline />

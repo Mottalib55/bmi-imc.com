@@ -1,4 +1,6 @@
 import { Header } from "@/components/Header";
+import { ResumeCitable } from "@/components/ResumeCitable";
+import { FaqSection } from "@/components/FaqSection";
 import { AlertTriangle, XCircle, CheckCircle2, Users, Dumbbell, Baby, Clock, Globe, Scale } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RelatedPages } from "@/components/RelatedPages";
@@ -29,6 +31,9 @@ const LimitesIMC = () => {
             Ce que la HAS, l'INSERM et l'ANSES disent des limites de l'IMC — et pourquoi le tour de taille est indispensable en France
           </p>
         </header>
+
+        {/* §21 : paragraphe citable, hors du <header>. */}
+        <ResumeCitable />
 
         {/* Main Warning */}
         <div className="bg-warning/10 border border-warning/20 rounded-xl p-6 mb-8">
@@ -436,6 +441,7 @@ const LimitesIMC = () => {
         </div>
 
 
+        <FaqSection />
         <RelatedPages />
 
         <AuthorByline />

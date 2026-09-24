@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { MiseAJour } from "@/components/MiseAJour";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
 import { Code, Copy, Check } from "lucide-react";
@@ -43,6 +44,8 @@ const Widget = () => {
           <h1 className="text-4xl font-display font-bold mb-4">
             <span className="gradient-text">Free BMI Calculator Widget</span>
           </h1>
+        {/* §8.4 : date de mise à jour, juste sous le titre. */}
+        <MiseAJour />
           <p className="text-lg text-muted-foreground">
             Add a free BMI calculator to your website or blog. Simply copy the embed code below and paste it into your HTML.
           </p>

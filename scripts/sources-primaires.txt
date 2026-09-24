@@ -1,0 +1,22 @@
+# Sources primaires de bmi-imc.com
+#
+# La liste générique du contrôle §7 est celle des administrations fiscales et
+# sociales : elle convient à un barème d'imposition, pas à un indice de santé.
+# Les autorités qui font foi sur l'IMC sont les agences sanitaires, qui ne
+# portent pas toutes un domaine en .gov.
+
+# L'OMS publie la classification internationale de l'IMC et les définitions du
+# surpoids et de l'obésité reprises par l'ensemble des pays.
+who.int
+
+# La Haute Autorité de santé édicte les recommandations françaises de prise en
+# charge du surpoids et de l'obésité, chez l'adulte comme chez l'enfant.
+has-sante.fr
+
+# Santé publique France produit les enquêtes de prévalence en population
+# française citées sur les pages de données.
+santepubliquefrance.fr
+
+# Les Centers for Disease Control and Prevention publient les courbes de
+# croissance pédiatriques et les définitions utilisées dans le monde anglophone.
+cdc.gov

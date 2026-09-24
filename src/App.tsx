@@ -129,6 +129,10 @@ const MentionsLegales = lazy(() => import("./pages/MentionsLegales"));
 // Keep NotFound static (small, needed for fallback)
 import NotFound from "./pages/NotFound";
 const Glossary = lazy(() => import("./pages/Glossary"));
+const Confidentialite = lazy(() => import("./pages/Confidentialite"));
+const Privacy = lazy(() => import("./pages/Privacy"));
+const Methodologie = lazy(() => import("./pages/Methodologie"));
+const Methodology = lazy(() => import("./pages/Methodology"));
 const Widget = lazy(() => import("./pages/Widget"));
 
 const queryClient = new QueryClient();
@@ -263,6 +267,10 @@ const App = () => (
           <Route path="/a-propos" element={<APropos />} />
           <Route path="/legal" element={<Legal />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
+          <Route path="/confidentialite" element={<Confidentialite />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/methodologie" element={<Methodologie />} />
+          <Route path="/methodology" element={<Methodology />} />
           <Route path="/glossary" element={<Glossary />} />
           <Route path="/widget" element={<Widget />} />
 

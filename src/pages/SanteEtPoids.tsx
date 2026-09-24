@@ -1,4 +1,6 @@
 import { Header } from "@/components/Header";
+import { ResumeCitable } from "@/components/ResumeCitable";
+import { FaqSection } from "@/components/FaqSection";
 import { Heart, Activity, Apple, Moon, Brain, Scale, TrendingUp, AlertTriangle, CheckCircle2, BookOpen, Users, Stethoscope } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RelatedPages } from "@/components/RelatedPages";
@@ -30,6 +32,9 @@ const SanteEtPoids = () => {
             Comprendre la relation entre poids, IMC et santé globale
           </p>
         </header>
+
+        {/* §21 : paragraphe citable, hors du <header>. */}
+        <ResumeCitable />
 
         <div className="space-y-8">
           {/* Introduction */}
@@ -562,6 +567,7 @@ const SanteEtPoids = () => {
         </div>
 
 
+        <FaqSection />
         <RelatedPages />
 
         <AuthorByline />

@@ -1,4 +1,6 @@
 import { Header } from "@/components/Header";
+import { ResumeCitable } from "@/components/ResumeCitable";
+import { FaqSection } from "@/components/FaqSection";
 import { BookOpen, TrendingUp, TrendingDown, Target, AlertTriangle, CheckCircle2, Scale, Globe, Heart, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RelatedPages } from "@/components/RelatedPages";
@@ -29,6 +31,9 @@ const BMIInterpretation = () => {
             How to read and correctly interpret your Body Mass Index based on CDC, NHS, and AHA guidelines — with 42.4% of US adults classified as obese, understanding your BMI has never been more critical.
           </p>
         </header>
+
+        {/* §21 : paragraphe citable, hors du <header>. */}
+        <ResumeCitable />
 
         <div className="space-y-8">
           {/* What does BMI mean */}
@@ -468,6 +473,7 @@ const BMIInterpretation = () => {
         </div>
 
 
+        <FaqSection />
         <RelatedPages />
 
         <AuthorByline />

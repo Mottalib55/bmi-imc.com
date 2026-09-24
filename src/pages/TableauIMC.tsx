@@ -1,4 +1,6 @@
 import { Header } from "@/components/Header";
+import { ResumeCitable } from "@/components/ResumeCitable";
+import { FaqSection } from "@/components/FaqSection";
 import { Table, Scale, AlertTriangle, CheckCircle2, Globe, BookOpen, Activity, Heart } from "lucide-react";
 import { RelatedPages } from "@/components/RelatedPages";
 import { Footer } from "@/components/Footer";
@@ -28,6 +30,9 @@ const TableauIMC = () => {
             Classification officielle OMS utilisée par la HAS, avec les données françaises ObÉpi-Roche 2023 : <strong>47% des Français</strong> sont en surpoids ou obèses.
           </p>
         </header>
+
+        {/* §21 : paragraphe citable, hors du <header>. */}
+        <ResumeCitable />
 
         <div className="space-y-8">
           {/* Main Table */}
@@ -528,6 +533,7 @@ const TableauIMC = () => {
         </div>
 
 
+        <FaqSection />
         <RelatedPages />
 
         <AuthorByline />

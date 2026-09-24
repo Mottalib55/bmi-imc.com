@@ -1,4 +1,6 @@
 import { Header } from "@/components/Header";
+import { ResumeCitable } from "@/components/ResumeCitable";
+import { FaqSection } from "@/components/FaqSection";
 import { Baby, AlertTriangle, TrendingUp, BookOpen, Stethoscope, Globe, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { RelatedPages } from "@/components/RelatedPages";
@@ -30,6 +32,9 @@ const BMIChildren = () => {
             19.7% of US children aged 2-19 are obese (CDC/NHANES). Use CDC growth charts and NHS NCMP data for accurate tracking of your child's weight status.
           </p>
         </header>
+
+        {/* §21 : paragraphe citable, hors du <header>. */}
+        <ResumeCitable />
 
         {/* Medical Warning */}
         <div className="bg-destructive/10 border border-destructive/20 rounded-xl p-6 mb-8">
@@ -418,6 +423,7 @@ const BMIChildren = () => {
         </div>
 
 
+        <FaqSection />
         <RelatedPages />
 
         <AuthorByline />

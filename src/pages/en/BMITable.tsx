@@ -1,4 +1,6 @@
 import { Header } from "@/components/Header";
+import { ResumeCitable } from "@/components/ResumeCitable";
+import { FaqSection } from "@/components/FaqSection";
 import { Table, Scale, AlertTriangle, CheckCircle2, Globe, MapPin } from "lucide-react";
 import { RelatedPages } from "@/components/RelatedPages";
 import { Footer } from "@/components/Footer";
@@ -28,6 +30,9 @@ const BMITable = () => {
             The complete WHO BMI classification used by the <strong>CDC</strong> and <strong>NHS</strong>, with US prevalence data: <strong>41.9% of American adults are obese</strong> (NHANES 2017-2020).
           </p>
         </header>
+
+        {/* §21 : paragraphe citable, hors du <header>. */}
+        <ResumeCitable />
 
         <div className="space-y-8">
           {/* Main Table */}
@@ -457,6 +462,7 @@ const BMITable = () => {
         </div>
 
 
+        <FaqSection />
         <RelatedPages />
 
         <AuthorByline />

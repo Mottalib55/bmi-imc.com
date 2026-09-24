@@ -1,5 +1,7 @@
 import { useState, useCallback } from "react";
 import { Header } from "@/components/Header";
+import { ResumeCitable } from "@/components/ResumeCitable";
+import { FaqSection } from "@/components/FaqSection";
 import { Footer } from "@/components/Footer";
 import { BMICalculator } from "@/components/BMICalculator";
 import { BMIGauge } from "@/components/BMIGauge";
@@ -45,6 +47,9 @@ const IMCFemme = () => {
             En France, <strong>44% des femmes sont en surpoids ou obèses</strong> (ObÉpi-Roche 2023). Calculateur d'IMC adapté aux femmes françaises avec références HAS, INSERM et PNNS.
           </p>
         </header>
+
+        {/* §21 : paragraphe citable, hors du <header>. */}
+        <ResumeCitable />
 
         {/* Calculator Section */}
         <div className="grid lg:grid-cols-2 gap-6 md:gap-8 mb-8">
@@ -419,6 +424,7 @@ const IMCFemme = () => {
 
         {/* Footer */}
 
+        <FaqSection />
         <RelatedPages />
 
         <AuthorByline />

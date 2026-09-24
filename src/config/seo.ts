@@ -10,7 +10,7 @@ export const defaultSEO: PageSEO[] = [
   {
     path: "/imc",
     lang: "fr",
-    title: "Calcul IMC Gratuit — Résultat Immédiat avec Interprétation",
+    title: "IMC : calcul gratuit et interprétation immédiate du résultat",
     description: "Calculez votre indice de masse corporelle en 10 secondes. Résultat instantané avec catégorie OMS, poids idéal selon votre taille et conseils personnalisés.",
   },
   {
@@ -58,7 +58,7 @@ export const defaultSEO: PageSEO[] = [
   {
     path: "/faq-imc",
     lang: "fr",
-    title: "FAQ IMC — 17 Questions Fréquentes, Réponses d'Experts",
+    title: "IMC : les questions les plus fréquentes, et leurs réponses",
     description: "Réponses claires aux questions fréquentes sur l'IMC. Formule de calcul, poids normal, fiabilité, remboursement Sécu, tour de taille et quand s'inquiéter.",
   },
   {
@@ -78,7 +78,7 @@ export const defaultSEO: PageSEO[] = [
   {
     path: "/bmi-men",
     lang: "en",
-    title: "Ideal BMI for Men — Weight by Height and Age Chart",
+    title: "BMI for men: ideal weight by height, age and waist",
     description: "Calculate your male BMI and find your ideal weight range by height. Age-specific chart, waist circumference thresholds, and when your BMI may be misleading.",
   },
   {
@@ -108,7 +108,7 @@ export const defaultSEO: PageSEO[] = [
   {
     path: "/bmi-interpretation",
     lang: "en",
-    title: "What Does My BMI Mean? Each Category Explained Clearly",
+    title: "BMI interpretation: reading your result in context",
     description: "Understand what your BMI number tells you about your health. Each category explained, when to take action, risk factors, and what can make BMI inaccurate.",
   },
   {
@@ -565,7 +565,7 @@ export const defaultSEO: PageSEO[] = [
   {
     path: "/glossary",
     lang: "en",
-    title: "BMI Glossary - 35+ Health & Weight Terms Defined",
+    title: "BMI glossary: every term explained in plain English",
     description: "Complete glossary of BMI, body mass index, obesity, underweight, healthy weight, metabolic rate, body fat percentage and 30+ health terms with WHO definitions.",
   },
   {
@@ -577,26 +577,26 @@ export const defaultSEO: PageSEO[] = [
   {
     path: "/about",
     lang: "en",
-    title: "About BMI-IMC — Free BMI Calculator by Radif Partners",
-    description: "Learn about BMI-IMC.com, a free Body Mass Index calculator created by Radif Partners, Éditeur de calculateurs et de guides pratiques. Accurate BMI calculations based on WHO standards in 9 languages.",
+    title: "BMI-IMC.com: who publishes it, and how it is built",
+    description: "BMI-IMC.com is published by Radif Partners. Who we are, where the WHO thresholds we use come from, how pages are checked and how often they are updated.",
   },
   {
     path: "/a-propos",
     lang: "fr",
-    title: "À Propos de BMI-IMC — Calculateur IMC Gratuit par Radif Partners",
-    description: "Découvrez BMI-IMC.com, un calculateur d'indice de masse corporelle gratuit créé par Radif Partners, Éditeur de calculateurs et de guides pratiques. Calculs IMC fiables selon les normes OMS en 9 langues.",
+    title: "Qui édite BMI-IMC.com, et comment le site est fabriqué",
+    description: "BMI-IMC.com est édité par Radif Partners. Qui nous sommes, d'où viennent les seuils de l'OMS, comment les pages sont vérifiées et à quel rythme mises à jour.",
   },
   {
     path: "/legal",
     lang: "en",
-    title: "Legal Notice — BMI-IMC.com",
-    description: "Legal notice and terms of use for BMI-IMC.com, a free BMI calculator. Publisher information, intellectual property, privacy policy and disclaimer.",
+    title: "Legal notice for BMI-IMC.com: publisher and hosting",
+    description: "Publisher of BMI-IMC.com, person responsible for content, contact details, hosting provider and terms of use, together with the limits of the results shown.",
   },
   {
     path: "/mentions-legales",
     lang: "fr",
-    title: "Mentions Légales — BMI-IMC.com",
-    description: "Mentions légales et conditions d'utilisation de BMI-IMC.com, calculateur IMC gratuit. Informations éditeur, propriété intellectuelle et politique de confidentialité.",
+    title: "Mentions légales de BMI-IMC.com : éditeur, hébergeur, contact",
+    description: "Éditeur du site BMI-IMC.com, responsable de publication, coordonnées, hébergeur et conditions d'utilisation, ainsi que les limites des résultats affichés.",
   },
 ];
 

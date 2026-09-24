@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 import { getSEOForPath } from "@/config/seo";
 import { getAlternates, localeMap, type Lang } from "@/config/routes";
+import { dateDePage } from "@/lib/page-date";
 
 const DOMAIN = "https://bmi-imc.com";
 
@@ -31,11 +32,23 @@ export const SEOHead = () => {
     "url": canonicalUrl,
     "inLanguage": seo.lang,
     "datePublished": "2026-05-16",
-    "dateModified": "2026-06-27",
+    // §8.4 : la date de dernière modification vient de l'historique git, pas
+    // d'une constante écrite à la main qui vieillit sans qu'on s'en aperçoive.
+    "dateModified": dateDePage(seo.path) ?? "2026-05-16",
     "author": {
       "@type": "Organization",
       "name": "Radif Partners",
       "url": `${DOMAIN}/about/`,
+      // §8 : sans ces trois champs, Google n'a aucun élément pour rattacher le
+      // site à un éditeur identifiable et compétent sur le sujet.
+      "foundingDate": "2025-01-01",
+      "publishingPrinciples": `${DOMAIN}/about/`,
+      "knowsAbout": [
+        "body mass index",
+        "WHO weight classification",
+        "obesity and overweight",
+        "nutrition and health indicators",
+      ],
     },
     "publisher": {
       "@type": "Organization",

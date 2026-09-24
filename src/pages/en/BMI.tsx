@@ -1,5 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 import { Header } from "@/components/Header";
+import { ResumeCitable } from "@/components/ResumeCitable";
+import { FaqSection } from "@/components/FaqSection";
 import { Footer } from "@/components/Footer";
 import { BMIGauge } from "@/components/BMIGauge";
 import { AuthorByline } from "@/components/AuthorByline";
@@ -78,6 +80,9 @@ const BMI = () => {
             Calculate your Body Mass Index instantly and discover your ideal weight range
           </p>
         </header>
+
+        {/* §21 : paragraphe citable, hors du <header>. */}
+        <ResumeCitable />
 
         {/* Calculator */}
         <div className="grid lg:grid-cols-2 gap-6 md:gap-8 mb-8">
@@ -447,6 +452,7 @@ const BMI = () => {
         </div>
 
 
+        <FaqSection />
         <RelatedPages />
 
         <AuthorByline />

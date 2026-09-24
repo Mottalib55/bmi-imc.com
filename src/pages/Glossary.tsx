@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { MiseAJour } from "@/components/MiseAJour";
 import { Footer } from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { AuthorByline } from "@/components/AuthorByline";
@@ -65,7 +66,7 @@ const Glossary = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>BMI Glossary - 35+ Health & Weight Terms Defined</title>
+        <title>BMI glossary: every term explained in plain English</title>
         <meta name="description" content="Complete glossary of BMI, body mass index, obesity, underweight, healthy weight, metabolic rate, body fat percentage and 30+ health terms. Evidence-based definitions from WHO and CDC." />
         <link rel="canonical" href="https://bmi-imc.com/glossary/" />
         <meta property="og:title" content="BMI Glossary - 35+ Health & Weight Terms Defined" />
@@ -86,10 +87,26 @@ const Glossary = () => {
           <h1 className="text-4xl font-display font-bold mb-4">
             <span className="gradient-text">BMI & Health Glossary</span>
           </h1>
+        
+        {/* §8.4 : date de mise à jour, juste sous le titre. */}
+        <MiseAJour />
           <p className="text-lg text-muted-foreground">
             Definitions for {glossaryTerms.length} key terms related to Body Mass Index, body composition, weight management, and health metrics.
           </p>
         </header>
+
+        {/* §21 : un glossaire n'est qu'une liste de définitions ; sans un
+            paragraphe de corps, la page n'a rien qu'un moteur puisse citer. */}
+        <p className="mb-10 text-base leading-relaxed text-muted-foreground">
+          Ce glossaire réunit les termes que l&apos;on croise en lisant un résultat d&apos;indice de
+          masse corporelle : les catégories de l&apos;Organisation mondiale de la santé, les mesures
+          qui complètent l&apos;indice comme le tour de taille ou le pourcentage de masse grasse, et
+          les notions physiologiques qui expliquent pourquoi deux personnes au même indice peuvent
+          présenter des risques différents. Chaque définition indique, lorsque cela a un sens, le
+          seuil retenu et l&apos;organisme qui le publie, de sorte que le chiffre puisse être
+          vérifié à sa source plutôt que cru sur parole. Les termes sont classés par ordre
+          alphabétique ; ceux qui renvoient à une page détaillée du site sont liés vers elle, de l'interprétation du résultat aux limites connues de l'indice. Les définitions suivent la classification internationale de l'Organisation mondiale de la santé, complétée par les recommandations françaises de la Haute Autorité de santé lorsqu'elles diffèrent.
+        </p>
 
         <div className="space-y-4">
           {glossaryTerms.map((item, index) => (

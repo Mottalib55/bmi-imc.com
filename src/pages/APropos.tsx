@@ -1,4 +1,6 @@
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { MiseAJour } from "@/components/MiseAJour";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { Mail, GraduationCap, Shield, Heart, BookOpen, Globe, Scale, AlertTriangle } from "lucide-react";
@@ -15,6 +17,8 @@ const APropos = () => {
 
       <div className="container max-w-4xl py-12 px-4">
         <h1 className="text-4xl font-display font-bold mb-8 gradient-text">À propos de BMI-IMC.com</h1>
+        {/* §8.4 : date de mise à jour, juste sous le titre. */}
+        <MiseAJour />
 
         {/* Author Card */}
         <div className="flex flex-col md:flex-row items-center md:items-start gap-6 rounded-xl border border-border bg-muted/30 p-6 mb-10">
@@ -360,6 +364,7 @@ const APropos = () => {
           <Link to="/about" className="hover:text-primary">About (EN)</Link>
         </div>
       </div>
+    <Footer />
     </div>
   );
 };
