@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { MiseAJour } from "@/components/MiseAJour";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
 
@@ -57,7 +58,7 @@ const Privacy = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Privacy policy — BMI-IMC.com</title>
+        <title>BMI-IMC.com privacy policy: what data the site collects</title>
         <meta
           name="description"
           content="What data bmi-imc.com collects, what happens to your height and weight, how long audience data is kept and how to exercise your rights under the GDPR."
@@ -68,6 +69,8 @@ const Privacy = () => {
 
       <main id="main-content" className="container max-w-4xl py-12 px-4">
         <h1 className="text-4xl font-display font-bold mb-8">Privacy policy</h1>
+        {/* §8.4 : date de mise à jour, juste sous le titre. */}
+        <MiseAJour />
 
         <div className="prose prose-gray max-w-none space-y-8 text-muted-foreground">
           <p>

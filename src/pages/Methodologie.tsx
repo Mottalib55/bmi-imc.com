@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { MiseAJour } from "@/components/MiseAJour";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
 
@@ -48,7 +49,7 @@ const Methodologie = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Méthodologie : comment nous calculons l&apos;IMC — BMI-IMC.com</title>
+        <title>IMC : notre méthode de calcul et nos sources officielles</title>
         <meta
           name="description"
           content="La formule de l'IMC, l'origine des seuils de l'OMS, ce que l'indice ne mesure pas, la fréquence des mises à jour et les sources officielles utilisées sur bmi-imc.com."
@@ -59,6 +60,8 @@ const Methodologie = () => {
 
       <main id="main-content" className="container max-w-4xl py-12 px-4">
         <h1 className="text-4xl font-display font-bold mb-8">Méthodologie</h1>
+        {/* §8.4 : date de mise à jour, juste sous le titre. */}
+        <MiseAJour />
 
         <div className="prose prose-gray max-w-none space-y-8 text-muted-foreground">
           <p>

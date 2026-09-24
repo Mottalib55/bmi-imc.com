@@ -1,4 +1,5 @@
 import { Header } from "@/components/Header";
+import { MiseAJour } from "@/components/MiseAJour";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
 
@@ -57,7 +58,7 @@ const Confidentialite = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Politique de confidentialité — BMI-IMC.com</title>
+        <title>Politique de confidentialité de BMI-IMC.com : vos données</title>
         <meta
           name="description"
           content="Quelles données bmi-imc.com collecte, ce que devient votre taille et votre poids, combien de temps les données d'audience sont conservées et comment exercer vos droits RGPD."
@@ -68,6 +69,8 @@ const Confidentialite = () => {
 
       <main id="main-content" className="container max-w-4xl py-12 px-4">
         <h1 className="text-4xl font-display font-bold mb-8">Politique de confidentialité</h1>
+        {/* §8.4 : date de mise à jour, juste sous le titre. */}
+        <MiseAJour />
 
         <div className="prose prose-gray max-w-none space-y-8 text-muted-foreground">
           <p>

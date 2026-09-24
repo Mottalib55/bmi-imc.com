@@ -9,7 +9,7 @@ const APropos = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>À propos de BMI-IMC — Calculateur IMC Gratuit par Radif Partners</title>
+        <title>BMI-IMC.com : qui l'édite, et comment le site est fait</title>
         <meta name="description" content="Découvrez BMI-IMC.com, un calculateur d'Indice de Masse Corporelle gratuit créé par Radif Partners, Éditeur de calculateurs et de guides pratiques. Calculs IMC précis basés sur les normes OMS en 9 langues." />
         <link rel="canonical" href="https://bmi-imc.com/a-propos/" />
       </Helmet>

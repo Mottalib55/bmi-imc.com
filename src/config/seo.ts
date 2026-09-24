@@ -21,13 +21,13 @@ export const defaultSEO: PageSEO[] = [
   {
     path: "/methodologie",
     lang: "fr",
-    title: "Méthodologie : comment nous calculons votre IMC exactement",
+    title: "IMC : notre méthode de calcul et nos sources officielles",
     description: "La formule de l'IMC, l'origine des seuils de l'OMS, ce que l'indice ne mesure pas, la fréquence des mises à jour et les sources officielles utilisées.",
   },
   {
     path: "/methodology",
     lang: "en",
-    title: "Methodology: how we calculate the body mass index",
+    title: "BMI methodology: our calculation and official sources",
     description: "The BMI formula, where the WHO thresholds come from, what the index does not measure, how often pages are updated and the official sources behind them.",
   },
   // --- Français ---
@@ -607,7 +607,7 @@ export const defaultSEO: PageSEO[] = [
   {
     path: "/a-propos",
     lang: "fr",
-    title: "Qui édite BMI-IMC.com, et comment le site est fabriqué",
+    title: "BMI-IMC.com : qui l'édite, et comment le site est fait",
     description: "BMI-IMC.com est édité par Radif Partners. Qui nous sommes, d'où viennent les seuils de l'OMS, comment les pages sont vérifiées et à quel rythme mises à jour.",
   },
   {
