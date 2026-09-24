@@ -6,6 +6,30 @@ export interface PageSEO {
 }
 
 export const defaultSEO: PageSEO[] = [
+  {
+    path: "/confidentialite",
+    lang: "fr",
+    title: "Politique de confidentialité de BMI-IMC.com : vos données",
+    description: "Quelles données bmi-imc.com collecte, ce que devient votre taille et votre poids, combien de temps les données d'audience sont conservées, vos droits.",
+  },
+  {
+    path: "/privacy",
+    lang: "en",
+    title: "BMI-IMC.com privacy policy: what data the site collects",
+    description: "What data bmi-imc.com collects, what happens to your height and weight, how long audience data is kept and how to exercise your rights under the GDPR.",
+  },
+  {
+    path: "/methodologie",
+    lang: "fr",
+    title: "Méthodologie : comment nous calculons votre IMC exactement",
+    description: "La formule de l'IMC, l'origine des seuils de l'OMS, ce que l'indice ne mesure pas, la fréquence des mises à jour et les sources officielles utilisées.",
+  },
+  {
+    path: "/methodology",
+    lang: "en",
+    title: "Methodology: how we calculate the body mass index",
+    description: "The BMI formula, where the WHO thresholds come from, what the index does not measure, how often pages are updated and the official sources behind them.",
+  },
   // --- Français ---
   {
     path: "/imc",
