@@ -353,7 +353,7 @@ const IMCDeportista = () => {
 
           {/* Link back to main page */}
           <div className="grid md:grid-cols-3 gap-6">
-            <Link to="/es/imc" className="glass-card p-6 hover:border-primary/50 transition-colors">
+            <Link to="/es/imc/" className="glass-card p-6 hover:border-primary/50 transition-colors">
               <div className="flex items-center gap-3 mb-3">
                 <div className="p-2 rounded-lg bg-primary/10">
                   <Scale className="w-5 h-5 text-primary" />
@@ -365,7 +365,7 @@ const IMCDeportista = () => {
               </p>
             </Link>
 
-            <Link to="/es/tabla-imc" className="glass-card p-6 hover:border-primary/50 transition-colors">
+            <Link to="/es/tabla-imc/" className="glass-card p-6 hover:border-primary/50 transition-colors">
               <div className="flex items-center gap-3 mb-3">
                 <div className="p-2 rounded-lg bg-primary/10">
                   <Target className="w-5 h-5 text-primary" />
@@ -377,7 +377,7 @@ const IMCDeportista = () => {
               </p>
             </Link>
 
-            <Link to="/es/limitaciones-imc" className="glass-card p-6 hover:border-orange-500/50 transition-colors">
+            <Link to="/es/limitaciones-imc/" className="glass-card p-6 hover:border-orange-500/50 transition-colors">
               <div className="flex items-center gap-3 mb-3">
                 <div className="p-2 rounded-lg bg-orange-500/10">
                   <AlertTriangle className="w-5 h-5 text-orange-500" />

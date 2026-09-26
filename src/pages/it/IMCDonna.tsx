@@ -468,15 +468,15 @@ const IMCDonna = () => {
           <div className="glass-card p-8">
             <h2 className="text-2xl font-display font-bold mb-6 text-center">Scopri anche</h2>
             <div className="grid sm:grid-cols-3 gap-4">
-              <a href="/it/imc" className="flex items-center justify-center gap-2 p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors">
+              <a href="/it/imc/" className="flex items-center justify-center gap-2 p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors">
                 <Scale className="w-5 h-5 text-pink-500" />
                 <span className="font-medium">Calcolatore IMC</span>
               </a>
-              <a href="/it/imc-uomo" className="flex items-center justify-center gap-2 p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors">
+              <a href="/it/imc-uomo/" className="flex items-center justify-center gap-2 p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors">
                 <Users className="w-5 h-5 text-pink-500" />
                 <span className="font-medium">IMC Uomo</span>
               </a>
-              <a href="/it/imc-sportivo" className="flex items-center justify-center gap-2 p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors">
+              <a href="/it/imc-sportivo/" className="flex items-center justify-center gap-2 p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors">
                 <Activity className="w-5 h-5 text-pink-500" />
                 <span className="font-medium">IMC Sportivo</span>
               </a>

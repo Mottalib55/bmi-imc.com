@@ -609,15 +609,15 @@ const BMIYundongyuan = () => {
               <h2 className="text-2xl font-display font-bold">相关计算工具</h2>
             </div>
             <div className="grid md:grid-cols-3 gap-4">
-              <Link to="/zh/bmi" className="block bg-muted/30 rounded-xl p-4 hover:bg-muted/50 transition-colors">
+              <Link to="/zh/bmi/" className="block bg-muted/30 rounded-xl p-4 hover:bg-muted/50 transition-colors">
                 <h4 className="font-bold mb-1">BMI计算器</h4>
                 <p className="text-sm text-muted-foreground">标准BMI计算与解读</p>
               </Link>
-              <Link to="/zh/bmi-nanxing" className="block bg-muted/30 rounded-xl p-4 hover:bg-muted/50 transition-colors">
+              <Link to="/zh/bmi-nanxing/" className="block bg-muted/30 rounded-xl p-4 hover:bg-muted/50 transition-colors">
                 <h4 className="font-bold mb-1">男性BMI计算器</h4>
                 <p className="text-sm text-muted-foreground">专为男性优化的BMI评估</p>
               </Link>
-              <Link to="/zh/bmi-nvxing" className="block bg-muted/30 rounded-xl p-4 hover:bg-muted/50 transition-colors">
+              <Link to="/zh/bmi-nvxing/" className="block bg-muted/30 rounded-xl p-4 hover:bg-muted/50 transition-colors">
                 <h4 className="font-bold mb-1">女性BMI计算器</h4>
                 <p className="text-sm text-muted-foreground">专为女性优化的BMI评估</p>
               </Link>

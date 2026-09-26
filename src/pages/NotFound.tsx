@@ -38,7 +38,7 @@ const NotFound = () => {
             BMI Calculator (EN)
           </Link>
           <Link
-            to="/imc"
+            to="/imc/"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border font-medium hover:bg-muted transition-colors"
           >
             <ArrowLeft className="w-5 h-5" />
@@ -47,12 +47,12 @@ const NotFound = () => {
         </div>
 
         <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-3 text-sm">
-          <Link to="/bmi-men" className="rounded-lg border border-border p-3 hover:bg-muted transition-colors">BMI for Men</Link>
-          <Link to="/bmi-women" className="rounded-lg border border-border p-3 hover:bg-muted transition-colors">BMI for Women</Link>
-          <Link to="/bmi-table" className="rounded-lg border border-border p-3 hover:bg-muted transition-colors">BMI Table</Link>
-          <Link to="/imc-homme" className="rounded-lg border border-border p-3 hover:bg-muted transition-colors">IMC Homme</Link>
-          <Link to="/imc-femme" className="rounded-lg border border-border p-3 hover:bg-muted transition-colors">IMC Femme</Link>
-          <Link to="/tableau-imc" className="rounded-lg border border-border p-3 hover:bg-muted transition-colors">Tableau IMC</Link>
+          <Link to="/bmi-men/" className="rounded-lg border border-border p-3 hover:bg-muted transition-colors">BMI for Men</Link>
+          <Link to="/bmi-women/" className="rounded-lg border border-border p-3 hover:bg-muted transition-colors">BMI for Women</Link>
+          <Link to="/bmi-table/" className="rounded-lg border border-border p-3 hover:bg-muted transition-colors">BMI Table</Link>
+          <Link to="/imc-homme/" className="rounded-lg border border-border p-3 hover:bg-muted transition-colors">IMC Homme</Link>
+          <Link to="/imc-femme/" className="rounded-lg border border-border p-3 hover:bg-muted transition-colors">IMC Femme</Link>
+          <Link to="/tableau-imc/" className="rounded-lg border border-border p-3 hover:bg-muted transition-colors">Tableau IMC</Link>
         </div>
       </main>
     </div>

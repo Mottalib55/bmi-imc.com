@@ -132,7 +132,7 @@ const LimitacoesIMC = () => {
                 <p className="text-sm text-muted-foreground">
                   A massa muscular elevada dá um IMC de "sobrepeso" ou "obesidade" quando o percentual de gordura é mínimo.
                 </p>
-                <Link to="/pt/imc-atleta" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/pt/imc-atleta/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   Saiba mais →
                 </Link>
               </div>
@@ -145,7 +145,7 @@ const LimitacoesIMC = () => {
                 <p className="text-sm text-muted-foreground">
                   Os limites para adultos não se aplicam. É preciso usar as curvas de corpulência adaptadas à idade e ao sexo.
                 </p>
-                <Link to="/pt/imc-crianca" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/pt/imc-crianca/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   Saiba mais →
                 </Link>
               </div>
@@ -415,7 +415,7 @@ const LimitacoesIMC = () => {
               Agora que você conhece as limitações, use nossa calculadora como primeiro indicador
             </p>
             <Link
-              to="/pt/imc"
+              to="/pt/imc/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
               Calcular meu IMC

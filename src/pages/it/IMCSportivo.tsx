@@ -527,15 +527,15 @@ const IMCSportivo = () => {
           <div className="glass-card p-8">
             <h2 className="text-2xl font-display font-bold mb-6 text-center">Scopri anche</h2>
             <div className="grid md:grid-cols-3 gap-4">
-              <Link to="/it/imc" className="block p-4 rounded-xl border border-border hover:border-orange-500/50 transition-colors text-center">
+              <Link to="/it/imc/" className="block p-4 rounded-xl border border-border hover:border-orange-500/50 transition-colors text-center">
                 <p className="font-bold">Calcolo IMC</p>
                 <p className="text-sm text-muted-foreground">Calcolatore IMC generale</p>
               </Link>
-              <a href="/it/imc-uomo" className="block p-4 rounded-xl border border-border hover:border-orange-500/50 transition-colors text-center">
+              <a href="/it/imc-uomo/" className="block p-4 rounded-xl border border-border hover:border-orange-500/50 transition-colors text-center">
                 <p className="font-bold">IMC Uomo</p>
                 <p className="text-sm text-muted-foreground">Calcolo IMC per uomini</p>
               </a>
-              <a href="/it/imc-donna" className="block p-4 rounded-xl border border-border hover:border-orange-500/50 transition-colors text-center">
+              <a href="/it/imc-donna/" className="block p-4 rounded-xl border border-border hover:border-orange-500/50 transition-colors text-center">
                 <p className="font-bold">IMC Donna</p>
                 <p className="text-sm text-muted-foreground">Calcolo IMC per donne</p>
               </a>

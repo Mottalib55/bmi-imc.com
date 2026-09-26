@@ -516,7 +516,7 @@ const BMITabelle = () => {
               Verwenden Sie unseren kostenlosen BMI-Rechner, um Ihre Kategorie in der Tabelle zu finden
             </p>
             <Link
-              to="/de/bmi"
+              to="/de/bmi/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
             >
               <Scale className="w-5 h-5" />

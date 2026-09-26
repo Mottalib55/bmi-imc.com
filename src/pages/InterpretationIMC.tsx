@@ -124,7 +124,7 @@ const InterpretationIMC = () => {
                 <ul className="text-muted-foreground space-y-1 text-sm">
                   <li>• Risque accru de diabète type 2, HTA, dyslipidémie</li>
                   <li>• Tour de taille à surveiller : &gt;94 cm (H) ou &gt;80 cm (F) = risque majoré</li>
-                  <li>• Peut être dû à la masse musculaire (sportifs — voir <Link to="/imc-sportif" className="text-primary hover:underline">IMC Sportif</Link>)</li>
+                  <li>• Peut être dû à la masse musculaire (sportifs — voir <Link to="/imc-sportif/" className="text-primary hover:underline">IMC Sportif</Link>)</li>
                 </ul>
                 <p className="text-warning font-medium mt-3">
                   Parcours HAS : Médecin traitant → bilan sanguin (glycémie, lipides) → rééquilibrage alimentaire → sport sur ordonnance si ALD.

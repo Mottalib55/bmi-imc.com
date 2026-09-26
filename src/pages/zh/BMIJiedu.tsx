@@ -510,9 +510,9 @@ const BMIJiedu = () => {
               </p>
               <p>
                 完整的<strong>BMI解读</strong>还应了解
-                <Link to="/zh/bmi-juxianxing" className="text-primary hover:underline">BMI的局限性</Link>，
-                参考<Link to="/zh/bmi-biao" className="text-primary hover:underline">BMI对照表</Link>，
-                并关注<Link to="/zh/jiankang-tizhong" className="text-primary hover:underline">健康体重管理</Link>的科学方法。
+                <Link to="/zh/bmi-juxianxing/" className="text-primary hover:underline">BMI的局限性</Link>，
+                参考<Link to="/zh/bmi-biao/" className="text-primary hover:underline">BMI对照表</Link>，
+                并关注<Link to="/zh/jiankang-tizhong/" className="text-primary hover:underline">健康体重管理</Link>的科学方法。
                 无论使用WHO标准还是<strong>中国标准WS/T 428-2013</strong>，BMI都只是健康评估的起点，
                 建议定期到医疗机构进行全面体检。
               </p>
@@ -526,7 +526,7 @@ const BMIJiedu = () => {
               使用我们的免费BMI计算器，基于WS/T 428-2013中国标准与WHO双标准，精准评估您的体重状态
             </p>
             <Link
-              to="/zh/bmi"
+              to="/zh/bmi/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
               计算您的BMI

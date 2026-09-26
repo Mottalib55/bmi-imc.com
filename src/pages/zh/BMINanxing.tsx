@@ -469,17 +469,17 @@ const BMINanxing = () => {
               <h2 className="text-2xl font-display font-bold">相关工具</h2>
             </div>
             <div className="grid md:grid-cols-3 gap-4">
-              <Link to="/zh/bmi" className="p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors text-center">
+              <Link to="/zh/bmi/" className="p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors text-center">
                 <Scale className="w-8 h-8 text-blue-500 mx-auto mb-2" />
                 <span className="font-semibold">BMI计算器</span>
                 <p className="text-sm text-muted-foreground mt-1">通用BMI计算工具</p>
               </Link>
-              <Link to="/zh/bmi-nvxing" className="p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors text-center">
+              <Link to="/zh/bmi-nvxing/" className="p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors text-center">
                 <Heart className="w-8 h-8 text-pink-500 mx-auto mb-2" />
                 <span className="font-semibold">女性BMI计算器</span>
                 <p className="text-sm text-muted-foreground mt-1">专为女性定制</p>
               </Link>
-              <Link to="/zh/bmi-yundongyuan" className="p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors text-center">
+              <Link to="/zh/bmi-yundongyuan/" className="p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors text-center">
                 <Dumbbell className="w-8 h-8 text-green-500 mx-auto mb-2" />
                 <span className="font-semibold">运动员BMI计算器</span>
                 <p className="text-sm text-muted-foreground mt-1">适用于体育运动者</p>

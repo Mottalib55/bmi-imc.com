@@ -484,12 +484,12 @@ const BMIJuxianxing = () => {
               <p>
                 <strong>BMI的局限性</strong>众多，且已被科学界充分记录。这一<strong>BMI批判性分析</strong>不应被孤立解读。
                 <strong>BMI的缺陷</strong>包括无法区分脂肪和肌肉、不考虑年龄和性别差异，以及忽略种族间的体型差异。
-                了解更多关于<Link to="/zh/bmi-jiedu" className="text-primary hover:underline">如何正确解读BMI</Link>的信息。
+                了解更多关于<Link to="/zh/bmi-jiedu/" className="text-primary hover:underline">如何正确解读BMI</Link>的信息。
               </p>
               <p>
                 <strong>为什么BMI不够完善</strong>？因为它只是一个简单的数学公式（体重除以身高的平方）。
                 <strong>BMI的问题</strong>在运动员、儿童和老年人中尤为明显。BMI<strong>是否可靠</strong>取决于使用的具体场景。
-                查看我们的<Link to="/zh/bmi-biao" className="text-primary hover:underline">BMI分类表</Link>了解标准分类。
+                查看我们的<Link to="/zh/bmi-biao/" className="text-primary hover:underline">BMI分类表</Link>了解标准分类。
               </p>
               <p>
                 <strong>BMI的替代方案</strong>如腰围测量、体脂百分比和DEXA扫描能够提供更全面的健康评估。
@@ -506,7 +506,7 @@ const BMIJuxianxing = () => {
               既然您已经了解了BMI的局限性，可以将我们的计算器作为初步参考指标
             </p>
             <Link
-              to="/zh/bmi"
+              to="/zh/bmi/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
               计算我的BMI

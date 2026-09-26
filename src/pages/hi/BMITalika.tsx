@@ -725,7 +725,7 @@ const BMITalika = () => {
               हमारे मुफ़्त कैलकुलेटर का उपयोग करें और ICMR तथा WHO दोनों मानकों के अनुसार तुरंत जानें कि आप किस श्रेणी में हैं।
             </p>
             <Link
-              to="/hi/bmi"
+              to="/hi/bmi/"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
             >
               <Scale className="w-5 h-5" />

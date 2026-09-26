@@ -49,19 +49,19 @@ const BMIFAQ = () => {
     },
     {
       question: "Is BMI reliable?",
-      answer: "BMI is a good indicator for the general population, but it has <strong>limitations</strong>. It doesn't distinguish muscle mass from fat mass. A muscular athlete can have high BMI without excess fat. Other indicators like waist circumference or body fat percentage are complementary. See our page on <a href='/bmi-limitations' class='text-primary hover:underline'>BMI limitations</a>."
+      answer: "BMI is a good indicator for the general population, but it has <strong>limitations</strong>. It doesn't distinguish muscle mass from fat mass. A muscular athlete can have high BMI without excess fat. Other indicators like waist circumference or body fat percentage are complementary. See our page on <a href='/bmi-limitations/' class='text-primary hover:underline'>BMI limitations</a>."
     },
     {
       question: "What BMI for women?",
-      answer: "Normal BMI for women is the same as for men: <strong>18.5 to 24.9</strong>. However, women naturally have higher body fat (20-25% vs 15-20% for men). Waist circumference is often more relevant: it shouldn't exceed 31.5 inches. Check our <a href='/bmi-women' class='text-primary hover:underline'>Women's BMI</a> page for more details."
+      answer: "Normal BMI for women is the same as for men: <strong>18.5 to 24.9</strong>. However, women naturally have higher body fat (20-25% vs 15-20% for men). Waist circumference is often more relevant: it shouldn't exceed 31.5 inches. Check our <a href='/bmi-women/' class='text-primary hover:underline'>Women's BMI</a> page for more details."
     },
     {
       question: "What BMI for men?",
-      answer: "Normal BMI for men is between <strong>18.5 and 24.9</strong>. Muscular men can have higher BMI (up to 27-28) without health problems. Waist circumference is an important complementary indicator: it shouldn't exceed 37 inches. See our <a href='/bmi-men' class='text-primary hover:underline'>Men's BMI</a> page."
+      answer: "Normal BMI for men is between <strong>18.5 and 24.9</strong>. Muscular men can have higher BMI (up to 27-28) without health problems. Waist circumference is an important complementary indicator: it shouldn't exceed 37 inches. See our <a href='/bmi-men/' class='text-primary hover:underline'>Men's BMI</a> page."
     },
     {
       question: "How to calculate a child's BMI?",
-      answer: "The calculation is the same (weight/height²), but <strong>interpretation is different</strong>. Adult thresholds (18.5/25/30) are not used. Body mass curves that account for age and sex are used. A child must be positioned on percentile curves. Check our <a href='/bmi-children' class='text-primary hover:underline'>Children's BMI</a> page."
+      answer: "The calculation is the same (weight/height²), but <strong>interpretation is different</strong>. Adult thresholds (18.5/25/30) are not used. Body mass curves that account for age and sex are used. A child must be positioned on percentile curves. Check our <a href='/bmi-children/' class='text-primary hover:underline'>Children's BMI</a> page."
     },
     {
       question: "Can BMI be calculated during pregnancy?",
@@ -69,7 +69,7 @@ const BMIFAQ = () => {
     },
     {
       question: "Is BMI the same for athletes?",
-      answer: "<strong>BMI is biased for athletes</strong>. The formula doesn't distinguish muscle from fat. A bodybuilder with 10% body fat can have BMI 30+ (classified obese). For athletes, prefer <strong>FFMI</strong> (Fat-Free Mass Index), body fat percentage or waist circumference. See our <a href='/bmi-athletes' class='text-primary hover:underline'>Athletes' BMI</a> page."
+      answer: "<strong>BMI is biased for athletes</strong>. The formula doesn't distinguish muscle from fat. A bodybuilder with 10% body fat can have BMI 30+ (classified obese). For athletes, prefer <strong>FFMI</strong> (Fat-Free Mass Index), body fat percentage or waist circumference. See our <a href='/bmi-athletes/' class='text-primary hover:underline'>Athletes' BMI</a> page."
     },
     {
       question: "From what BMI are you overweight?",

@@ -132,7 +132,7 @@ const BMISeemayen = () => {
                 <p className="text-sm text-muted-foreground">
                   अधिक मांसपेशी द्रव्यमान BMI को "अधिक वजन" या "मोटापा" दिखाता है, जबकि शरीर में वसा प्रतिशत न्यूनतम होता है।
                 </p>
-                <Link to="/hi/bmi-khiladi" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/hi/bmi-khiladi/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   और जानें →
                 </Link>
               </div>
@@ -145,7 +145,7 @@ const BMISeemayen = () => {
                 <p className="text-sm text-muted-foreground">
                   वयस्कों की सीमाएं लागू नहीं होतीं। आयु और लिंग-विशिष्ट पर्सेंटाइल वक्रों का उपयोग करना आवश्यक है।
                 </p>
-                <Link to="/hi/bmi-bachche" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/hi/bmi-bachche/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   और जानें →
                 </Link>
               </div>
@@ -168,7 +168,7 @@ const BMISeemayen = () => {
                 <p className="text-sm text-muted-foreground">
                   गर्भावस्था के दौरान वजन बढ़ना सामान्य और वांछनीय है। गर्भावस्था से पहले का BMI संदर्भ के रूप में काम करता है।
                 </p>
-                <Link to="/hi/bmi-mahila" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/hi/bmi-mahila/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   और जानें →
                 </Link>
               </div>
@@ -496,7 +496,7 @@ const BMISeemayen = () => {
               अब जब आप सीमाओं को जानते हैं, तो हमारे कैलकुलेटर का उपयोग पहले संकेतक के रूप में करें
             </p>
             <Link
-              to="/hi/bmi"
+              to="/hi/bmi/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
               मेरा BMI कैलकुलेट करें

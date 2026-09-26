@@ -489,7 +489,7 @@ const BMISportler = () => {
 
           {/* Link back to main BMI page */}
           <div className="text-center">
-            <Link to="/de/bmi" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors">
+            <Link to="/de/bmi/" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors">
               <Scale className="w-5 h-5" />
               Zum BMI-Rechner
             </Link>

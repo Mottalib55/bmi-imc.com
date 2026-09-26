@@ -838,9 +838,9 @@ const BMIBiao = () => {
               </p>
               <p>
                 如需了解更多信息，请访问我们的
-                <Link to="/zh/bmi-jiedu" className="text-primary hover:underline">BMI解读页面</Link>
+                <Link to="/zh/bmi-jiedu/" className="text-primary hover:underline">BMI解读页面</Link>
                 或了解
-                <Link to="/zh/bmi-juxianxing" className="text-primary hover:underline">BMI的局限性</Link>。
+                <Link to="/zh/bmi-juxianxing/" className="text-primary hover:underline">BMI的局限性</Link>。
               </p>
             </div>
           </div>
@@ -852,7 +852,7 @@ const BMIBiao = () => {
               使用我们的免费BMI计算器，按照中国标准查看您的BMI分类
             </p>
             <Link
-              to="/zh/bmi"
+              to="/zh/bmi/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:bg-primary/90 transition-colors"
             >
               <Scale className="w-5 h-5" />

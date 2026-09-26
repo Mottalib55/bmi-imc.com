@@ -132,7 +132,7 @@ const LimitiIMC = () => {
                 <p className="text-sm text-muted-foreground">
                   Un'elevata massa muscolare porta a un IMC di "sovrappeso" o "obesità", mentre la percentuale di grasso corporeo è minima.
                 </p>
-                <Link to="/it/imc-sportivo" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/it/imc-sportivo/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   Scopri di più →
                 </Link>
               </div>
@@ -145,7 +145,7 @@ const LimitiIMC = () => {
                 <p className="text-sm text-muted-foreground">
                   I valori soglia per gli adulti non si applicano. È necessario utilizzare le curve percentili specifiche per età e sesso.
                 </p>
-                <Link to="/it/imc-bambino" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/it/imc-bambino/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   Scopri di più →
                 </Link>
               </div>
@@ -168,7 +168,7 @@ const LimitiIMC = () => {
                 <p className="text-sm text-muted-foreground">
                   L'aumento di peso durante la gravidanza è normale e auspicabile. L'IMC pre-gravidanza serve come riferimento.
                 </p>
-                <Link to="/it/imc-donna" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/it/imc-donna/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   Scopri di più →
                 </Link>
               </div>
@@ -349,7 +349,7 @@ const LimitiIMC = () => {
               Ora che conoscete i limiti, utilizzate il nostro calcolatore come primo indicatore
             </p>
             <Link
-              to="/it/imc"
+              to="/it/imc/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
               Calcolare il mio IMC

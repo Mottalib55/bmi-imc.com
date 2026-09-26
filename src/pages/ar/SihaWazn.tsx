@@ -280,7 +280,7 @@ const SihaWazn = () => {
           <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center">
             <h3 className="text-xl font-bold mb-4">احسب مؤشر كتلة جسمك</h3>
             <p className="text-muted-foreground mb-6">المؤشر الأول لتقييم وزنك الصحي</p>
-            <Link to="/ar/imc" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors">احسب مؤشري</Link>
+            <Link to="/ar/imc/" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors">احسب مؤشري</Link>
           </div>
         </div>
 

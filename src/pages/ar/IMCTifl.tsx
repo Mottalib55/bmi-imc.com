@@ -331,7 +331,7 @@ const IMCTifl = () => {
           <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center">
             <h3 className="text-xl font-bold mb-4">هل أنت بالغ؟</h3>
             <p className="text-muted-foreground mb-6">استخدم حاسبة مؤشر كتلة الجسم القياسية للبالغين</p>
-            <Link to="/ar/imc" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors">
+            <Link to="/ar/imc/" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors">
               احسب مؤشر كتلة جسمي
             </Link>
           </div>

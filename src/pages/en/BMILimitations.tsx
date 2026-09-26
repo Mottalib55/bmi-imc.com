@@ -137,7 +137,7 @@ const BMILimitations = () => {
                 <p className="text-sm text-muted-foreground">
                   High muscle mass gives "overweight" or "obese" BMI while body fat is minimal.
                 </p>
-                <Link to="/bmi-athletes" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/bmi-athletes/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   Learn more →
                 </Link>
               </div>
@@ -150,7 +150,7 @@ const BMILimitations = () => {
                 <p className="text-sm text-muted-foreground">
                   Adult thresholds don't apply. Age and sex-specific body mass curves must be used.
                 </p>
-                <Link to="/bmi-children" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/bmi-children/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   Learn more →
                 </Link>
               </div>
@@ -173,7 +173,7 @@ const BMILimitations = () => {
                 <p className="text-sm text-muted-foreground">
                   Weight gain is normal and desirable during pregnancy. Pre-pregnancy BMI serves as reference.
                 </p>
-                <Link to="/bmi-women" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/bmi-women/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   Learn more →
                 </Link>
               </div>

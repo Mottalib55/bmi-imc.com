@@ -602,7 +602,7 @@ const TabellaIMC = () => {
               Utilizza il nostro calcolatore gratuito per scoprire in quale categoria ti trovi secondo la classificazione OMS.
             </p>
             <Link
-              to="/it/imc"
+              to="/it/imc/"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-bold text-lg hover:bg-primary/90 transition-colors"
             >
               <Scale className="w-5 h-5" />

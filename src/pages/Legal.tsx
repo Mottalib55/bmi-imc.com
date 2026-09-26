@@ -276,8 +276,8 @@ const Legal = () => {
 
         <div className="border-t border-border pt-6 mt-10 flex flex-wrap gap-4 text-sm text-muted-foreground">
           <Link to="/" className="hover:text-primary">BMI Calculator</Link>
-          <Link to="/about" className="hover:text-primary">About</Link>
-          <Link to="/mentions-legales" className="hover:text-primary">Mentions Légales (FR)</Link>
+          <Link to="/about/" className="hover:text-primary">About</Link>
+          <Link to="/mentions-legales/" className="hover:text-primary">Mentions Légales (FR)</Link>
         </div>
       </div>
     <Footer />

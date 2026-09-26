@@ -358,10 +358,10 @@ const APropos = () => {
 
         {/* Footer links */}
         <div className="border-t border-border pt-6 mt-10 flex flex-wrap gap-4 text-sm text-muted-foreground">
-          <Link to="/imc" className="hover:text-primary">Calculateur IMC</Link>
-          <Link to="/mentions-legales" className="hover:text-primary">Mentions Légales</Link>
+          <Link to="/imc/" className="hover:text-primary">Calculateur IMC</Link>
+          <Link to="/mentions-legales/" className="hover:text-primary">Mentions Légales</Link>
           <Link to="/" className="hover:text-primary">BMI Calculator (EN)</Link>
-          <Link to="/about" className="hover:text-primary">About (EN)</Link>
+          <Link to="/about/" className="hover:text-primary">About (EN)</Link>
         </div>
       </div>
     <Footer />

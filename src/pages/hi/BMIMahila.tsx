@@ -359,13 +359,13 @@ const BMIMahila = () => {
           <div className="glass-card p-8">
             <h2 className="text-2xl font-display font-bold mb-6 text-center">अन्य BMI कैलकुलेटर देखें</h2>
             <div className="grid md:grid-cols-3 gap-4">
-              <a href="/hi/bmi" className="flex items-center justify-center p-4 bg-primary/10 rounded-xl text-primary font-semibold hover:bg-primary/20 transition-colors">
+              <a href="/hi/bmi/" className="flex items-center justify-center p-4 bg-primary/10 rounded-xl text-primary font-semibold hover:bg-primary/20 transition-colors">
                 BMI कैलकुलेटर
               </a>
-              <a href="/hi/bmi-purush" className="flex items-center justify-center p-4 bg-blue-500/10 rounded-xl text-blue-500 font-semibold hover:bg-blue-500/20 transition-colors">
+              <a href="/hi/bmi-purush/" className="flex items-center justify-center p-4 bg-blue-500/10 rounded-xl text-blue-500 font-semibold hover:bg-blue-500/20 transition-colors">
                 पुरुषों के लिए BMI
               </a>
-              <a href="/hi/bmi-khiladi" className="flex items-center justify-center p-4 bg-emerald-500/10 rounded-xl text-emerald-500 font-semibold hover:bg-emerald-500/20 transition-colors">
+              <a href="/hi/bmi-khiladi/" className="flex items-center justify-center p-4 bg-emerald-500/10 rounded-xl text-emerald-500 font-semibold hover:bg-emerald-500/20 transition-colors">
                 खिलाड़ियों के लिए BMI
               </a>
             </div>

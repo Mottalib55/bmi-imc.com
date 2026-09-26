@@ -41,7 +41,7 @@ const PreguntasFrecuentesIMC = () => {
     },
     {
       question: "¿Cómo calcular su IMC?",
-      answer: "Para calcular su IMC, divida su peso en kilogramos por su talla en metros al cuadrado. Por ejemplo, si pesa 70 kg y mide 1,75 m: IMC = 70 / (1,75 × 1,75) = 70 / 3,0625 = <strong>22,9</strong>. También puede usar nuestra <a href='/es/imc' class='text-primary hover:underline'>calculadora IMC gratuita</a>."
+      answer: "Para calcular su IMC, divida su peso en kilogramos por su talla en metros al cuadrado. Por ejemplo, si pesa 70 kg y mide 1,75 m: IMC = 70 / (1,75 × 1,75) = 70 / 3,0625 = <strong>22,9</strong>. También puede usar nuestra <a href='/es/imc/' class='text-primary hover:underline'>calculadora IMC gratuita</a>."
     },
     {
       question: "¿Cuál es el IMC ideal?",
@@ -49,19 +49,19 @@ const PreguntasFrecuentesIMC = () => {
     },
     {
       question: "¿Es fiable el IMC?",
-      answer: "El IMC es un buen indicador para la población general, pero tiene <strong>limitaciones</strong>. No distingue la masa muscular de la masa grasa. Un deportista musculoso puede tener un IMC elevado sin exceso de grasa. Otros indicadores como el perímetro de cintura o el porcentaje de masa grasa son complementarios. Vea nuestra página sobre las <a href='/es/limitaciones-imc' class='text-primary hover:underline'>limitaciones del IMC</a>."
+      answer: "El IMC es un buen indicador para la población general, pero tiene <strong>limitaciones</strong>. No distingue la masa muscular de la masa grasa. Un deportista musculoso puede tener un IMC elevado sin exceso de grasa. Otros indicadores como el perímetro de cintura o el porcentaje de masa grasa son complementarios. Vea nuestra página sobre las <a href='/es/limitaciones-imc/' class='text-primary hover:underline'>limitaciones del IMC</a>."
     },
     {
       question: "¿Qué IMC para una mujer?",
-      answer: "El IMC normal para una mujer es el mismo que para un hombre: <strong>18,5 a 24,9</strong>. Sin embargo, las mujeres tienen naturalmente un porcentaje de grasa más elevado (20-25% vs 15-20% para los hombres). El perímetro de cintura es a menudo más pertinente: no debería superar los 80 cm. Consulte nuestra página <a href='/es/imc-mujer' class='text-primary hover:underline'>IMC Mujer</a> para más detalles."
+      answer: "El IMC normal para una mujer es el mismo que para un hombre: <strong>18,5 a 24,9</strong>. Sin embargo, las mujeres tienen naturalmente un porcentaje de grasa más elevado (20-25% vs 15-20% para los hombres). El perímetro de cintura es a menudo más pertinente: no debería superar los 80 cm. Consulte nuestra página <a href='/es/imc-mujer/' class='text-primary hover:underline'>IMC Mujer</a> para más detalles."
     },
     {
       question: "¿Qué IMC para un hombre?",
-      answer: "El IMC normal para un hombre se sitúa entre <strong>18,5 y 24,9</strong>. Los hombres musculosos pueden tener un IMC más elevado (hasta 27-28) sin problema de salud. El perímetro de cintura es un indicador complementario importante: no debería superar los 94 cm. Vea nuestra página <a href='/es/imc-hombre' class='text-primary hover:underline'>IMC Hombre</a>."
+      answer: "El IMC normal para un hombre se sitúa entre <strong>18,5 y 24,9</strong>. Los hombres musculosos pueden tener un IMC más elevado (hasta 27-28) sin problema de salud. El perímetro de cintura es un indicador complementario importante: no debería superar los 94 cm. Vea nuestra página <a href='/es/imc-hombre/' class='text-primary hover:underline'>IMC Hombre</a>."
     },
     {
       question: "¿Cómo calcular el IMC de un niño?",
-      answer: "El cálculo es el mismo (peso/talla²), pero la <strong>interpretación es diferente</strong>. No se utilizan los umbrales adultos (18,5/25/30). Se utilizan curvas de corpulencia que tienen en cuenta la edad y el sexo. Un niño debe situarse en las curvas de percentiles. Consulte nuestra página <a href='/es/imc-nino' class='text-primary hover:underline'>IMC Niño</a>."
+      answer: "El cálculo es el mismo (peso/talla²), pero la <strong>interpretación es diferente</strong>. No se utilizan los umbrales adultos (18,5/25/30). Se utilizan curvas de corpulencia que tienen en cuenta la edad y el sexo. Un niño debe situarse en las curvas de percentiles. Consulte nuestra página <a href='/es/imc-nino/' class='text-primary hover:underline'>IMC Niño</a>."
     },
     {
       question: "¿Se puede calcular el IMC durante el embarazo?",
@@ -69,7 +69,7 @@ const PreguntasFrecuentesIMC = () => {
     },
     {
       question: "¿Es el IMC el mismo para los deportistas?",
-      answer: "<strong>El IMC está sesgado para los deportistas</strong>. La fórmula no distingue músculo y grasa. Un culturista con 10% de masa grasa puede tener un IMC de 30+ (clasificado obeso). Para deportistas, prefiera el <strong>FFMI</strong> (Fat-Free Mass Index), el porcentaje de masa grasa o el perímetro de cintura. Vea nuestra página <a href='/es/imc-deportista' class='text-primary hover:underline'>IMC Deportista</a>."
+      answer: "<strong>El IMC está sesgado para los deportistas</strong>. La fórmula no distingue músculo y grasa. Un culturista con 10% de masa grasa puede tener un IMC de 30+ (clasificado obeso). Para deportistas, prefiera el <strong>FFMI</strong> (Fat-Free Mass Index), el porcentaje de masa grasa o el perímetro de cintura. Vea nuestra página <a href='/es/imc-deportista/' class='text-primary hover:underline'>IMC Deportista</a>."
     },
     {
       question: "¿A partir de qué IMC se tiene sobrepeso?",
@@ -153,7 +153,7 @@ const PreguntasFrecuentesIMC = () => {
             Use nuestra calculadora gratuita para conocer su índice de masa corporal
           </p>
           <Link
-            to="/es/imc"
+            to="/es/imc/"
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
           >
             Calcular mi IMC

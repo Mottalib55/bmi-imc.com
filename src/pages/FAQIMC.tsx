@@ -69,7 +69,7 @@ const FAQIMC = () => {
     },
     {
       question: "L'IMC du carnet de santé est-il fiable pour les enfants français ?",
-      answer: "Le <strong>carnet de santé français</strong> contient des <strong>courbes de corpulence</strong> mises à jour par l'INSERM et le PNNS. Ces courbes utilisent des percentiles et le <strong>rebond d'adiposité</strong> (normalement vers 6 ans) pour détecter précocement le surpoids. Elles sont fiables mais doivent être interprétées par un pédiatre. En France, <strong>17% des enfants</strong> sont en surpoids (étude Esteban, Santé Publique France). Voir notre page <a href='/imc-enfant' class='text-primary hover:underline'>IMC Enfant</a>."
+      answer: "Le <strong>carnet de santé français</strong> contient des <strong>courbes de corpulence</strong> mises à jour par l'INSERM et le PNNS. Ces courbes utilisent des percentiles et le <strong>rebond d'adiposité</strong> (normalement vers 6 ans) pour détecter précocement le surpoids. Elles sont fiables mais doivent être interprétées par un pédiatre. En France, <strong>17% des enfants</strong> sont en surpoids (étude Esteban, Santé Publique France). Voir notre page <a href='/imc-enfant/' class='text-primary hover:underline'>IMC Enfant</a>."
     },
     {
       question: "Le Nutri-Score aide-t-il à maintenir un bon IMC ?",
@@ -97,7 +97,7 @@ const FAQIMC = () => {
     },
     {
       question: "Qu'est-ce que l'obésité à poids normal (TOFI) ?",
-      answer: "Le syndrome <strong>TOFI</strong> (Thin Outside, Fat Inside) désigne des personnes ayant un <strong>IMC normal</strong> (18,5-25) mais un excès de <strong>graisse viscérale</strong> dangereux pour la santé. En France, on estime que <strong>20 à 30%</strong> des personnes de poids normal présentent ce profil à risque. Le <strong>tour de taille</strong> est essentiel pour les détecter. Les risques cardiovasculaires et de diabète sont similaires à ceux du surpoids. Un <a href='/interpretation-imc' class='text-primary hover:underline'>IMC normal</a> ne garantit donc pas l'absence de risque métabolique."
+      answer: "Le syndrome <strong>TOFI</strong> (Thin Outside, Fat Inside) désigne des personnes ayant un <strong>IMC normal</strong> (18,5-25) mais un excès de <strong>graisse viscérale</strong> dangereux pour la santé. En France, on estime que <strong>20 à 30%</strong> des personnes de poids normal présentent ce profil à risque. Le <strong>tour de taille</strong> est essentiel pour les détecter. Les risques cardiovasculaires et de diabète sont similaires à ceux du surpoids. Un <a href='/interpretation-imc/' class='text-primary hover:underline'>IMC normal</a> ne garantit donc pas l'absence de risque métabolique."
     },
     {
       question: "Existe-t-il une nouvelle formule d'IMC plus précise ?",

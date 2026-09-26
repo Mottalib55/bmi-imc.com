@@ -392,7 +392,7 @@ const InterpretazioneIMC = () => {
               Utilizza il nostro calcolatore gratuito per determinare il tuo Indice di Massa Corporea e confrontarlo con i dati italiani
             </p>
             <Link
-              to="/it/imc"
+              to="/it/imc/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
               Calcola il tuo IMC

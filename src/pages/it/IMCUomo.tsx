@@ -438,13 +438,13 @@ const IMCUomo = () => {
           <div className="glass-card p-8">
             <h2 className="text-2xl font-display font-bold mb-6 text-center">Scopri anche</h2>
             <div className="grid md:grid-cols-3 gap-4">
-              <a href="/it/imc" className="flex items-center justify-center p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors text-center">
+              <a href="/it/imc/" className="flex items-center justify-center p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors text-center">
                 <span className="font-semibold text-primary">Calcolatore IMC Generale</span>
               </a>
-              <a href="/it/imc-donna" className="flex items-center justify-center p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors text-center">
+              <a href="/it/imc-donna/" className="flex items-center justify-center p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors text-center">
                 <span className="font-semibold text-pink-500">IMC per le Donne</span>
               </a>
-              <a href="/it/imc-sportivo" className="flex items-center justify-center p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors text-center">
+              <a href="/it/imc-sportivo/" className="flex items-center justify-center p-4 bg-muted/30 rounded-xl hover:bg-muted/50 transition-colors text-center">
                 <span className="font-semibold text-green-500">IMC per Sportivi</span>
               </a>
             </div>

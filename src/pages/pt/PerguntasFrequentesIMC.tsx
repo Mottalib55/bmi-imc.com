@@ -41,7 +41,7 @@ const PerguntasFrequentesIMC = () => {
     },
     {
       question: "Como calcular seu IMC?",
-      answer: "Para calcular seu IMC, divida seu peso em quilogramas pela sua altura em metros ao quadrado. Por exemplo, se você pesa 70 kg e mede 1,75 m: IMC = 70 / (1,75 × 1,75) = 70 / 3,0625 = <strong>22,9</strong>. Você também pode usar nossa <a href='/pt/imc' class='text-primary hover:underline'>calculadora IMC gratuita</a>."
+      answer: "Para calcular seu IMC, divida seu peso em quilogramas pela sua altura em metros ao quadrado. Por exemplo, se você pesa 70 kg e mede 1,75 m: IMC = 70 / (1,75 × 1,75) = 70 / 3,0625 = <strong>22,9</strong>. Você também pode usar nossa <a href='/pt/imc/' class='text-primary hover:underline'>calculadora IMC gratuita</a>."
     },
     {
       question: "Qual é o IMC ideal?",
@@ -49,7 +49,7 @@ const PerguntasFrequentesIMC = () => {
     },
     {
       question: "O IMC é confiável?",
-      answer: "O IMC é um bom indicador para a população geral, mas tem <strong>limitações</strong>. Ele não distingue massa muscular de massa gorda. Um atleta musculoso pode ter um IMC elevado sem excesso de gordura. Outros indicadores como a circunferência da cintura ou o percentual de gordura corporal são complementares. Veja nossa página sobre as <a href='/pt/limitacoes-imc' class='text-primary hover:underline'>limitações do IMC</a>."
+      answer: "O IMC é um bom indicador para a população geral, mas tem <strong>limitações</strong>. Ele não distingue massa muscular de massa gorda. Um atleta musculoso pode ter um IMC elevado sem excesso de gordura. Outros indicadores como a circunferência da cintura ou o percentual de gordura corporal são complementares. Veja nossa página sobre as <a href='/pt/limitacoes-imc/' class='text-primary hover:underline'>limitações do IMC</a>."
     },
     {
       question: "Qual IMC para uma mulher?",
@@ -61,7 +61,7 @@ const PerguntasFrequentesIMC = () => {
     },
     {
       question: "Como calcular o IMC de uma criança?",
-      answer: "O cálculo é o mesmo (peso/altura²), mas a <strong>interpretação é diferente</strong>. Não usamos os limites para adultos (18,5/25/30). Usamos curvas de corpulência que levam em conta a idade e o sexo. Uma criança deve estar situada nas curvas de percentis. Consulte nossa página <a href='/pt/imc-crianca' class='text-primary hover:underline'>IMC Criança</a>."
+      answer: "O cálculo é o mesmo (peso/altura²), mas a <strong>interpretação é diferente</strong>. Não usamos os limites para adultos (18,5/25/30). Usamos curvas de corpulência que levam em conta a idade e o sexo. Uma criança deve estar situada nas curvas de percentis. Consulte nossa página <a href='/pt/imc-crianca/' class='text-primary hover:underline'>IMC Criança</a>."
     },
     {
       question: "Podemos calcular o IMC durante a gravidez?",
@@ -69,7 +69,7 @@ const PerguntasFrequentesIMC = () => {
     },
     {
       question: "O IMC é o mesmo para atletas?",
-      answer: "<strong>O IMC é enviesado para atletas</strong>. A fórmula não distingue músculo e gordura. Um fisiculturista com 10% de gordura corporal pode ter um IMC de 30+ (classificado como obeso). Para atletas, prefira o <strong>FFMI</strong> (Fat-Free Mass Index), o percentual de gordura corporal ou a circunferência da cintura. Veja nossa página <a href='/pt/imc-atleta' class='text-primary hover:underline'>IMC Atleta</a>."
+      answer: "<strong>O IMC é enviesado para atletas</strong>. A fórmula não distingue músculo e gordura. Um fisiculturista com 10% de gordura corporal pode ter um IMC de 30+ (classificado como obeso). Para atletas, prefira o <strong>FFMI</strong> (Fat-Free Mass Index), o percentual de gordura corporal ou a circunferência da cintura. Veja nossa página <a href='/pt/imc-atleta/' class='text-primary hover:underline'>IMC Atleta</a>."
     },
     {
       question: "A partir de qual IMC estamos com sobrepeso?",
@@ -153,7 +153,7 @@ const PerguntasFrequentesIMC = () => {
             Use nossa calculadora gratuita para conhecer seu índice de massa corporal
           </p>
           <Link
-            to="/pt/imc"
+            to="/pt/imc/"
             className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
           >
             Calcular meu IMC

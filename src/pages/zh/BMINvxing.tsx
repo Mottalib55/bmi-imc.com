@@ -449,15 +449,15 @@ const BMINvxing = () => {
           <div className="glass-card p-8">
             <h2 className="text-2xl font-display font-bold mb-6 text-center">探索更多BMI工具</h2>
             <div className="grid md:grid-cols-3 gap-4">
-              <Link to="/zh/bmi" className="flex items-center justify-between p-4 bg-muted/30 rounded-xl hover:bg-pink-500/10 transition-colors group">
+              <Link to="/zh/bmi/" className="flex items-center justify-between p-4 bg-muted/30 rounded-xl hover:bg-pink-500/10 transition-colors group">
                 <span className="font-medium">BMI计算器</span>
                 <ArrowRight className="w-4 h-4 text-pink-500 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <Link to="/zh/bmi-nanxing" className="flex items-center justify-between p-4 bg-muted/30 rounded-xl hover:bg-pink-500/10 transition-colors group">
+              <Link to="/zh/bmi-nanxing/" className="flex items-center justify-between p-4 bg-muted/30 rounded-xl hover:bg-pink-500/10 transition-colors group">
                 <span className="font-medium">男性BMI计算器</span>
                 <ArrowRight className="w-4 h-4 text-pink-500 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <Link to="/zh/bmi-yundongyuan" className="flex items-center justify-between p-4 bg-muted/30 rounded-xl hover:bg-pink-500/10 transition-colors group">
+              <Link to="/zh/bmi-yundongyuan/" className="flex items-center justify-between p-4 bg-muted/30 rounded-xl hover:bg-pink-500/10 transition-colors group">
                 <span className="font-medium">运动员BMI计算器</span>
                 <ArrowRight className="w-4 h-4 text-pink-500 group-hover:translate-x-1 transition-transform" />
               </Link>

@@ -375,7 +375,7 @@ const BMI = () => {
 
           {/* Links to other pages */}
           <div className="grid md:grid-cols-3 gap-6">
-            <Link to="/bmi-men" className="glass-card p-6 hover:border-blue-500/50 transition-colors">
+            <Link to="/bmi-men/" className="glass-card p-6 hover:border-blue-500/50 transition-colors">
               <div className="flex items-center gap-3 mb-3">
                 <div className="p-2 rounded-lg bg-blue-500/10">
                   <Activity className="w-5 h-5 text-blue-500" />
@@ -387,7 +387,7 @@ const BMI = () => {
               </p>
             </Link>
 
-            <Link to="/bmi-women" className="glass-card p-6 hover:border-pink-500/50 transition-colors">
+            <Link to="/bmi-women/" className="glass-card p-6 hover:border-pink-500/50 transition-colors">
               <div className="flex items-center gap-3 mb-3">
                 <div className="p-2 rounded-lg bg-pink-500/10">
                   <Activity className="w-5 h-5 text-pink-500" />
@@ -399,7 +399,7 @@ const BMI = () => {
               </p>
             </Link>
 
-            <Link to="/bmi-athletes" className="glass-card p-6 hover:border-orange-500/50 transition-colors">
+            <Link to="/bmi-athletes/" className="glass-card p-6 hover:border-orange-500/50 transition-colors">
               <div className="flex items-center gap-3 mb-3">
                 <div className="p-2 rounded-lg bg-orange-500/10">
                   <TrendingUp className="w-5 h-5 text-orange-500" />

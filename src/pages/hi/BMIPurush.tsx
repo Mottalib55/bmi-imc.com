@@ -398,15 +398,15 @@ const BMIPurush = () => {
           <div className="glass-card p-8">
             <h2 className="text-2xl font-display font-bold mb-6 text-center">अन्य BMI कैलकुलेटर देखें</h2>
             <div className="grid md:grid-cols-3 gap-4">
-              <a href="/hi/bmi" className="flex items-center justify-center gap-2 p-4 bg-primary/10 rounded-xl hover:bg-primary/20 transition-colors text-center font-medium">
+              <a href="/hi/bmi/" className="flex items-center justify-center gap-2 p-4 bg-primary/10 rounded-xl hover:bg-primary/20 transition-colors text-center font-medium">
                 <Scale className="w-5 h-5" />
                 BMI कैलकुलेटर
               </a>
-              <a href="/hi/bmi-mahila" className="flex items-center justify-center gap-2 p-4 bg-pink-500/10 rounded-xl hover:bg-pink-500/20 transition-colors text-center font-medium">
+              <a href="/hi/bmi-mahila/" className="flex items-center justify-center gap-2 p-4 bg-pink-500/10 rounded-xl hover:bg-pink-500/20 transition-colors text-center font-medium">
                 <User className="w-5 h-5" />
                 महिलाओं के लिए BMI
               </a>
-              <a href="/hi/bmi-khiladi" className="flex items-center justify-center gap-2 p-4 bg-green-500/10 rounded-xl hover:bg-green-500/20 transition-colors text-center font-medium">
+              <a href="/hi/bmi-khiladi/" className="flex items-center justify-center gap-2 p-4 bg-green-500/10 rounded-xl hover:bg-green-500/20 transition-colors text-center font-medium">
                 <Dumbbell className="w-5 h-5" />
                 खिलाड़ियों के लिए BMI
               </a>

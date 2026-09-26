@@ -132,7 +132,7 @@ const LimitacionesIMC = () => {
                 <p className="text-sm text-muted-foreground">
                   La masa muscular elevada da un IMC de "sobrepeso" u "obesidad" cuando el porcentaje de grasa es mínimo.
                 </p>
-                <Link to="/es/imc-deportista" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/es/imc-deportista/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   Más información →
                 </Link>
               </div>
@@ -145,7 +145,7 @@ const LimitacionesIMC = () => {
                 <p className="text-sm text-muted-foreground">
                   Los umbrales adultos no se aplican. Hay que utilizar las curvas de corpulencia adaptadas a la edad y al sexo.
                 </p>
-                <Link to="/es/imc-nino" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/es/imc-nino/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   Más información →
                 </Link>
               </div>
@@ -168,7 +168,7 @@ const LimitacionesIMC = () => {
                 <p className="text-sm text-muted-foreground">
                   El aumento de peso es normal y deseable durante el embarazo. El IMC pre-embarazo sirve de referencia.
                 </p>
-                <Link to="/es/imc-mujer" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/es/imc-mujer/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   Más información →
                 </Link>
               </div>
@@ -431,7 +431,7 @@ const LimitacionesIMC = () => {
               Ahora que conoce las limitaciones, use nuestra calculadora como un primer indicador
             </p>
             <Link
-              to="/es/imc"
+              to="/es/imc/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
               Calcular mi IMC

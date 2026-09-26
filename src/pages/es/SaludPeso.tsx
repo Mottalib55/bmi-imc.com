@@ -571,7 +571,7 @@ const SaludPeso = () => {
               Primer indicador para evaluar su peso saludable
             </p>
             <Link
-              to="/es/imc"
+              to="/es/imc/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
               Calcular mi IMC

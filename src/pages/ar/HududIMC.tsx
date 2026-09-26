@@ -72,12 +72,12 @@ const HududIMC = () => {
               <div className="border border-border rounded-xl p-5">
                 <div className="flex items-center gap-2 mb-3"><Dumbbell className="w-5 h-5 text-orange-500" /><h4 className="font-bold">الرياضيون ولاعبو كمال الأجسام</h4></div>
                 <p className="text-sm text-muted-foreground">كتلة العضلات العالية تعطي مؤشر "زيادة وزن" أو "سمنة" بينما نسبة الدهون ضئيلة.</p>
-                <Link to="/ar/imc-riyadi" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">اعرف المزيد ←</Link>
+                <Link to="/ar/imc-riyadi/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">اعرف المزيد ←</Link>
               </div>
               <div className="border border-border rounded-xl p-5">
                 <div className="flex items-center gap-2 mb-3"><Baby className="w-5 h-5 text-cyan-500" /><h4 className="font-bold">الأطفال والمراهقون</h4></div>
                 <p className="text-sm text-muted-foreground">عتبات البالغين لا تنطبق. يجب استخدام منحنيات كتلة الجسم الخاصة بالعمر والجنس.</p>
-                <Link to="/ar/imc-tifl" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">اعرف المزيد ←</Link>
+                <Link to="/ar/imc-tifl/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">اعرف المزيد ←</Link>
               </div>
               <div className="border border-border rounded-xl p-5">
                 <div className="flex items-center gap-2 mb-3"><Clock className="w-5 h-5 text-purple-500" /><h4 className="font-bold">كبار السن</h4></div>
@@ -86,7 +86,7 @@ const HududIMC = () => {
               <div className="border border-border rounded-xl p-5">
                 <div className="flex items-center gap-2 mb-3"><Users className="w-5 h-5 text-pink-500" /><h4 className="font-bold">الحوامل</h4></div>
                 <p className="text-sm text-muted-foreground">زيادة الوزن طبيعية ومرغوبة أثناء الحمل. المؤشر قبل الحمل يُستخدم كمرجع.</p>
-                <Link to="/ar/imc-maraa" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">اعرف المزيد ←</Link>
+                <Link to="/ar/imc-maraa/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">اعرف المزيد ←</Link>
               </div>
               <div className="border border-border rounded-xl p-5">
                 <div className="flex items-center gap-2 mb-3"><Globe className="w-5 h-5 text-green-500" /><h4 className="font-bold">بعض الأعراق</h4></div>
@@ -304,7 +304,7 @@ const HududIMC = () => {
           <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center">
             <h3 className="text-xl font-bold mb-4">احسب مؤشر كتلة جسمك بمعرفة كاملة</h3>
             <p className="text-muted-foreground mb-6">الآن بعد معرفتك بالحدود، استخدم حاسبتنا كمؤشر أولي</p>
-            <Link to="/ar/imc" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors">احسب مؤشري</Link>
+            <Link to="/ar/imc/" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors">احسب مؤشري</Link>
           </div>
         </div>
 

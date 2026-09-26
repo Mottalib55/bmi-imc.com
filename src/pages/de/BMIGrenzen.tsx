@@ -132,7 +132,7 @@ const BMIGrenzen = () => {
                 <p className="text-sm text-muted-foreground">
                   Hohe Muskelmasse führt zu "Übergewicht" oder "Adipositas" BMI, während der Körperfettanteil minimal ist.
                 </p>
-                <Link to="/de/bmi-sportler" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/de/bmi-sportler/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   Mehr erfahren →
                 </Link>
               </div>
@@ -145,7 +145,7 @@ const BMIGrenzen = () => {
                 <p className="text-sm text-muted-foreground">
                   Erwachsenengrenzwerte gelten nicht. Es müssen alters- und geschlechtsspezifische Perzentilkurven verwendet werden.
                 </p>
-                <Link to="/de/bmi-kinder" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/de/bmi-kinder/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   Mehr erfahren →
                 </Link>
               </div>
@@ -168,7 +168,7 @@ const BMIGrenzen = () => {
                 <p className="text-sm text-muted-foreground">
                   Gewichtszunahme ist während der Schwangerschaft normal und erwünscht. Der BMI vor der Schwangerschaft dient als Referenz.
                 </p>
-                <Link to="/de/bmi-frauen" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/de/bmi-frauen/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   Mehr erfahren →
                 </Link>
               </div>
@@ -357,7 +357,7 @@ const BMIGrenzen = () => {
               Jetzt, da Sie die Einschränkungen kennen, nutzen Sie unseren Rechner als ersten Indikator
             </p>
             <Link
-              to="/de/bmi"
+              to="/de/bmi/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
               Meinen BMI berechnen

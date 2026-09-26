@@ -384,7 +384,7 @@ const IMCBambino = () => {
               Utilizza il nostro calcolatore IMC standard per adulti
             </p>
             <Link
-              to="/it/imc"
+              to="/it/imc/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
               Calcola il mio IMC adulto

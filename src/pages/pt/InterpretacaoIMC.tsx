@@ -324,7 +324,7 @@ const InterpretacaoIMC = () => {
               Use nossa calculadora gratuita para conhecer seu indice de massa corporal e interpreta-lo com base nos dados brasileiros e portugueses
             </p>
             <Link
-              to="/pt/imc"
+              to="/pt/imc/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
               Calcular meu IMC

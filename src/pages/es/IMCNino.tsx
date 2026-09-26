@@ -383,7 +383,7 @@ const IMCNino = () => {
               Use nuestra calculadora IMC est&aacute;ndar para adultos
             </p>
             <Link
-              to="/es/imc"
+              to="/es/imc/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
               Calcular mi IMC adulto

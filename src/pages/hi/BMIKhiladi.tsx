@@ -655,15 +655,15 @@ const BMIKhiladi = () => {
           <div className="glass-card p-8">
             <h2 className="text-2xl font-display font-bold mb-6 text-center">यह भी देखें</h2>
             <div className="grid md:grid-cols-3 gap-4">
-              <Link to="/hi/bmi" className="block p-4 rounded-xl border border-border hover:border-orange-500/50 transition-colors text-center">
+              <Link to="/hi/bmi/" className="block p-4 rounded-xl border border-border hover:border-orange-500/50 transition-colors text-center">
                 <p className="font-bold">BMI गणना</p>
                 <p className="text-sm text-muted-foreground">सामान्य BMI कैलकुलेटर</p>
               </Link>
-              <Link to="/hi/bmi-purush" className="block p-4 rounded-xl border border-border hover:border-orange-500/50 transition-colors text-center">
+              <Link to="/hi/bmi-purush/" className="block p-4 rounded-xl border border-border hover:border-orange-500/50 transition-colors text-center">
                 <p className="font-bold">पुरुषों का BMI</p>
                 <p className="text-sm text-muted-foreground">पुरुषों के लिए BMI गणना</p>
               </Link>
-              <Link to="/hi/bmi-mahila" className="block p-4 rounded-xl border border-border hover:border-orange-500/50 transition-colors text-center">
+              <Link to="/hi/bmi-mahila/" className="block p-4 rounded-xl border border-border hover:border-orange-500/50 transition-colors text-center">
                 <p className="font-bold">महिलाओं का BMI</p>
                 <p className="text-sm text-muted-foreground">महिलाओं के लिए BMI गणना</p>
               </Link>

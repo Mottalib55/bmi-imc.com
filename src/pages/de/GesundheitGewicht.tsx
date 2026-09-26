@@ -535,7 +535,7 @@ const GesundheitGewicht = () => {
               Erster Indikator zur Bewertung Ihres gesunden Gewichts
             </p>
             <Link
-              to="/de/bmi"
+              to="/de/bmi/"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
               Meinen BMI berechnen

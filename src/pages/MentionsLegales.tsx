@@ -313,9 +313,9 @@ const MentionsLegales = () => {
         </div>
 
         <div className="border-t border-border pt-6 mt-10 flex flex-wrap gap-4 text-sm text-muted-foreground">
-          <Link to="/imc" className="hover:text-primary">Calculateur IMC</Link>
-          <Link to="/a-propos" className="hover:text-primary">À propos</Link>
-          <Link to="/legal" className="hover:text-primary">Legal Notice (EN)</Link>
+          <Link to="/imc/" className="hover:text-primary">Calculateur IMC</Link>
+          <Link to="/a-propos/" className="hover:text-primary">À propos</Link>
+          <Link to="/legal/" className="hover:text-primary">Legal Notice (EN)</Link>
         </div>
       </div>
     <Footer />

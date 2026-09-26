@@ -34,15 +34,15 @@ const BMIChangjianwenti = () => {
     },
     {
       question: "如何计算BMI？",
-      answer: "计算BMI非常简单：将您的体重（公斤）除以身高（米）的平方。例如：如果您体重70公斤，身高1.75米，则 BMI = 70 / (1.75 × 1.75) = 70 / 3.0625 = <strong>22.9</strong>。您也可以使用我们的<a href='/zh/bmi' class='text-primary hover:underline'>免费BMI计算器</a>来快速获取结果，无需手动计算。"
+      answer: "计算BMI非常简单：将您的体重（公斤）除以身高（米）的平方。例如：如果您体重70公斤，身高1.75米，则 BMI = 70 / (1.75 × 1.75) = 70 / 3.0625 = <strong>22.9</strong>。您也可以使用我们的<a href='/zh/bmi/' class='text-primary hover:underline'>免费BMI计算器</a>来快速获取结果，无需手动计算。"
     },
     {
       question: "正常的BMI范围是多少？",
-      answer: "根据世界卫生组织（WHO）的标准，<strong>正常BMI</strong>范围为<strong>18.5至24.9</strong>。具体分类如下：低于18.5为体重过轻，18.5至24.9为正常体重，25至29.9为超重，30及以上为肥胖。在这一正常范围内，健康风险最低。不过，理想的BMI值通常在21至22之间。您可以查看我们的<a href='/zh/bmi-biao' class='text-primary hover:underline'>BMI对照表</a>了解更多详情。"
+      answer: "根据世界卫生组织（WHO）的标准，<strong>正常BMI</strong>范围为<strong>18.5至24.9</strong>。具体分类如下：低于18.5为体重过轻，18.5至24.9为正常体重，25至29.9为超重，30及以上为肥胖。在这一正常范围内，健康风险最低。不过，理想的BMI值通常在21至22之间。您可以查看我们的<a href='/zh/bmi-biao/' class='text-primary hover:underline'>BMI对照表</a>了解更多详情。"
     },
     {
       question: "BMI适用于所有人吗？",
-      answer: "BMI作为一种通用指标，对大多数成年人是有效的，但它<strong>并不适用于所有人</strong>。以下人群的BMI结果可能不准确：<strong>1)</strong> 运动员和健身者（肌肉量较高），<strong>2)</strong> 孕妇，<strong>3)</strong> 老年人（65岁以上），<strong>4)</strong> 儿童和青少年（需使用年龄别BMI），<strong>5)</strong> 不同种族人群（亚洲人的健康BMI范围可能更低）。请参阅我们的<a href='/zh/bmi-jiedu' class='text-primary hover:underline'>BMI解读</a>页面获取详细信息。"
+      answer: "BMI作为一种通用指标，对大多数成年人是有效的，但它<strong>并不适用于所有人</strong>。以下人群的BMI结果可能不准确：<strong>1)</strong> 运动员和健身者（肌肉量较高），<strong>2)</strong> 孕妇，<strong>3)</strong> 老年人（65岁以上），<strong>4)</strong> 儿童和青少年（需使用年龄别BMI），<strong>5)</strong> 不同种族人群（亚洲人的健康BMI范围可能更低）。请参阅我们的<a href='/zh/bmi-jiedu/' class='text-primary hover:underline'>BMI解读</a>页面获取详细信息。"
     },
     {
       question: "BMI和体脂率有什么区别？",
@@ -133,14 +133,14 @@ const BMIChangjianwenti = () => {
         <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center">
           <h3 className="text-xl font-bold mb-4">立即计算您的BMI</h3>
           <p className="text-muted-foreground mb-6">使用我们的免费计算器，快速了解您的身体质量指数</p>
-          <Link to="/zh/bmi" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors">计算我的BMI</Link>
+          <Link to="/zh/bmi/" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors">计算我的BMI</Link>
         </div>
 
         <div className="glass-card p-8 mt-8">
           <h2 className="text-2xl font-display font-bold mb-6">全面了解BMI</h2>
           <div className="text-muted-foreground space-y-4">
             <p>本<strong>BMI常见问题</strong>页面解答了关于身体质量指数计算和解读的最常见问题。无论您想了解<strong>如何计算BMI</strong>、<strong>正常BMI范围是多少</strong>，还是<strong>BMI是否可靠</strong>，这里都能找到答案。</p>
-            <p>BMI是一个简单而实用的体重评估工具，但它也有其局限性，应结合其他健康指标综合判断。如需全面的健康评估，建议咨询专业医生。您也可以查看我们的<a href="/zh/bmi-biao" className="text-primary hover:underline">BMI对照表</a>和<a href="/zh/bmi-jiedu" className="text-primary hover:underline">BMI解读指南</a>获取更多信息。</p>
+            <p>BMI是一个简单而实用的体重评估工具，但它也有其局限性，应结合其他健康指标综合判断。如需全面的健康评估，建议咨询专业医生。您也可以查看我们的<a href="/zh/bmi-biao/" className="text-primary hover:underline">BMI对照表</a>和<a href="/zh/bmi-jiedu/" className="text-primary hover:underline">BMI解读指南</a>获取更多信息。</p>
             <p>
               中国已建立覆盖<strong>13.6亿人口</strong>的基本医疗保险体系，为肥胖相关疾病治疗提供保障。
               <strong>城镇职工医保</strong>和<strong>城乡居民医保</strong>覆盖2型糖尿病、高血压等

@@ -139,7 +139,7 @@ const LimitesIMC = () => {
                 <p className="text-sm text-muted-foreground">
                   En France, les rugbymen du Top 14 ont un IMC de 30-35 (« obèse ») avec seulement 12-18% de masse grasse. L'INSEP utilise la DXA, pas l'IMC.
                 </p>
-                <Link to="/imc-sportif" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/imc-sportif/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   En savoir plus →
                 </Link>
               </div>
@@ -152,7 +152,7 @@ const LimitesIMC = () => {
                 <p className="text-sm text-muted-foreground">
                   Le carnet de santé français utilise les courbes IOTF, pas l'IMC adulte. Le rebond d'adiposité (normalement vers 6 ans) est un marqueur clé suivi par les pédiatres et la PMI.
                 </p>
-                <Link to="/imc-enfant" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/imc-enfant/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   En savoir plus →
                 </Link>
               </div>
@@ -175,7 +175,7 @@ const LimitesIMC = () => {
                 <p className="text-sm text-muted-foreground">
                   Le CNGOF recommande de calculer l'IMC avant la grossesse pour adapter le suivi. Prise de poids recommandée en France : 11-16 kg (IMC normal), 7-11 kg (surpoids), 5-9 kg (obésité).
                 </p>
-                <Link to="/imc-femme" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
+                <Link to="/imc-femme/" className="text-primary text-sm font-medium hover:underline mt-2 inline-block">
                   En savoir plus →
                 </Link>
               </div>
