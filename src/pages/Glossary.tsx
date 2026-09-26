@@ -47,13 +47,23 @@ const glossaryTerms: Term[] = [
   { term: "DEXA Scan", definition: "Dual-energy X-ray Absorptiometry. A medical imaging technique that provides precise measurements of body fat percentage, lean mass, and bone density. Considered the gold standard for body composition analysis." },
   { term: "Bioelectrical Impedance Analysis (BIA)", definition: "A method of estimating body composition by measuring the resistance of body tissues to a small electrical current. Used in many consumer body fat scales and handheld devices." },
   { term: "Obesity Paradox", definition: "The observation in some studies that slightly overweight or mildly obese individuals may have better survival rates for certain conditions like heart failure compared to normal-weight patients." },
+  { term: "Waist Circumference", definition: "The distance around the abdomen measured at the midpoint between the lowest rib and the top of the hip bone. The WHO sets action levels at 94 cm for men and 80 cm for women, with substantially raised risk above 102 cm and 88 cm respectively. It captures abdominal fat directly, which BMI cannot." },
+  { term: "Waist-to-Height Ratio", definition: "Waist circumference divided by height, with 0.5 as the widely used cut-off: your waist should be less than half your height. It performs better than BMI at predicting cardiometabolic risk and needs no reference table, which is why NICE recommends it alongside BMI for adults under 40." },
+  { term: "Visceral Fat", definition: "Fat stored around the internal organs in the abdominal cavity, as opposed to subcutaneous fat stored under the skin. It is metabolically active, releasing inflammatory compounds and free fatty acids into the portal circulation, and is the fat depot most strongly linked to insulin resistance and cardiovascular disease." },
+  { term: "Quetelet Index", definition: "The original name for what is now called BMI, after the Belgian statistician Adolphe Quetelet who described it in 1832. He devised it to describe populations, not to assess individuals, a distinction that still explains most of the criticism directed at the measure today." },
+  { term: "Ethnic-Specific Thresholds", definition: "Lower BMI cut-offs used for populations of South Asian, Chinese and some other Asian descent, where cardiometabolic risk rises at a lower body mass. The WHO proposes action points at 23 and 27.5 rather than 25 and 30, and several national health services apply them." },
+  { term: "BMI Prime", definition: "BMI divided by the upper limit of the normal range, 25. A BMI Prime of 1.0 sits exactly at the overweight boundary, 0.8 near the lower end of normal and 1.2 at the top of the overweight band. It expresses how far a reading is from the threshold as a simple ratio." },
+  { term: "Ponderal Index", definition: "Weight divided by the cube of height rather than the square, expressed in kg/m3. It is less sensitive to height than BMI, which is why it is preferred for infants and for very tall or very short adults, where BMI systematically over- or under-states body fatness." },
+  { term: "BMI-for-Age Percentile", definition: "The measure used for children and adolescents aged 2 to 19, comparing a child's BMI against reference data for the same age and sex. Below the 5th percentile is underweight, the 5th to 85th healthy, the 85th to 95th overweight and above the 95th obese. Fixed adult thresholds do not apply." },
+  { term: "Basal Metabolic Rate (BMR)", definition: "The energy the body uses at complete rest to maintain vital functions, typically 1 400 to 1 800 kcal a day for an adult. It accounts for 60 to 70 per cent of total daily energy expenditure and falls as lean mass is lost, which is why weight regain is common after rapid loss." },
+  { term: "Skinfold Calipers", definition: "A low-cost tool that measures the thickness of a pinch of skin and underlying fat at standard sites, converted to a body fat percentage through published equations. Accuracy depends heavily on the operator's technique, but repeated measurements by the same person track change reliably." },
 ];
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "DefinedTermSet",
   name: "BMI & Health Glossary",
-  description: "Comprehensive glossary of 35+ terms related to Body Mass Index (BMI), body composition, weight management, and health metrics used by WHO, CDC, and NHS.",
+  description: "Comprehensive glossary of 45 terms related to Body Mass Index (BMI), body composition, weight management, and health metrics used by WHO, CDC, and NHS.",
   url: "https://bmi-imc.com/glossary/",
   definedTerm: glossaryTerms.map((t) => ({
     "@type": "DefinedTerm",
@@ -69,7 +79,7 @@ const Glossary = () => {
         <title>BMI glossary: every term explained in plain English</title>
         <meta name="description" content="Complete glossary of BMI, body mass index, obesity, underweight, healthy weight, metabolic rate, body fat percentage and 30+ health terms. Evidence-based definitions from WHO and CDC." />
         <link rel="canonical" href="https://bmi-imc.com/glossary/" />
-        <meta property="og:title" content="BMI Glossary - 35+ Health & Weight Terms Defined" />
+        <meta property="og:title" content="BMI Glossary: 45 Health & Weight Terms Defined" />
         <meta property="og:description" content="Complete glossary of BMI and health terms with evidence-based definitions from WHO and CDC." />
         <meta property="og:url" content="https://bmi-imc.com/glossary/" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
@@ -98,14 +108,17 @@ const Glossary = () => {
         {/* §21 : un glossaire n'est qu'une liste de définitions ; sans un
             paragraphe de corps, la page n'a rien qu'un moteur puisse citer. */}
         <p className="mb-10 text-base leading-relaxed text-muted-foreground">
-          Ce glossaire réunit les termes que l&apos;on croise en lisant un résultat d&apos;indice de
-          masse corporelle : les catégories de l&apos;Organisation mondiale de la santé, les mesures
-          qui complètent l&apos;indice comme le tour de taille ou le pourcentage de masse grasse, et
-          les notions physiologiques qui expliquent pourquoi deux personnes au même indice peuvent
-          présenter des risques différents. Chaque définition indique, lorsque cela a un sens, le
-          seuil retenu et l&apos;organisme qui le publie, de sorte que le chiffre puisse être
-          vérifié à sa source plutôt que cru sur parole. Les termes sont classés par ordre
-          alphabétique ; ceux qui renvoient à une page détaillée du site sont liés vers elle, de l'interprétation du résultat aux limites connues de l'indice. Les définitions suivent la classification internationale de l'Organisation mondiale de la santé, complétée par les recommandations françaises de la Haute Autorité de santé lorsqu'elles diffèrent.
+          This glossary gathers the terms you meet when reading a body mass index result: the World
+          Health Organization weight categories, the measurements that complete the index such as
+          waist circumference and body fat percentage, and the physiological concepts that explain
+          why two people with the same index can carry very different risk. Each definition gives
+          the threshold and the body that publishes it wherever that makes sense, so the figure can
+          be checked at its source rather than taken on trust. Terms are listed alphabetically, and
+          those with a page of their own on this site link to it, from how to read a result to the
+          limits of the measure and the reference tables by height and weight. Forty-five entries
+          are listed, covering the classification bands, the alternative indices, the measurement
+          techniques from calipers to DEXA, and the metabolic conditions that excess weight is
+          associated with.
         </p>
 
         <div className="space-y-4">
@@ -116,6 +129,47 @@ const Glossary = () => {
             </div>
           ))}
         </div>
+
+        <section className="mt-12 space-y-4 text-muted-foreground leading-relaxed">
+          <h2 className="text-2xl font-display font-bold text-foreground">How these terms fit together</h2>
+          <p>
+            Most of the confusion around body mass index comes from treating one number as if it
+            were three separate things: a measure of size, a measure of fatness and a measure of
+            health. It is reliably the first, an approximation of the second and, on its own, a
+            poor proxy for the third. The terms in this glossary fall into those three groups. BMI,
+            the Quetelet index, BMI Prime and the ponderal index all describe mass relative to
+            height. Body fat percentage, DEXA, bioelectrical impedance and skinfold calipers
+            attempt to measure fatness directly. Waist circumference, waist-to-height ratio,
+            visceral fat and metabolic syndrome describe where fat sits and what it is doing, which
+            is what actually drives risk.
+          </p>
+          <p>
+            Reading a result well means moving through those three groups rather than stopping at
+            the first. An index of 27 says you are heavier than the reference range for your
+            height. A waist of 88 cm on a man says some of that weight is abdominal. A fasting
+            glucose or a blood pressure reading says whether it is already doing damage. Each step
+            adds information the previous one could not supply, and no step is a substitute for the
+            one after it.
+          </p>
+          <h2 className="text-2xl font-display font-bold text-foreground pt-4">Where the thresholds come from</h2>
+          <p>
+            The adult cut-offs of 18.5, 25 and 30 were adopted by the World Health Organization in
+            1995 on the basis of large cohort studies linking body mass to mortality. They were
+            chosen as round numbers close to inflection points in those curves, not derived from a
+            biological boundary, which is why a reading of 24.9 and one of 25.1 describe almost
+            identical bodies despite falling in different categories. The same exercise repeated on
+            Asian populations produced lower inflection points, which is the basis for the
+            ethnic-specific action points of 23 and 27.5.
+          </p>
+          <p>
+            Children are handled differently again, through percentiles rather than fixed values,
+            because body composition changes continuously with age and sex through growth. A child
+            at the 90th percentile is heavier than nine in ten children of the same age and sex,
+            which is a statement about that population rather than about a universal threshold.
+            Applying adult cut-offs to anyone under nineteen produces meaningless results, a
+            mistake made often enough that the CDC publishes a specific warning against it.
+          </p>
+        </section>
 
         <AuthorByline />
       </main>

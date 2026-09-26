@@ -373,7 +373,25 @@ const LimitesIMC = () => {
               <div className="p-3 rounded-xl bg-primary/10">
                 <Globe className="w-6 h-6 text-primary" />
               </div>
-              <h2 className="text-2xl font-display font-bold">Vers un remplacement de l'IMC ? Les pistes françaises</h2>
+              <h2 className="text-2xl font-display font-bold">Les populations où l&apos;indice se trompe le plus</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Quatre groupes concentrent l&apos;essentiel des erreurs de classement. Les sportifs de force, d&apos;abord,
+                chez qui le muscle, dix-huit pour cent plus dense que la graisse, pousse l&apos;indice au-delà de 25 sans
+                excès de masse grasse. Les personnes âgées ensuite : la taille diminue d&apos;un à trois centimètres
+                après soixante ans, ce qui gonfle mécaniquement l&apos;indice, pendant que la sarcopénie remplace du
+                muscle par de la graisse sans changer le poids. Une fourchette de 23 à 28 leur est souvent préférée.
+              </p>
+              <p>
+                Les populations d&apos;origine sud-asiatique et est-asiatique forment le troisième groupe : le risque
+                cardiométabolique y augmente à partir d&apos;un indice plus bas, et l&apos;Organisation mondiale de la
+                santé propose des seuils d&apos;action à 23 et 27,5 plutôt qu&apos;à 25 et 30. Les femmes enceintes
+                enfin : l&apos;indice n&apos;y est pas interprétable, seul celui d&apos;avant la conception sert de
+                repère à la prise de poids attendue. Dans ces quatre cas, lire l&apos;indice sans correction conduit à
+                rassurer à tort ou à inquiéter sans motif.
+              </p>
+              <h3 className="text-xl font-display font-bold text-foreground pt-2">Vers un remplacement de l&apos;IMC ? Les pistes françaises</h3>
             </div>
             <div className="text-muted-foreground space-y-4">
               <p>

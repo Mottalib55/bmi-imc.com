@@ -53,23 +53,26 @@ const Widget = () => {
 
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Preview */}
-          <div>
+          <div className="min-w-0">
             <h2 className="text-xl font-display font-bold mb-4">Preview</h2>
+            {/* Largeur fluide : 380 px en dur débordaient de 299 px sur un
+                écran de 320 px, la page entière prenant un défilement latéral. */}
             <iframe
               src="/embed/"
-              width="380"
               height="480"
-              style={{ border: "none", borderRadius: "12px", boxShadow: "0 2px 8px rgba(0,0,0,.1)" }}
+              style={{ border: "none", borderRadius: "12px", boxShadow: "0 2px 8px rgba(0,0,0,.1)", width: "100%", maxWidth: "380px" }}
               title="BMI Calculator Widget Preview"
               loading="lazy"
             />
           </div>
 
           {/* Embed Code */}
-          <div>
+          <div className="min-w-0">
             <h2 className="text-xl font-display font-bold mb-4">Embed Code</h2>
-            <div className="relative">
-              <pre className="bg-muted rounded-xl p-4 text-sm overflow-x-auto text-muted-foreground">
+            {/* `min-w-0` : sans lui, la piste de grille prend la largeur du
+                contenu et `overflow-x-auto` ne retient rien (299 px de débord). */}
+            <div className="relative min-w-0">
+              <pre className="bg-muted rounded-xl p-4 text-sm overflow-x-auto max-w-full text-muted-foreground">
                 <code>{embedCode}</code>
               </pre>
               <button

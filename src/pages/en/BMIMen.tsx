@@ -353,7 +353,32 @@ const BMIMen = () => {
               <div className="p-3 rounded-xl bg-blue-500/10">
                 <Activity className="w-6 h-6 text-blue-500" />
               </div>
-              <h2 className="text-2xl font-display font-bold">Everything About Male BMI</h2>
+              <h2 className="text-2xl font-display font-bold">What BMI Misses in Men</h2>
+            </div>
+            <div className="text-muted-foreground space-y-4">
+              <p>
+                Two limitations matter more for men than for women. The first is muscle. Because muscle tissue is roughly
+                eighteen per cent denser than fat, a man who trains with weights can read 27 or 28 with a body fat
+                percentage in the low teens. The index cannot tell the two tissues apart, so it reports mass, not
+                composition. Rugby forwards, rowers and powerlifters routinely read as obese on paper.
+              </p>
+              <p>
+                The second is where the fat sits. Men store surplus energy preferentially in the abdomen, around the
+                organs rather than under the skin, and that visceral depot is the one linked to insulin resistance and
+                cardiovascular disease. Two men can share a BMI of 27 and carry entirely different risk depending on
+                whether the extra weight sits at the waist or is spread across the frame. This is why waist
+                circumference, with its watch level at 94 cm and its high level at 102 cm, adds information that the
+                index alone cannot supply, and why the waist-to-height ratio &mdash; keep your waist under half your
+                height &mdash; is increasingly recommended alongside it.
+              </p>
+              <p>
+                Age changes the reading again. From around forty, muscle mass declines by roughly one per cent a year
+                unless resistance training keeps it working, while fat mass tends to rise. A man whose weight has been
+                stable for twenty years may therefore have a materially worse body composition at sixty than at forty
+                with an unchanged BMI. Tracking waist measurement alongside weight catches that drift; tracking weight
+                alone does not.
+              </p>
+              <h3 className="text-xl font-display font-bold text-foreground pt-2">Everything About Male BMI</h3>
             </div>
             <div className="text-muted-foreground space-y-4">
               <p>

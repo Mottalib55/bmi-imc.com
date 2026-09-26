@@ -15,11 +15,25 @@ export const routeMap: Record<string, Record<Lang, string>> = {
   health:         { fr: "/sante-et-poids/",      en: "/health-weight/",        es: "/es/salud-peso/",                pt: "/pt/saude-peso/",                ar: "/ar/siha-wazn/",        de: "/de/gesundheit-gewicht/", it: "/it/salute-peso/",            hi: "/hi/swasthya-vajan/",   zh: "/zh/jiankang-tizhong/" },
 };
 
+// Les chemins de `routeMap` portent un slash final, que `normalizePath` retire
+// de l'adresse courante : la comparaison échouait donc toujours, si bien que
+// `getPageType` renvoyait null, que le paragraphe citable du §21 n'était rendu
+// sur aucune page, et que `getCurrentLang` retombait partout sur « fr »
+// (relevé le 2026-09-26). On normalise les deux côtés de la même façon.
 const normalizePath = (p: string): string =>
   p !== "/" && p.endsWith("/") ? p.slice(0, -1) : p;
 
+const routeMapNormalise: Record<string, Record<Lang, string>> = Object.fromEntries(
+  Object.entries(routeMap).map(([type, routes]) => [
+    type,
+    Object.fromEntries(
+      Object.entries(routes).map(([lang, path]) => [lang, normalizePath(path)]),
+    ) as Record<Lang, string>,
+  ]),
+);
+
 export const pathToLang: Record<string, Lang> = {};
-for (const routes of Object.values(routeMap)) {
+for (const routes of Object.values(routeMapNormalise)) {
   for (const [lang, path] of Object.entries(routes)) {
     pathToLang[path] = lang as Lang;
   }
@@ -29,6 +43,11 @@ export const getCurrentLang = (pathname: string): Lang => pathToLang[normalizePa
 
 export const getEquivalentPath = (currentPath: string, targetLang: Lang): string => {
   const normalized = normalizePath(currentPath);
+  for (const [type, routes] of Object.entries(routeMapNormalise)) {
+    if (Object.values(routes).includes(normalized)) {
+      return routeMap[type][targetLang];
+    }
+  }
   for (const routes of Object.values(routeMap)) {
     if (Object.values(routes).includes(normalized)) {
       return routes[targetLang];
@@ -39,6 +58,11 @@ export const getEquivalentPath = (currentPath: string, targetLang: Lang): string
 
 export const getAlternates = (currentPath: string): Record<Lang, string> | null => {
   const normalized = normalizePath(currentPath);
+  for (const [type, routes] of Object.entries(routeMapNormalise)) {
+    if (Object.values(routes).includes(normalized)) {
+      return routeMap[type] as Record<Lang, string>;
+    }
+  }
   for (const routes of Object.values(routeMap)) {
     if (Object.values(routes).includes(normalized)) {
       return routes as Record<Lang, string>;
@@ -49,7 +73,7 @@ export const getAlternates = (currentPath: string): Record<Lang, string> | null 
 
 export const getPageType = (pathname: string): PageType | null => {
   const normalized = normalizePath(pathname);
-  for (const [pageType, routes] of Object.entries(routeMap)) {
+  for (const [pageType, routes] of Object.entries(routeMapNormalise)) {
     if (Object.values(routes).includes(normalized)) {
       return pageType as PageType;
     }
