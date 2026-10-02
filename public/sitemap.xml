@@ -167,5 +167,22 @@
     <lastmod>2026-06-27</lastmod>
     <priority>0.4</priority>
   </url>
-
+  <url>
+    <loc>https://bmi-imc.com/confidentialite/</loc>
+  </url>
+  <url>
+    <loc>https://bmi-imc.com/legal/</loc>
+  </url>
+  <url>
+    <loc>https://bmi-imc.com/mentions-legales/</loc>
+  </url>
+  <url>
+    <loc>https://bmi-imc.com/methodologie/</loc>
+  </url>
+  <url>
+    <loc>https://bmi-imc.com/methodology/</loc>
+  </url>
+  <url>
+    <loc>https://bmi-imc.com/privacy/</loc>
+  </url>
 </urlset>
