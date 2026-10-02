@@ -137,14 +137,15 @@ const Legal = () => {
               parties.
             </p>
             <p>
-              <strong>Browsing data:</strong> We may use anonymised analytics tools to understand how
-              visitors use our website. This data is aggregated and cannot be used to identify individual
-              users. No profiling or advertising cookies are used.
+              <strong>Browsing data:</strong> We measure traffic with Microsoft Clarity and Google
+              Analytics 4, which load when a page opens. These tools record pages viewed, clicks, scrolling,
+              device type and referral source. No advertising cookies are used. Details are given in the
+              privacy policy.
             </p>
             <p>
-              <strong>Third-party services:</strong> This website may load fonts from Google Fonts. By
-              using this site, you consent to the processing of data by these services in accordance
-              with their respective privacy policies.
+              <strong>Third-party services:</strong> This website loads Microsoft Clarity (Microsoft
+              Corporation) and Google Analytics (Google Ireland Limited), and may load fonts from Google Fonts.
+              Each of these services processes data under its own privacy policy.
             </p>
           </section>
 
@@ -156,7 +157,9 @@ const Legal = () => {
               under applicable legislation.
             </p>
             <p>
-              No tracking, profiling, or advertising cookies are used on this website. User preferences
+              The audience measurement tools also set cookies as soon as a page opens, with no prior banner:
+              _clck and _clsk for Microsoft Clarity, _ga and _ga_F6NRFKKHRG for Google Analytics. No
+              advertising cookies are used on this website. User preferences
               (such as language selection or dark/light mode) are stored in the browser's localStorage,
               which is not a cookie and is never transmitted to our servers. You can configure your browser
               to refuse cookies or delete existing cookies at any time through your browser settings.
@@ -271,7 +274,7 @@ const Legal = () => {
             </p>
           </section>
 
-          <p className="text-sm italic">Last updated: June 2026</p>
+          <p className="text-sm italic">Last updated: October 2026</p>
         </div>
 
         <div className="border-t border-border pt-6 mt-10 flex flex-wrap gap-4 text-sm text-muted-foreground">

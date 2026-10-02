@@ -26,19 +26,20 @@ const Privacy = () => {
     {
       titre: "3. Audience measurement",
       corps: [
-        "We measure traffic in order to know which pages are useful and which need rewriting. The data collected covers pages viewed, referral source, device type and aggregated technical information. It does not identify you and is never matched against the values entered in the calculator.",
+        "We measure traffic in order to know which pages are useful and which need rewriting. Two tools load when a page opens: Microsoft Clarity (Microsoft Corporation) and Google Analytics 4 (Google Ireland Limited).",
+        "Clarity records how pages are used: clicks, scrolling, pages viewed and their address, as sessions and heatmaps. The content of input fields, and therefore the height and weight you enter, is masked in your browser before anything is sent. Google Analytics receives the pages viewed, the referral source, the device type and an approximate location derived from the IP address. This data is never matched against the values entered in the calculator.",
       ],
     },
     {
       titre: "4. Legal bases and retention",
       corps: [
-        "Audience measurement rests on the publisher's legitimate interest in improving the site. Audience data is kept for no more than thirteen months, in line with the French data protection authority's recommendation. Emails are kept for one year after the last reply.",
+        "Audience measurement rests on the publisher's legitimate interest in improving the site. Clarity keeps session recordings for thirty days and aggregated data for no more than thirteen months; Google Analytics keeps event data for the period set in the account, fourteen months at most. Emails are kept for one year after the last reply.",
       ],
     },
     {
       titre: "5. Recipients and transfers",
       corps: [
-        "Data is neither sold nor rented. It is processed by the site's host and by the audience measurement tool, both acting on the publisher's instructions. No transfer of health data takes place, since none is collected.",
+        "Data is neither sold nor rented. It is processed by the site's host and by the two audience measurement tools, Microsoft Clarity and Google Analytics, whose servers may be located in the United States. No transfer of health data takes place, since none is collected.",
       ],
     },
     {
@@ -50,7 +51,7 @@ const Privacy = () => {
     {
       titre: "7. Cookies",
       corps: [
-        "The site sets the technical cookies needed to work, which require no consent. Audience measurement cookies are configured so that they cannot track a person from one site to another. You can delete them at any time from your browser settings.",
+        "The site sets the technical cookies needed to work, which require no consent. The two audience measurement tools set cookies as soon as a page opens, with no prior banner: _clck (one year) and _clsk (one day) for Microsoft Clarity, to which Microsoft may add MUID and CLID on its own domains, and _ga and _ga_F6NRFKKHRG (two years) for Google Analytics. You can delete or block them at any time from your browser settings; the calculator works without them.",
       ],
     },
   ];

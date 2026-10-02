@@ -26,19 +26,20 @@ const Confidentialite = () => {
     {
       titre: "3. Mesure d'audience",
       corps: [
-        "Nous mesurons la fréquentation du site afin de savoir quelles pages sont utiles et lesquelles doivent être réécrites. Les données recueillies sont les pages consultées, la provenance, le type d'appareil et des informations techniques agrégées. Elles ne permettent pas de vous identifier et ne sont pas recoupées avec les valeurs saisies dans le calculateur.",
+        "Nous mesurons la fréquentation du site afin de savoir quelles pages sont utiles et lesquelles doivent être réécrites. Deux outils sont chargés à l'ouverture de chaque page : Microsoft Clarity (Microsoft Corporation) et Google Analytics 4 (Google Ireland Limited).",
+        "Clarity enregistre la façon dont les pages sont utilisées : clics, défilement, pages vues et leur adresse, sous forme de sessions et de cartes de chaleur. Le contenu des champs de saisie, donc la taille et le poids que vous entrez, est masqué dans votre navigateur avant tout envoi. Google Analytics reçoit les pages consultées, la provenance, le type d'appareil et une localisation approximative déduite de l'adresse IP. Ces données ne sont pas recoupées avec les valeurs saisies dans le calculateur.",
       ],
     },
     {
       titre: "4. Bases légales et durées",
       corps: [
-        "La mesure d'audience repose sur l'intérêt légitime de l'éditeur à améliorer son site. Les données d'audience sont conservées treize mois au plus, conformément à la recommandation de la CNIL. Les messages reçus par courriel sont conservés un an après la dernière réponse.",
+        "La mesure d'audience repose sur l'intérêt légitime de l'éditeur à améliorer son site. Clarity conserve les enregistrements de session trente jours et les données agrégées treize mois au plus ; Google Analytics conserve les données d'événement pendant la durée réglée dans le compte, quatorze mois au plus. Les messages reçus par courriel sont conservés un an après la dernière réponse.",
       ],
     },
     {
       titre: "5. Destinataires et transferts",
       corps: [
-        "Les données ne sont ni vendues ni louées. Elles sont traitées par l'hébergeur du site et par l'outil de mesure d'audience, qui agissent sur instruction de l'éditeur. Aucun transfert de données de santé n'a lieu, puisqu'aucune n'est collectée.",
+        "Les données ne sont ni vendues ni louées. Elles sont traitées par l'hébergeur du site et par les deux outils de mesure d'audience, Microsoft Clarity et Google Analytics, dont les serveurs peuvent se trouver aux États-Unis. Aucun transfert de données de santé n'a lieu, puisqu'aucune n'est collectée.",
       ],
     },
     {
@@ -50,7 +51,7 @@ const Confidentialite = () => {
     {
       titre: "7. Cookies",
       corps: [
-        "Le site dépose les cookies techniques nécessaires à son fonctionnement, qui ne requièrent pas de consentement. Les cookies de mesure d'audience sont configurés de manière à ne pas permettre le suivi d'une personne d'un site à l'autre. Vous pouvez les supprimer à tout moment depuis les réglages de votre navigateur.",
+        "Le site dépose les cookies techniques nécessaires à son fonctionnement, qui ne requièrent pas de consentement. Les deux outils de mesure d'audience déposent des cookies dès l'ouverture de la page, sans bandeau préalable : _clck (un an) et _clsk (un jour) pour Microsoft Clarity, auxquels Microsoft peut ajouter MUID et CLID sur ses propres domaines, et _ga et _ga_F6NRFKKHRG (deux ans) pour Google Analytics. Vous pouvez les supprimer ou les bloquer à tout moment depuis les réglages de votre navigateur ; le calculateur fonctionne sans eux.",
       ],
     },
   ];
