@@ -119,6 +119,14 @@ function buildHreflangTags(path) {
 // ---------------------------------------------------------------------------
 const template = readFileSync(join(DIST, "index.html"), "utf-8");
 
+// Deja injecte : `npm run build` appelle ce script, puis le workflow de deploiement
+// le relance. La seconde passe partait de l'accueil deja injecte et reecrivait chaque
+// page avec son titre, son canonical et son og:url. Sans marqueur, il n'y a rien a faire.
+if (!template.includes("__CANONICAL__")) {
+  console.log("inject-seo: dist/index.html est deja injecte, rien a faire.");
+  process.exit(0);
+}
+
 let generated = 0;
 
 for (const entry of seoEntries) {
