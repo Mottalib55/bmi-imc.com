@@ -85,9 +85,13 @@ const INDEXED_LANGS = new Set(["en", "fr"]);
 // ---------------------------------------------------------------------------
 // 5. Build a lookup: path → alternates (for hreflang, EN/FR only)
 // ---------------------------------------------------------------------------
+const sansBarre = (p) => (p === "/" ? "/" : String(p).replace(/\/+$/, ""));
+const avecBarre = (p) => (sansBarre(p) === "/" ? "/" : sansBarre(p) + "/");
+
 function getAlternates(path) {
   for (const routes of Object.values(routeMap)) {
-    if (Object.values(routes).includes(path)) {
+    // routes.ts ecrit ses chemins avec la barre finale, les entrees SEO sans : comparer sans.
+    if (Object.values(routes).some((r) => sansBarre(r) === sansBarre(path))) {
       return routes;
     }
   }
@@ -102,13 +106,13 @@ function buildHreflangTags(path) {
   const tags = [];
   for (const [lang, altPath] of Object.entries(alternates)) {
     if (!INDEXED_LANGS.has(lang)) continue;
-    const href = `${BASE_URL}${altPath === "/" ? "/" : altPath + "/"}`;
+    const href = `${BASE_URL}${avecBarre(altPath)}`;
     tags.push(`<link rel="alternate" hreflang="${lang}" href="${href}" />`);
   }
   // x-default points to English version
   if (alternates.en) {
     const enPath = alternates.en;
-    const href = `${BASE_URL}${enPath === "/" ? "/" : enPath + "/"}`;
+    const href = `${BASE_URL}${avecBarre(enPath)}`;
     tags.push(`<link rel="alternate" hreflang="x-default" href="${href}" />`);
   }
   return tags.join("\n    ");
