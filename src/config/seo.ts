@@ -127,7 +127,7 @@ export const defaultSEO: PageSEO[] = [
     path: "/bmi-table",
     lang: "en",
     title: "BMI Chart and Table — WHO Classification with Examples",
-    description: "Complete BMI table with all WHO categories and thresholds. Underweight, normal, overweight, obese — find your category with weight examples for every height.",
+    description: "Complete BMI table with all WHO categories and thresholds. Underweight, normal, overweight, obese: find your category with weight examples for every height.",
   },
   {
     path: "/bmi-interpretation",
