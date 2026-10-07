@@ -10,6 +10,8 @@ import PageLoader from "@/components/PageLoader";
 
 // Main pages
 const Index = lazy(() => import("./pages/Index"));
+const LegalLocal = lazy(() => import("./pages/LegalLocal"));
+import { LEGAL_LOCAL } from "@/config/legal-local";
 const IMCHomme = lazy(() => import("./pages/IMCHomme"));
 const IMCFemme = lazy(() => import("./pages/IMCFemme"));
 const IMCSportif = lazy(() => import("./pages/IMCSportif"));
@@ -269,6 +271,12 @@ const App = () => (
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/confidentialite" element={<Confidentialite />} />
           <Route path="/privacy" element={<Privacy />} />
+          {/* Confidentialité et mentions légales des autres langues (RECETTE §15.6) */}
+          {Object.entries(LEGAL_LOCAL).flatMap(([lang, L]) =>
+            (["privacy", "legal"] as const).map((kind) => (
+              <Route key={`${lang}-${kind}`} path={L[kind].path.replace(/\/$/, "")} element={<LegalLocal lang={lang} kind={kind} />} />
+            )),
+          )}
           <Route path="/methodologie" element={<Methodologie />} />
           <Route path="/methodology" element={<Methodology />} />
           <Route path="/glossary" element={<Glossary />} />

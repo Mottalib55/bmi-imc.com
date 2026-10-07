@@ -11,7 +11,7 @@
     <link rel="manifest" href="/site.webmanifest" />
 
     <!-- CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.clarity.ms https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.clarity.ms https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src 'self'; frame-ancestors 'self'" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://*.clarity.ms; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.clarity.ms; frame-src 'self'; frame-ancestors 'self'" />
 
     <!-- Google Search Console -->
     <meta name="google-site-verification" content="pz8vNRKZBsbghtKrozlAfeZ1vaKXmAZr8GFHD_3NXN0" />
@@ -19,24 +19,8 @@
     <!-- Bing Webmaster Tools -->
     <meta name="msvalidate.01" content="15b1d26333aa4cd7a1cdba8e813bfc7f" />
 
-    <!-- Microsoft Clarity (production only) -->
-    <script>
-    if(location.hostname==='bmi-imc.com'){
-      (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)
-      })(window,document,"clarity","script","xa8cgdx2ko");
-    }
-    </script>
-
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F6NRFKKHRG"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-F6NRFKKHRG');
-    </script>
+    <!-- Microsoft Clarity sans cookie (RECETTE §15.6), production seulement : consentv2 refusé mis en file avant le script -->
+    <script>(function(){window.clarity=window.clarity||function(){(window.clarity.q=window.clarity.q||[]).push(arguments);};window.clarity('consentv2',{ad_Storage:'denied',analytics_Storage:'denied'});if(location.hostname!=='bmi-imc.com')return;var s=document.createElement('script');s.async=true;s.src='https://www.clarity.ms/tag/xa8cgdx2ko';document.head.appendChild(s);})();</script>
 
     <!-- SEO Meta Tags -->
     <title>__TITLE__</title>
@@ -142,7 +126,7 @@
     </script>
   </head>
 
-  <body>
+  <body data-clarity-mask="true">
     <div id="root"><div style="max-width:700px;margin:40px auto;padding:0 20px;font-family:system-ui,sans-serif;opacity:0"><h1 style="font-size:1.5rem;color:#1a1a2e">__TITLE__</h1><p style="color:#444;line-height:1.6">__DESCRIPTION__</p></div></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

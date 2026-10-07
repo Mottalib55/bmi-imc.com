@@ -1,3 +1,4 @@
+import { LEGAL_PATH_LANG } from "./legal-local";
 export type Lang = "fr" | "en" | "es" | "pt" | "ar" | "de" | "it" | "hi" | "zh";
 
 export type PageType = keyof typeof routeMap;
@@ -37,6 +38,12 @@ for (const routes of Object.values(routeMapNormalise)) {
   for (const [lang, path] of Object.entries(routes)) {
     pathToLang[path] = lang as Lang;
   }
+}
+
+// Pages légales : langue d'après leur adresse (elles ne sont pas dans routeMap, qui sert
+// aussi au menu et aux pages liées). /privacy/ et /legal/ sont en anglais.
+for (const [path, lang] of Object.entries({ ...LEGAL_PATH_LANG, "/privacy/": "en", "/legal/": "en", "/confidentialite/": "fr", "/mentions-legales/": "fr" })) {
+  pathToLang[normalizePath(path)] = lang as Lang;
 }
 
 export const getCurrentLang = (pathname: string): Lang => pathToLang[normalizePath(pathname)] || "fr";

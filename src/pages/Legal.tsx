@@ -137,32 +137,26 @@ const Legal = () => {
               parties.
             </p>
             <p>
-              <strong>Browsing data:</strong> We measure traffic with Microsoft Clarity and Google
-              Analytics 4, which load when a page opens. These tools record pages viewed, clicks, scrolling,
-              device type and referral source. No advertising cookies are used. Details are given in the
-              privacy policy.
+              <strong>No cookies, no personal data:</strong> bmi-imc.com sets no cookies and the publisher
+              records no personal data about its visitors. The only measurement is an anonymous, cookieless
+              check of site stability (errors, loading times, clicks that do nothing) with Microsoft Clarity,
+              with page content and input fields masked. Details, retention periods and how to object are
+              given in the <a href="/privacy/" className="underline">privacy policy</a>.
             </p>
             <p>
-              <strong>Third-party services:</strong> This website loads Microsoft Clarity (Microsoft
-              Corporation) and Google Analytics (Google Ireland Limited), and may load fonts from Google Fonts.
-              Each of these services processes data under its own privacy policy.
+              <strong>Third-party services:</strong> This website loads Microsoft Clarity (Microsoft Ireland
+              Operations Limited) in cookieless mode, and may load fonts from Google Fonts, which receives your
+              IP address to send the font file.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold text-foreground">7. Cookie Policy</h2>
             <p>
-              This website may use essential cookies strictly necessary for the proper functioning of the
-              site. These technical cookies do not collect personal data and do not require prior consent
-              under applicable legislation.
-            </p>
-            <p>
-              The audience measurement tools also set cookies as soon as a page opens, with no prior banner:
-              _clck and _clsk for Microsoft Clarity, _ga and _ga_F6NRFKKHRG for Google Analytics. No
-              advertising cookies are used on this website. User preferences
-              (such as language selection or dark/light mode) are stored in the browser's localStorage,
-              which is not a cookie and is never transmitted to our servers. You can configure your browser
-              to refuse cookies or delete existing cookies at any time through your browser settings.
+              This website sets no cookies at all: neither technical, audience, advertising nor social-media
+              cookies, and Microsoft Clarity runs without its _clck, _clsk, MUID or CLID cookies. As there is
+              nothing to accept or refuse, no cookie banner is shown. The BMI calculator keeps nothing on your
+              device between visits.
             </p>
           </section>
 
@@ -179,7 +173,6 @@ const Legal = () => {
               <li><strong>Right to restriction of processing</strong> (Art. 18): obtain restriction of processing in certain cases provided by law.</li>
               <li><strong>Right to data portability</strong> (Art. 20): receive personal data in a structured, commonly used and machine-readable format, and transmit it to another controller.</li>
               <li><strong>Right to object</strong> (Art. 21): object to processing of personal data on grounds relating to your particular situation.</li>
-              <li><strong>Right to withdraw consent</strong> (Art. 7): withdraw consent at any time, without affecting the lawfulness of processing carried out before the withdrawal.</li>
             </ul>
             <p>
               Since the website does not collect personal data, these rights are currently not applicable

@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { getSEOForPath } from "@/config/seo";
 import { getAlternates, localeMap, type Lang } from "@/config/routes";
 import { dateDePage } from "@/lib/page-date";
+import { LEGAL_PATH_LANG } from "@/config/legal-local";
 
 const DOMAIN = "https://bmi-imc.com";
 
@@ -16,7 +17,7 @@ const withTrailingSlash = (path: string): string =>
 const UTILITY_PATHS = ["/about", "/a-propos", "/legal", "/mentions-legales", "/widget", "/glossary"];
 
 const isContentPage = (path: string): boolean =>
-  !UTILITY_PATHS.includes(path);
+  !UTILITY_PATHS.includes(path) && !LEGAL_PATH_LANG[`${path}/`];
 
 export const SEOHead = () => {
   const { pathname } = useLocation();

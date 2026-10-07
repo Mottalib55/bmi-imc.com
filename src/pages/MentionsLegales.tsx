@@ -156,35 +156,27 @@ const MentionsLegales = () => {
               âge, sexe) n'est envoyée à nos serveurs ou à des tiers.
             </p>
             <p>
-              <strong>Données de navigation :</strong> Nous mesurons la fréquentation du site avec Microsoft
-              Clarity et Google Analytics 4, chargés à l'ouverture de chaque page. Ces outils enregistrent les
-              pages vues, les clics, le défilement, le type d'appareil et la provenance. Aucun cookie
-              publicitaire n'est utilisé. Le détail figure dans la politique de confidentialité.
+              <strong>Aucun cookie, aucune donnée personnelle :</strong> bmi-imc.com ne dépose aucun cookie et
+              l'éditeur n'enregistre aucune donnée personnelle sur ses visiteurs. Seule une mesure anonyme et
+              sans cookie de la stabilité du site (erreurs, temps de chargement, clics sans effet) est faite avec
+              Microsoft Clarity, contenu des pages et champs de saisie masqués. Le détail, les durées de
+              conservation et le moyen de s'y opposer figurent dans la 
+              <a href="/confidentialite/" className="underline">politique de confidentialité</a>.
             </p>
             <p>
-              <strong>Services tiers :</strong> Le site charge Microsoft Clarity (Microsoft Corporation) et
-              Google Analytics (Google Ireland Limited), et peut charger des polices depuis Google Fonts. Chacun
-              de ces services traite les données selon sa propre politique de confidentialité.
+              <strong>Services tiers :</strong> le site charge Microsoft Clarity (Microsoft Ireland Operations
+              Limited) en mode sans cookie, et peut charger des polices depuis Google Fonts, qui reçoit votre
+              adresse IP pour envoyer le fichier de police.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl font-bold text-foreground">8. Politique des cookies</h2>
             <p>
-              Conformément à la directive européenne 2009/136/CE et aux recommandations de la CNIL, nous
-              vous informons que le site bmi-imc.com peut utiliser des cookies essentiels strictement
-              nécessaires au bon fonctionnement du site. Ces cookies techniques ne collectent aucune
-              donnée personnelle et ne nécessitent pas de consentement préalable conformément à l'article
-              82 de la loi Informatique et Libertés.
-            </p>
-            <p>
-              Les outils de mesure d'audience déposent en outre des cookies dès l'ouverture de la page, sans
-              bandeau préalable : _clck et _clsk pour Microsoft Clarity, _ga et _ga_F6NRFKKHRG pour Google
-              Analytics. Aucun cookie publicitaire n'est utilisé sur ce site. Les préférences
-              utilisateur (comme le choix de la langue ou le mode sombre/clair) sont stockées dans le
-              localStorage du navigateur, qui n'est pas un cookie et n'est jamais transmis à nos serveurs.
-              Vous pouvez configurer votre navigateur pour refuser les cookies ou supprimer ceux déjà
-              installés à tout moment via les paramètres de votre navigateur.
+              Le site ne dépose aucun cookie : ni cookie technique, ni mesure d'audience, ni publicité, ni réseau
+              social, et Microsoft Clarity fonctionne sans ses cookies _clck, _clsk, MUID ou CLID. Comme il n'y a
+              rien à accepter ni à refuser, aucun bandeau cookies n'est affiché. Le calculateur d'IMC ne garde
+              rien sur votre appareil d'une visite à l'autre.
             </p>
           </section>
 

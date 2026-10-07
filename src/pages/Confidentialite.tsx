@@ -12,46 +12,40 @@ import { Helmet } from "react-helmet-async";
 const Confidentialite = () => {
   const sections: { titre: string; corps: string[] }[] = [
     {
-      titre: "1. Responsable du traitement",
+      titre: "1. Responsable",
       corps: [
-        "Le site bmi-imc.com est édité par Radif Partners, qui détermine les finalités et les moyens des traitements décrits ci-dessous. Toute question relative à vos données peut être adressée à contact@bmi-imc.com.",
+        "Le site bmi-imc.com est édité par Radif Partners. Toute question sur cette page ou sur vos données peut être adressée à contact@bmi-imc.com.",
       ],
     },
     {
-      titre: "2. Le calcul de l'IMC ne quitte pas votre navigateur",
+      titre: "2. Votre taille et votre poids restent dans votre navigateur",
       corps: [
-        "La taille, le poids, l'âge et le sexe que vous saisissez dans le calculateur ne sont ni transmis à un serveur ni enregistrés. Le calcul s'exécute entièrement dans votre navigateur, et la page ne conserve rien après sa fermeture. Aucun compte n'est nécessaire et aucune donnée de santé n'est collectée.",
+        "La taille, le poids, l'âge et le sexe saisis dans le calculateur d'IMC sont calculés par votre propre navigateur. Ils ne nous sont pas transmis, ne sont enregistrés sur aucun serveur et ne sont pas conservés sur votre appareil : à la fermeture ou au rechargement de la page, ils disparaissent. Il n'y a pas de compte, et l'éditeur ne collecte ni n'enregistre aucune donnée de santé.",
       ],
     },
     {
-      titre: "3. Mesure d'audience",
+      titre: "3. Aucun cookie",
       corps: [
-        "Nous mesurons la fréquentation du site afin de savoir quelles pages sont utiles et lesquelles doivent être réécrites. Deux outils sont chargés à l'ouverture de chaque page : Microsoft Clarity (Microsoft Corporation) et Google Analytics 4 (Google Ireland Limited).",
-        "Clarity enregistre la façon dont les pages sont utilisées : clics, défilement, pages vues et leur adresse, sous forme de sessions et de cartes de chaleur. Le contenu des champs de saisie, donc la taille et le poids que vous entrez, est masqué dans votre navigateur avant tout envoi. Google Analytics reçoit les pages consultées, la provenance, le type d'appareil et une localisation approximative déduite de l'adresse IP. Ces données ne sont pas recoupées avec les valeurs saisies dans le calculateur.",
+        "bmi-imc.com ne dépose aucun cookie : ni mesure d'audience, ni publicité, ni réseau social, ni cookie Microsoft Clarity (_clck, _clsk, MUID, CLID). Comme il n'y a rien à accepter ni à refuser, le site n'affiche pas de bandeau cookies.",
       ],
     },
     {
-      titre: "4. Bases légales et durées",
+      titre: "4. Mesure anonyme de la stabilité du site",
       corps: [
-        "La mesure d'audience repose sur l'intérêt légitime de l'éditeur à améliorer son site. Clarity conserve les enregistrements de session trente jours et les données agrégées treize mois au plus ; Google Analytics conserve les données d'événement pendant la durée réglée dans le compte, quatorze mois au plus. Les messages reçus par courriel sont conservés un an après la dernière réponse.",
+        "Pour repérer un calculateur qui fonctionne mal sur tel téléphone ou tel navigateur, nous utilisons Microsoft Clarity en mode sans cookie. L'outil ne remonte que des signaux techniques : erreurs de script, temps de chargement, clics sans effet, profondeur de défilement. Chaque page vue reçoit son propre identifiant aléatoire, de sorte que les visites ne sont jamais reliées entre elles, et le texte des pages comme tous les champs de saisie sont masqués dans votre navigateur avant tout envoi : Clarity ne voit ni une taille, ni un poids, ni un résultat d'IMC.",
+        "Prestataire : Microsoft Ireland Operations Limited, One Microsoft Place, South County Business Park, Leopardstown, Dublin 18, Irlande. Finalité : détecter et corriger les pannes, sans profilage, publicité ni revente. Conservation : 30 jours pour les relevés de pages vues, 13 mois pour les statistiques agrégées. Base légale : l'intérêt légitime de l'éditeur à faire fonctionner un outil gratuit (article 6-1 f du RGPD). Pour vous y opposer, bloquez clarity.ms dans votre navigateur ou avec un bloqueur de contenu, ou écrivez à contact@bmi-imc.com ; le calculateur fonctionne exactement de la même façon sans lui.",
       ],
     },
     {
-      titre: "5. Destinataires et transferts",
+      titre: "5. Hébergement",
       corps: [
-        "Les données ne sont ni vendues ni louées. Elles sont traitées par l'hébergeur du site et par les deux outils de mesure d'audience, Microsoft Clarity et Google Analytics, dont les serveurs peuvent se trouver aux États-Unis. Aucun transfert de données de santé n'a lieu, puisqu'aucune n'est collectée.",
+        "Le site est servi par GitHub Pages (GitHub, Inc., États-Unis), qui tient de brefs journaux techniques (adresse IP, page demandée, heure) pour délivrer et protéger le service ; l'éditeur n'y a pas accès. Les transferts vers les États-Unis reposent sur le cadre de protection des données UE–États-Unis. Les courriels que vous nous envoyez ne sont gardés que le temps d'y répondre.",
       ],
     },
     {
       titre: "6. Vos droits",
       corps: [
-        "Vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité. Ces droits s'exercent par courriel à contact@bmi-imc.com, avec une réponse sous un mois. Si la réponse ne vous satisfait pas, vous pouvez saisir la Commission nationale de l'informatique et des libertés sur www.cnil.fr.",
-      ],
-    },
-    {
-      titre: "7. Cookies",
-      corps: [
-        "Le site dépose les cookies techniques nécessaires à son fonctionnement, qui ne requièrent pas de consentement. Les deux outils de mesure d'audience déposent des cookies dès l'ouverture de la page, sans bandeau préalable : _clck (un an) et _clsk (un jour) pour Microsoft Clarity, auxquels Microsoft peut ajouter MUID et CLID sur ses propres domaines, et _ga et _ga_F6NRFKKHRG (deux ans) pour Google Analytics. Vous pouvez les supprimer ou les bloquer à tout moment depuis les réglages de votre navigateur ; le calculateur fonctionne sans eux.",
+        "Vous pouvez demander l'accès, la rectification ou l'effacement de données vous concernant et vous opposer à la mesure de stabilité, par courriel à contact@bmi-imc.com, avec une réponse sous un mois. Comme aucun fichier de lecteurs n'est tenu, la réponse est le plus souvent que rien n'est détenu à votre sujet. Vous pouvez aussi saisir la CNIL (www.cnil.fr) ou l'autorité de votre pays.",
       ],
     },
   ];
@@ -59,10 +53,10 @@ const Confidentialite = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Politique de confidentialité de BMI-IMC.com : vos données</title>
+        <title>Confidentialité de BMI-IMC.com : aucun cookie, aucune donnée</title>
         <meta
           name="description"
-          content="Quelles données bmi-imc.com collecte, ce que devient votre taille et votre poids, combien de temps les données d'audience sont conservées et comment exercer vos droits RGPD."
+          content="bmi-imc.com ne dépose aucun cookie ni ne garde de donnée personnelle : taille et poids restent dans votre navigateur, seule la stabilité du site est mesurée."
         />
         <link rel="canonical" href="https://bmi-imc.com/confidentialite/" />
       </Helmet>

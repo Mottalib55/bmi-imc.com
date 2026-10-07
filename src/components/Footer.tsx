@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { getCurrentLang, routeMap, type Lang } from "@/config/routes";
 import { dateDePage, dateLisible, LIBELLE_MAJ } from "@/lib/page-date";
+import { LEGAL_LOCAL } from "@/config/legal-local";
 
 const i18n: Record<Lang, {
   copyright: string;
@@ -32,7 +33,10 @@ const i18n: Record<Lang, {
 export const Footer = () => {
   const { pathname } = useLocation();
   const lang = getCurrentLang(pathname);
-  const t = i18n[lang] || i18n.en;
+  const base = i18n[lang] || i18n.en;
+  const local = LEGAL_LOCAL[lang];
+  // Pages légales dans la langue de la page quand elles existent (RECETTE §15.6)
+  const t = local ? { ...base, legalPath: local.legal.path, privacyPath: local.privacy.path } : base;
   const iso = dateDePage(pathname);
 
   return (

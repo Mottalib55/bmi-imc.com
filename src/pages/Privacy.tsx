@@ -14,44 +14,38 @@ const Privacy = () => {
     {
       titre: "1. Who is responsible",
       corps: [
-        "The bmi-imc.com website is published by Radif Partners, which determines the purposes and means of the processing described below. Any question about your data can be sent to contact@bmi-imc.com.",
+        "bmi-imc.com is published by Radif Partners. Any question about this page or about your data can be sent to contact@bmi-imc.com.",
       ],
     },
     {
-      titre: "2. The BMI calculation never leaves your browser",
+      titre: "2. Your height and weight never leave your browser",
       corps: [
-        "The height, weight, age and sex you enter in the calculator are neither sent to a server nor stored. The calculation runs entirely in your browser, and the page keeps nothing once it is closed. No account is required and no health data is collected.",
+        "The height, weight, age and sex you type into the BMI calculator are computed by your own browser. They are not sent to us, not stored on a server and not kept on your device: close or reload the page and they are gone. There is no account, and no health data of any kind is collected or recorded by the publisher.",
       ],
     },
     {
-      titre: "3. Audience measurement",
+      titre: "3. No cookies",
       corps: [
-        "We measure traffic in order to know which pages are useful and which need rewriting. Two tools load when a page opens: Microsoft Clarity (Microsoft Corporation) and Google Analytics 4 (Google Ireland Limited).",
-        "Clarity records how pages are used: clicks, scrolling, pages viewed and their address, as sessions and heatmaps. The content of input fields, and therefore the height and weight you enter, is masked in your browser before anything is sent. Google Analytics receives the pages viewed, the referral source, the device type and an approximate location derived from the IP address. This data is never matched against the values entered in the calculator.",
+        "bmi-imc.com sets no cookies: no audience, advertising or social-media cookie, and no Microsoft Clarity cookie either (_clck, _clsk, MUID, CLID). Since there is nothing to accept or refuse, the site shows no cookie banner.",
       ],
     },
     {
-      titre: "4. Legal bases and retention",
+      titre: "4. Anonymous check of site stability",
       corps: [
-        "Audience measurement rests on the publisher's legitimate interest in improving the site. Clarity keeps session recordings for thirty days and aggregated data for no more than thirteen months; Google Analytics keeps event data for the period set in the account, fourteen months at most. Emails are kept for one year after the last reply.",
+        "To find a calculator that misbehaves on a given phone or browser, we use Microsoft Clarity in cookieless mode. It reports technical signals only: script errors, loading times, clicks that do nothing and how far a page is scrolled. Each page view gets its own random identifier, so visits are never linked together, and the page text and every input field are masked in your browser before anything is sent: Clarity never sees a height, a weight or a BMI result.",
+        "Provider: Microsoft Ireland Operations Limited, One Microsoft Place, South County Business Park, Leopardstown, Dublin 18, Ireland. Purpose: detecting and fixing technical faults, with no profiling, advertising or resale. Retention: 30 days for page-view records, 13 months for aggregated statistics. Legal basis: the publisher's legitimate interest in keeping a free tool working (Article 6(1)(f) GDPR). To object, block clarity.ms in your browser or with a content blocker, or write to contact@bmi-imc.com; the calculator works exactly the same without it.",
       ],
     },
     {
-      titre: "5. Recipients and transfers",
+      titre: "5. Hosting",
       corps: [
-        "Data is neither sold nor rented. It is processed by the site's host and by the two audience measurement tools, Microsoft Clarity and Google Analytics, whose servers may be located in the United States. No transfer of health data takes place, since none is collected.",
+        "The site is served by GitHub Pages (GitHub, Inc., United States), which keeps short technical logs (IP address, page requested, time) to deliver and protect the service; the publisher has no access to them. Transfers to the United States rely on the EU–US Data Privacy Framework. Emails you send us are kept only as long as needed to answer them.",
       ],
     },
     {
       titre: "6. Your rights",
       corps: [
-        "You have the right to access, rectify, erase, restrict, object to and port your data. These rights are exercised by email at contact@bmi-imc.com, with a reply within one month. If the reply does not satisfy you, you may refer the matter to the French data protection authority at www.cnil.fr.",
-      ],
-    },
-    {
-      titre: "7. Cookies",
-      corps: [
-        "The site sets the technical cookies needed to work, which require no consent. The two audience measurement tools set cookies as soon as a page opens, with no prior banner: _clck (one year) and _clsk (one day) for Microsoft Clarity, to which Microsoft may add MUID and CLID on its own domains, and _ga and _ga_F6NRFKKHRG (two years) for Google Analytics. You can delete or block them at any time from your browser settings; the calculator works without them.",
+        "You may ask for access to, correction or erasure of any data about you and object to the stability check, by email at contact@bmi-imc.com, with a reply within one month. Since no file on readers is kept, the answer is usually that nothing is held about you. You may also complain to the French data protection authority (www.cnil.fr) or to the authority of your own country, such as the ICO in the United Kingdom.",
       ],
     },
   ];
@@ -59,10 +53,10 @@ const Privacy = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>BMI-IMC.com privacy policy: what data the site collects</title>
+        <title>BMI-IMC.com privacy policy: no cookies, no data kept</title>
         <meta
           name="description"
-          content="What data bmi-imc.com collects, what happens to your height and weight, how long audience data is kept and how to exercise your rights under the GDPR."
+          content="bmi-imc.com sets no cookies and keeps no personal data: your height and weight stay in your browser, and only an anonymous, cookieless stability check is run."
         />
         <link rel="canonical" href="https://bmi-imc.com/privacy/" />
       </Helmet>

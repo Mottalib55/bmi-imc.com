@@ -8,6 +8,7 @@
     "build": "node scripts/page-dates.mjs && npx --yes playwright install --with-deps chromium && vite build && node scripts/inject-seo.mjs && node scripts/snapshot-spa.mjs dist && node scripts/typo-nbsp.mjs dist",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
+    "check:cookies": "python3 scripts/check-cookies.py .",
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest"
