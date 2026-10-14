@@ -35,9 +35,9 @@ const Widget = () => {
       </Helmet>
       <Header />
 
-      <main id="main-content" className="container max-w-4xl py-8 px-4 md:py-12">
+      <main id="main-content" className="container max-w-4xl pt-3 pb-8 px-4 md:pb-12">
         <header className="mb-10">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-3">
             <Code className="w-4 h-4" />
             Embed Widget
           </div>

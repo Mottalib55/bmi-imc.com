@@ -35,10 +35,10 @@ const Index = () => {
         <div className="absolute top-1/2 left-1/2 w-[300px] h-[300px] rounded-full bg-age/5 blur-3xl animate-float" style={{ animationDelay: "-1.5s" }} />
       </div>
 
-      <main id="main-content" className="container max-w-6xl py-8 px-4 md:py-16">
+      <main id="main-content" className="container max-w-6xl pt-3 pb-8 px-4 md:pb-16">
         {/* Header */}
         <header className="text-center mb-12 md:mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-3">
             <Activity className="w-4 h-4" />
             Simulateur en temps réel
           </div>

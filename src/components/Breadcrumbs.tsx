@@ -75,11 +75,8 @@ export const Breadcrumbs = () => {
       <Helmet>
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
-      <nav
-        aria-label="Breadcrumb"
-        className="mb-6 text-sm text-muted-foreground"
-        dir={isRtl ? "rtl" : undefined}
-      >
+      <div className="mb-1 flex flex-wrap items-baseline gap-x-6 gap-y-0.5 text-sm text-muted-foreground" dir={isRtl ? "rtl" : undefined}>
+      <nav aria-label="Breadcrumb">
         <ol className="flex items-center gap-1 flex-wrap">
           <li className="flex items-center gap-1">
             <Link to={homePath} className="hover:text-primary transition-colors flex items-center gap-1">
@@ -95,15 +92,16 @@ export const Breadcrumbs = () => {
           </li>
         </ol>
       </nav>
-      {/* §8.4 : la date de mise à jour doit se lire en haut de la page. Le fil
-          d'Ariane la porte, parce qu'il précède le titre sur toutes les pages
-          et que la date y est lue comme une information, pas comme un ornement. */}
+      {/* §8.4 : la date de mise à jour se lit en haut de la page, à droite sur
+          la ligne fine du fil d'Ariane (RECETTE §10.3) : seule sur sa ligne,
+          elle repoussait le titre de 24 px. */}
       {iso && (
-        <p className="-mt-4 mb-6 text-xs text-muted-foreground" dir={isRtl ? "rtl" : undefined}>
+        <p className="ml-auto text-xs text-muted-foreground">
           {LIBELLE_MAJ[lang] ?? LIBELLE_MAJ.fr}{" "}
           <time dateTime={iso}>{dateLisible(iso, lang)}</time>
         </p>
       )}
+      </div>
     </>
   );
 };

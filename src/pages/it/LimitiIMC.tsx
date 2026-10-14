@@ -15,10 +15,10 @@ const LimitiIMC = () => {
         <div className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full bg-warning/5 blur-3xl animate-float" />
       </div>
 
-      <main id="main-content" className="container max-w-6xl py-8 px-4 md:py-12">
+      <main id="main-content" className="container max-w-6xl pt-3 pb-8 px-4 md:pb-12">
         <Breadcrumbs />
         <header className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-warning/10 text-warning text-sm font-medium mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-warning/10 text-warning text-sm font-medium mb-3">
             <AlertTriangle className="w-4 h-4" />
             Analisi Critica
           </div>
