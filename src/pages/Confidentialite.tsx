@@ -1,5 +1,4 @@
 import { Header } from "@/components/Header";
-import { MiseAJour } from "@/components/MiseAJour";
 import { Footer } from "@/components/Footer";
 import { Helmet } from "react-helmet-async";
 
@@ -64,8 +63,6 @@ const Confidentialite = () => {
 
       <main id="main-content" className="container max-w-4xl py-12 px-4">
         <h1 className="text-4xl font-display font-bold mb-8">Politique de confidentialité</h1>
-        {/* §8.4 : date de mise à jour, juste sous le titre. */}
-        <MiseAJour />
 
         <div className="prose prose-gray max-w-none space-y-8 text-muted-foreground">
           <p>

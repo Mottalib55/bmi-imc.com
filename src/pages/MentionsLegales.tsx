@@ -1,6 +1,5 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { MiseAJour } from "@/components/MiseAJour";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
@@ -17,8 +16,6 @@ const MentionsLegales = () => {
 
       <div className="container max-w-4xl py-12 px-4">
         <h1 className="text-4xl font-display font-bold mb-8">Mentions Légales</h1>
-        {/* §8.4 : date de mise à jour, juste sous le titre. */}
-        <MiseAJour />
 
         <div className="prose prose-gray max-w-none space-y-8 text-muted-foreground">
 

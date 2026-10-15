@@ -26,9 +26,11 @@ const LOCALES: Record<string, string> = {
 
 /** Date lisible dans la langue de la page. */
 export function dateLisible(iso: string, lang: string): string {
-  return new Intl.DateTimeFormat(LOCALES[lang] ?? "fr-FR", {
-    day: "numeric", month: "long", year: "numeric",
+  const s = new Intl.DateTimeFormat(LOCALES[lang] ?? "fr-FR", {
+    day: "numeric", month: "long", year: "numeric", timeZone: "UTC",
   }).format(new Date(`${iso}T12:00:00Z`));
+  // Français : « 1er octobre », jamais « 1 octobre » (RECETTE §8.4).
+  return (LOCALES[lang] ?? "fr-FR").startsWith("fr") ? s.replace(/^1 /, "1er ") : s;
 }
 
 /** « Mise à jour le … », dans la langue de la page. */

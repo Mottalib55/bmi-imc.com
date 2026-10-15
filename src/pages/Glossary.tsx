@@ -1,5 +1,4 @@
 import { Header } from "@/components/Header";
-import { MiseAJour } from "@/components/MiseAJour";
 import { Footer } from "@/components/Footer";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { AuthorByline } from "@/components/AuthorByline";
@@ -98,8 +97,6 @@ const Glossary = () => {
             <span className="gradient-text">BMI & Health Glossary</span>
           </h1>
         
-        {/* §8.4 : date de mise à jour, juste sous le titre. */}
-        <MiseAJour />
           <p className="text-lg text-muted-foreground">
             Definitions for {glossaryTerms.length} key terms related to Body Mass Index, body composition, weight management, and health metrics.
           </p>
