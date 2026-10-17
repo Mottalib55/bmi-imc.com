@@ -195,7 +195,7 @@ const About = () => {
               { title: "Profile-Specific Tools", desc: "Dedicated BMI calculators for men, women, athletes, and children with age and gender-appropriate guidelines." },
               { title: "Comprehensive Health Guides", desc: "In-depth articles on BMI interpretation, limitations, health and weight management, written by qualified professionals." },
               { title: "9 Languages Supported", desc: "Full availability in French, English, Spanish, Portuguese, German, Italian, Hindi, Chinese, and Arabic." },
-              { title: "Privacy First", desc: "No personal data is collected. All calculations happen in your browser. No cookies for tracking." },
+              { title: "Privacy First", desc: "No personal data is collected. All calculations happen in your browser. Only Google Analytics audience measurement sets cookies, with no advertising." },
               { title: "Evidence-Based Content", desc: "All health information is based on WHO guidelines, peer-reviewed research, and official medical sources." },
             ].map((item, i) => (
               <div key={i} className="rounded-lg border border-border p-4">
@@ -281,7 +281,7 @@ const About = () => {
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 w-2 h-2 rounded-full bg-primary flex-shrink-0" />
-              <span><strong>Privacy by design:</strong> We do not collect, store, or transmit any personal health data. All BMI calculations are performed locally in your browser. No cookies are used for tracking purposes.</span>
+              <span><strong>Privacy by design:</strong> We do not collect, store, or transmit any personal health data. All BMI calculations are performed locally in your browser. Only Google Analytics audience measurement cookies are set, with no advertising.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 w-2 h-2 rounded-full bg-primary flex-shrink-0" />

@@ -153,15 +153,15 @@ const MentionsLegales = () => {
               âge, sexe) n'est envoyée à nos serveurs ou à des tiers.
             </p>
             <p>
-              <strong>Aucun cookie, aucune donnée personnelle :</strong> bmi-imc.com ne dépose aucun cookie et
-              l'éditeur n'enregistre aucune donnée personnelle sur ses visiteurs. Seule une mesure anonyme et
-              sans cookie de la stabilité du site (erreurs, temps de chargement, clics sans effet) est faite avec
-              Microsoft Clarity, contenu des pages et champs de saisie masqués. Le détail, les durées de
-              conservation et le moyen de s'y opposer figurent dans la 
+              <strong>Mesure d'audience et données personnelles :</strong> bmi-imc.com dépose les seuls cookies de mesure
+              d'audience Google Analytics (_ga, _ga_F6NRFKKHRG, 13 mois au plus), sans publicité, et l'éditeur ne tient
+              aucun fichier de visiteurs. La stabilité du site (erreurs, temps de chargement, clics sans effet) est
+              mesurée avec Microsoft Clarity, sans cookie, contenu des pages et champs de saisie masqués. Le détail,
+              les durées de conservation et le moyen de s'y opposer figurent dans la{" "}
               <a href="/confidentialite/" className="underline">politique de confidentialité</a>.
             </p>
             <p>
-              <strong>Services tiers :</strong> le site charge Microsoft Clarity (Microsoft Ireland Operations
+              <strong>Services tiers :</strong> le site charge Google Analytics (Google Ireland Limited) et Microsoft Clarity (Microsoft Ireland Operations
               Limited) en mode sans cookie, et peut charger des polices depuis Google Fonts, qui reçoit votre
               adresse IP pour envoyer le fichier de police.
             </p>
@@ -170,10 +170,15 @@ const MentionsLegales = () => {
           <section>
             <h2 className="text-xl font-bold text-foreground">8. Politique des cookies</h2>
             <p>
-              Le site ne dépose aucun cookie : ni cookie technique, ni mesure d'audience, ni publicité, ni réseau
-              social, et Microsoft Clarity fonctionne sans ses cookies _clck, _clsk, MUID ou CLID. Comme il n'y a
-              rien à accepter ni à refuser, aucun bandeau cookies n'est affiché. Le calculateur d'IMC ne garde
-              rien sur votre appareil d'une visite à l'autre.
+              Le site dépose deux cookies de mesure d'audience Google Analytics, et ceux-là seulement : _ga, qui distingue
+              les visiteurs par un identifiant aléatoire, et _ga_F6NRFKKHRG, qui garde l'état de la visite, pour 13 mois au
+              plus (390 jours), sans prolongation à chaque visite. Fournisseur : Google Ireland Limited, Gordon House,
+              Barrow Street, Dublin 4, Irlande ; transfert possible à Google LLC (États-Unis) dans le cadre du EU–U.S. Data
+              Privacy Framework ; conservation chez Google : 14 mois ; base juridique : intérêt légitime (article 6-1 f du
+              RGPD). Ni cookie publicitaire ni cookie de réseau social ; Microsoft Clarity fonctionne sans cookie. Pour
+              vous y opposer : réglages de votre navigateur ou{" "}
+              <a href="https://tools.google.com/dlpage/gaoptout" className="underline" target="_blank" rel="noopener noreferrer">module de désactivation de Google Analytics</a>.
+              Le calculateur d'IMC ne garde rien sur votre appareil d'une visite à l'autre.
             </p>
           </section>
 

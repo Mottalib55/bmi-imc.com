@@ -9,21 +9,21 @@ export const defaultSEO: PageSEO[] = [
   {
     path: "/confidentialite",
     lang: "fr",
-    title: "Confidentialité de BMI-IMC.com : aucun cookie, aucune donnée",
-    description: "bmi-imc.com ne dépose aucun cookie ni ne garde de donnée personnelle : taille et poids restent dans votre navigateur, seule la stabilité du site est mesurée.",
+    title: "Confidentialité de bmi-imc.com : mesure d’audience Google Analytics",
+    description: "Ce que bmi-imc.com mesure avec Google Analytics (cookies _ga, 13 mois au plus, sans publicité), ce qui reste dans votre navigateur, vos droits et comment vous opposer.",
   },
   {
     path: "/privacy",
     lang: "en",
-    title: "BMI-IMC.com privacy policy: no cookies, no data kept",
-    description: "bmi-imc.com sets no cookies and keeps no personal data: your height and weight stay in your browser, and only an anonymous, cookieless stability check is run.",
+    title: "bmi-imc.com privacy policy: Google Analytics audience measurement",
+    description: "What bmi-imc.com measures with Google Analytics (_ga cookies, 13 months at most, no advertising), what stays in your browser, your rights and how to object.",
   },
   // Confidentialité et mentions légales des autres langues (copie de src/config/legal-local.ts)
   {
     path: "/de/datenschutz",
     lang: "de",
-    title: "Datenschutz bei BMI-IMC.com: keine Cookies, keine Daten",
-    description: "BMI-IMC.com setzt keine Cookies und speichert keine personenbezogenen Daten: Größe und Gewicht bleiben im Browser, nur die Stabilität wird anonym mit Microsoft Clarity gemessen.",
+    title: "Datenschutz bei bmi-imc.com: Reichweitenmessung mit Google Analytics",
+    description: "Was bmi-imc.com mit Google Analytics misst (Cookies _ga, höchstens 13 Monate, ohne Werbung), was in Ihrem Browser bleibt, Ihre Rechte und wie Sie widersprechen.",
   },
   {
     path: "/de/impressum",
@@ -34,8 +34,8 @@ export const defaultSEO: PageSEO[] = [
   {
     path: "/es/privacidad",
     lang: "es",
-    title: "Privacidad de BMI-IMC.com: sin cookies ni datos guardados",
-    description: "BMI-IMC.com no instala cookies ni guarda datos personales: su estatura y su peso se quedan en el navegador y solo Microsoft Clarity mide de forma anónima la estabilidad.",
+    title: "Privacidad de bmi-imc.com: medición de audiencia con Google Analytics",
+    description: "Lo que bmi-imc.com mide con Google Analytics (cookies _ga, 13 meses como máximo, sin publicidad), lo que queda en su navegador, sus derechos y cómo oponerse.",
   },
   {
     path: "/es/aviso-legal",
@@ -46,8 +46,8 @@ export const defaultSEO: PageSEO[] = [
   {
     path: "/it/privacy",
     lang: "it",
-    title: "Privacy di BMI-IMC.com: nessun cookie, nessun dato salvato",
-    description: "BMI-IMC.com non usa cookie né conserva dati personali: altezza e peso restano nel browser e Microsoft Clarity misura soltanto, in modo anonimo, la stabilità.",
+    title: "Privacy di bmi-imc.com: misura dell’audience con Google Analytics",
+    description: "Cosa misura bmi-imc.com con Google Analytics (cookie _ga, 13 mesi al massimo, senza pubblicità), cosa resta nel suo browser, i suoi diritti e come opporsi.",
   },
   {
     path: "/it/note-legali",
@@ -58,8 +58,8 @@ export const defaultSEO: PageSEO[] = [
   {
     path: "/pt/privacidade",
     lang: "pt",
-    title: "Privacidade do BMI-IMC.com: sem cookies e sem dados",
-    description: "O BMI-IMC.com não usa cookies nem guarda dados pessoais: altura e peso ficam no seu navegador e só a estabilidade é medida, de forma anônima, pelo Microsoft Clarity.",
+    title: "Privacidade do bmi-imc.com: medição de audiência com Google Analytics",
+    description: "O que o bmi-imc.com mede com o Google Analytics (cookies _ga, 13 meses no máximo, sem publicidade), o que fica no seu navegador, os seus direitos e como se opor.",
   },
   {
     path: "/pt/aviso-legal",
@@ -70,8 +70,8 @@ export const defaultSEO: PageSEO[] = [
   {
     path: "/ar/privacy",
     lang: "ar",
-    title: "سياسة الخصوصية في BMI-IMC.com: بدون كوكيز وبدون بيانات",
-    description: "لا يستخدم موقع BMI-IMC.com ملفات تعريف الارتباط (كوكيز) ولا يحفظ أي بيانات شخصية: يبقى الطول والوزن في متصفحك، ويقيس Microsoft Clarity استقرار الموقع فقط بشكل مجهول.",
+    title: "الخصوصية في bmi-imc.com: قياس الزيارات عبر Google Analytics",
+    description: "ما يقيسه bmi-imc.com عبر Google Analytics (كوكيز _ga لمدة 13 شهرًا كحد أقصى، دون إعلانات)، وما يبقى في متصفحك، وحقوقك وطريقة الاعتراض.",
   },
   {
     path: "/ar/legal",
@@ -82,8 +82,8 @@ export const defaultSEO: PageSEO[] = [
   {
     path: "/hi/privacy",
     lang: "hi",
-    title: "BMI-IMC.com गोपनीयता नीति: कोई कुकी नहीं, कोई डेटा नहीं",
-    description: "BMI-IMC.com कोई कुकी नहीं लगाता और कोई व्यक्तिगत डेटा नहीं रखता: आपकी लंबाई और वजन ब्राउज़र में ही रहते हैं, केवल साइट की स्थिरता Microsoft Clarity से गुमनाम रूप से मापी जाती है।",
+    title: "bmi-imc.com गोपनीयता नीति: Google Analytics से विज़िटर माप",
+    description: "bmi-imc.com Google Analytics से क्या मापता है (_ga कुकी, अधिकतम 13 महीने, बिना विज्ञापन), आपके ब्राउज़र में क्या रहता है, आपके अधिकार और आपत्ति का तरीका।",
   },
   {
     path: "/hi/legal",
@@ -94,8 +94,8 @@ export const defaultSEO: PageSEO[] = [
   {
     path: "/zh/privacy",
     lang: "zh",
-    title: "BMI-IMC.com 隐私政策：不使用 Cookie，不保存数据",
-    description: "BMI-IMC.com 不使用 Cookie，也不保存任何个人数据：身高和体重只留在您的浏览器中，我们只通过 Microsoft Clarity 以匿名方式检测网站的稳定性。",
+    title: "bmi-imc.com 隐私政策：使用 Google Analytics 统计访问量",
+    description: "bmi-imc.com 通过 Google Analytics 统计哪些内容（_ga Cookie，最长 13 个月，无广告）、哪些数据留在您的浏览器中、您的权利以及如何反对。",
   },
   {
     path: "/zh/legal",

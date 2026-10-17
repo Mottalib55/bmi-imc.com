@@ -213,7 +213,7 @@ const APropos = () => {
               { title: "Outils par Profil", desc: "Des calculateurs IMC dédiés pour les hommes, les femmes, les sportifs et les enfants avec des recommandations adaptées à l'âge et au sexe." },
               { title: "Guides Santé Complets", desc: "Articles approfondis sur l'interprétation de l'IMC, ses limites, la gestion du poids et de la santé, rédigés par des professionnels qualifiés." },
               { title: "9 Langues Supportées", desc: "Disponibilité complète en français, anglais, espagnol, portugais, allemand, italien, hindi, chinois et arabe." },
-              { title: "Confidentialité Avant Tout", desc: "Aucune donnée personnelle n'est collectée. Tous les calculs sont effectués dans votre navigateur. Pas de cookies de suivi." },
+              { title: "Confidentialité Avant Tout", desc: "Aucune donnée personnelle n'est collectée. Tous les calculs sont effectués dans votre navigateur. Seule la mesure d'audience Google Analytics dépose des cookies, sans publicité." },
               { title: "Contenu Basé sur la Science", desc: "Toutes les informations de santé sont basées sur les directives de l'OMS, la littérature médicale évaluée par des pairs et les recommandations des autorités nationales de santé." },
             ].map((item, i) => (
               <div key={i} className="rounded-lg border border-border p-4">
@@ -303,7 +303,7 @@ const APropos = () => {
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 w-2 h-2 rounded-full bg-primary flex-shrink-0" />
-              <span><strong>Confidentialité par conception :</strong> Nous ne collectons, ne stockons et ne transmettons aucune donnée de santé personnelle. Tous les calculs d'IMC sont effectués localement dans votre navigateur. Aucun cookie n'est utilisé à des fins de suivi.</span>
+              <span><strong>Confidentialité par conception :</strong> Nous ne collectons, ne stockons et ne transmettons aucune donnée de santé personnelle. Tous les calculs d'IMC sont effectués localement dans votre navigateur. Seuls les cookies de mesure d'audience Google Analytics sont déposés, sans publicité.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="mt-1 w-2 h-2 rounded-full bg-primary flex-shrink-0" />

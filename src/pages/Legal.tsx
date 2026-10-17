@@ -134,14 +134,14 @@ const Legal = () => {
               parties.
             </p>
             <p>
-              <strong>No cookies, no personal data:</strong> bmi-imc.com sets no cookies and the publisher
-              records no personal data about its visitors. The only measurement is an anonymous, cookieless
-              check of site stability (errors, loading times, clicks that do nothing) with Microsoft Clarity,
-              with page content and input fields masked. Details, retention periods and how to object are
+              <strong>Audience measurement and personal data:</strong> bmi-imc.com sets Google Analytics audience measurement
+              cookies only (_ga, _ga_F6NRFKKHRG, 13 months at most), with no advertising, and the publisher keeps no visitor
+              file. Site stability (errors, loading times, clicks that do nothing) is monitored with Microsoft Clarity,
+              cookie-free, with page content and input fields masked. Details, retention periods and how to object are
               given in the <a href="/privacy/" className="underline">privacy policy</a>.
             </p>
             <p>
-              <strong>Third-party services:</strong> This website loads Microsoft Clarity (Microsoft Ireland
+              <strong>Third-party services:</strong> This website loads Google Analytics (Google Ireland Limited) and Microsoft Clarity (Microsoft Ireland
               Operations Limited) in cookieless mode, and may load fonts from Google Fonts, which receives your
               IP address to send the font file.
             </p>
@@ -150,10 +150,14 @@ const Legal = () => {
           <section>
             <h2 className="text-xl font-bold text-foreground">7. Cookie Policy</h2>
             <p>
-              This website sets no cookies at all: neither technical, audience, advertising nor social-media
-              cookies, and Microsoft Clarity runs without its _clck, _clsk, MUID or CLID cookies. As there is
-              nothing to accept or refuse, no cookie banner is shown. The BMI calculator keeps nothing on your
-              device between visits.
+              This website sets two Google Analytics audience measurement cookies and those alone: _ga, which tells visitors
+              apart with a random identifier, and _ga_F6NRFKKHRG, which keeps the state of the visit, for 13 months at most
+              (390 days), not extended on each visit. Provider: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4,
+              Ireland; data may be transferred to Google LLC (United States) under the EU–U.S. Data Privacy Framework;
+              retention at Google: 14 months; legal basis: legitimate interest (Article 6(1)(f) GDPR). No advertising or
+              social-media cookie; Microsoft Clarity runs cookie-free. To object: your browser settings or the{" "}
+              <a href="https://tools.google.com/dlpage/gaoptout" className="underline" target="_blank" rel="noopener noreferrer">Google Analytics opt-out browser add-on</a>.
+              The BMI calculator keeps nothing on your device between visits.
             </p>
           </section>
 

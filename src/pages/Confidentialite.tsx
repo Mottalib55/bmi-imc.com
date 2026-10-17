@@ -23,9 +23,11 @@ const Confidentialite = () => {
       ],
     },
     {
-      titre: "3. Aucun cookie",
+      titre: "3. Mesure d’audience avec Google Analytics",
       corps: [
-        "bmi-imc.com ne dépose aucun cookie : ni mesure d'audience, ni publicité, ni réseau social, ni cookie Microsoft Clarity (_clck, _clsk, MUID, CLID). Comme il n'y a rien à accepter ni à refuser, le site n'affiche pas de bandeau cookies.",
+        "bmi-imc.com utilise Google Analytics 4 pour compter ses visites et savoir quelles pages servent : pages vues, page de provenance, durée de la visite, type d’appareil et de navigateur, pays et ville approximatifs. Google Analytics dépose pour cela deux cookies sur votre terminal : _ga, qui distingue les visiteurs par un identifiant aléatoire, et _ga_F6NRFKKHRG, qui garde l’état de la visite. Leur durée de vie est réglée à 13 mois au plus (390 jours) et n’est pas prolongée à chaque visite.",
+        "L’adresse IP est anonymisée : Google Analytics 4 ne l’enregistre ni ne la conserve. L’adresse de page transmise est privée de ses paramètres, de sorte que vos saisies n’y figurent pas. Le site n’affiche pas de publicité : stockage publicitaire, personnalisation des annonces et signaux Google sont désactivés, et les données de mesure ne sont partagées avec aucun annonceur.",
+        "Fournisseur : Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irlande, sous-traitant au sens de l’article 28 du RGPD. Les données peuvent être transférées à Google LLC, aux États-Unis, dans le cadre du EU–U.S. Data Privacy Framework et des clauses contractuelles types de la Commission européenne. Conservation chez Google : 14 mois, puis suppression. Base juridique : l’intérêt légitime de l’éditeur à connaître l’usage de son site (article 6-1 f du RGPD). Pour vous y opposer, bloquez ou supprimez les cookies dans les réglages de votre navigateur, ou installez le module de désactivation de Google Analytics (https://tools.google.com/dlpage/gaoptout) ; le site fonctionne alors de la même façon.",
       ],
     },
     {
@@ -52,10 +54,10 @@ const Confidentialite = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Confidentialité de BMI-IMC.com : aucun cookie, aucune donnée</title>
+        <title>Confidentialité de bmi-imc.com : mesure d’audience Google Analytics</title>
         <meta
           name="description"
-          content="bmi-imc.com ne dépose aucun cookie ni ne garde de donnée personnelle : taille et poids restent dans votre navigateur, seule la stabilité du site est mesurée."
+          content="Ce que bmi-imc.com mesure avec Google Analytics (cookies _ga, 13 mois au plus, sans publicité), ce qui reste dans votre navigateur, vos droits et comment vous opposer."
         />
         <link rel="canonical" href="https://bmi-imc.com/confidentialite/" />
       </Helmet>

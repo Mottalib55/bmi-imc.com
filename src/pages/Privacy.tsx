@@ -23,9 +23,11 @@ const Privacy = () => {
       ],
     },
     {
-      titre: "3. No cookies",
+      titre: "3. Audience measurement with Google Analytics",
       corps: [
-        "bmi-imc.com sets no cookies: no audience, advertising or social-media cookie, and no Microsoft Clarity cookie either (_clck, _clsk, MUID, CLID). Since there is nothing to accept or refuse, the site shows no cookie banner.",
+        "bmi-imc.com uses Google Analytics 4 to count visits and see which pages are useful: pages viewed, referring page, visit length, device and browser type, approximate country and city. To do so Google Analytics sets two cookies on your device: _ga, which tells visitors apart with a random identifier, and _ga_F6NRFKKHRG, which keeps the state of the visit. Their lifetime is set to 13 months at most (390 days) and is not extended on each visit.",
+        "The IP address is anonymised: Google Analytics 4 neither logs nor stores it. The page address sent is stripped of its parameters, so your inputs are not included. The site shows no advertising: ad storage, ad personalisation and Google signals are switched off, and measurement data is shared with no advertiser.",
+        "Provider: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland, acting as processor under Article 28 GDPR. Data may be transferred to Google LLC in the United States under the EU–U.S. Data Privacy Framework and the European Commission’s standard contractual clauses. Retention at Google: 14 months, then deletion. Legal basis: the publisher’s legitimate interest in knowing how the site is used (Article 6(1)(f) GDPR). To object, block or delete cookies in your browser settings, or install the Google Analytics opt-out browser add-on (https://tools.google.com/dlpage/gaoptout); the site works the same way.",
       ],
     },
     {
@@ -52,10 +54,10 @@ const Privacy = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>BMI-IMC.com privacy policy: no cookies, no data kept</title>
+        <title>bmi-imc.com privacy policy: Google Analytics audience measurement</title>
         <meta
           name="description"
-          content="bmi-imc.com sets no cookies and keeps no personal data: your height and weight stay in your browser, and only an anonymous, cookieless stability check is run."
+          content="What bmi-imc.com measures with Google Analytics (_ga cookies, 13 months at most, no advertising), what stays in your browser, your rights and how to object."
         />
         <link rel="canonical" href="https://bmi-imc.com/privacy/" />
       </Helmet>
