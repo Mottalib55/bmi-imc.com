@@ -1,6 +1,6 @@
 {
-  "name": "BMI-IMC Calculator",
-  "short_name": "BMI-IMC",
+  "name": "BMI IMC",
+  "short_name": "BMI IMC",
   "description": "Free BMI Calculator - Calculateur IMC Gratuit",
   "start_url": "/",
   "display": "standalone",

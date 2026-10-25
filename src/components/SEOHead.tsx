@@ -53,7 +53,7 @@ export const SEOHead = () => {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "BMI-IMC",
+      "name": "BMI IMC",
       "url": DOMAIN,
       "logo": {
         "@type": "ImageObject",
@@ -79,7 +79,7 @@ export const SEOHead = () => {
       <meta property="og:description" content={seo.description} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="BMI-IMC" />
+      <meta property="og:site_name" content="BMI IMC" />
       <meta property="og:image" content={`${DOMAIN}/og-image.png`} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />

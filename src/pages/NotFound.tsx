@@ -15,7 +15,7 @@ const NotFound = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>404 - Page Not Found | BMI-IMC</title>
+        <title>404 - Page Not Found | BMI IMC</title>
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       <Header />

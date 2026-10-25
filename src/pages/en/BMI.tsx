@@ -46,7 +46,7 @@ const BMI = () => {
   const searchActionJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "BMI-IMC",
+    "name": "BMI IMC",
     "url": "https://bmi-imc.com",
     "potentialAction": {
       "@type": "SearchAction",

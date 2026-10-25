@@ -25,7 +25,7 @@ const i18n: Record<Lang, {
   mobileLang: string;
 }> = {
   fr: {
-    logo: ["Calculateur ", "IMC"],
+    logo: ["BMI ", "IMC"],
     calculator: "Calculateur",
     profiles: "Profils",
     info: "Infos",
@@ -44,7 +44,7 @@ const i18n: Record<Lang, {
     mobileLang: "Langues",
   },
   en: {
-    logo: ["BMI ", "Calculator"],
+    logo: ["BMI ", "IMC"],
     calculator: "Calculator",
     profiles: "Profiles",
     info: "Info",
@@ -63,7 +63,7 @@ const i18n: Record<Lang, {
     mobileLang: "Languages",
   },
   es: {
-    logo: ["Calculadora ", "IMC"],
+    logo: ["BMI ", "IMC"],
     calculator: "Calculadora",
     profiles: "Perfiles",
     info: "Info",
@@ -82,7 +82,7 @@ const i18n: Record<Lang, {
     mobileLang: "Idiomas",
   },
   pt: {
-    logo: ["Calculadora ", "IMC"],
+    logo: ["BMI ", "IMC"],
     calculator: "Calculadora",
     profiles: "Perfis",
     info: "Info",
@@ -101,7 +101,7 @@ const i18n: Record<Lang, {
     mobileLang: "Idiomas",
   },
   de: {
-    logo: ["BMI-", "Rechner"],
+    logo: ["BMI ", "IMC"],
     calculator: "Rechner",
     profiles: "Profile",
     info: "Info",
@@ -120,7 +120,7 @@ const i18n: Record<Lang, {
     mobileLang: "Sprachen",
   },
   it: {
-    logo: ["Calcolatore ", "IMC"],
+    logo: ["BMI ", "IMC"],
     calculator: "Calcolatore",
     profiles: "Profili",
     info: "Info",
@@ -139,7 +139,7 @@ const i18n: Record<Lang, {
     mobileLang: "Lingue",
   },
   hi: {
-    logo: ["BMI ", "कैलकुलेटर"],
+    logo: ["BMI ", "IMC"],
     calculator: "कैलकुलेटर",
     profiles: "प्रोफाइल",
     info: "जानकारी",
@@ -158,7 +158,7 @@ const i18n: Record<Lang, {
     mobileLang: "भाषाएं",
   },
   zh: {
-    logo: ["BMI ", "计算器"],
+    logo: ["BMI ", "IMC"],
     calculator: "计算器",
     profiles: "人群",
     info: "信息",
@@ -177,7 +177,7 @@ const i18n: Record<Lang, {
     mobileLang: "语言",
   },
   ar: {
-    logo: ["حاسبة ", "مؤشر كتلة الجسم"],
+    logo: ["BMI ", "IMC"],
     calculator: "الحاسبة",
     profiles: "الفئات",
     info: "معلومات",
@@ -338,8 +338,8 @@ export const Header = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link to={routeMap.main[currentLang]} className="flex items-center gap-2 group">
-            <img src="/logo.svg" alt="BMI Calculator" className="w-9 h-9 rounded-xl group-hover:scale-105 transition-transform" />
-            <span className="font-display font-bold text-lg hidden sm:block">
+            <img src="/logo.svg" alt="" className="w-9 h-9 rounded-xl group-hover:scale-105 transition-transform" />
+            <span className="font-display font-bold text-lg hidden sm:block whitespace-nowrap">
               {t.logo[0]}<span className="gradient-text">{t.logo[1]}</span>
             </span>
           </Link>
