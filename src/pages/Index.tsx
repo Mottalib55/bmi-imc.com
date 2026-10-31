@@ -50,12 +50,15 @@ const Index = () => {
         </header>
 
         {/* §21 : paragraphe citable, hors du <header>. */}
-        <ResumeCitable />
+        <div className="flex flex-col">
+          {/* On a phone the calculator comes first and the citable paragraph right after it (audit of 2026-10-28). */}
+            <div className="order-2 lg:order-1"><ResumeCitable /></div>
 
-        {/* Top Row - Calculator and Gauge side by side */}
-        <div className="grid lg:grid-cols-2 gap-6 md:gap-8 mb-6 md:mb-8">
-          <BMICalculator onCalculate={handleCalculate} />
-          <BMIGauge bmi={bmi} />
+          {/* Top Row - Calculator and Gauge side by side */}
+          <div className="order-1 lg:order-2 grid lg:grid-cols-2 gap-6 md:gap-8 mb-6 md:mb-8">
+            <BMICalculator onCalculate={handleCalculate} />
+            <BMIGauge bmi={bmi} />
+          </div>
         </div>
 
         {/* Bottom Row - Details and Recommendations */}

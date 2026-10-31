@@ -339,7 +339,7 @@ export const Header = () => {
           {/* Logo */}
           <Link to={routeMap.main[currentLang]} className="flex items-center gap-2 group">
             <img src="/logo.svg" alt="" className="w-9 h-9 rounded-xl group-hover:scale-105 transition-transform" />
-            <span className="font-display font-bold text-lg hidden sm:block whitespace-nowrap">
+            <span className="font-display font-bold text-lg block whitespace-nowrap">
               {t.logo[0]}<span className="gradient-text">{t.logo[1]}</span>
             </span>
           </Link>

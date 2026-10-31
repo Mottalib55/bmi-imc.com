@@ -107,13 +107,13 @@ function buildHreflangTags(path) {
   for (const [lang, altPath] of Object.entries(alternates)) {
     if (!INDEXED_LANGS.has(lang)) continue;
     const href = `${BASE_URL}${avecBarre(altPath)}`;
-    tags.push(`<link rel="alternate" hreflang="${lang}" href="${href}" />`);
+    tags.push(`<link rel="alternate" hreflang="${lang}" href="${href}" data-rh="true" />`);
   }
   // x-default points to English version
   if (alternates.en) {
     const enPath = alternates.en;
     const href = `${BASE_URL}${avecBarre(enPath)}`;
-    tags.push(`<link rel="alternate" hreflang="x-default" href="${href}" />`);
+    tags.push(`<link rel="alternate" hreflang="x-default" href="${href}" data-rh="true" />`);
   }
   return tags.join("\n    ");
 }

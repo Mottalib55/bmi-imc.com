@@ -74,10 +74,11 @@ async function worker() {
       await page.waitForTimeout(300);
       const inner = await page.evaluate(() => document.getElementById('root').innerHTML);
       const lang = await page.evaluate(() => document.documentElement.lang);
-      // Schémas ajoutés au <head> à l'exécution (useFAQSchema…) : recopiés s'ils manquent au fichier
+      // Schémas ajoutés au <head> à l'exécution (Helmet) : recopiés s'ils manquent au fichier, avec data-rh pour
+      // que Helmet les remplace au chargement au lieu de les doubler (audit du 2026-10-28)
       const lds = await page.evaluate(() => [...document.head.querySelectorAll('script[type="application/ld+json"]')].map((s) => s.textContent));
       let html = await readFile(file, 'utf8');
-      const extra = lds.filter((t) => t && !html.includes(t)).map((t) => `<script type="application/ld+json">${t.replace(/</g, '\\u003c')}</script>`).join('');
+      const extra = lds.filter((t) => t && !html.includes(t)).map((t) => `<script type="application/ld+json" data-rh="true">${t.replace(/</g, '\\u003c')}</script>`).join('');
       if (extra) html = html.replace('</head>', extra + '</head>');
       const a = html.indexOf('<div id="root">');
       const b = html.lastIndexOf('</div>', html.indexOf('</body>'));

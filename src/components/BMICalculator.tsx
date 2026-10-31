@@ -4,6 +4,7 @@ import { Label } from "@/components/ui/label";
 import { Slider } from "@/components/ui/slider";
 import { Scale, Ruler, Calculator } from "lucide-react";
 import { getCurrentLang } from "@/config/routes";
+import { NumberBox } from "@/components/NumberBox";
 
 interface BMICalculatorProps {
   onCalculate: (bmi: number, weight: number, height: number) => void;
@@ -60,16 +61,12 @@ export const BMICalculator = ({ onCalculate }: BMICalculatorProps) => {
               <Scale className={`w-4 h-4 transition-all duration-200 ${activeSlider === 'weight' ? 'text-primary scale-125' : ''}`} />
               {t.weight}
             </Label>
-            <div className="flex items-baseline gap-1">
-              <span className={`text-3xl font-display font-bold transition-all duration-150 ${
-                activeSlider === 'weight' ? 'text-primary scale-110' : 'text-primary'
-              }`}>{weight}</span>
-              <span className="text-muted-foreground font-medium">kg</span>
-            </div>
+            <NumberBox id={`bmi-weight-${lang}`} label={`${t.weight} (kg)`} value={weight} onChange={setWeight} min={30} max={200} step={0.1} unit="kg" />
           </div>
           <Slider
             value={[weight]}
             onValueChange={(value) => setWeight(value[0])}
+            thumbLabel={`${t.weight} (kg)`}
             onPointerDown={() => setActiveSlider('weight')}
             onPointerUp={() => setActiveSlider(null)}
             onPointerLeave={() => setActiveSlider(null)}
@@ -95,16 +92,12 @@ export const BMICalculator = ({ onCalculate }: BMICalculatorProps) => {
               <Ruler className={`w-4 h-4 transition-all duration-200 ${activeSlider === 'height' ? 'text-accent scale-125' : ''}`} />
               {t.height}
             </Label>
-            <div className="flex items-baseline gap-1">
-              <span className={`text-3xl font-display font-bold transition-all duration-150 ${
-                activeSlider === 'height' ? 'text-accent scale-110' : 'text-accent'
-              }`}>{height}</span>
-              <span className="text-muted-foreground font-medium">cm</span>
-            </div>
+            <NumberBox id={`bmi-height-${lang}`} label={`${t.height} (cm)`} value={height} onChange={setHeight} min={100} max={220} step={0.5} unit="cm" />
           </div>
           <Slider
             value={[height]}
             onValueChange={(value) => setHeight(value[0])}
+            thumbLabel={`${t.height} (cm)`}
             onPointerDown={() => setActiveSlider('height')}
             onPointerUp={() => setActiveSlider(null)}
             onPointerLeave={() => setActiveSlider(null)}

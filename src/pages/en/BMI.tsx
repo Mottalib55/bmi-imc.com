@@ -10,17 +10,24 @@ import { Link } from "react-router-dom";
 import { Slider } from "@/components/ui/slider";
 import { RelatedPages } from "@/components/RelatedPages";
 import { Helmet } from "react-helmet-async";
+import { NumberBox } from "@/components/NumberBox";
 
-const kgToLbs = (kg: number) => Math.round(kg * 2.20462);
+const LB_PER_KG = 2.20462;
+const CM_PER_IN = 2.54;
+const kgToLbs = (kg: number) => Math.round(kg * LB_PER_KG);
 const cmToFtIn = (cm: number) => {
-  const totalIn = Math.round(cm / 2.54);
+  const totalIn = Math.round(cm / CM_PER_IN);
   return `${Math.floor(totalIn / 12)}'${totalIn % 12}"`;
 };
+const r1 = (x: number) => Math.round(x * 10) / 10;
 
 const BMI = () => {
   const [bmi, setBmi] = useState<number | null>(null);
   const [weight, setWeight] = useState(77);
   const [height, setHeight] = useState(176);
+  // US visitors type pounds and feet/inches; the calculation stays in kg and cm.
+  const [us, setUs] = useState(false);
+  const totalIn = Math.round(height / CM_PER_IN);
 
   const calculateBMI = useCallback((w: number, h: number) => {
     const heightM = h / 100;
@@ -33,15 +40,10 @@ const BMI = () => {
     calculateBMI(weight, height);
   }, []);
 
-  const handleWeightChange = (value: number[]) => {
-    setWeight(value[0]);
-    calculateBMI(value[0], height);
-  };
-
-  const handleHeightChange = (value: number[]) => {
-    setHeight(value[0]);
-    calculateBMI(weight, value[0]);
-  };
+  const setW = (kg: number) => { setWeight(kg); calculateBMI(kg, height); };
+  const setH = (cm: number) => { setHeight(cm); calculateBMI(weight, cm); };
+  const handleWeightChange = (value: number[]) => setW(us ? r1(value[0] / LB_PER_KG) : value[0]);
+  const handleHeightChange = (value: number[]) => setH(us ? r1(value[0] * CM_PER_IN) : value[0]);
 
   const searchActionJsonLd = {
     "@context": "https://schema.org",
@@ -82,58 +84,72 @@ const BMI = () => {
         </header>
 
         {/* §21 : paragraphe citable, hors du <header>. */}
-        <ResumeCitable />
+        <div className="flex flex-col">
+          {/* On a phone the calculator comes first and the citable paragraph right after it (audit of 2026-10-28). */}
+            <div className="order-2 lg:order-1"><ResumeCitable /></div>
 
-        {/* Calculator */}
-        <div className="grid lg:grid-cols-2 gap-6 md:gap-8 mb-8">
-          <div className="glass-card p-6 md:p-8">
-            <h2 className="text-xl font-display font-bold mb-6 flex items-center gap-2">
-              <Scale className="w-5 h-5 text-primary" />
-              Enter your measurements
-            </h2>
+          {/* Calculator */}
+          <div className="order-1 lg:order-2 grid lg:grid-cols-2 gap-6 md:gap-8 mb-8">
+            <div className="glass-card p-6 md:p-8">
+              <h2 className="text-xl font-display font-bold mb-6 flex items-center gap-2">
+                <Scale className="w-5 h-5 text-primary" />
+                Enter your measurements
+              </h2>
 
-            <div className="space-y-8">
-              <div>
-                <div className="flex justify-between items-center mb-4">
-                  <label className="text-sm font-medium">Weight</label>
-                  <span className="text-2xl font-bold text-primary">{weight} kg <span className="text-base font-normal text-muted-foreground">({kgToLbs(weight)} lbs)</span></span>
-                </div>
-                <Slider
-                  value={[weight]}
-                  onValueChange={handleWeightChange}
-                  min={30}
-                  max={200}
-                  step={1}
-                  className="py-4"
-                />
-                <div className="flex justify-between text-xs text-muted-foreground mt-1">
-                  <span>30 kg</span>
-                  <span>200 kg</span>
-                </div>
+              <div className="mb-6 inline-flex rounded-lg border border-border p-1" role="group" aria-label="Units">
+                <button type="button" aria-pressed={!us} onClick={() => setUs(false)} className={`rounded-md px-3 py-1 text-sm font-medium ${!us ? "bg-primary text-primary-foreground" : "text-muted-foreground"}`}>kg / cm</button>
+                <button type="button" aria-pressed={us} onClick={() => setUs(true)} className={`rounded-md px-3 py-1 text-sm font-medium ${us ? "bg-primary text-primary-foreground" : "text-muted-foreground"}`}>lb / ft in</button>
               </div>
 
-              <div>
-                <div className="flex justify-between items-center mb-4">
-                  <label className="text-sm font-medium">Height</label>
-                  <span className="text-2xl font-bold text-primary">{height} cm <span className="text-base font-normal text-muted-foreground">({cmToFtIn(height)})</span></span>
+              <div className="space-y-8">
+                <div>
+                  <div className="flex justify-between items-center mb-4 gap-3">
+                    <label htmlFor="bmi-weight" className="text-sm font-medium">Weight</label>
+                    {us
+                      ? <span className="flex items-baseline gap-2"><NumberBox id="bmi-weight" label="Weight in pounds" value={kgToLbs(weight)} onChange={(lb) => setW(r1(lb / LB_PER_KG))} min={66} max={440} unit="lb" /><span className="text-base font-normal text-muted-foreground">({r1(weight)} kg)</span></span>
+                      : <span className="flex items-baseline gap-2"><NumberBox id="bmi-weight" label="Weight in kilograms" value={weight} onChange={setW} min={30} max={200} step={0.1} unit="kg" /><span className="text-base font-normal text-muted-foreground">({kgToLbs(weight)} lbs)</span></span>}
+                  </div>
+                  <Slider
+                    value={[us ? kgToLbs(weight) : weight]}
+                    onValueChange={handleWeightChange}
+                    min={us ? 66 : 30}
+                    max={us ? 440 : 200}
+                    step={1}
+                    thumbLabel={us ? "Weight in pounds" : "Weight in kilograms"}
+                    className="py-4"
+                  />
+                  <div className="flex justify-between text-xs text-muted-foreground mt-1">
+                    <span>{us ? "66 lb" : "30 kg"}</span>
+                    <span>{us ? "440 lb" : "200 kg"}</span>
+                  </div>
                 </div>
-                <Slider
-                  value={[height]}
-                  onValueChange={handleHeightChange}
-                  min={100}
-                  max={220}
-                  step={1}
-                  className="py-4"
-                />
-                <div className="flex justify-between text-xs text-muted-foreground mt-1">
-                  <span>100 cm</span>
-                  <span>220 cm</span>
+
+                <div>
+                  <div className="flex justify-between items-center mb-4 gap-3">
+                    <label htmlFor="bmi-height" className="text-sm font-medium">Height</label>
+                    {us
+                      ? <span className="flex items-baseline gap-2"><NumberBox id="bmi-height" label="Height, feet" value={Math.floor(totalIn / 12)} onChange={(ft) => setH(r1((ft * 12 + (totalIn % 12)) * CM_PER_IN))} min={3} max={7} unit="ft" /><NumberBox id="bmi-height-in" label="Height, inches" value={totalIn % 12} onChange={(inch) => setH(r1((Math.floor(totalIn / 12) * 12 + inch) * CM_PER_IN))} min={0} max={11} unit="in" /></span>
+                      : <span className="flex items-baseline gap-2"><NumberBox id="bmi-height" label="Height in centimetres" value={height} onChange={setH} min={100} max={220} step={0.5} unit="cm" /><span className="text-base font-normal text-muted-foreground">({cmToFtIn(height)})</span></span>}
+                  </div>
+                  <Slider
+                    value={[us ? totalIn : height]}
+                    onValueChange={handleHeightChange}
+                    min={us ? 39 : 100}
+                    max={us ? 87 : 220}
+                    step={1}
+                    thumbLabel={us ? "Height in inches" : "Height in centimetres"}
+                    className="py-4"
+                  />
+                  <div className="flex justify-between text-xs text-muted-foreground mt-1">
+                    <span>{us ? `3'3"` : "100 cm"}</span>
+                    <span>{us ? `7'3"` : "220 cm"}</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <BMIGauge bmi={bmi} />
+            <BMIGauge bmi={bmi} />
+          </div>
         </div>
 
         {/* Content */}
